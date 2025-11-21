@@ -1,0 +1,87 @@
+/* Import Theme Globals */
+@import './styles/theme-globals.css';
+
+/* Global Theme Variables */
+:root {
+  --body-bg: #fff;
+  --body-text: #333;
+  --section-bg: #f8f9fa;
+  --card-bg: #fff;
+  --border-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --body-bg: #0f0f1e;
+  --body-text: #f5f5f5;
+  --section-bg: #1a1a2e;
+  --card-bg: #16213e;
+  --border-color: #2a2a3e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--body-text);
+  background-color: var(--body-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global card styles for dark mode */
+[data-theme="dark"] .card,
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .info-item,
+[data-theme="dark"] .feature-item,
+[data-theme="dark"] .testimonial-item,
+[data-theme="dark"] .service-card {
+  background: var(--card-bg);
+  color: var(--body-text);
+}
+
+/* Section backgrounds */
+[data-theme="dark"] section {
+  color: var(--body-text);
+}
+
+[data-theme="dark"] .benefits,
+[data-theme="dark"] .inspiration,
+[data-theme="dark"] .process,
+[data-theme="dark"] .testimonials,
+[data-theme="dark"] .colors {
+  background-color: var(--section-bg);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--body-text);
+}
+
+[data-theme="dark"] p {
+  color: var(--body-text);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background: var(--card-bg);
+  color: var(--body-text);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #888;
+}

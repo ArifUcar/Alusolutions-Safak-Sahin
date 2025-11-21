@@ -1,0 +1,483 @@
+/* Import Theme Globals */
+@import './theme-globals.css';
+
+/* Afspraak Page Styles */
+.afspraak-page {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #22c55e;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --white: #fff;
+  --card-bg: #fff;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .afspraak-page {
+  --primary-color: #4a90e2;
+  --secondary-color: #5dade2;
+  --accent-color: #22c55e;
+  --text-color: #f5f5f5;
+  --light-bg: #1a1a2e;
+  --white: #16213e;
+  --card-bg: #16213e;
+  --border-color: #2a2a3e;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.afspraak-page .header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.afspraak-page .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.afspraak-page .logo a {
+  text-decoration: none;
+}
+
+.afspraak-page .logo h1 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.afspraak-page .nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.afspraak-page .nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.afspraak-page .nav a:hover {
+  color: var(--secondary-color);
+}
+
+.afspraak-page .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.afspraak-page .btn-primary {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.afspraak-page .btn-primary:hover {
+  background-color: #16a34a;
+}
+
+.afspraak-page .btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.afspraak-page .btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Main Section */
+.afspraak-main {
+  min-height: calc(100vh - 70px);
+  background-color: var(--light-bg);
+}
+
+.afspraak-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: calc(100vh - 70px);
+}
+
+/* Left Image */
+.afspraak-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.afspraak-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: calc(100vh - 70px);
+}
+
+/* Right Form */
+.afspraak-form-wrapper {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Form Steps */
+.form-step {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-step h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.step-label {
+  color: var(--text-color);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.required {
+  background: var(--light-bg);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Option Cards */
+.option-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  border-color: var(--primary-color);
+}
+
+.option-card.selected {
+  border-color: var(--primary-color);
+  background: rgba(44, 62, 80, 0.05);
+}
+
+.option-card input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  accent-color: var(--primary-color);
+}
+
+.option-content {
+  flex: 1;
+}
+
+.option-content strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 3px;
+}
+
+.option-content span {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* DateTime Section */
+.datetime-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Time Slots */
+.time-slots label {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.time-slot {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+  border-color: var(--primary-color);
+}
+
+.time-slot.selected {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white);
+}
+
+.availability-note {
+  background: var(--light-bg);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.availability-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Personal Info Grid */
+.personal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Summary Section */
+.summary-section {
+  background: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-section h3 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.summary-list li:last-child {
+  border-bottom: none;
+}
+
+.summary-list strong {
+  color: var(--primary-color);
+}
+
+/* Navigation Buttons */
+.form-navigation {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-back {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-back:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-next,
+.btn-submit {
+  flex: 1;
+  padding: 15px 30px;
+  background: var(--accent-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-next:hover,
+.btn-submit:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.btn-next span,
+.btn-submit span {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .afspraak-container {
+    grid-template-columns: 1fr;
+  }
+
+  .afspraak-image {
+    display: none;
+  }
+
+  .afspraak-form-wrapper {
+    padding: 30px 20px;
+    min-height: calc(100vh - 70px);
+  }
+}
+
+@media (max-width: 768px) {
+  .afspraak-page .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .afspraak-page .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-step h2 {
+    font-size: 1.5rem;
+  }
+
+  .slots-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .personal-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .afspraak-form-wrapper {
+    padding: 20px 15px;
+  }
+
+  .slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .option-card {
+    padding: 15px;
+  }
+}

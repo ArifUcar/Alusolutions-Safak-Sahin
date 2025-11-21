@@ -1,0 +1,100 @@
+/* Global Dark/Light Theme Variables */
+/* Import this file in other CSS files for consistent theming */
+
+:root {
+  /* Colors */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #22c55e;
+  --text-color: #333;
+  --text-light: #666;
+  --text-lighter: #888;
+
+  /* Backgrounds */
+  --bg-primary: #fff;
+  --bg-secondary: #f8f9fa;
+  --bg-card: #fff;
+
+  /* Borders */
+  --border-color: #e0e0e0;
+  --border-light: #eee;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  /* Colors */
+  --primary-color: #4a90e2;
+  --secondary-color: #5dade2;
+  --accent-color: #22c55e;
+  --text-color: #f5f5f5;
+  --text-light: #d0d0d0;
+  --text-lighter: #a0a0a0;
+
+  /* Backgrounds */
+  --bg-primary: #0f0f1e;
+  --bg-secondary: #1a1a2e;
+  --bg-card: #16213e;
+
+  /* Borders */
+  --border-color: #2a2a3e;
+  --border-light: #333;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Apply to common elements */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-color);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Card-like elements */
+.card,
+.product-card,
+.service-card,
+.info-card,
+.feature-card,
+.testimonial-card {
+  background: var(--bg-card);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+/* Sections */
+section {
+  transition: background-color var(--transition-normal);
+}
+
+/* Links */
+a {
+  transition: color var(--transition-fast);
+}
+
+/* Inputs and forms */
+input,
+textarea,
+select {
+  background: var(--bg-card);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-light);
+}

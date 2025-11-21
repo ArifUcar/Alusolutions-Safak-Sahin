@@ -1,0 +1,717 @@
+/* Import Theme Globals */
+@import './theme-globals.css';
+
+/* Inspiratie Page Styles */
+.inspiratie-page {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #22c55e;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --white: #fff;
+  --card-bg: #fff;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .inspiratie-page {
+  --primary-color: #4a90e2;
+  --secondary-color: #5dade2;
+  --accent-color: #22c55e;
+  --text-color: #f5f5f5;
+  --light-bg: #1a1a2e;
+  --white: #16213e;
+  --card-bg: #16213e;
+  --border-color: #2a2a3e;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.inspiratie-page .header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.inspiratie-page .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inspiratie-page .logo a {
+  text-decoration: none;
+}
+
+.inspiratie-page .logo h1 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.inspiratie-page .nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.inspiratie-page .nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.inspiratie-page .nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+.inspiratie-page .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.inspiratie-page .btn-primary {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.inspiratie-page .btn-primary:hover {
+  background-color: #d35400;
+}
+
+.inspiratie-page .btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.inspiratie-page .btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.inspiratie-page .btn-large {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+}
+
+/* Hero */
+.inspiratie-hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.inspiratie-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.inspiratie-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspiratie-hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 62, 80, 0.8);
+}
+
+.inspiratie-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.inspiratie-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.inspiratie-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Filter Section */
+.filter-section {
+  padding: 40px 0;
+  background-color: var(--white);
+  border-bottom: 1px solid #eee;
+}
+
+.filter-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+/* Main Gallery */
+.main-gallery {
+  padding: 60px 0;
+  background-color: var(--light-bg);
+}
+
+.main-gallery .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-masonry {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gallery-item.large {
+  grid-column: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item.large img {
+  height: 400px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: var(--white);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gallery-category {
+  display: inline-block;
+  background: var(--accent-color);
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.gallery-overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.gallery-overlay p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Featured Projects */
+.featured-projects {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+.featured-projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+
+.featured-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.featured-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.featured-item.reverse {
+  direction: rtl;
+}
+
+.featured-item.reverse > * {
+  direction: ltr;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.featured-category {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.featured-content h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.featured-content p {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.featured-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.featured-specs li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: var(--text-color);
+  border-bottom: 1px solid #eee;
+}
+
+.featured-specs li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Before After */
+.before-after {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+}
+
+.before-after .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.before-after h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.transformation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.transformation-item {
+  text-align: center;
+}
+
+.transformation-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.before,
+.after {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.before img,
+.after img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.before span,
+.after span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.transformation-item h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+/* Styles Section */
+.styles-section {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+.styles-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.styles-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+}
+
+.styles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.style-card {
+  text-align: center;
+  background: var(--light-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.style-card:hover {
+  transform: translateY(-5px);
+}
+
+.style-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.style-card h3 {
+  color: var(--primary-color);
+  margin: 20px 0 10px;
+  font-size: 1.1rem;
+}
+
+.style-card p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  padding: 0 15px 20px;
+  margin: 0;
+}
+
+/* CTA Section */
+.inspiratie-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  text-align: center;
+}
+
+.inspiratie-cta .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.inspiratie-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.inspiratie-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.inspiratie-cta .cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.inspiratie-cta .btn-secondary {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.inspiratie-cta .btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+/* Footer */
+.inspiratie-page .footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 60px 0 20px;
+}
+
+.inspiratie-page .footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.inspiratie-page .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.inspiratie-page .footer h4 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.inspiratie-page .footer-about p {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.inspiratie-page .footer-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.inspiratie-page .footer-social-icons a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.inspiratie-page .footer-contact p {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.inspiratie-page .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inspiratie-page .footer-links li {
+  margin-bottom: 8px;
+}
+
+.inspiratie-page .footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.inspiratie-page .footer-links a:hover {
+  color: var(--white);
+}
+
+.inspiratie-page .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.inspiratie-page .footer-bottom p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.inspiratie-page .footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.inspiratie-page .footer-bottom-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .gallery-masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item.large {
+    grid-column: span 1;
+  }
+
+  .featured-item,
+  .featured-item.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .transformation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .styles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inspiratie-page .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .inspiratie-page .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .inspiratie-page .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .inspiratie-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .gallery-masonry {
+    grid-template-columns: 1fr;
+  }
+
+  .transformation-images {
+    grid-template-columns: 1fr;
+  }
+
+  .styles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inspiratie-cta .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inspiratie-page .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inspiratie-page .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
