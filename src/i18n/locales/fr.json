@@ -1,1349 +1,1289 @@
 {
   "header": {
-    "services": "Nos Services",
-    "verandas": "Vérandas",
-    "other": "Autres",
-    "about": "À Propos",
-    "inspiration": "Inspiration",
-    "projectGallery": "Galerie de Projets",
-    "beforeAfter": "Avant & Après",
-    "styles": "Styles",
-    "blogsTips": "Blogs & Astuces",
-    "requestQuote": "Demander un Devis",
-    "onlineQuote": "Devis en Ligne",
-    "freeMeasurement": "Mesure Gratuite",
-    "callDirect": "Appeler Directement",
-    "quote": "Demander un Devis",
+    "services": "Onze diensten",
+    "verandas": "Veranda's",
+    "other": "Overige",
+    "about": "Over ons",
+    "inspiration": "Inspiratie",
+    "projectGallery": "Projecten Galerij",
+    "beforeAfter": "Voor & Na",
+    "styles": "Stijlen",
+    "blogsTips": "Blogs & Tips",
+    "requestQuote": "Offerte aanvragen",
+    "onlineQuote": "Online Offerte",
+    "freeMeasurement": "Gratis Inmeten",
+    "callDirect": "Bel Direct",
+    "quote": "Offerte aanvragen",
     "contact": "Contact",
-    "contactForm": "Formulaire de Contact",
-    "visitShowroom": "Visiter le Showroom",
-    "faq": "Foire aux Questions",
-    "language": "Langue",
-    "makeAppointment": "Prendre un Rendez-vous",
-    "tagline": "Nous Apportons la Vie Extérieure à l'Intérieur",
-    "darkMode": "Mode sombre",
-    "lightMode": "Mode clair"
+    "contactForm": "Contact Formulier",
+    "visitShowroom": "Showroom Bezoeken",
+    "faq": "Veelgestelde Vragen",
+    "language": "Taal",
+    "makeAppointment": "Afspraak maken",
+    "tagline": "Wij Brengen Buitenleven Binnen",
+    "darkMode": "Donkere modus",
+    "lightMode": "Lichte modus"
   },
   "products": {
-    "polycarbonaat": "Véranda en Polycarbonate",
-    "glazen": "Véranda en Verre",
-    "lamellen": "Véranda à Lamelles",
-    "vouwdak": "Véranda à Toit Rétractable",
-    "schuifwand": "Mur Coulissant en Verre",
-    "cube": "Véranda Cube",
-    "tuinkamer": "Jardin d'Hiver",
-    "carport": "Carport"
+    "polycarbonaat": {
+      "hero": {
+        "title": "Polycarbonaat Veranda",
+        "subtitle": "Duurzaam, betaalbaar en lichtdoorlatend",
+        "imageAlt": "Polycarbonaat Veranda"
+      },
+      "info": {
+        "title": "Wat is een Polycarbonaat Veranda?",
+        "description1": "Een polycarbonaat veranda is de ideale keuze voor wie op zoek is naar een duurzame en betaalbare terrasoverkapping. Dankzij de sterke en heldere polycarbonaat dakplaten geniet je van veel lichtinval, zonder in te leveren op bescherming tegen regen en wind.",
+        "description2": "Bij AluSolutions leveren wij jouw polycarbonaat veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Polycarbonaat Veranda voorbeeld"
+      },
+      "benefits": {
+        "benefit1": "Uitstekende lichtdoorlatendheid",
+        "benefit2": "UV-bestendig en weerbestendig",
+        "benefit3": "Lichtgewicht maar sterk",
+        "benefit4": "Betaalbare optie",
+        "benefit5": "Makkelijk te onderhouden",
+        "benefit6": "Lange levensduur (10-15 jaar)"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Aluminium frame met polycarbonaat platen",
+        "thickness": "Dikte platen",
+        "thicknessValue": "16mm of 32mm kanaalplaten",
+        "colors": "Kleuren",
+        "colorsValue": "Helder, opaal of getint",
+        "frameColors": "Frame kleuren",
+        "frameColorsValue": "Antraciet, wit, crème of RAL kleur",
+        "maxWidth": "Maximale breedte",
+        "maxWidthValue": "Tot 7 meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar op constructie"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Polycarbonaat Veranda?",
+        "description": "Vraag vrijblijvend een offerte aan of maak een afspraak voor advies op maat",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "glazen": {
+      "hero": {
+        "title": "Glazen Veranda",
+        "subtitle": "Maximale transparantie en luxe uitstraling",
+        "imageAlt": "Glazen Veranda"
+      },
+      "info": {
+        "title": "Wat is een Glazen Veranda?",
+        "description1": "Een glazen veranda biedt maximale lichtinval en een onbelemmerd uitzicht op uw tuin. Het gehard glas is veilig, sterk en gemakkelijk te reinigen.",
+        "description2": "Bij AluSolutions gebruiken we uitsluitend hoogwaardig gehard glas dat voldoet aan alle veiligheidsnormen.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Glazen Veranda"
+      },
+      "benefits": {
+        "benefit1": "Maximale lichtinval",
+        "benefit2": "Onbelemmerd uitzicht",
+        "benefit3": "Luxe uitstraling",
+        "benefit4": "Gehard veiligheidsglas",
+        "benefit5": "Zelfreinigend glas beschikbaar",
+        "benefit6": "Lange levensduur"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Aluminium frame met gehard glas",
+        "glassThickness": "Glasdikte",
+        "glassThicknessValue": "8mm gehard veiligheidsglas",
+        "options": "Opties",
+        "optionsValue": "Helder, getint of zelfreinigend",
+        "frameColors": "Frame kleuren",
+        "frameColorsValue": "Alle RAL kleuren mogelijk",
+        "maxWidth": "Maximale breedte",
+        "maxWidthValue": "Tot 6 meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar op constructie"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Glazen Veranda?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "lamellen": {
+      "hero": {
+        "title": "Lamellen Veranda",
+        "subtitle": "Verstelbare zonwering voor optimaal comfort",
+        "imageAlt": "Lamellen Veranda"
+      },
+      "info": {
+        "title": "Wat is een Lamellen Veranda?",
+        "description1": "Een lamellen veranda biedt ultieme flexibiliteit. De draaibare lamellen reguleren zonlicht en ventilatie naar wens, van volledig open tot volledig gesloten.",
+        "description2": "Perfect voor wie maximale controle wil over licht en schaduw gedurende de dag.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Lamellen Veranda"
+      },
+      "benefits": {
+        "benefit1": "Verstelbare lamellen (0-135°)",
+        "benefit2": "Optimale zonwering",
+        "benefit3": "Goede ventilatie",
+        "benefit4": "Waterafvoer via lamellen",
+        "benefit5": "Elektrisch bedienbaar",
+        "benefit6": "Modern design"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Aluminium frame en lamellen",
+        "operation": "Bediening",
+        "operationValue": "Elektrisch met afstandsbediening",
+        "rotation": "Rotatie",
+        "rotationValue": "0° tot 135° verstelbaar",
+        "frameColors": "Frame kleuren",
+        "frameColorsValue": "Alle RAL kleuren mogelijk",
+        "maxWidth": "Maximale breedte",
+        "maxWidthValue": "Tot 6 meter per sectie",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar op constructie, 5 jaar op motor"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Lamellen Veranda?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "vouwdak": {
+      "hero": {
+        "title": "Vouwdak Veranda",
+        "subtitle": "Flexibel opvouwbaar voor elk seizoen",
+        "imageAlt": "Vouwdak Veranda"
+      },
+      "info": {
+        "title": "Wat is een Vouwdak Veranda?",
+        "description1": "Een vouwdak veranda combineert bescherming met flexibiliteit. Het doek kan elektrisch open en dicht worden geschoven, zodat u zelf bepaalt wanneer u onder de blote hemel zit.",
+        "description2": "Ideaal voor wie het beste van beide werelden wil: beschutting wanneer nodig, open lucht wanneer gewenst.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Vouwdak Veranda"
+      },
+      "benefits": {
+        "benefit1": "Volledig opvouwbaar",
+        "benefit2": "Elektrische bediening",
+        "benefit3": "Water- en UV-werend doek",
+        "benefit4": "Sfeervolle uitstraling",
+        "benefit5": "Ingebouwde LED-verlichting mogelijk",
+        "benefit6": "Windbestendig tot 6 Beaufort"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Aluminium frame met PVC doek",
+        "operation": "Bediening",
+        "operationValue": "Elektrisch met afstandsbediening",
+        "fabric": "Doek",
+        "fabricValue": "Weerbestendig, UV-werend PVC",
+        "fabricColors": "Doek kleuren",
+        "fabricColorsValue": "Wit, crème, grijs of antraciet",
+        "maxWidth": "Maximale breedte",
+        "maxWidthValue": "Tot 7 meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar op frame, 5 jaar op doek"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Vouwdak Veranda?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "schuifwand": {
+      "hero": {
+        "title": "Glazen Schuifwand",
+        "subtitle": "Windvrij genieten met maximaal uitzicht",
+        "imageAlt": "Glazen Schuifwand"
+      },
+      "info": {
+        "title": "Wat is een Glazen Schuifwand?",
+        "description1": "Een glazen schuifwand transformeert uw veranda tot een windvrije buitenkamer. De panelen schuiven eenvoudig opzij voor maximale ventilatie.",
+        "description2": "Perfect als aanvulling op uw bestaande veranda of overkapping.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Glazen Schuifwand"
+      },
+      "benefits": {
+        "benefit1": "Windvrij genieten",
+        "benefit2": "Eenvoudig te openen",
+        "benefit3": "Onbelemmerd uitzicht",
+        "benefit4": "Verleng uw buitenseizoen",
+        "benefit5": "Gehard veiligheidsglas",
+        "benefit6": "Kindveilig slot"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Aluminium rails met gehard glas",
+        "glassThickness": "Glasdikte",
+        "glassThicknessValue": "8mm of 10mm gehard glas",
+        "system": "Systeem",
+        "systemValue": "2, 3, 4 of 5 rails",
+        "height": "Hoogte",
+        "heightValue": "Tot 3 meter",
+        "panelWidth": "Breedte per paneel",
+        "panelWidthValue": "Tot 1 meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Glazen Schuifwand?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "cube": {
+      "hero": {
+        "title": "Cube Veranda",
+        "subtitle": "Strak modern design voor uw tuin",
+        "imageAlt": "Cube Veranda"
+      },
+      "info": {
+        "title": "Wat is een Cube Veranda?",
+        "description1": "De Cube veranda is het toppunt van modern design. Met strakke lijnen en een minimalistische uitstraling past deze perfecte kubus in elke moderne tuin.",
+        "description2": "Vrijstaand of tegen de woning, de Cube maakt altijd indruk.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Cube Veranda"
+      },
+      "benefits": {
+        "benefit1": "Ultra modern design",
+        "benefit2": "Vrijstaand mogelijk",
+        "benefit3": "Strakke afwerking",
+        "benefit4": "Ingebouwde LED-verlichting",
+        "benefit5": "Diverse dakopties",
+        "benefit6": "Windschermen mogelijk"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Premium aluminium constructie",
+        "roofOptions": "Dakopties",
+        "roofOptionsValue": "Glas, lamellen of polycarbonaat",
+        "design": "Design",
+        "designValue": "Minimalistisch kubusvorm",
+        "frameColors": "Frame kleuren",
+        "frameColorsValue": "Alle RAL kleuren mogelijk",
+        "dimensions": "Afmetingen",
+        "dimensionsValue": "Op maat gemaakt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Cube Veranda?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "tuinkamer": {
+      "hero": {
+        "title": "Tuinkamer",
+        "subtitle": "Het hele jaar genieten van uw tuin",
+        "imageAlt": "Tuinkamer"
+      },
+      "info": {
+        "title": "Wat is een Tuinkamer?",
+        "description1": "Een tuinkamer is een volledig afgesloten veranda waarmee u het hele jaar door kunt genieten van uw tuin, ongeacht het weer.",
+        "description2": "Perfect als extra leefruimte, werkplek of hobbyruimte met uitzicht op de tuin.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Tuinkamer"
+      },
+      "benefits": {
+        "benefit1": "Het hele jaar bruikbaar",
+        "benefit2": "Extra leefruimte",
+        "benefit3": "Volledig geïsoleerd",
+        "benefit4": "Verwarming mogelijk",
+        "benefit5": "Verhoogt woningwaarde",
+        "benefit6": "Diverse afwerkingen"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Geïsoleerd aluminium systeem",
+        "glazing": "Beglazing",
+        "glazingValue": "HR++ isolatieglas",
+        "roof": "Dak",
+        "roofValue": "Geïsoleerde dakpanelen",
+        "doors": "Deuren",
+        "doorsValue": "Schuif- of vouwdeuren",
+        "dimensions": "Afmetingen",
+        "dimensionsValue": "Volledig op maat",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Tuinkamer?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    },
+    "carport": {
+      "hero": {
+        "title": "Carport",
+        "subtitle": "Bescherm uw auto stijlvol",
+        "imageAlt": "Carport"
+      },
+      "info": {
+        "title": "Wat is een Carport?",
+        "description1": "Een aluminium carport beschermt uw auto tegen regen, sneeuw, hagel en UV-straling. Stijlvol en duurzaam, een waardevolle toevoeging aan uw woning.",
+        "description2": "Verkrijgbaar voor één of meerdere auto's, volledig op maat gemaakt.",
+        "benefitsTitle": "Voordelen",
+        "imageAlt": "Carport"
+      },
+      "benefits": {
+        "benefit1": "Bescherming tegen weer",
+        "benefit2": "Onderhoudsvrij aluminium",
+        "benefit3": "Verhoogt woningwaarde",
+        "benefit4": "Diverse dakopties",
+        "benefit5": "Op maat gemaakt",
+        "benefit6": "Snelle montage"
+      },
+      "specs": {
+        "title": "Specificaties",
+        "material": "Materiaal",
+        "materialValue": "Aluminium constructie",
+        "roofOptions": "Dakopties",
+        "roofOptionsValue": "Polycarbonaat of aluminium",
+        "capacity": "Capaciteit",
+        "capacityValue": "1, 2 of meer auto's",
+        "frameColors": "Frame kleuren",
+        "frameColorsValue": "Alle RAL kleuren mogelijk",
+        "dimensions": "Afmetingen",
+        "dimensionsValue": "Op maat gemaakt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 jaar"
+      },
+      "gallery": {
+        "title": "Projecten",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interesse in een Carport?",
+        "description": "Vraag vrijblijvend een offerte aan",
+        "quoteButton": "Offerte aanvragen",
+        "appointmentButton": "Afspraak maken"
+      }
+    }
   },
   "menu": {
-    "verandas": "Vérandas",
-    "polycarbonate": "Véranda en Polycarbonate",
-    "glass": "Véranda en Verre",
-    "slats": "Véranda à Lamelles",
-    "foldingRoof": "Véranda à Toit Rétractable",
-    "other": "Autres",
-    "slidingWall": "Mur Coulissant en Verre",
-    "cube": "Véranda Cube",
-    "gardenRoom": "Jardin d'Hiver",
+    "verandas": "Veranda's",
+    "polycarbonate": "Polycarbonaat Veranda",
+    "glass": "Glazen Veranda",
+    "slats": "Lamellen Veranda",
+    "foldingRoof": "Vouwdak Veranda",
+    "other": "Overige",
+    "slidingWall": "Glazen Schuifwand",
+    "cube": "Cube Veranda",
+    "gardenRoom": "Tuinkamer",
     "carport": "Carport",
     "services": "Services",
-    "plateChange": "Changement de Plaque",
-    "maintenance": "Maintenance",
-    "repair": "Réparation",
-    "projectGallery": "Galerie de Projets",
-    "beforeAfter": "Avant & Après",
-    "styles": "Styles",
-    "blogsTips": "Blogs & Astuces",
-    "onlineQuote": "Devis en Ligne",
-    "freeMeasurement": "Mesure Gratuite",
-    "callDirect": "Appeler Directement",
-    "contactForm": "Formulaire de Contact",
-    "visitShowroom": "Visiter le Showroom",
-    "faq": "Foire aux Questions"
+    "plateChange": "Platenwissel",
+    "maintenance": "Onderhoud",
+    "repair": "Reparatie",
+    "projectGallery": "Projecten Galerij",
+    "beforeAfter": "Voor & Na",
+    "styles": "Stijlen",
+    "blogsTips": "Blogs & Tips",
+    "onlineQuote": "Online Offerte",
+    "freeMeasurement": "Gratis Inmeten",
+    "callDirect": "Bel Direct",
+    "contactForm": "Contact Formulier",
+    "visitShowroom": "Showroom Bezoeken",
+    "faq": "Veelgestelde Vragen"
   },
   "footer": {
-    "quickLinks": "Liens Rapides",
-    "products": "Produits",
+    "tagline": "Wij Brengen Buitenleven Binnen",
+    "description": "Specialist in hoogwaardige aluminium veranda's en overkappingen. Al meer dan 15 jaar uw betrouwbare partner voor buitenleven.",
+    "products": "Producten",
+    "pages": "Pagina's",
     "contact": "Contact",
-    "followUs": "Suivez-nous",
-    "allRightsReserved": "Tous droits réservés",
-    "privacy": "Confidentialité",
-    "terms": "Conditions",
+    "followUs": "Volg Ons",
+    "aboutUs": "Over Ons",
+    "inspiration": "Inspiratie",
+    "gallery": "Galerij",
+    "blogs": "Blogs",
+    "requestQuote": "Offerte Aanvragen",
+    "makeAppointment": "Afspraak maken",
+    "contactUs": "Contact",
+    "copyright": "Wij brengen buitenleven binnen.",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Algemene Voorwaarden",
     "cookies": "Cookies"
   },
   "common": {
-    "readMore": "Lire la suite",
-    "contactUs": "Contactez-nous",
-    "getQuote": "Obtenir un devis",
-    "viewProjects": "Voir les projets",
-    "loading": "Chargement...",
-    "error": "Une erreur s'est produite",
-    "success": "Succès!",
-    "submit": "Soumettre",
-    "cancel": "Annuler",
-    "save": "Enregistrer",
-    "edit": "Modifier",
-    "delete": "Supprimer",
-    "close": "Fermer",
-    "next": "Suivant",
-    "previous": "Précédent",
-    "back": "Retour"
+    "readMore": "Lees meer",
+    "contactUs": "Neem contact op",
+    "getQuote": "Vraag offerte aan",
+    "viewProjects": "Bekijk projecten",
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "success": "Succesvol!",
+    "submit": "Versturen",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "close": "Sluiten",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "back": "Terug"
   },
   "about": {
     "hero": {
-      "title": "À Propos",
-      "subtitle": "Votre partenaire pour des solutions de patio de qualité",
-      "imageAlt": "À propos d'AluSolutions"
+      "title": "Over Ons",
+      "subtitle": "Uw partner voor hoogwaardige terrasoplossingen"
     },
-    "whoAreWe": {
-      "title": "Qui sommes-nous?",
-      "paragraph1": "Nous sommes une entreprise leader spécialisée dans la fourniture de solutions de patio élégantes et durables. Avec fierté, nous offrons une large gamme de produits de haute qualité, notamment des vérandas, des murs coulissants en verre et des murs latéraux, pour transformer votre espace extérieur en une oasis de confort et de beauté.",
-      "paragraph2": "N'hésitez plus et contactez-nous dès aujourd'hui pour demander votre devis. Ensemble, nous transformerons votre espace extérieur en un lieu où vous pourrez pleinement profiter, quel que soit le temps!",
-      "ctaButton": "Demander un devis",
-      "imageAlt": "Équipe d'AluSolutions"
+    "who": {
+      "title": "Wie zijn wij?",
+      "description1": "Wij zijn een toonaangevend bedrijf dat gespecialiseerd is in het leveren van stijlvolle en duurzame terrasoplossingen. Met trots bieden we een breed assortiment aan hoogwaardige producten, waaronder veranda's, glazen schuifwanden en zijwanden, om uw buitenruimte te transformeren in een oase van comfort en schoonheid.",
+      "description2": "Aarzel niet langer en neem vandaag nog contact met ons op om uw offerte aan te vragen. Samen maken we van uw buitenruimte een plek waar u volop kunt genieten, ongeacht het weer!",
+      "cta": "Vraag offerte aan"
     },
     "quality": {
-      "title": "Qualité et savoir-faire",
-      "paragraph1": "Chez Alusolutions, nous accordons une grande importance à la qualité et au savoir-faire. Nos produits sont fabriqués avec des matériaux de haute qualité et des technologies innovantes, ce qui se traduit par des solutions durables et fiables. Nos collaborateurs dévoués et expérimentés sont toujours prêts à vous conseiller et à vous guider dans le choix des meilleures options pour votre situation spécifique.",
-      "paragraph2": "Nous nous efforçons de satisfaire nos clients et d'aborder chaque défi avec enthousiasme. Du premier contact à l'installation et au service après-vente, nous nous efforçons de fournir un excellent service et d'établir une relation à long terme avec nos clients.",
-      "imageAlt": "Qualité et savoir-faire"
+      "title": "Kwaliteit en vakmanschap",
+      "description1": "Bij Alusolutions hechten we veel waarde aan kwaliteit en vakmanschap. Onze producten zijn vervaardigd met hoogwaardige materialen en innovatieve technologieën, wat resulteert in duurzame en betrouwbare oplossingen. Onze toegewijde en ervaren teamleden staan altijd klaar om u te adviseren en te begeleiden bij het maken van de beste keuzes voor uw specifieke situatie.",
+      "description2": "We streven naar klanttevredenheid en nemen elke uitdaging met enthousiasme aan. Vanaf het eerste contact tot de installatie en nazorg, wij streven ernaar om een uitstekende service te bieden en een langdurige relatie met onze klanten op te bouwen."
     },
-    "featuresBanner": {
-      "title": "Découvrez nos solutions de patio intemporelles et élégantes",
-      "subtitle": "Faites briller votre espace extérieur avec nos vérandas élégantes et nos murs coulissants en verre, qui ajoutent une touche intemporelle et élégante à votre maison."
+    "banner": {
+      "title": "Ontdek onze tijdloze en elegante terrasoplossingen",
+      "description": "Laat uw buitenruimte stralen met onze stijlvolle veranda's en glazen schuifwanden, die een tijdloze en elegante uitstraling toevoegen aan uw woning."
     },
     "benefits": {
-      "benefit1": {
-        "title": "Solutions de patio sur mesure",
-        "description": "Chez Alusolutions, nous croyons à la personnalisation. Nous concevons et créons des solutions de patio qui correspondent parfaitement à vos souhaits spécifiques, afin que vous puissiez profiter d'un espace extérieur qui vous ressemble."
+      "custom": {
+        "title": "Maatwerk terrasoplossingen",
+        "description": "Bij Alusolutions geloven we in maatwerk. Wij ontwerpen en creëren terrasoplossingen die perfect passen bij uw specifieke wensen, zodat u kunt genieten van een buitenruimte die helemaal van u is."
       },
-      "benefit2": {
-        "title": "Améliorez votre expérience extérieure",
-        "description": "Nos solutions de patio de haute qualité améliorent votre expérience extérieure, vous permettant de profiter pleinement de la vie en plein air toute l'année."
+      "experience": {
+        "title": "Verbeter uw buitenbeleving",
+        "description": "Onze hoogwaardige terrasoplossingen verbeteren uw buitenbeleving, zodat u optimaal kunt genieten van het buitenleven in alle seizoenen."
       },
-      "benefit3": {
-        "title": "Confort et protection",
-        "description": "Nos solutions de patio procurent non seulement confort, mais vous protègent également des intempéries et du vent, vous permettant de profiter de votre espace extérieur sans souci."
+      "protection": {
+        "title": "Comfort en bescherming",
+        "description": "Onze terrasoplossingen bieden niet alleen comfort, maar beschermen u ook tegen weer en wind, zodat u zorgeloos kunt genieten van uw buitenruimte."
       }
     },
     "oasis": {
-      "title": "Créez Votre Oasis Extérieure",
-      "description": "Chez Alusolutions, nous nous efforçons de transformer votre espace extérieur en une oasis de confort, de style et d'élégance. Grâce à des solutions de patio sur mesure et à des produits de haute qualité, nous concrétisons votre projet de rêve. Demandez un devis aujourd'hui et découvrez les possibilités pour votre environnement extérieur unique.",
-      "ctaButton": "Demander un Devis Gratuit",
-      "imageAlt": "Oasis extérieure"
+      "title": "Creëer Uw Buitenoase",
+      "description": "Bij Alusolutions streven we ernaar om uw buitenruimte te transformeren in een oase van comfort, stijl en elegantie. Met op maat gemaakte terrasoplossingen en hoogwaardige producten, maken we uw droomproject werkelijkheid. Vraag vandaag nog een offerte aan en ontdek de mogelijkheden voor uw unieke buitenomgeving.",
+      "cta": "Gratis Offerte Aanvragen"
     },
     "team": {
-      "title": "Notre Équipe",
-      "subtitle": "Découvrez nos professionnels expérimentés",
+      "title": "Ons Team",
+      "subtitle": "Maak kennis met onze ervaren professionals",
       "member1": {
         "name": "Jan van der Berg",
-        "position": "Directeur"
+        "role": "Directeur"
       },
       "member2": {
         "name": "Lisa de Jong",
-        "position": "Responsable Commercial"
+        "role": "Sales Manager"
       },
       "member3": {
         "name": "Mark Jansen",
-        "position": "Chef Installateur"
+        "role": "Hoofd Monteur"
       },
       "member4": {
         "name": "Emma Bakker",
-        "position": "Service Client"
-      },
-      "memberImageAlt": "Membre de l'équipe"
+        "role": "Klantenservice"
+      }
     },
     "values": {
-      "title": "Nos Valeurs",
-      "value1": {
-        "title": "Qualité",
-        "description": "Seuls les meilleurs matériaux et le meilleur savoir-faire"
+      "title": "Onze Waarden",
+      "quality": {
+        "title": "Kwaliteit",
+        "description": "Alleen de beste materialen en vakmanschap"
       },
-      "value2": {
-        "title": "Fiabilité",
-        "description": "Nous tenons toujours nos promesses"
+      "reliability": {
+        "title": "Betrouwbaarheid",
+        "description": "Afspraken komen wij altijd na"
       },
-      "value3": {
-        "title": "Innovation",
-        "description": "Amélioration continue de nos produits"
+      "innovation": {
+        "title": "Innovatie",
+        "description": "Continue verbetering van onze producten"
       },
-      "value4": {
-        "title": "Satisfaction Client",
-        "description": "Votre satisfaction est notre priorité"
+      "satisfaction": {
+        "title": "Klanttevredenheid",
+        "description": "Uw tevredenheid is onze prioriteit"
       }
     },
     "cta": {
-      "title": "Prêt à commencer?",
-      "subtitle": "Contactez-nous aujourd'hui pour un devis sans engagement",
-      "quoteButton": "Demander un devis",
-      "contactButton": "Prendre contact"
+      "title": "Klaar om te beginnen?",
+      "description": "Neem vandaag nog contact met ons op voor een vrijblijvende offerte",
+      "requestQuote": "Offerte aanvragen",
+      "contact": "Contact opnemen"
     }
   },
   "home": {
     "hero": {
-      "title": "Véranda en polycarbonate",
-      "paragraph1": "Une véranda en polycarbonate est le choix idéal pour ceux qui recherchent une couverture de patio durable et abordable. Grâce aux panneaux de toit en polycarbonate robustes et clairs, vous profitez d'une abondante lumière, sans compromis sur la protection contre la pluie et le vent.",
-      "paragraph2": "Chez AluSolutions, nous livrons votre véranda en polycarbonate entièrement adaptée à vos souhaits. En 3 semaines, nos constructeurs de vérandas assurent une livraison rapide et une installation professionnelle.",
-      "ctaButton": "Demandez simplement un devis!",
-      "imageAlt": "Véranda moderne"
+      "title": "Polycarbonaat veranda",
+      "description1": "Een polycarbonaat veranda is de ideale keuze voor wie op zoek is naar een duurzame en betaalbare terrasoverkapping. Dankzij de sterke en heldere polycarbonaat dakplaten geniet je van veel lichtinval, zonder in te leveren op bescherming tegen regen en wind.",
+      "description2": "Bij AluSolutions leveren wij jouw polycarbonaat veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
+      "cta": "Vraag eenvoudig een offerte aan!"
     },
     "galleryPreview": {
-      "image1Alt": "Auvent en verre",
-      "image2Alt": "Véranda en aluminium",
-      "image3Alt": "Jardin d'hiver avec véranda",
-      "image4Alt": "Auvent moderne"
+      "image1Alt": "Glazen overkapping",
+      "image2Alt": "Aluminium veranda",
+      "image3Alt": "Tuinkamer met veranda",
+      "image4Alt": "Moderne overkapping"
     },
     "products": {
-      "title": "Nos Produits",
-      "subtitle": "Découvrez notre gamme complète de vérandas et de pergolas de haute qualité",
-      "product1": {
-        "title": "Véranda en Polycarbonate",
-        "description": "Durable et abordable avec une excellente transmission de la lumière",
-        "button": "Plus d'info",
-        "imageAlt": "Véranda en Polycarbonate"
+      "title": "Onze Producten",
+      "subtitle": "Ontdek ons complete assortiment hoogwaardige veranda's en overkappingen",
+      "moreInfo": "Meer info",
+      "poly": {
+        "description": "Duurzaam en betaalbaar met uitstekende lichtdoorlatendheid"
       },
-      "product2": {
-        "title": "Véranda en Verre",
-        "description": "Transparence maximale pour un aspect luxueux",
-        "button": "Plus d'info",
-        "imageAlt": "Véranda en Verre"
+      "glazen": {
+        "description": "Maximale transparantie voor een luxe uitstraling"
       },
-      "product3": {
-        "title": "Véranda à Lamelles",
-        "description": "Lamelles réglables pour une protection solaire optimale",
-        "button": "Plus d'info",
-        "imageAlt": "Véranda à Lamelles"
+      "lamellen": {
+        "description": "Verstelbare lamellen voor optimale zonwering"
       },
-      "product4": {
-        "title": "Véranda à Toit Rétractable",
-        "description": "Toit flexible rétractable pour chaque saison",
-        "button": "Plus d'info",
-        "imageAlt": "Véranda à Toit Rétractable"
+      "vouwdak": {
+        "description": "Flexibel opvouwbaar dak voor elk seizoen"
       },
-      "product5": {
-        "title": "Mur Coulissant en Verre",
-        "description": "Transition fluide entre l'intérieur et l'extérieur",
-        "button": "Plus d'info",
-        "imageAlt": "Mur Coulissant en Verre"
+      "schuifwand": {
+        "description": "Naadloze overgang tussen binnen en buiten"
       },
-      "product6": {
-        "title": "Jardin d'Hiver",
-        "description": "Extension complète de votre espace de vie",
-        "button": "Plus d'info",
-        "imageAlt": "Jardin d'Hiver"
+      "tuinkamer": {
+        "description": "Complete uitbreiding van uw woonruimte"
       }
     },
     "benefits": {
-      "title": "Découvrez les avantages uniques d'une véranda en polycarbonate",
-      "subtitle": "Élégance abordable avec nos vérandas en polycarbonate",
-      "paragraph1": "L'investissement dans une véranda en polycarbonate dépend de plusieurs facteurs, tels que les dimensions de la structure et le choix d'options supplémentaires telles que des spots LED intégrés, des murs latéraux ou des portes coulissantes.",
-      "paragraph2": "Nous comprenons que le choix d'une véranda est une décision importante qui doit être adaptée à la fois à votre budget et à votre mode de vie. C'est pourquoi nous offrons des conseils personnalisés et des informations détaillées sur les possibilités et les coûts.",
-      "ctaButton": "Prendre contact",
-      "imageAlt": "Véranda élégante"
+      "title": "Ervaar de unieke voordelen van een polycarbonaat veranda",
+      "subtitle": "Betaalbare elegantie met onze polycarbonaat veranda's",
+      "paragraph1": "De investering in een polycarbonaat veranda is afhankelijk van meerdere factoren, zoals de afmetingen van de constructie en de keuze voor aanvullende opties zoals ingebouwde LED-spots, zijwanden of schuifdeuren.",
+      "paragraph2": "Wij begrijpen dat de keuze voor een veranda een belangrijke beslissing is die afgestemd moet zijn op zowel uw budget als uw levensstijl. Daarom bieden we persoonlijk advies en gedetailleerde informatie over de mogelijkheden en kosten.",
+      "ctaButton": "Neem contact op",
+      "imageAlt": "Elegante veranda"
     },
     "stats": {
-      "stat1": {
-        "number": "15+",
-        "label": "Années d'expérience"
-      },
-      "stat2": {
-        "number": "500+",
-        "label": "Clients satisfaits"
-      },
-      "stat3": {
-        "number": "1000+",
-        "label": "Projets réalisés"
-      },
-      "stat4": {
-        "number": "7",
-        "label": "Années de Garantie"
-      }
+      "experience": "Jaar ervaring",
+      "clients": "Tevreden klanten",
+      "projects": "Projecten voltooid",
+      "warranty": "Jaar Garantie"
     },
     "process": {
-      "title": "Comment ça marche?",
-      "subtitle": "En 4 étapes simples vers votre véranda de rêve",
+      "title": "Hoe werkt het?",
+      "subtitle": "In 4 eenvoudige stappen naar uw droomveranda",
       "step1": {
-        "title": "Demande de Devis",
-        "description": "Remplissez notre formulaire avec vos souhaits et recevez un devis sans engagement sous 24 heures.",
-        "imageAlt": "Demande de devis"
+        "title": "Offerte Aanvragen",
+        "description": "Vul ons formulier in met uw wensen en ontvang binnen 24 uur een vrijblijvende offerte.",
+        "imageAlt": "Offerte aanvragen"
       },
       "step2": {
-        "title": "Conseil Personnel",
-        "description": "Nos experts viendront vous rendre visite pour une mesure gratuite et des conseils personnalisés.",
-        "imageAlt": "Conseil personnel"
+        "title": "Persoonlijk Advies",
+        "description": "Onze experts komen bij u langs voor een gratis inmeting en advies op maat.",
+        "imageAlt": "Persoonlijk advies"
       },
       "step3": {
-        "title": "Production",
-        "description": "Votre véranda est fabriquée sur mesure dans notre propre atelier de production.",
-        "imageAlt": "Production"
+        "title": "Productie",
+        "description": "Uw veranda wordt op maat gemaakt in onze eigen productie faciliteit.",
+        "imageAlt": "Productie"
       },
       "step4": {
-        "title": "Installation",
-        "description": "En 3 semaines, votre véranda est installée professionnellement par nos poseurs.",
-        "imageAlt": "Installation"
+        "title": "Installatie",
+        "description": "Binnen 3 weken wordt uw veranda vakkundig geplaatst door onze monteurs.",
+        "imageAlt": "Installatie"
       }
     },
     "quality": {
-      "title": "Vérandas en polycarbonate de qualité abordable",
-      "description": "Le coût d'une véranda en polycarbonate dépend de la taille et des options telles que les spots, les murs latéraux ou les portes coulissantes. Néanmoins, une telle véranda est un choix abordable qui dure longtemps et qui est belle.",
-      "list": {
-        "item1": "Coût des matériaux: moins cher que le verre, économiquement avantageux",
-        "item2": "Coûts d'installation inférieurs: installation simple réduit les coûts de main-d'œuvre",
-        "item3": "Durabilité et entretien: durable avec un entretien minimal",
-        "item4": "Efficacité énergétique: isolation réduit les coûts énergétiques",
-        "item5": "Polyvalence: design flexible, production efficace"
-      },
-      "imageAlt": "Véranda de qualité"
+      "title": "Betaalbare kwaliteit polycarbonaat veranda's",
+      "description": "De kosten van een polycarbonaat veranda hangen af van de grootte en extra's zoals spots, zijwanden of schuifdeuren. Toch is zo'n veranda een voordelige keuze die lang meegaat en er mooi uitziet.",
+      "feature1": "Kosten van materialen: goedkoper dan glas, economisch voordelig",
+      "feature2": "Lagere installatiekosten: eenvoudige installatie verlaagt arbeidskosten",
+      "feature3": "Duurzaamheid en onderhoud: langdurig met minimaal onderhoud",
+      "feature4": "Energie-efficiëntie: isolatie verlaagt energiekosten",
+      "feature5": "Veelzijdigheid: flexibel ontwerp, efficiënte productie"
     },
     "features": {
-      "title": "Pourquoi choisir AluSolutions?",
-      "feature1": {
-        "title": "Qualité Premium",
-        "description": "Seuls les meilleurs matériaux pour un résultat durable"
+      "title": "Waarom kiezen voor AluSolutions?",
+      "quality": {
+        "title": "Premium Kwaliteit",
+        "description": "Alleen de beste materialen voor een langdurig resultaat"
       },
-      "feature2": {
-        "title": "Installation Professionnelle",
-        "description": "Poseurs expérimentés pour une installation parfaite"
+      "installation": {
+        "title": "Vakkundige Montage",
+        "description": "Ervaren monteurs voor een perfecte installatie"
       },
-      "feature3": {
-        "title": "Sur Mesure",
-        "description": "Chaque véranda est spécialement conçue pour vous"
+      "custom": {
+        "title": "Op Maat Gemaakt",
+        "description": "Elke veranda wordt speciaal voor u ontworpen"
       },
-      "feature4": {
-        "title": "Prix Compétitifs",
-        "description": "La qualité n'a pas à être chère"
+      "pricing": {
+        "title": "Scherpe Prijzen",
+        "description": "Kwaliteit hoeft niet duur te zijn"
       },
-      "feature5": {
-        "title": "Livraison Rapide",
-        "description": "Installée en 3 semaines"
+      "delivery": {
+        "title": "Snelle Levering",
+        "description": "Binnen 3 weken geplaatst"
       },
-      "feature6": {
-        "title": "Service Personnel",
-        "description": "Contact direct avec nos spécialistes"
+      "service": {
+        "title": "Persoonlijke Service",
+        "description": "Direct contact met onze specialisten"
       }
     },
     "inspiration": {
-      "title": "Inspiration pour votre véranda",
-      "category1": "Véranda de Luxe",
-      "category2": "Moderne",
-      "category3": "Classique",
-      "category4": "Murs en Verre",
-      "category5": "Jardin d'Hiver",
-      "imageAlt": "Inspiration véranda"
+      "title": "Inspiratie voor jouw veranda",
+      "luxury": "Luxe Veranda",
+      "modern": "Modern",
+      "classic": "Klassiek",
+      "glassWalls": "Glazen Wanden",
+      "gardenRoom": "Tuinkamer"
     },
-    "recentProjects": {
-      "title": "Projets Récents",
-      "projectAlt": "Projet"
+    "gallery": {
+      "title": "Recente Projecten"
     },
     "testimonials": {
-      "title": "Ce que disent nos clients",
-      "testimonial1": {
-        "quote": "Excellent service et qualité. Notre véranda est parfaite et les poseurs étaient très professionnels.",
-        "author": "Jan de Vries",
+      "title": "Wat onze klanten zeggen",
+      "review1": {
+        "text": "Uitstekende service en kwaliteit. Onze veranda is perfect geworden en de monteurs waren zeer professioneel.",
+        "name": "Jan de Vries",
         "location": "Amsterdam"
       },
-      "testimonial2": {
-        "quote": "Du devis à l'installation, tout s'est déroulé sans problème. Très satisfait du résultat final!",
-        "author": "Maria Jansen",
+      "review2": {
+        "text": "Van offerte tot plaatsing, alles verliep soepel. Zeer tevreden met het eindresultaat!",
+        "name": "Maria Jansen",
         "location": "Rotterdam"
       },
-      "testimonial3": {
-        "quote": "Bon rapport qualité-prix. La véranda est magnifique et a été installée en 2 semaines.",
-        "author": "Peter Bakker",
+      "review3": {
+        "text": "Goede prijs-kwaliteit verhouding. De veranda ziet er prachtig uit en is binnen 2 weken geplaatst.",
+        "name": "Peter Bakker",
         "location": "Utrecht"
       }
     },
     "info": {
-      "item1": {
-        "title": "Qu'est-ce qu'une véranda en polycarbonate?",
-        "description": "Une véranda en polycarbonate d'Alusolutions est une pergola ou un abri de jardin durable qui prolonge votre maison d'un espace extérieur élégant.",
-        "imageAlt": "Qu'est-ce qu'une véranda"
+      "what": {
+        "title": "Wat is een polycarbonaat veranda?",
+        "description": "Een polycarbonaat veranda van Alusolutions is een duurzame terras- of tuinoverkapping die je woning verlengt met een stijlvolle buitenruimte."
       },
-      "item2": {
-        "title": "Avantages du polycarbonate",
-        "description": "Le polycarbonate est un matériau robuste et perméable à la lumière qui protège des rayons UV et des conditions météorologiques.",
-        "imageAlt": "Avantages"
+      "benefits": {
+        "title": "Voordelen van polycarbonaat",
+        "description": "Polycarbonaat is een robuust, lichtdoorlatend materiaal dat bescherming biedt tegen UV-stralen en weersinvloeden."
       },
-      "item3": {
-        "title": "Pourquoi choisir Alusolutions?",
-        "description": "Chez Alusolutions, vous choisissez qualité et durabilité. Nos vérandas sont solides et nécessitent peu d'entretien.",
-        "imageAlt": "Pourquoi Alusolutions"
+      "whyUs": {
+        "title": "Waarom kiezen voor Alusolutions?",
+        "description": "Bij Alusolutions kies je voor kwaliteit en duurzaamheid. Onze veranda's zijn sterk en onderhoudsarm."
       },
-      "item4": {
-        "title": "Personnalisez votre véranda",
-        "description": "Chaque véranda peut être personnalisée avec des options telles que l'éclairage LED, la protection solaire et les murs latéraux.",
-        "imageAlt": "Personnaliser"
+      "personalize": {
+        "title": "Personaliseer je veranda",
+        "description": "Elke veranda kan worden gepersonaliseerd met opties zoals LED-verlichting, zonwering en zijwanden."
       },
-      "item5": {
-        "title": "Placement et installation",
-        "description": "Nos experts assurent une installation rapide et professionnelle de votre véranda.",
-        "imageAlt": "Installation"
+      "installation": {
+        "title": "Plaatsing en installatie",
+        "description": "Onze experts zorgen voor een snelle en professionele installatie van je veranda."
       },
-      "item6": {
-        "title": "Découvrez notre showroom",
-        "description": "Visitez notre showroom pour découvrir vous-même la qualité de nos vérandas.",
-        "imageAlt": "Showroom"
+      "showroom": {
+        "title": "Ontdek onze showroom",
+        "description": "Bezoek onze showroom om de kwaliteit van onze veranda's zelf te ervaren."
       }
     },
     "colors": {
-      "title": "Couleurs Disponibles",
-      "subtitle": "Choisissez la couleur parfaite qui correspond à votre maison",
-      "color1": "Anthracite",
-      "color2": "Blanc",
-      "color3": "Crème",
-      "color4": "Brun"
+      "title": "Beschikbare Kleuren",
+      "subtitle": "Kies de perfecte kleur die past bij uw woning",
+      "anthracite": "Antraciet",
+      "white": "Wit",
+      "cream": "Crème",
+      "brown": "Bruin"
     },
     "cta": {
-      "title": "Prêt pour votre véranda de rêve?",
-      "subtitle": "Demandez un devis sans engagement aujourd'hui et découvrez les possibilités.",
-      "quoteButton": "Demander un devis",
-      "contactButton": "Prendre contact",
-      "imageAlt": "Arrière-plan véranda"
+      "title": "Klaar voor jouw droomveranda?",
+      "description": "Vraag vandaag nog een vrijblijvende offerte aan en ontdek de mogelijkheden.",
+      "requestQuote": "Offerte aanvragen",
+      "contact": "Neem contact op"
     },
     "faq": {
-      "title": "Questions fréquentes",
-      "subtitle": "Découvrez notre guide étape par étape facile pour votre véranda en polycarbonate.",
-      "ctaButton": "Demander un Devis Gratuit",
+      "title": "Veelgestelde vragen",
+      "subtitle": "Ontdek onze makkelijke stap-voor-stap gids voor jouw polycarbonaat veranda.",
+      "cta": "Vrijblijvende Offerte aanvragen",
       "q1": {
-        "question": "Un permis est-il requis pour installer une pergola?",
-        "answer": "Dans la plupart des cas, aucun permis n'est requis si la pergola répond à certaines conditions. Contactez-nous pour des conseils sur les permis dans votre municipalité."
+        "question": "Is een vergunning nodig om een terrasoverkapping te plaatsen?",
+        "answer": "In de meeste gevallen is geen vergunning nodig als de overkapping aan bepaalde voorwaarden voldoet. Neem contact met ons op voor advies over vergunningen in uw gemeente."
       },
       "q2": {
-        "question": "Combien de temps dure une pergola?",
-        "answer": "Nos vérandas durent des années avec un entretien minimal. Avec les soins appropriés, vous pouvez vous attendre à une durée de vie de plus de 20 ans."
+        "question": "Hoe lang gaat een terrasoverkapping mee?",
+        "answer": "Onze veranda's gaan jarenlang mee met minimaal onderhoud. Met de juiste verzorging kunt u rekenen op een levensduur van 20+ jaar."
       },
       "q3": {
-        "question": "Vos pergolas résistent-elles à toutes les conditions météorologiques?",
-        "answer": "Oui, nos produits sont conçus pour le climat néerlandais et résistants à la pluie, au vent, à la neige et aux rayons UV."
+        "question": "Zijn jullie terrasoverkappingen bestand tegen alle weersomstandigheden?",
+        "answer": "Ja, onze producten zijn ontworpen voor het Nederlandse klimaat en bestand tegen regen, wind, sneeuw en UV-straling."
       },
       "q4": {
-        "question": "Combien de temps faut-il pour installer une pergola?",
-        "answer": "En 3 semaines, nous assurons la livraison et l'installation professionnelle. L'installation elle-même prend généralement 1 à 2 jours."
+        "question": "Hoe lang duurt het om een terrasoverkapping te installeren?",
+        "answer": "Binnen 3 weken zorgen wij voor levering en vakkundige plaatsing. De installatie zelf duurt meestal 1-2 dagen."
       },
       "q5": {
-        "question": "Puis-je agrandir ma véranda plus tard avec des options supplémentaires?",
-        "answer": "Oui, nos vérandas sont conçues de manière modulaire. Vous pouvez facilement ajouter des éclairages LED, des murs latéraux ou des portes coulissantes plus tard."
+        "question": "Kan ik mijn veranda later uitbreiden met extra opties?",
+        "answer": "Ja, onze veranda's zijn modulair ontworpen. U kunt later eenvoudig LED-verlichting, zijwanden of schuifdeuren toevoegen."
       },
       "q6": {
-        "question": "Proposez-vous des options de financement?",
-        "answer": "Oui, nous travaillons avec divers partenaires de financement. Renseignez-vous sur les options lors de votre consultation personnelle."
+        "question": "Bieden jullie financieringsmogelijkheden aan?",
+        "answer": "Ja, wij werken samen met verschillende financieringspartners. Vraag naar de mogelijkheden tijdens uw persoonlijke adviesgesprek."
       }
     },
     "contact": {
-      "title": "Prendre contact",
-      "subtitle": "Avez-vous des questions ou souhaitez-vous prendre rendez-vous? N'hésitez pas à nous contacter!",
-      "address": {
-        "label": "Adresse",
-        "value": "Mariastraat 22, 5953 NL Reuver"
-      },
-      "phone": {
-        "label": "Téléphone",
-        "value": "+31 85 060 5036"
-      },
-      "email": {
-        "label": "Email",
-        "value": "Info@alusolutions.nl"
-      },
-      "hours": {
-        "label": "Horaires d'ouverture",
-        "weekdays": "Lun-Ven: 08:00 - 17:00",
-        "saturday": "Sam: 09:00 - 15:00"
-      },
-      "mapTitle": "Emplacement AluSolutions"
+      "title": "Neem contact op",
+      "subtitle": "Heeft u vragen of wilt u een afspraak maken? Neem gerust contact met ons op!",
+      "address": "Adres",
+      "phone": "Telefoon",
+      "email": "E-mail",
+      "hours": "Openingstijden",
+      "weekdays": "Ma-Vr: 08:00 - 17:00",
+      "saturday": "Za: 09:00 - 15:00"
     }
   },
   "privacy": {
-    "title": "Politique de Confidentialité",
+    "title": "Privacy Policy",
     "section1": {
-      "title": "1. Introduction",
-      "content": "AluSolutions respecte votre vie privée et s'assure que les informations personnelles que vous nous fournissez restent confidentielles."
+      "title": "1. Inleiding",
+      "content": "AluSolutions respecteert uw privacy en zorgt ervoor dat de persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld."
     },
     "section2": {
-      "title": "2. Données que nous collectons",
-      "content": "Nous collectons les données que vous nous fournissez, telles que le nom, l'adresse, l'adresse e-mail et le numéro de téléphone lorsque vous nous contactez ou demandez un devis."
+      "title": "2. Gegevens die wij verzamelen",
+      "content": "Wij verzamelen gegevens die u zelf aan ons verstrekt, zoals naam, adres, e-mailadres en telefoonnummer wanneer u contact met ons opneemt of een offerte aanvraagt."
     },
     "section3": {
-      "title": "3. Utilisation des données",
-      "content": "Vos données sont utilisées pour traiter votre demande, envoyer des devis et fournir nos services."
+      "title": "3. Gebruik van gegevens",
+      "content": "Uw gegevens worden gebruikt voor het verwerken van uw aanvraag, het versturen van offertes en het leveren van onze diensten."
     },
     "section4": {
-      "title": "4. Durée de conservation",
-      "content": "Nous ne conservons pas vos données plus longtemps que nécessaire pour la finalité pour laquelle elles ont été collectées."
+      "title": "4. Bewaartermijn",
+      "content": "Wij bewaren uw gegevens niet langer dan noodzakelijk voor het doel waarvoor ze zijn verzameld."
     },
     "section5": {
-      "title": "5. Vos droits",
-      "content": "Vous avez le droit d'accéder, de corriger et de supprimer vos données. Veuillez nous contacter pour cela."
+      "title": "5. Uw rechten",
+      "content": "U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op."
     },
     "section6": {
       "title": "6. Contact",
-      "content": "Pour toute question concernant notre politique de confidentialité, vous pouvez nous contacter via info@alusolutions.nl"
+      "content": "Voor vragen over ons privacybeleid kunt u contact opnemen via info@alusolutions.nl"
     }
   },
   "voorwaarden": {
-    "title": "Conditions Générales",
+    "title": "Algemene Voorwaarden",
     "section1": {
-      "title": "Article 1 - Définitions",
-      "content": "Dans ces conditions, AluSolutions signifie: l'entreprise située à Reuver, enregistrée auprès de la Chambre de Commerce sous le numéro 90086449."
+      "title": "Artikel 1 - Definities",
+      "content": "In deze voorwaarden wordt verstaan onder AluSolutions: de onderneming gevestigd te Reuver, ingeschreven bij de KVK onder nummer 90086449."
     },
     "section2": {
-      "title": "Article 2 - Applicabilité",
-      "content": "Ces conditions s'appliquent à toutes les offres et accords d'AluSolutions."
+      "title": "Artikel 2 - Toepasselijkheid",
+      "content": "Deze voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten van AluSolutions."
     },
     "section3": {
-      "title": "Article 3 - Devis",
-      "content": "Tous les devis sont sans engagement et valables pendant 30 jours, sauf indication contraire."
+      "title": "Artikel 3 - Offertes",
+      "content": "Alle offertes zijn vrijblijvend en 30 dagen geldig, tenzij anders aangegeven."
     },
     "section4": {
-      "title": "Article 4 - Livraison",
-      "content": "Le délai de livraison est déterminé en consultation et est indicatif."
+      "title": "Artikel 4 - Levering",
+      "content": "De levertijd wordt in overleg bepaald en is indicatief."
     },
     "section5": {
-      "title": "Article 5 - Garantie",
-      "content": "AluSolutions offre une garantie de 10 ans sur la construction en cas d'utilisation normale."
+      "title": "Artikel 5 - Garantie",
+      "content": "AluSolutions biedt 10 jaar garantie op de constructie bij normaal gebruik."
     },
     "section6": {
-      "title": "Article 6 - Paiement",
-      "content": "Le paiement s'effectue conformément aux conditions de paiement indiquées sur la facture."
+      "title": "Artikel 6 - Betaling",
+      "content": "Betaling geschiedt conform de op de factuur vermelde betalingsvoorwaarden."
     }
   },
   "cookies": {
-    "title": "Politique des Cookies",
+    "title": "Cookiebeleid",
     "section1": {
-      "title": "Qu'est-ce que les cookies?",
-      "content": "Les cookies sont de petits fichiers texte qui sont stockés sur votre appareil lorsque vous visitez notre site web."
+      "title": "Wat zijn cookies?",
+      "content": "Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u onze website bezoekt."
     },
     "section2": {
-      "title": "Quels cookies utilisons-nous?",
-      "functional": "Cookies fonctionnels:",
-      "functionalDesc": "Nécessaires au fonctionnement du site web.",
-      "analytical": "Cookies analytiques:",
-      "analyticalDesc": "Pour obtenir des informations sur l'utilisation du site web."
+      "title": "Welke cookies gebruiken wij?",
+      "functional": "Functionele cookies:",
+      "functionalDesc": "Noodzakelijk voor het functioneren van de website.",
+      "analytical": "Analytische cookies:",
+      "analyticalDesc": "Om inzicht te krijgen in het gebruik van de website."
     },
     "section3": {
-      "title": "Gestion des cookies",
-      "content": "Vous pouvez bloquer ou supprimer les cookies via les paramètres de votre navigateur."
+      "title": "Cookies beheren",
+      "content": "U kunt cookies blokkeren of verwijderen via uw browserinstellingen."
     },
     "section4": {
       "title": "Contact",
-      "content": "Des questions sur notre politique des cookies? Contactez-nous via info@alusolutions.nl"
+      "content": "Vragen over ons cookiebeleid? Neem contact op via info@alusolutions.nl"
     }
   },
   "inspiratie": {
     "hero": {
-      "title": "Inspiration",
-      "subtitle": "Découvrez nos beaux projets et trouvez l'inspiration"
+      "title": "Inspiratie",
+      "subtitle": "Ontdek onze prachtige projecten en laat u inspireren"
     },
     "filters": {
-      "all": "Tous les projets",
-      "polycarbonate": "Polycarbonate",
-      "glass": "Véranda en Verre",
-      "slats": "Lamelles",
-      "foldingRoof": "Toit Rétractable",
-      "gardenRoom": "Jardin d'Hiver"
+      "all": "Alle projecten",
+      "polycarbonate": "Polycarbonaat",
+      "glass": "Glazen Veranda",
+      "slats": "Lamellen",
+      "foldingRoof": "Vouwdak",
+      "gardenRoom": "Tuinkamer"
     },
     "gallery": {
-      "modernGlass": "Véranda en Verre Moderne",
-      "classicCover": "Auvent Classique",
-      "cozyGarden": "Jardin d'Hiver Attractif",
-      "slatsVeranda": "Véranda à Lamelles",
-      "foldingSystem": "Système à Toit Rétractable",
-      "straightLines": "Lignes Propres",
-      "luxuryLook": "Apparence de Luxe",
-      "timelessDesign": "Design Intemporel",
-      "glassSlidingWall": "Mur Coulissant en Verre",
-      "elegantSlats": "Lamelles Élégantes",
-      "compactSolution": "Solution Compacte"
+      "modernGlass": "Moderne Glazen Veranda",
+      "classicCover": "Klassieke Overkapping",
+      "cozyGarden": "Sfeervolle Tuinkamer",
+      "slatsVeranda": "Lamellen Veranda",
+      "foldingSystem": "Vouwdak Systeem",
+      "straightLines": "Strakke Lijnen",
+      "luxuryLook": "Luxe Uitstraling",
+      "timelessDesign": "Tijdloos Design",
+      "glassSlidingWall": "Glazen Schuifwand",
+      "elegantSlats": "Elegante Lamellen",
+      "compactSolution": "Compacte Oplossing"
     },
     "cities": {
       "amsterdam": "Amsterdam",
       "rotterdam": "Rotterdam",
       "utrecht": "Utrecht",
-      "denHaag": "La Haye",
+      "denHaag": "Den Haag",
       "eindhoven": "Eindhoven",
       "tilburg": "Tilburg",
-      "groningen": "Groningue",
+      "groningen": "Groningen",
       "almere": "Almere",
       "breda": "Breda",
       "nijmegen": "Nijmegen",
       "arnhem": "Arnhem"
     },
     "featured": {
-      "title": "Projets en Vedette",
-      "subtitle": "Découvrez nos réalisations les plus spéciales",
-      "viewProject": "Voir le projet",
+      "title": "Uitgelichte Projecten",
+      "subtitle": "Bekijk onze meest bijzondere realisaties",
+      "viewProject": "Bekijk project",
       "project1": {
         "title": "Villa Amsterdam",
-        "description": "Une belle véranda en verre pour une villa moderne à Amsterdam. Avec éclairage LED intégré et stores électriques.",
+        "description": "Een prachtige glazen veranda voor een moderne villa in Amsterdam. Met geïntegreerde LED-verlichting en elektrische zonwering.",
         "specs": {
-          "size": "Dimensions: 6m x 4m",
-          "material": "Matériau: Structure en aluminium",
-          "glass": "Verre: Verre de sécurité trempé"
+          "size": "Afmeting: 6m x 4m",
+          "material": "Materiaal: Aluminium frame",
+          "glass": "Glas: Gehard veiligheidsglas"
         }
       },
       "project2": {
-        "title": "Jardin d'Hiver Rural",
-        "description": "Jardin d'hiver complet avec murs coulissants en verre pour une maison de campagne. Parfait pour une utilisation toute l'année.",
+        "title": "Landelijke Tuinkamer",
+        "description": "Complete tuinkamer met glazen schuifwanden voor een landhuis. Perfect voor het hele jaar door gebruik.",
         "specs": {
-          "size": "Dimensions: 8m x 5m",
-          "includes": "Inclus: Murs coulissants en verre",
-          "extra": "Extra: Préparation pour chauffage par le sol"
+          "size": "Afmeting: 8m x 5m",
+          "includes": "Inclusief: Glazen schuifwanden",
+          "extra": "Extra: Vloerverwarming voorbereid"
         }
       },
       "project3": {
-        "title": "Lamelles Modernes",
-        "description": "Véranda innovante à lamelles électriques. Contrôle optimal de la lumière et de l'ombre.",
+        "title": "Moderne Lamellen",
+        "description": "Innovatieve lamellen veranda met elektrische bediening. Optimale controle over licht en schaduw.",
         "specs": {
-          "size": "Dimensions: 5m x 3,5m",
-          "control": "Contrôle: Électrique avec application",
-          "color": "Couleur: Anthracite"
+          "size": "Afmeting: 5m x 3.5m",
+          "control": "Bediening: Elektrisch met app",
+          "color": "Kleur: Antraciet"
         }
       }
     },
     "transformations": {
-      "title": "Transformations",
-      "subtitle": "Découvrez comment nous transformons les espaces extérieurs",
-      "before": "Avant",
-      "after": "Après",
-      "project1": "Rénovation de Jardin Rotterdam",
-      "project2": "Extension de Terrasse Utrecht"
+      "title": "Transformaties",
+      "subtitle": "Zie hoe wij buitenruimtes transformeren",
+      "before": "Voor",
+      "after": "Na",
+      "project1": "Tuin Renovatie Rotterdam",
+      "project2": "Terras Uitbreiding Utrecht"
     },
     "styles": {
-      "title": "Styles & Matériaux",
+      "title": "Stijlen & Materialen",
       "modern": {
-        "title": "Moderne",
-        "description": "Lignes nettes et design minimaliste"
+        "title": "Modern",
+        "description": "Strakke lijnen en minimalistisch design"
       },
       "classic": {
-        "title": "Classique",
-        "description": "Élégance intemporelle et chaleur"
+        "title": "Klassiek",
+        "description": "Tijdloze elegantie en warmte"
       },
       "rustic": {
-        "title": "Rustique",
-        "description": "Matériaux naturels et convivialité"
+        "title": "Landelijk",
+        "description": "Natuurlijke materialen en gezelligheid"
       },
       "industrial": {
-        "title": "Industriel",
-        "description": "Caractère robuste et fort"
+        "title": "Industrieel",
+        "description": "Robuust en stoer karakter"
       }
     },
     "cta": {
-      "title": "Vous êtes inspiré?",
-      "subtitle": "Laissez-nous réaliser votre véranda de rêve. Demandez un devis sans engagement!",
-      "quoteButton": "Demander un devis",
-      "contactButton": "Prendre contact"
+      "title": "Geïnspireerd geraakt?",
+      "subtitle": "Laat ons uw droomveranda realiseren. Vraag een vrijblijvende offerte aan!",
+      "quoteButton": "Offerte aanvragen",
+      "contactButton": "Neem contact op"
     }
   },
   "showroom": {
     "hero": {
-      "title": "Visitez notre Showroom",
-      "subtitle": "Voyez et expérimentez nos vérandas en réalité"
+      "title": "Bezoek onze Showroom",
+      "subtitle": "Bekijk en ervaar onze veranda's in het echt"
     },
     "welcome": {
-      "title": "Bienvenue dans notre Showroom",
-      "paragraph1": "Dans notre showroom, vous pouvez voir et expérimenter différentes vérandas et pergolas. Nos conseillers sont prêts à répondre à toutes vos questions.",
-      "paragraph2": "Prenez rendez-vous pour un conseil personnalisé ou passez pendant les heures d'ouverture."
+      "title": "Welkom in onze Showroom",
+      "paragraph1": "In onze showroom kunt u diverse veranda's en overkappingen bekijken en ervaren. Onze adviseurs staan klaar om al uw vragen te beantwoorden.",
+      "paragraph2": "Maak een afspraak voor persoonlijk advies of kom langs tijdens openingstijden."
     },
     "hours": {
-      "title": "Horaires d'Ouverture",
-      "monday": "Lundi - Jeudi: 09:00 - 17:00",
-      "friday": "Vendredi: Fermé",
-      "saturday": "Samedi: 10:00 - 15:00",
-      "sunday": "Dimanche: Fermé"
+      "title": "Openingstijden",
+      "monday": "Maandag - Donderdag: 09:00 - 17:00",
+      "friday": "Vrijdag: Gesloten",
+      "saturday": "Zaterdag: 10:00 - 15:00",
+      "sunday": "Zondag: Gesloten"
     },
     "address": {
-      "title": "Adresse",
+      "title": "Adres",
       "street": "Mariastraat 22",
       "city": "5953 NL Reuver"
     },
     "cta": {
-      "title": "Prendre un rendez-vous",
-      "subtitle": "Planifiez votre visite à notre showroom",
-      "appointmentButton": "Prendre rendez-vous",
-      "callButton": "Appelez-nous"
+      "title": "Maak een afspraak",
+      "subtitle": "Plan uw bezoek aan onze showroom",
+      "appointmentButton": "Afspraak maken",
+      "callButton": "Bel ons"
     },
-    "mapTitle": "Emplacement du Showroom"
+    "mapTitle": "Showroom Locatie"
   },
   "faq": {
     "hero": {
-      "title": "Foire aux Questions",
-      "subtitle": "Trouvez des réponses aux questions les plus fréquemment posées"
+      "title": "Veelgestelde Vragen",
+      "subtitle": "Vind antwoorden op de meest gestelde vragen"
     },
     "questions": {
       "q1": {
-        "question": "Combien de temps faut-il pour la livraison d'une véranda?",
-        "answer": "Le délai de livraison moyen est de 3-4 semaines après la passation de votre commande. Cela peut varier en fonction du type de véranda et des options personnalisées."
+        "question": "Hoe lang duurt de levering van een veranda?",
+        "answer": "De gemiddelde levertijd is 3-4 weken na het plaatsen van uw bestelling. Dit kan variëren afhankelijk van het type veranda en eventuele maatwerk opties."
       },
       "q2": {
-        "question": "Combien coûte une véranda?",
-        "answer": "Le prix d'une véranda dépend du type, des dimensions et des options choisies. Demandez un devis sans engagement pour un prix exact."
+        "question": "Wat kost een veranda?",
+        "answer": "De prijs van een veranda hangt af van het type, de afmetingen en de gekozen opties. Vraag vrijblijvend een offerte aan voor een exacte prijsopgave."
       },
       "q3": {
-        "question": "Combien de temps dure l'installation?",
-        "answer": "L'installation prend en moyenne 1-2 jours, selon la taille et la complexité de la véranda."
+        "question": "Hoelang duurt de montage?",
+        "answer": "De montage duurt gemiddeld 1-2 dagen, afhankelijk van de grootte en complexiteit van de veranda."
       },
       "q4": {
-        "question": "Y a-t-il une garantie sur la véranda?",
-        "answer": "Oui, nous offrons 10 ans de garantie sur la construction et 5 ans sur les parties mobiles telles que les moteurs."
+        "question": "Is er garantie op de veranda?",
+        "answer": "Ja, wij bieden 10 jaar garantie op de constructie en 5 jaar op bewegende delen zoals motoren."
       },
       "q5": {
-        "question": "Ai-je besoin d'un permis?",
-        "answer": "Dans la plupart des cas, une véranda est exemptée de permis à condition qu'elle réponde à certaines conditions. Nous vous conseillerons lors de la consultation."
+        "question": "Heb ik een vergunning nodig?",
+        "answer": "In de meeste gevallen is een veranda vergunningsvrij mits deze voldoet aan bepaalde voorwaarden. Wij adviseren u hierover tijdens het adviesgesprek."
       },
       "q6": {
-        "question": "Puis-je installer la véranda moi-même?",
-        "answer": "Nous recommandons de faire effectuer l'installation par nos professionnels pour des résultats optimaux et pour que la garantie reste valable."
+        "question": "Kan ik de veranda zelf plaatsen?",
+        "answer": "Wij raden aan om de montage door onze vakmensen te laten uitvoeren voor optimaal resultaat en behoud van garantie."
       },
       "q7": {
-        "question": "Quelles couleurs sont disponibles?",
-        "answer": "Nos vérandas sont disponibles en de nombreuses couleurs standard. En outre, toute couleur RAL est possible en option personnalisée."
+        "question": "Welke kleuren zijn beschikbaar?",
+        "answer": "Onze veranda's zijn leverbaar in vele standaardkleuren. Daarnaast is elke RAL kleur mogelijk als maatwerk optie."
       },
       "q8": {
-        "question": "Puis-je ajouter de l'éclairage et du chauffage?",
-        "answer": "Oui, nous proposons diverses options pour l'éclairage LED intégré et le chauffage de terrasse."
+        "question": "Kan ik verlichting en verwarming toevoegen?",
+        "answer": "Ja, wij bieden diverse opties voor ingebouwde LED-verlichting en terrasverwarming."
       },
       "q9": {
-        "question": "Comment entretenir ma véranda?",
-        "answer": "Une véranda en aluminium est pratiquement sans entretien. Un nettoyage occasionnel à l'eau et avec un chiffon doux suffit."
+        "question": "Hoe onderhoud ik mijn veranda?",
+        "answer": "Een aluminium veranda is vrijwel onderhoudsvrij. Af en toe reinigen met water en een zachte doek volstaat."
       },
       "q10": {
-        "question": "Venez-vous aussi dans ma région?",
-        "answer": "Nous installons des vérandas partout aux Pays-Bas. Contactez-nous pour discuter des possibilités."
+        "question": "Komen jullie ook bij mij in de buurt?",
+        "answer": "Wij plaatsen veranda's door heel Nederland. Neem contact op om te bespreken wat de mogelijkheden zijn."
       }
     },
     "cta": {
-      "title": "Votre question n'est-elle pas listée?",
-      "subtitle": "N'hésitez pas à nous contacter",
-      "button": "Prendre contact"
+      "title": "Staat uw vraag er niet bij?",
+      "subtitle": "Neem gerust contact met ons op",
+      "button": "Contact opnemen"
     }
   },
   "contact": {
     "hero": {
       "title": "Contact",
-      "subtitle": "Nous sommes là pour vous",
+      "subtitle": "Wij staan voor u klaar",
       "imageAlt": "Contact AluSolutions"
     },
     "form": {
-      "title": "Formulaire de contact",
-      "subtitle": "Remplissez le formulaire et nous vous contacterons dès que possible.",
-      "name": "Nom *",
-      "namePlaceholder": "Prénom et nom de famille",
-      "phone": "Téléphone *",
-      "phonePlaceholder": "Numéro de téléphone",
+      "title": "Contact formulier",
+      "subtitle": "Vul het formulier in en wij nemen zo snel mogelijk contact met u op.",
+      "name": "Naam *",
+      "namePlaceholder": "Voor- en achternaam",
+      "phone": "Telefoon *",
+      "phonePlaceholder": "Telefoonnummer",
       "email": "Email *",
-      "emailPlaceholder": "Adresse e-mail",
-      "city": "Ville",
-      "cityPlaceholder": "Ville",
-      "subject": "Sujet *",
-      "subjectPlaceholder": "Sélectionnez un sujet",
+      "emailPlaceholder": "Email adres",
+      "city": "Woonplaats",
+      "cityPlaceholder": "Stad",
+      "subject": "Onderwerp *",
+      "subjectPlaceholder": "Selecteer een onderwerp",
       "subjects": {
-        "polycarbonate": "Véranda en polycarbonate",
-        "plateChange": "Changement de plaque",
-        "glass": "Véranda en verre",
-        "slats": "Véranda à lamelles",
-        "foldingRoof": "Véranda à toit rétractable",
-        "slidingWall": "Mur coulissant en verre",
-        "other": "Autre"
+        "polycarbonate": "Polycarbonaat veranda",
+        "plateChange": "Platenwissel",
+        "glass": "Glazen veranda",
+        "slats": "Lamellen veranda",
+        "foldingRoof": "Vouwdak veranda",
+        "slidingWall": "Glazen schuifwand",
+        "other": "Overige"
       },
-      "message": "Message *",
-      "messagePlaceholder": "Posez votre question ici",
-      "photo": "Photo ou exemple (non requis)",
-      "submit": "Envoyer le message",
-      "successMessage": "Merci pour votre message! Nous vous contacterons dès que possible."
+      "message": "Bericht *",
+      "messagePlaceholder": "Stel hier uw vraag",
+      "photo": "Foto of voorbeeld (niet verplicht)",
+      "submit": "Verstuur bericht",
+      "successMessage": "Bedankt voor uw bericht! Wij nemen zo snel mogelijk contact met u op."
     },
     "info": {
-      "title": "Souhaitez-vous contacter AluSolutions?",
-      "paragraph1": "Avez-vous des questions sur nos produits, ou avez-vous besoin d'aide pour passer une commande? Peut-être souhaitez-vous simplement partager vos réflexions? Chez AluSolutions, nous aimons vous entendre! Notre équipe dévouée est prête à répondre rapidement et efficacement à toutes vos questions.",
-      "paragraph2": "Pour une aide immédiate, nous vous recommandons de nous contacter via WhatsApp. Nous sommes également disponibles par e-mail ou via notre formulaire de contact.",
-      "phone": "Téléphone",
+      "title": "Wil je contact opnemen met AluSolutions?",
+      "paragraph1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij AluSolutions horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
+      "paragraph2": "Voor directe hulp adviseren we je om contact met ons op te nemen via WhatsApp. Daarnaast zijn we ook bereikbaar via e-mail of ons contactformulier.",
+      "phone": "Telefoon",
       "email": "Email",
       "showroom": "Showroom",
-      "hours": "Horaires d'Ouverture",
-      "hoursWeekdays": "Lun-Jeu: 09:00 - 17:00",
-      "hoursFriday": "Vendredi: Fermé",
-      "hoursSaturday": "Sam: 10:00 - 15:00",
-      "followUs": "Suivez-nous",
+      "hours": "Openingstijden",
+      "hoursWeekdays": "Ma-Do: 09:00 - 17:00",
+      "hoursFriday": "Vrijdag: Gesloten",
+      "hoursSaturday": "Za: 10:00 - 15:00",
+      "followUs": "Volg ons",
       "social": {
         "facebook": "Facebook",
         "instagram": "Instagram",
         "whatsapp": "WhatsApp",
         "youtube": "YouTube"
       },
-      "makeAppointment": "Prendre un rendez-vous"
+      "makeAppointment": "Maak een afspraak"
     },
     "map": {
-      "title": "Visitez notre showroom",
-      "mapTitle": "Emplacement AluSolutions"
+      "title": "Bezoek onze showroom",
+      "mapTitle": "AluSolutions Locatie"
     },
     "reviews": {
-      "title": "Ce que disent nos clients",
-      "rating": "Basé sur 64 avis",
+      "title": "Wat onze klanten zeggen",
+      "rating": "Gebaseerd op 64 recensies",
       "highlights": {
-        "quality": "Savoir-faire de haute qualité et fiabilité",
-        "service": "Service sympathique et solutions sur mesure",
-        "value": "Bon rapport qualité-prix et résultats professionnels"
+        "quality": "Hoge kwaliteit vakmanschap en betrouwbaarheid",
+        "service": "Vriendelijke service en oplossingen op maat",
+        "value": "Goede prijs-kwaliteitverhouding en professioneel resultaat"
       },
-      "writeReview": "Rédiger un avis",
+      "writeReview": "Schrijf een review",
       "customer1": {
         "name": "Bright Ride",
-        "date": "11 novembre 2025",
-        "review": "Les gars ont fait un excellent travail et je suis très satisfait du résultat final de ma porte coulissante en verre"
+        "date": "11 November 2025",
+        "review": "De jongens hebben een top werk geleverd en zeer tevreden over het eind resultaat van mijn glazen schuif deur"
       },
       "customer2": {
         "name": "Dennis Gerritzen",
-        "date": "4 septembre 2025",
-        "review": "Bon service, professionnels sympathiques et réalisé rapidement."
+        "date": "4 September 2025",
+        "review": "Goede service, aardige vakmensen en snel gemaakt."
       },
       "customer3": {
         "name": "Carin Titulaer",
-        "date": "28 avril 2025",
-        "review": "Très content de ma nouvelle véranda. Bon travail effectué"
+        "date": "28 April 2025",
+        "review": "Erg blij met mijn nieuwe veranda. Goed werk geleverd"
       },
       "customer4": {
         "name": "Orhan Yilmaz",
-        "date": "3 mai 2024",
-        "review": "Excellent service et excellent qualité, réfléchit avec et organise super rapidement."
+        "date": "3 Mei 2024",
+        "review": "Topservice en topkwaliteit, denkt mee en supersnel geregeld."
       },
       "customer5": {
         "name": "Hanifi Pehlivan",
-        "date": "13 septembre 2024",
-        "review": "Excellente qualité! Agréable et convivial avec les clients. Nous sommes très satisfaits de notre nouvelle pergola. Très compétent et travaille avec précision et propreté."
+        "date": "13 September 2024",
+        "review": "Top kwaliteit! Fijn klantvriendelijk. Wij zijn erg tevreden met onze nieuwe overkapping. Zeer deskundig en werkt secuur en netjes."
       },
       "customer6": {
         "name": "Mandy Kessels",
-        "date": "6 décembre 2024",
-        "review": "Super aide, vraiment une recommandation, personnel sympathique et très rapide et soigneux respect"
+        "date": "6 December 2024",
+        "review": "Super geholpen echte aanrader lief personeel en erg snel n netjes respect"
       }
     },
     "cta": {
-      "title": "Découvrez maintenant les excellentes offres!",
-      "subtitle": "Ne manquez pas cette opportunité et demandez un devis sans engagement aujourd'hui",
-      "quoteButton": "Demander un devis",
-      "callButton": "Appelez-nous maintenant"
-    }
-  },
-  "products": {
-    "polycarbonaat": {
-      "hero": {
-        "title": "Véranda en Polycarbonate",
-        "subtitle": "Durable, abordable et perméable à la lumière",
-        "imageAlt": "Véranda en Polycarbonate"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'une Véranda en Polycarbonate?",
-        "description1": "Une véranda en polycarbonate est le choix idéal pour ceux qui recherchent une pergola de patio durable et abordable. Grâce aux panneaux de toit en polycarbonate robustes et clairs, vous profitez d'une abondante lumière, sans compromis sur la protection contre la pluie et le vent.",
-        "description2": "Chez AluSolutions, nous livrons votre véranda en polycarbonate entièrement adaptée à vos souhaits. En 3 semaines, nos constructeurs de vérandas assurent une livraison rapide et une installation professionnelle.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Exemple de véranda en polycarbonate"
-      },
-      "benefits": {
-        "benefit1": "Excellente transmission de la lumière",
-        "benefit2": "Résistant aux rayons UV et aux intempéries",
-        "benefit3": "Léger mais résistant",
-        "benefit4": "Option abordable",
-        "benefit5": "Facile à entretenir",
-        "benefit6": "Longue durée de vie (10-15 ans)"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Structure en aluminium avec panneaux en polycarbonate",
-        "thickness": "Épaisseur des panneaux",
-        "thicknessValue": "Panneaux cannelés de 16mm ou 32mm",
-        "colors": "Couleurs",
-        "colorsValue": "Clair, opaque ou teinté",
-        "frameColors": "Couleurs de la structure",
-        "frameColorsValue": "Anthracite, blanc, crème ou couleur RAL",
-        "maxWidth": "Largeur maximale",
-        "maxWidthValue": "Jusqu'à 7 mètres",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans sur la construction"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par une Véranda en Polycarbonate?",
-        "description": "Demandez un devis sans engagement ou prenez rendez-vous pour un conseil personnalisé",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "glazen": {
-      "hero": {
-        "title": "Véranda en Verre",
-        "subtitle": "Transparence maximale et aspect luxueux",
-        "imageAlt": "Véranda en Verre"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'une Véranda en Verre?",
-        "description1": "Une véranda en verre offre une lumière maximale et une vue dégagée sur votre jardin. Le verre trempé est sûr, solide et facile à nettoyer.",
-        "description2": "Chez AluSolutions, nous n'utilisons que du verre trempé de haute qualité qui répond à toutes les normes de sécurité.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Véranda en Verre"
-      },
-      "benefits": {
-        "benefit1": "Entrée maximale de lumière",
-        "benefit2": "Vue dégagée",
-        "benefit3": "Aspect luxueux",
-        "benefit4": "Verre de sécurité trempé",
-        "benefit5": "Verre autonettoyant disponible",
-        "benefit6": "Longue durée de vie"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Structure en aluminium avec verre trempé",
-        "glassThickness": "Épaisseur du verre",
-        "glassThicknessValue": "Verre de sécurité trempé de 8mm",
-        "options": "Options",
-        "optionsValue": "Clair, teinté ou autonettoyant",
-        "frameColors": "Couleurs de la structure",
-        "frameColorsValue": "Toutes les couleurs RAL possibles",
-        "maxWidth": "Largeur maximale",
-        "maxWidthValue": "Jusqu'à 6 mètres",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans sur la construction"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par une Véranda en Verre?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "lamellen": {
-      "hero": {
-        "title": "Véranda à Lamelles",
-        "subtitle": "Protection solaire réglable pour un confort optimal",
-        "imageAlt": "Véranda à Lamelles"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'une Véranda à Lamelles?",
-        "description1": "Une véranda à lamelles offre une flexibilité ultime. Les lamelles rotatives régulent la lumière solaire et la ventilation selon vos souhaits, de complètement ouvert à complètement fermé.",
-        "description2": "Parfaite pour ceux qui veulent un contrôle maximal sur la lumière et l'ombre tout au long de la journée.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Véranda à Lamelles"
-      },
-      "benefits": {
-        "benefit1": "Lamelles réglables (0-135°)",
-        "benefit2": "Protection solaire optimale",
-        "benefit3": "Bonne ventilation",
-        "benefit4": "Évacuation d'eau par les lamelles",
-        "benefit5": "Commandable électriquement",
-        "benefit6": "Design moderne"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Structure en aluminium et lamelles",
-        "operation": "Fonctionnement",
-        "operationValue": "Électrique avec télécommande",
-        "rotation": "Rotation",
-        "rotationValue": "Réglable de 0° à 135°",
-        "frameColors": "Couleurs de la structure",
-        "frameColorsValue": "Toutes les couleurs RAL possibles",
-        "maxWidth": "Largeur maximale",
-        "maxWidthValue": "Jusqu'à 6 mètres par section",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans sur la construction, 5 ans sur le moteur"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par une Véranda à Lamelles?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "vouwdak": {
-      "hero": {
-        "title": "Véranda à Toit Rétractable",
-        "subtitle": "Pliable de manière flexible pour chaque saison",
-        "imageAlt": "Véranda à Toit Rétractable"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'une Véranda à Toit Rétractable?",
-        "description1": "Une véranda à toit rétractable combine protection et flexibilité. Le tissu peut être ouvert et fermé électriquement, vous décidez donc quand vous vous asseyez à ciel ouvert.",
-        "description2": "Idéale pour ceux qui veulent le meilleur des deux mondes: un abri quand nécessaire, l'air libre quand désiré.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Véranda à Toit Rétractable"
-      },
-      "benefits": {
-        "benefit1": "Complètement pliable",
-        "benefit2": "Fonctionnement électrique",
-        "benefit3": "Tissu résistant à l'eau et aux UV",
-        "benefit4": "Aspect atmosphérique",
-        "benefit5": "Éclairage LED intégré possible",
-        "benefit6": "Résistant au vent jusqu'à 6 Beaufort"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Structure en aluminium avec tissu PVC",
-        "operation": "Fonctionnement",
-        "operationValue": "Électrique avec télécommande",
-        "fabric": "Tissu",
-        "fabricValue": "PVC résistant aux intempéries et aux UV",
-        "fabricColors": "Couleurs du tissu",
-        "fabricColorsValue": "Blanc, crème, gris ou anthracite",
-        "maxWidth": "Largeur maximale",
-        "maxWidthValue": "Jusqu'à 7 mètres",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans sur la structure, 5 ans sur le tissu"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par une Véranda à Toit Rétractable?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "schuifwand": {
-      "hero": {
-        "title": "Mur Coulissant en Verre",
-        "subtitle": "Jouissance sans vent avec vue maximale",
-        "imageAlt": "Mur Coulissant en Verre"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'un Mur Coulissant en Verre?",
-        "description1": "Un mur coulissant en verre transforme votre véranda en une pièce extérieure sans vent. Les panneaux glissent facilement sur le côté pour une ventilation maximale.",
-        "description2": "Parfait comme complément à votre véranda ou pergola existante.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Mur Coulissant en Verre"
-      },
-      "benefits": {
-        "benefit1": "Jouissance sans vent",
-        "benefit2": "Facile à ouvrir",
-        "benefit3": "Vue dégagée",
-        "benefit4": "Prolongez votre saison extérieure",
-        "benefit5": "Verre de sécurité trempé",
-        "benefit6": "Serrure sûre pour enfants"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Rails en aluminium avec verre trempé",
-        "glassThickness": "Épaisseur du verre",
-        "glassThicknessValue": "Verre trempé de 8mm ou 10mm",
-        "system": "Système",
-        "systemValue": "2, 3, 4 ou 5 rails",
-        "height": "Hauteur",
-        "heightValue": "Jusqu'à 3 mètres",
-        "panelWidth": "Largeur par panneau",
-        "panelWidthValue": "Jusqu'à 1 mètre",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par un Mur Coulissant en Verre?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "cube": {
-      "hero": {
-        "title": "Véranda Cube",
-        "subtitle": "Design moderne et élégant pour votre jardin",
-        "imageAlt": "Véranda Cube"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'une Véranda Cube?",
-        "description1": "La véranda Cube est le summum du design moderne. Avec des lignes nettes et une apparence minimaliste, ce cube parfait s'intègre dans n'importe quel jardin moderne.",
-        "description2": "Indépendante ou accolée à la maison, la Cube fait toujours son effet.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Véranda Cube"
-      },
-      "benefits": {
-        "benefit1": "Design ultra moderne",
-        "benefit2": "Possibilité indépendante",
-        "benefit3": "Finition soignée",
-        "benefit4": "Éclairage LED intégré",
-        "benefit5": "Diverses options de toit",
-        "benefit6": "Possibilités de pare-vent"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Construction en aluminium premium",
-        "roofOptions": "Options de toit",
-        "roofOptionsValue": "Verre, lamelles ou polycarbonate",
-        "design": "Design",
-        "designValue": "Forme de cube minimaliste",
-        "frameColors": "Couleurs de la structure",
-        "frameColorsValue": "Toutes les couleurs RAL possibles",
-        "dimensions": "Dimensions",
-        "dimensionsValue": "Sur mesure",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par une Véranda Cube?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "tuinkamer": {
-      "hero": {
-        "title": "Jardin d'Hiver",
-        "subtitle": "Profitez de votre jardin toute l'année",
-        "imageAlt": "Jardin d'Hiver"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'un Jardin d'Hiver?",
-        "description1": "Un jardin d'hiver est une véranda entièrement fermée qui vous permet de profiter de votre jardin toute l'année, quel que soit le temps.",
-        "description2": "Parfait comme espace de vie supplémentaire, lieu de travail ou pièce de loisir avec vue sur le jardin.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Jardin d'Hiver"
-      },
-      "benefits": {
-        "benefit1": "Utilisable toute l'année",
-        "benefit2": "Espace de vie supplémentaire",
-        "benefit3": "Complètement isolé",
-        "benefit4": "Chauffage possible",
-        "benefit5": "Augmente la valeur de la maison",
-        "benefit6": "Diverses finitions"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Système en aluminium isolé",
-        "glazing": "Vitrage",
-        "glazingValue": "Verre isolant HR++",
-        "roof": "Toit",
-        "roofValue": "Panneaux de toit isolés",
-        "doors": "Portes",
-        "doorsValue": "Portes coulissantes ou pliantes",
-        "dimensions": "Dimensions",
-        "dimensionsValue": "Complètement sur mesure",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par un Jardin d'Hiver?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
-    },
-    "carport": {
-      "hero": {
-        "title": "Carport",
-        "subtitle": "Protégez votre voiture élégamment",
-        "imageAlt": "Carport"
-      },
-      "info": {
-        "title": "Qu'est-ce qu'un Carport?",
-        "description1": "Un carport en aluminium protège votre voiture de la pluie, de la neige, de la grêle et des rayons UV. Élégant et durable, un ajout précieux à votre maison.",
-        "description2": "Disponible pour une ou plusieurs voitures, entièrement sur mesure.",
-        "benefitsTitle": "Avantages",
-        "imageAlt": "Carport"
-      },
-      "benefits": {
-        "benefit1": "Protection contre les intempéries",
-        "benefit2": "Aluminium sans entretien",
-        "benefit3": "Augmente la valeur de la maison",
-        "benefit4": "Diverses options de toit",
-        "benefit5": "Sur mesure",
-        "benefit6": "Installation rapide"
-      },
-      "specs": {
-        "title": "Spécifications",
-        "material": "Matériau",
-        "materialValue": "Construction en aluminium",
-        "roofOptions": "Options de toit",
-        "roofOptionsValue": "Polycarbonate ou aluminium",
-        "capacity": "Capacité",
-        "capacityValue": "1, 2 ou plus de voitures",
-        "frameColors": "Couleurs de la structure",
-        "frameColorsValue": "Toutes les couleurs RAL possibles",
-        "dimensions": "Dimensions",
-        "dimensionsValue": "Sur mesure",
-        "warranty": "Garantie",
-        "warrantyValue": "10 ans"
-      },
-      "gallery": {
-        "title": "Projets",
-        "project1Alt": "Projet 1",
-        "project2Alt": "Projet 2",
-        "project3Alt": "Projet 3",
-        "project4Alt": "Projet 4"
-      },
-      "cta": {
-        "title": "Intéressé par un Carport?",
-        "description": "Demandez un devis sans engagement",
-        "quoteButton": "Demander un devis",
-        "appointmentButton": "Prendre rendez-vous"
-      }
+      "title": "Ontdek nu de geweldige aanbiedingen!",
+      "subtitle": "Mis deze kans niet en vraag vandaag nog een vrijblijvende offerte aan",
+      "quoteButton": "Offerte aanvragen",
+      "callButton": "Bel ons direct"
     }
   },
   "offerte": {
-    "required": "Obligatoire",
-    "optional": "Optionnel",
-    "nextButton": "Suivant",
-    "backButton": "Retour",
-    "submitButton": "Envoyer devis",
-    "submitting": "Envoi en cours...",
-    "successTitle": "Merci!",
-    "successMessage": "Votre demande de devis a été soumise avec succès. Nous vous contacterons dans les plus brefs délais.",
-    "errorTitle": "Erreur survenue",
-    "errorMessage": "Une erreur s'est produite lors de l'envoi de votre demande. Veuillez réessayer plus tard.",
-    "step": "Étape",
-    "of": "de",
+    "required": "Verplicht",
+    "optional": "Optioneel",
+    "nextButton": "Volgende",
+    "backButton": "Terug",
+    "submitButton": "Offerte versturen",
+    "submitting": "Versturen...",
+    "successTitle": "Bedankt!",
+    "successMessage": "Uw offerte aanvraag is succesvol verzonden. We nemen zo spoedig mogelijk contact met u op.",
+    "errorTitle": "Fout opgetreden",
+    "errorMessage": "Er is een fout opgetreden bij het versturen van uw aanvraag. Probeer het later opnieuw.",
+    "step": "Stap",
+    "of": "van",
     "step1": {
-      "title": "Où voulez-vous la couverture",
-      "standaard": "Standard",
-      "standaardDesc": "Mur existant",
-      "vrijstaand": "Autoportant",
-      "vrijstaandDesc": "Libre dans le jardin"
+      "title": "Waar wilt u overkapping",
+      "standaard": "Standaard",
+      "standaardDesc": "Bestaande muur",
+      "vrijstaand": "Vrijstaand",
+      "vrijstaandDesc": "Vrij in de tuin"
     },
     "step2": {
-      "title": "Type de gouttière",
-      "rechteGoot": "Gouttière droite",
-      "halfrondeGoot": "Gouttière demi-ronde"
+      "title": "Goot type",
+      "rechteGoot": "Rechte goot",
+      "halfrondeGoot": "Halfronde goot"
     },
     "step3": {
-      "title": "Couleur",
-      "wit": "Blanc",
-      "cremeWit": "Blanc crème",
-      "antraciet": "Anthracite",
-      "zwart": "Noir"
+      "title": "Kleur",
+      "wit": "Wit",
+      "cremeWit": "Crème wit",
+      "antraciet": "Antraciet",
+      "zwart": "Zwart"
     },
     "step4": {
-      "title": "Matériau",
-      "placeholder": "Sélectionner le matériau",
-      "polycarbonaat": "Polycarbonate",
-      "glas": "Verre",
-      "lamellen": "Lamelles",
-      "vouwdak": "Toit pliable"
+      "title": "Materiaal",
+      "placeholder": "Selecteer materiaal",
+      "polycarbonaat": "Polycarbonaat",
+      "glas": "Glas",
+      "lamellen": "Lamellen",
+      "vouwdak": "Vouwdak"
     },
     "step5": {
-      "title": "Dimensions",
-      "breedte": "Largeur (m)",
-      "breedtePlaceholder": "Largeur en mètres",
-      "lengte": "Longueur (m)",
-      "lengtePlaceholder": "Longueur en mètres"
+      "title": "Afmetingen",
+      "breedte": "Breedte (m)",
+      "breedtePlaceholder": "Breedte in meters",
+      "lengte": "Lengte (m)",
+      "lengtePlaceholder": "Lengte in meters"
     },
     "step6": {
-      "title": "Éclairage",
-      "placeholder": "Sélectionner l'éclairage",
-      "geen": "Pas d'éclairage",
-      "ledSpots": "Spots LED",
-      "ledStrip": "Bande LED",
-      "beide": "Les deux (spots + bande)"
+      "title": "Verlichting",
+      "placeholder": "Selecteer verlichting",
+      "geen": "Geen verlichting",
+      "ledSpots": "LED spots",
+      "ledStrip": "LED strip",
+      "beide": "Beide (spots + strip)"
     },
     "step7": {
-      "title": "Voulez-vous ajouter plus d'options?",
-      "ja": "Oui",
-      "jaDesc": "Je veux configurer plus d'options",
-      "nee": "Non",
-      "neeDesc": "Continuer vers l'installation"
+      "title": "Wilt u meer opties toevoegen?",
+      "ja": "Ja",
+      "jaDesc": "Ik wil meer opties configureren",
+      "nee": "Nee",
+      "neeDesc": "Doorgaan naar montage"
     },
     "step8": {
-      "title": "Configurer les options",
-      "rechterKant": "Côté droit",
-      "rechterSpie": "Support droit",
-      "linkerKant": "Côté gauche",
-      "linkerSpie": "Support gauche",
-      "voorkant": "Devant",
-      "achterkant": "Derrière",
-      "selectOption": "Sélectionner l'option",
-      "glas": "Verre",
-      "screen": "Écran",
-      "geen": "Aucun",
-      "ja": "Oui",
-      "nee": "Non",
-      "extraOptions": "Options supplémentaires",
-      "zonweringBoven": "Store au-dessus",
-      "screenVoorkant": "Écran devant",
-      "screenLinkerKant": "Écran côté gauche",
-      "screenRechterKant": "Écran côté droit"
+      "title": "Opties configureren",
+      "rechterKant": "Rechter kant",
+      "rechterSpie": "Rechter spie",
+      "linkerKant": "Linker kant",
+      "linkerSpie": "Linker spie",
+      "voorkant": "Voorkant",
+      "achterkant": "Achterkant",
+      "selectOption": "Selecteer optie",
+      "glas": "Glas",
+      "screen": "Screen",
+      "geen": "Geen",
+      "ja": "Ja",
+      "nee": "Nee",
+      "extraOptions": "Extra opties",
+      "zonweringBoven": "Zonwering boven",
+      "screenVoorkant": "Screen voorkant",
+      "screenLinkerKant": "Screen linker kant",
+      "screenRechterKant": "Screen rechter kant"
     },
     "step9": {
-      "title": "Installation",
-      "inclusief": "Installation incluse",
-      "inclusiefDesc": "Nous nous occupons de l'installation",
-      "exclusief": "Installation non incluse",
-      "exclusiefDesc": "Je vais installer moi-même"
+      "title": "Montage",
+      "inclusief": "Inclusief montage",
+      "inclusiefDesc": "Wij verzorgen de montage",
+      "exclusief": "Exclusief montage",
+      "exclusiefDesc": "Ik monteer zelf"
     },
     "step10": {
-      "title": "Où pouvons-nous envoyer le devis?",
-      "subtitle": "Remplissez vos coordonnées",
-      "naam": "Nom",
-      "naamPlaceholder": "Nom",
-      "straat": "Rue + numéro",
-      "straatPlaceholder": "Rue + numéro",
-      "woonplaats": "Ville",
-      "woonplaatsPlaceholder": "Ville",
-      "email": "Adresse e-mail",
-      "emailPlaceholder": "Adresse e-mail",
-      "telefoon": "Numéro de téléphone",
-      "opmerking": "Remarque",
-      "opmerkingPlaceholder": "Que devrions-nous encore prendre en compte?"
+      "title": "Waar mogen wij de offerte naartoe sturen?",
+      "subtitle": "Vul uw contactgegevens in",
+      "naam": "Naam",
+      "naamPlaceholder": "Naam",
+      "straat": "Straatnaam + huisnummer",
+      "straatPlaceholder": "Straatnaam + huisnummer",
+      "woonplaats": "Woonplaats",
+      "woonplaatsPlaceholder": "Woonplaats",
+      "email": "E-mailadres",
+      "emailPlaceholder": "E-mailadres",
+      "telefoon": "Telefoonnummer",
+      "opmerking": "Opmerking",
+      "opmerkingPlaceholder": "Waar kunnen wij nog rekening houden?"
     }
   },
   "appointment": {
-    "title": "Prendre un rendez-vous",
-    "subtitle": "Planifiez une mesure gratuite, une visite du showroom ou une consultation.",
-    "name": "Nom",
-    "namePlaceholder": "Votre nom complet",
+    "title": "Maak een Afspraak",
+    "subtitle": "Plan een gratis opmeting, showroom bezoek of adviesgesprek.",
+    "name": "Naam",
+    "namePlaceholder": "Uw volledige naam",
     "email": "E-mail",
-    "emailPlaceholder": "votre.email@exemple.fr",
-    "phone": "Téléphone",
-    "serviceType": "Type de rendez-vous",
-    "selectService": "Sélectionnez un type",
-    "preferredDate": "Date préférée",
-    "preferredTime": "Heure préférée",
-    "selectTime": "Sélectionnez une heure",
-    "message": "Message",
-    "messagePlaceholder": "Dites-nous comment nous pouvons vous aider...",
-    "submitButton": "Prendre rendez-vous",
-    "successTitle": "Rendez-vous demandé!",
-    "successMessage": "Nous vous contacterons dès que possible pour confirmer votre rendez-vous."
+    "emailPlaceholder": "uw.email@voorbeeld.nl",
+    "phone": "Telefoon",
+    "serviceType": "Type afspraak",
+    "selectService": "Selecteer een type",
+    "preferredDate": "Voorkeursdatum",
+    "preferredTime": "Voorkeurtijd",
+    "selectTime": "Selecteer een tijd",
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons waar we u mee kunnen helpen...",
+    "submitButton": "Afspraak Maken",
+    "successTitle": "Afspraak aangevraagd!",
+    "successMessage": "We nemen zo spoedig mogelijk contact met u op om uw afspraak te bevestigen."
   }
 }
