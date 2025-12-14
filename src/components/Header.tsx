@@ -1,293 +1,316 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { Menubar } from 'primereact/menubar'
+import { Button } from 'primereact/button'
+import { Menu } from 'primereact/menu'
+import { Sidebar } from 'primereact/sidebar'
+import type { MenuItem } from 'primereact/menuitem'
 import { useTheme } from '../context/ThemeContext'
+import { supabase } from '../lib/supabase'
+import 'primereact/resources/themes/lara-light-blue/theme.css'
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css'
 import '../styles/Header.css'
 
+interface Configurator {
+  id: string
+  slug: string
+  name: Record<string, string>
+  is_active: boolean
+}
+
 export default function Header() {
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [mobileActiveMenu, setMobileActiveMenu] = useState<string | null>(null)
+  const { t, i18n } = useTranslation()
+  const navigate = useNavigate()
   const { theme, toggleTheme } = useTheme()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [configurators, setConfigurators] = useState<Configurator[]>([])
+  const langMenuRef = useRef<Menu>(null)
 
-  const handleMouseEnter = (menu: string) => {
-    setActiveDropdown(menu)
+  // Load active configurators
+  useEffect(() => {
+    const loadConfigurators = async () => {
+      const { data } = await supabase
+        .from('configurators')
+        .select('id, slug, name, is_active')
+        .eq('is_active', true)
+        .order('display_order', { ascending: true })
+
+      if (data) {
+        setConfigurators(data)
+      }
+    }
+    loadConfigurators()
+  }, [])
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng)
   }
 
-  const handleMouseLeave = () => {
-    setActiveDropdown(null)
-  }
+  const languageOptions = [
+    {
+      label: '🇳🇱 Nederlands',
+      command: () => changeLanguage('nl')
+    },
+    {
+      label: '🇬🇧 English',
+      command: () => changeLanguage('en')
+    },
+    {
+      label: '🇹🇷 Türkçe',
+      command: () => changeLanguage('tr')
+    },
+    {
+      label: '🇩🇪 Deutsch',
+      command: () => changeLanguage('de')
+    },
+    {
+      label: '🇫🇷 Français',
+      command: () => changeLanguage('fr')
+    },
+    {
+      label: '🇮🇹 Italiano',
+      command: () => changeLanguage('it')
+    }
+  ]
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen)
-    setMobileActiveMenu(null)
-  }
+  // Build configurator menu items dynamically
+  const configuratorItems: MenuItem[] = configurators.map(config => ({
+    label: config.name[i18n.language] || config.name['nl'] || config.slug,
+    icon: 'pi pi-cog',
+    command: () => navigate(`/offerte/${config.slug}`)
+  }))
 
-  const toggleMobileDropdown = (menu: string) => {
-    setMobileActiveMenu(mobileActiveMenu === menu ? null : menu)
-  }
+  const menuItems: MenuItem[] = [
+    {
+      label: t('header.services'),
+      icon: 'pi pi-th-large',
+      items: [
+        {
+          label: t('header.verandas'),
+          icon: 'pi pi-home',
+          items: [
+            {
+              label: t('products.polycarbonaat'),
+              icon: 'pi pi-box',
+              command: () => navigate('/producten/polycarbonaat')
+            },
+            {
+              label: t('products.glazen'),
+              icon: 'pi pi-sparkles',
+              command: () => navigate('/producten/glazen')
+            },
+            {
+              label: t('products.lamellen'),
+              icon: 'pi pi-bars',
+              command: () => navigate('/producten/lamellen')
+            },
+            {
+              label: t('products.vouwdak'),
+              icon: 'pi pi-chevron-up',
+              command: () => navigate('/producten/vouwdak')
+            }
+          ]
+        },
+        {
+          separator: true
+        },
+        {
+          label: t('header.other'),
+          icon: 'pi pi-palette',
+          items: [
+            {
+              label: t('products.schuifwand'),
+              icon: 'pi pi-arrows-h',
+              command: () => navigate('/producten/schuifwand')
+            },
+            {
+              label: t('products.cube'),
+              icon: 'pi pi-stop',
+              command: () => navigate('/producten/cube')
+            },
+            {
+              label: t('products.tuinkamer'),
+              icon: 'pi pi-building',
+              command: () => navigate('/producten/tuinkamer')
+            },
+            {
+              label: t('products.carport'),
+              icon: 'pi pi-car',
+              command: () => navigate('/producten/carport')
+            }
+          ]
+        }
+      ]
+    },
+    {
+      label: t('header.about'),
+      icon: 'pi pi-info-circle',
+      command: () => navigate('/over-ons')
+    },
+    {
+      label: t('header.inspiration'),
+      icon: 'pi pi-images',
+      items: [
+        {
+          label: t('header.projectGallery'),
+          icon: 'pi pi-image',
+          command: () => navigate('/inspiratie')
+        },
+        {
+          label: t('header.beforeAfter'),
+          icon: 'pi pi-replay',
+          command: () => navigate('/inspiratie')
+        },
+        {
+          label: t('header.styles'),
+          icon: 'pi pi-palette',
+          command: () => navigate('/inspiratie')
+        },
+        {
+          label: t('header.blogsTips'),
+          icon: 'pi pi-book',
+          command: () => navigate('/contact')
+        }
+      ]
+    },
+    {
+      label: t('header.requestQuote'),
+      icon: 'pi pi-file-edit',
+      items: [
+        // Dynamic configurators
+        ...configuratorItems,
+        ...(configuratorItems.length > 0 ? [{ separator: true }] : []),
+        {
+          label: t('header.freeMeasurement'),
+          icon: 'pi pi-calendar',
+          command: () => navigate('/afspraak')
+        },
+        {
+          label: t('header.callDirect'),
+          icon: 'pi pi-phone',
+          command: () => window.location.href = 'tel:+31850605036'
+        }
+      ]
+    },
+    {
+      label: t('header.contact'),
+      icon: 'pi pi-envelope',
+      items: [
+        {
+          label: t('header.contactForm'),
+          icon: 'pi pi-send',
+          command: () => navigate('/contact')
+        },
+        {
+          label: t('header.visitShowroom'),
+          icon: 'pi pi-map-marker',
+          command: () => navigate('/showroom')
+        },
+        {
+          label: t('header.faq'),
+          icon: 'pi pi-question-circle',
+          command: () => navigate('/faq')
+        }
+      ]
+    }
+  ]
+
+  const start = (
+    <Link to="/" className="logo-link">
+      <div className="logo">
+        <h1>ALU<span>SOLUTIONS</span></h1>
+        <p className="tagline">{t('header.tagline')}</p>
+      </div>
+    </Link>
+  )
+
+  const end = (
+    <div className="header-actions">
+      <Button
+        label={t('header.makeAppointment')}
+        icon="pi pi-calendar-plus"
+        className="p-button-success p-button-rounded cta-button"
+        onClick={() => navigate('/afspraak')}
+      />
+
+      <Menu model={languageOptions} popup ref={langMenuRef} />
+      <Button
+        icon="pi pi-globe"
+        className="p-button-text p-button-rounded"
+        onClick={(e) => langMenuRef.current?.toggle(e)}
+        tooltip={i18n.language.toUpperCase()}
+        tooltipOptions={{ position: 'bottom' }}
+      />
+
+      <Button
+        icon={theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}
+        className="p-button-text p-button-rounded"
+        onClick={toggleTheme}
+        tooltip={theme === 'light' ? t('header.darkMode') : t('header.lightMode')}
+        tooltipOptions={{ position: 'bottom' }}
+      />
+
+      <Button
+        icon="pi pi-bars"
+        className="p-button-text p-button-rounded mobile-menu-toggle"
+        onClick={() => setMobileMenuOpen(true)}
+      />
+    </div>
+  )
 
   return (
-    <header className="main-header">
-      <div className="container">
-        <div className="logo">
-          <Link to="/">
-            <h1>ALU<span>SOLUTIONS</span></h1>
-            <p className="tagline">Wij Brengen Buitenleven Binnen</p>
-          </Link>
+    <>
+      <header className="main-header">
+        <Menubar model={menuItems} start={start} end={end} className="custom-menubar" />
+      </header>
+
+      {/* Mobile Sidebar */}
+      <Sidebar
+        visible={mobileMenuOpen}
+        onHide={() => setMobileMenuOpen(false)}
+        position="left"
+        className="mobile-sidebar"
+      >
+        <div className="mobile-logo">
+          <h2>ALU<span>SOLUTIONS</span></h2>
+          <p>{t('header.tagline')}</p>
         </div>
 
-        <nav className="main-nav">
-          {/* Onze diensten dropdown */}
-          <div
-            className="nav-item has-dropdown"
-            onMouseEnter={() => handleMouseEnter('diensten')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span className="nav-link">
-              Onze diensten <span className="arrow">▾</span>
-            </span>
-            {activeDropdown === 'diensten' && (
-              <div className="dropdown-menu">
-                <div className="dropdown-content">
-                  <div className="dropdown-section">
-                    <h4>Veranda's</h4>
-                    <Link to="/producten/polycarbonaat">Polycarbonaat Veranda</Link>
-                    <Link to="/producten/glazen">Glazen Veranda</Link>
-                    <Link to="/producten/lamellen">Lamellen Veranda</Link>
-                    <Link to="/producten/vouwdak">Vouwdak Veranda</Link>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>Overige</h4>
-                    <Link to="/producten/schuifwand">Glazen Schuifwand</Link>
-                    <Link to="/producten/cube">Cube Veranda</Link>
-                    <Link to="/producten/tuinkamer">Tuinkamer</Link>
-                    <Link to="/producten/carport">Carport</Link>
-                  </div>
-                  <div className="dropdown-section">
-                    <h4>Services</h4>
-                    <Link to="/contact">Platenwissel</Link>
-                    <Link to="/contact">Onderhoud</Link>
-                    <Link to="/contact">Reparatie</Link>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+        <Menu
+          model={[
+            ...menuItems,
+            { separator: true },
+            {
+              label: t('header.makeAppointment'),
+              icon: 'pi pi-calendar-plus',
+              command: () => {
+                navigate('/afspraak')
+                setMobileMenuOpen(false)
+              },
+              className: 'mobile-cta-item'
+            }
+          ]}
+          className="mobile-menu"
+        />
 
-          {/* Over ons */}
-          <Link to="/over-ons" className="nav-link">Over ons</Link>
+        <div className="mobile-actions">
+          <Button
+            label={i18n.language.toUpperCase()}
+            icon="pi pi-globe"
+            className="p-button-outlined w-full mb-2"
+            onClick={(e) => langMenuRef.current?.toggle(e)}
+          />
 
-          {/* Inspiratie dropdown */}
-          <div
-            className="nav-item has-dropdown"
-            onMouseEnter={() => handleMouseEnter('inspiratie')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span className="nav-link">
-              Inspiratie <span className="arrow">▾</span>
-            </span>
-            {activeDropdown === 'inspiratie' && (
-              <div className="dropdown-menu">
-                <div className="dropdown-content single">
-                  <Link to="/inspiratie">Projecten Galerij</Link>
-                  <Link to="/inspiratie">Voor & Na</Link>
-                  <Link to="/inspiratie">Stijlen</Link>
-                  <Link to="/contact">Blogs & Tips</Link>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Offerte aanvragen dropdown */}
-          <div
-            className="nav-item has-dropdown"
-            onMouseEnter={() => handleMouseEnter('offerte')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span className="nav-link">
-              Offerte aanvragen <span className="arrow">▾</span>
-            </span>
-            {activeDropdown === 'offerte' && (
-              <div className="dropdown-menu">
-                <div className="dropdown-content single">
-                  <Link to="/offerte">Online Offerte</Link>
-                  <Link to="/afspraak">Gratis Inmeten</Link>
-                  <a href="tel:+31850605036">Bel Direct</a>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Contact dropdown */}
-          <div
-            className="nav-item has-dropdown"
-            onMouseEnter={() => handleMouseEnter('contact')}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span className="nav-link">
-              Contact <span className="arrow">▾</span>
-            </span>
-            {activeDropdown === 'contact' && (
-              <div className="dropdown-menu">
-                <div className="dropdown-content single">
-                  <Link to="/contact">Contact Formulier</Link>
-                  <Link to="/showroom">Showroom Bezoeken</Link>
-                  <Link to="/faq">Veelgestelde Vragen</Link>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* CTA Button */}
-          <Link to="/afspraak" className="btn btn-cta">
-            Afspraak maken <span>→</span>
-          </Link>
-        </nav>
-
-        {/* Theme Toggle Button */}
-        <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-          {theme === 'light' ? (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="12" r="5"/>
-              <line x1="12" y1="1" x2="12" y2="3"/>
-              <line x1="12" y1="21" x2="12" y2="23"/>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-              <line x1="1" y1="12" x2="3" y2="12"/>
-              <line x1="21" y1="12" x2="23" y2="12"/>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-            </svg>
-          )}
-        </button>
-
-        {/* Mobile menu button */}
-        <button className={`mobile-menu-btn ${mobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-
-      {/* Mobile Navigation */}
-      <nav className={`mobile-nav ${mobileMenuOpen ? 'active' : ''}`}>
-        <div className="mobile-nav-content">
-          {/* Onze diensten dropdown */}
-          <div className="mobile-nav-item">
-            <button className="mobile-nav-link" onClick={() => toggleMobileDropdown('diensten')}>
-              Onze diensten <span className={`arrow ${mobileActiveMenu === 'diensten' ? 'active' : ''}`}>▾</span>
-            </button>
-            {mobileActiveMenu === 'diensten' && (
-              <div className="mobile-dropdown">
-                <div className="mobile-dropdown-section">
-                  <h4>Veranda's</h4>
-                  <Link to="/producten/polycarbonaat" onClick={toggleMobileMenu}>Polycarbonaat Veranda</Link>
-                  <Link to="/producten/glazen" onClick={toggleMobileMenu}>Glazen Veranda</Link>
-                  <Link to="/producten/lamellen" onClick={toggleMobileMenu}>Lamellen Veranda</Link>
-                  <Link to="/producten/vouwdak" onClick={toggleMobileMenu}>Vouwdak Veranda</Link>
-                </div>
-                <div className="mobile-dropdown-section">
-                  <h4>Overige</h4>
-                  <Link to="/producten/schuifwand" onClick={toggleMobileMenu}>Glazen Schuifwand</Link>
-                  <Link to="/producten/cube" onClick={toggleMobileMenu}>Cube Veranda</Link>
-                  <Link to="/producten/tuinkamer" onClick={toggleMobileMenu}>Tuinkamer</Link>
-                  <Link to="/producten/carport" onClick={toggleMobileMenu}>Carport</Link>
-                </div>
-                <div className="mobile-dropdown-section">
-                  <h4>Services</h4>
-                  <Link to="/contact" onClick={toggleMobileMenu}>Platenwissel</Link>
-                  <Link to="/contact" onClick={toggleMobileMenu}>Onderhoud</Link>
-                  <Link to="/contact" onClick={toggleMobileMenu}>Reparatie</Link>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Over ons */}
-          <Link to="/over-ons" className="mobile-nav-link" onClick={toggleMobileMenu}>Over ons</Link>
-
-          {/* Inspiratie dropdown */}
-          <div className="mobile-nav-item">
-            <button className="mobile-nav-link" onClick={() => toggleMobileDropdown('inspiratie')}>
-              Inspiratie <span className={`arrow ${mobileActiveMenu === 'inspiratie' ? 'active' : ''}`}>▾</span>
-            </button>
-            {mobileActiveMenu === 'inspiratie' && (
-              <div className="mobile-dropdown">
-                <Link to="/inspiratie" onClick={toggleMobileMenu}>Projecten Galerij</Link>
-                <Link to="/inspiratie" onClick={toggleMobileMenu}>Voor & Na</Link>
-                <Link to="/inspiratie" onClick={toggleMobileMenu}>Stijlen</Link>
-                <Link to="/contact" onClick={toggleMobileMenu}>Blogs & Tips</Link>
-              </div>
-            )}
-          </div>
-
-          {/* Offerte aanvragen dropdown */}
-          <div className="mobile-nav-item">
-            <button className="mobile-nav-link" onClick={() => toggleMobileDropdown('offerte')}>
-              Offerte aanvragen <span className={`arrow ${mobileActiveMenu === 'offerte' ? 'active' : ''}`}>▾</span>
-            </button>
-            {mobileActiveMenu === 'offerte' && (
-              <div className="mobile-dropdown">
-                <Link to="/offerte" onClick={toggleMobileMenu}>Online Offerte</Link>
-                <Link to="/afspraak" onClick={toggleMobileMenu}>Gratis Inmeten</Link>
-                <a href="tel:+31850605036" onClick={toggleMobileMenu}>Bel Direct</a>
-              </div>
-            )}
-          </div>
-
-          {/* Contact dropdown */}
-          <div className="mobile-nav-item">
-            <button className="mobile-nav-link" onClick={() => toggleMobileDropdown('contact')}>
-              Contact <span className={`arrow ${mobileActiveMenu === 'contact' ? 'active' : ''}`}>▾</span>
-            </button>
-            {mobileActiveMenu === 'contact' && (
-              <div className="mobile-dropdown">
-                <Link to="/contact" onClick={toggleMobileMenu}>Contact Formulier</Link>
-                <Link to="/showroom" onClick={toggleMobileMenu}>Showroom Bezoeken</Link>
-                <Link to="/faq" onClick={toggleMobileMenu}>Veelgestelde Vragen</Link>
-              </div>
-            )}
-          </div>
-
-          {/* Theme Toggle in Mobile */}
-          <div className="mobile-theme-toggle">
-            <button className="mobile-theme-btn" onClick={toggleTheme}>
-              {theme === 'light' ? (
-                <>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                  </svg>
-                  <span>Dark Mode</span>
-                </>
-              ) : (
-                <>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="5"/>
-                    <line x1="12" y1="1" x2="12" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="23"/>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="21" y1="12" x2="23" y2="12"/>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                  </svg>
-                  <span>Light Mode</span>
-                </>
-              )}
-            </button>
-          </div>
-
-          {/* CTA Button */}
-          <Link to="/afspraak" className="mobile-cta-btn" onClick={toggleMobileMenu}>
-            Afspraak maken <span>→</span>
-          </Link>
+          <Button
+            label={theme === 'light' ? t('header.darkMode') : t('header.lightMode')}
+            icon={theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}
+            className="p-button-outlined w-full"
+            onClick={toggleTheme}
+          />
         </div>
-      </nav>
-    </header>
+      </Sidebar>
+    </>
   )
 }

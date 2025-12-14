@@ -1,0 +1,1349 @@
+{
+  "header": {
+    "services": "Hizmetlerimiz",
+    "verandas": "Verandalar",
+    "other": "Diğer",
+    "about": "Hakkımızda",
+    "inspiration": "İlham",
+    "projectGallery": "Proje Galerisi",
+    "beforeAfter": "Önce & Sonra",
+    "styles": "Stiller",
+    "blogsTips": "Blog & İpuçları",
+    "requestQuote": "Teklif İste",
+    "onlineQuote": "Online Teklif",
+    "freeMeasurement": "Ücretsiz Ölçüm",
+    "callDirect": "Hemen Ara",
+    "quote": "Teklif İste",
+    "contact": "İletişim",
+    "contactForm": "İletişim Formu",
+    "visitShowroom": "Showroom Ziyareti",
+    "faq": "Sık Sorulan Sorular",
+    "language": "Dil",
+    "makeAppointment": "Randevu Al",
+    "tagline": "Dış Yaşamı İçeri Getiriyoruz",
+    "darkMode": "Karanlık mod",
+    "lightMode": "Aydınlık mod"
+  },
+  "products": {
+    "polycarbonaat": "Polikarbonat Veranda",
+    "glazen": "Cam Veranda",
+    "lamellen": "Panjurlu Veranda",
+    "vouwdak": "Katlanır Çatı Veranda",
+    "schuifwand": "Cam Sürgülü Duvar",
+    "cube": "Küp Veranda",
+    "tuinkamer": "Bahçe Odası",
+    "carport": "Garaj Üstü"
+  },
+  "menu": {
+    "verandas": "Verandalar",
+    "polycarbonate": "Polikarbonat Veranda",
+    "glass": "Cam Veranda",
+    "slats": "Panjurlu Veranda",
+    "foldingRoof": "Katlanır Çatı Veranda",
+    "other": "Diğer",
+    "slidingWall": "Cam Sürgülü Duvar",
+    "cube": "Küp Veranda",
+    "gardenRoom": "Bahçe Odası",
+    "carport": "Garaj Üstü",
+    "services": "Hizmetler",
+    "plateChange": "Plaka Değişimi",
+    "maintenance": "Bakım",
+    "repair": "Onarım",
+    "projectGallery": "Proje Galerisi",
+    "beforeAfter": "Önce & Sonra",
+    "styles": "Stiller",
+    "blogsTips": "Blog & İpuçları",
+    "onlineQuote": "Online Teklif",
+    "freeMeasurement": "Ücretsiz Ölçüm",
+    "callDirect": "Hemen Ara",
+    "contactForm": "İletişim Formu",
+    "visitShowroom": "Showroom Ziyareti",
+    "faq": "Sık Sorulan Sorular"
+  },
+  "footer": {
+    "quickLinks": "Hızlı Bağlantılar",
+    "products": "Ürünler",
+    "contact": "İletişim",
+    "followUs": "Bizi Takip Edin",
+    "allRightsReserved": "Tüm hakları saklıdır",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "cookies": "Çerezler"
+  },
+  "common": {
+    "readMore": "Devamını oku",
+    "contactUs": "İletişime geç",
+    "getQuote": "Teklif al",
+    "viewProjects": "Projeleri görüntüle",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "Başarılı!",
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "close": "Kapat",
+    "next": "İleri",
+    "previous": "Geri",
+    "back": "Geri"
+  },
+  "about": {
+    "hero": {
+      "title": "Hakkımızda",
+      "subtitle": "Yüksek kaliteli teras çözümlerinde ortağınız",
+      "imageAlt": "AluSolutions Hakkında"
+    },
+    "whoAreWe": {
+      "title": "Biz Kimiz?",
+      "paragraph1": "Şık ve dayanıklı teras çözümleri sunma konusunda uzmanlaşmış öncü bir firmayız. Gururla, verandalar, cam sürgülü duvarlar ve yan duvarlar dahil olmak üzere geniş bir yüksek kaliteli ürün yelpazesi sunarak dış mekanınızı bir konfor ve güzellik oazına dönüştürüyoruz.",
+      "paragraph2": "Artık tereddüt etmeyin ve bugün bizimle iletişime geçerek teklifinizi isteyin. Birlikte dış mekanınızı, hava koşullarından bağımsız olarak tadını çıkarabileceğiniz bir yere dönüştürelim!",
+      "ctaButton": "Teklif isteyin",
+      "imageAlt": "AluSolutions ekibi"
+    },
+    "quality": {
+      "title": "Kalite ve ustalık",
+      "paragraph1": "Alusolutions'da kalite ve ustalığa büyük önem veriyoruz. Ürünlerimiz yüksek kaliteli malzemeler ve yenilikçi teknolojilerle üretilmiştir, bu da dayanıklı ve güvenilir çözümlerle sonuçlanır. Deneyimli ve kendini işine adamış ekip üyelerimiz, özel durumunuz için en iyi seçimleri yapmanızda size tavsiye vermek ve rehberlik etmek için her zaman hazırdır.",
+      "paragraph2": "Müşteri memnuniyetini hedefliyoruz ve her zorluğu coşkuyla kabul ediyoruz. İlk temastan kurulum ve satış sonrası hizmete kadar, mükemmel bir hizmet sunmaya ve müşterilerimizle uzun vadeli bir ilişki kurmaya çalışıyoruz.",
+      "imageAlt": "Kalite ve ustalık"
+    },
+    "featuresBanner": {
+      "title": "Zamansız ve zarif teras çözümlerimizi keşfedin",
+      "subtitle": "Evinize zamansız ve zarif bir görünüm katan şık verandalarımız ve cam sürgülü duvarlarımızla dış mekanınızı parlayın."
+    },
+    "benefits": {
+      "benefit1": {
+        "title": "Özel teras çözümleri",
+        "description": "Alusolutions'da özel çözümlere inanıyoruz. Özel isteklerinize mükemmel şekilde uyan teras çözümleri tasarlıyor ve yaratıyoruz, böylece tamamen size ait bir dış mekandan keyif alabilirsiniz."
+      },
+      "benefit2": {
+        "title": "Dış mekan deneyiminizi geliştirin",
+        "description": "Yüksek kaliteli teras çözümlerimiz, tüm mevsimlerde dış mekan yaşamından en iyi şekilde yararlanabilmeniz için dış mekan deneyiminizi geliştirir."
+      },
+      "benefit3": {
+        "title": "Konfor ve koruma",
+        "description": "Teras çözümlerimiz sadece konfor sağlamakla kalmaz, aynı zamanda sizi hava koşullarına ve rüzgara karşı korur, böylece dış mekanınızdan endişesizce keyif alabilirsiniz."
+      }
+    },
+    "oasis": {
+      "title": "Dış Mekan Vahınızı Yaratın",
+      "description": "Alusolutions'da, dış mekanınızı bir konfor, stil ve zarafet vahası haline dönüştürmeye çalışıyoruz. Özel yapım teras çözümleri ve yüksek kaliteli ürünlerle, hayalinizdeki projeyi gerçeğe dönüştürüyoruz. Bugün bir teklif isteyin ve benzersiz dış mekanınız için olanakları keşfedin.",
+      "ctaButton": "Ücretsiz Teklif İsteyin",
+      "imageAlt": "Dış mekan vahası"
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "subtitle": "Deneyimli profesyonellerimizle tanışın",
+      "member1": {
+        "name": "Jan van der Berg",
+        "position": "Direktör"
+      },
+      "member2": {
+        "name": "Lisa de Jong",
+        "position": "Satış Müdürü"
+      },
+      "member3": {
+        "name": "Mark Jansen",
+        "position": "Baş Montajcı"
+      },
+      "member4": {
+        "name": "Emma Bakker",
+        "position": "Müşteri Hizmetleri"
+      },
+      "memberImageAlt": "Ekip üyesi"
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "value1": {
+        "title": "Kalite",
+        "description": "Sadece en iyi malzemeler ve işçilik"
+      },
+      "value2": {
+        "title": "Güvenilirlik",
+        "description": "Sözlerimizi her zaman tutarız"
+      },
+      "value3": {
+        "title": "İnovasyon",
+        "description": "Ürünlerimizin sürekli geliştirilmesi"
+      },
+      "value4": {
+        "title": "Müşteri Memnuniyeti",
+        "description": "Memnuniyetiniz bizim önceliğimizdir"
+      }
+    },
+    "cta": {
+      "title": "Başlamaya hazır mısınız?",
+      "subtitle": "Bugün bizimle iletişime geçin ve ücretsiz bir teklif alın",
+      "quoteButton": "Teklif isteyin",
+      "contactButton": "İletişime geçin"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Polikarbonat veranda",
+      "paragraph1": "Polikarbonat veranda, dayanıklı ve uygun fiyatlı bir teras üstü arayan herkes için ideal bir seçimdir. Güçlü ve berrak polikarbonat çatı panelleri sayesinde yağmur ve rüzgara karşı korunmadan ödün vermeden bol ışık alırsınız.",
+      "paragraph2": "AluSolutions'da polikarbonat verandanızı isteklerinize tam olarak uygun şekilde sunuyoruz. 3 hafta içinde veranda yapımcılarımız hızlı teslimat ve profesyonel kurulum sağlar.",
+      "ctaButton": "Kolayca teklif isteyin!",
+      "imageAlt": "Modern veranda"
+    },
+    "galleryPreview": {
+      "image1Alt": "Cam üstü",
+      "image2Alt": "Alüminyum veranda",
+      "image3Alt": "Verandalı bahçe odası",
+      "image4Alt": "Modern üstü"
+    },
+    "products": {
+      "title": "Ürünlerimiz",
+      "subtitle": "Yüksek kaliteli veranda ve üst örtülerimizin tam yelpazesini keşfedin",
+      "product1": {
+        "title": "Polikarbonat Veranda",
+        "description": "Mükemmel ışık geçirgenliği ile dayanıklı ve uygun fiyatlı",
+        "button": "Daha fazla bilgi",
+        "imageAlt": "Polikarbonat Veranda"
+      },
+      "product2": {
+        "title": "Cam Veranda",
+        "description": "Lüks bir görünüm için maksimum şeffaflık",
+        "button": "Daha fazla bilgi",
+        "imageAlt": "Cam Veranda"
+      },
+      "product3": {
+        "title": "Panjurlu Veranda",
+        "description": "Optimum güneş koruması için ayarlanabilir panjurlar",
+        "button": "Daha fazla bilgi",
+        "imageAlt": "Panjurlu Veranda"
+      },
+      "product4": {
+        "title": "Katlanır Çatı Veranda",
+        "description": "Her mevsim için esnek katlanabilir çatı",
+        "button": "Daha fazla bilgi",
+        "imageAlt": "Katlanır Çatı Veranda"
+      },
+      "product5": {
+        "title": "Cam Sürgülü Duvar",
+        "description": "İç ve dış mekan arasında kesintisiz geçiş",
+        "button": "Daha fazla bilgi",
+        "imageAlt": "Cam Sürgülü Duvar"
+      },
+      "product6": {
+        "title": "Bahçe Odası",
+        "description": "Yaşam alanınızın tam genişletilmesi",
+        "button": "Daha fazla bilgi",
+        "imageAlt": "Bahçe Odası"
+      }
+    },
+    "benefits": {
+      "title": "Polikarbonat verandanın benzersiz avantajlarını yaşayın",
+      "subtitle": "Polikarbonat verandalarımızla uygun fiyatlı zarafet",
+      "paragraph1": "Polikarbonat verandaya yapılan yatırım, yapının boyutları ve yerleşik LED spotlar, yan duvarlar veya sürgülü kapılar gibi ek seçeneklerin seçimi gibi birden fazla faktöre bağlıdır.",
+      "paragraph2": "Veranda seçiminin hem bütçenize hem de yaşam tarzınıza uygun olması gereken önemli bir karar olduğunu anlıyoruz. Bu nedenle kişisel tavsiye ve olasılıklar ve maliyetler hakkında ayrıntılı bilgi sunuyoruz.",
+      "ctaButton": "İletişime geçin",
+      "imageAlt": "Zarif veranda"
+    },
+    "stats": {
+      "stat1": {
+        "number": "15+",
+        "label": "Yıllık deneyim"
+      },
+      "stat2": {
+        "number": "500+",
+        "label": "Mutlu müşteriler"
+      },
+      "stat3": {
+        "number": "1000+",
+        "label": "Tamamlanan projeler"
+      },
+      "stat4": {
+        "number": "7",
+        "label": "Yıl Garanti"
+      }
+    },
+    "process": {
+      "title": "Nasıl çalışır?",
+      "subtitle": "4 kolay adımda hayalinizdeki verandaya",
+      "step1": {
+        "title": "Teklif İsteyin",
+        "description": "İsteklerinizle formumuzu doldurun ve 24 saat içinde ücretsiz bir teklif alın.",
+        "imageAlt": "Teklif isteyin"
+      },
+      "step2": {
+        "title": "Kişisel Danışmanlık",
+        "description": "Uzmanlarımız ücretsiz ölçüm ve özel tavsiye için size gelir.",
+        "imageAlt": "Kişisel danışmanlık"
+      },
+      "step3": {
+        "title": "Üretim",
+        "description": "Verandanız kendi üretim tesisimizde özel olarak yapılır.",
+        "imageAlt": "Üretim"
+      },
+      "step4": {
+        "title": "Kurulum",
+        "description": "3 hafta içinde verandanız montajcılarımız tarafından profesyonelce kurulur.",
+        "imageAlt": "Kurulum"
+      }
+    },
+    "quality": {
+      "title": "Uygun fiyatlı kaliteli polikarbonat verandalar",
+      "description": "Polikarbonat verandanın maliyeti, boyut ve spotlar, yan duvarlar veya sürgülü kapılar gibi ekstralar gibi faktörlere bağlıdır. Yine de böyle bir veranda uzun süre dayanıklı ve güzel görünen uygun fiyatlı bir seçimdir.",
+      "list": {
+        "item1": "Malzeme maliyetleri: camdan daha ucuz, ekonomik olarak avantajlı",
+        "item2": "Daha düşük kurulum maliyetleri: kolay kurulum işçilik maliyetlerini azaltır",
+        "item3": "Dayanıklılık ve bakım: minimum bakımla uzun ömürlü",
+        "item4": "Enerji verimliliği: yalıtım enerji maliyetlerini azaltır",
+        "item5": "Çok yönlülük: esnek tasarım, verimli üretim"
+      },
+      "imageAlt": "Kaliteli veranda"
+    },
+    "features": {
+      "title": "Neden AluSolutions'ı seçmelisiniz?",
+      "feature1": {
+        "title": "Premium Kalite",
+        "description": "Uzun ömürlü sonuçlar için sadece en iyi malzemeler"
+      },
+      "feature2": {
+        "title": "Profesyonel Montaj",
+        "description": "Mükemmel kurulum için deneyimli montajcılar"
+      },
+      "feature3": {
+        "title": "Özel Yapım",
+        "description": "Her veranda özel olarak sizin için tasarlanır"
+      },
+      "feature4": {
+        "title": "Keskin Fiyatlar",
+        "description": "Kalitenin pahalı olması gerekmez"
+      },
+      "feature5": {
+        "title": "Hızlı Teslimat",
+        "description": "3 hafta içinde kurulur"
+      },
+      "feature6": {
+        "title": "Kişisel Hizmet",
+        "description": "Uzmanlarımızla doğrudan iletişim"
+      }
+    },
+    "inspiration": {
+      "title": "Verandanız için ilham",
+      "category1": "Lüks Veranda",
+      "category2": "Modern",
+      "category3": "Klasik",
+      "category4": "Cam Duvarlar",
+      "category5": "Bahçe Odası",
+      "imageAlt": "veranda ilhamı"
+    },
+    "recentProjects": {
+      "title": "Son Projeler",
+      "projectAlt": "Proje"
+    },
+    "testimonials": {
+      "title": "Müşterilerimiz ne diyor",
+      "testimonial1": {
+        "quote": "Mükemmel hizmet ve kalite. Verandamız mükemmel oldu ve montajcılar çok profesyoneldi.",
+        "author": "Jan de Vries",
+        "location": "Amsterdam"
+      },
+      "testimonial2": {
+        "quote": "Tekliften kuruluşa kadar her şey sorunsuz gitti. Sonuçtan çok memnunum!",
+        "author": "Maria Jansen",
+        "location": "Rotterdam"
+      },
+      "testimonial3": {
+        "quote": "İyi fiyat-kalite oranı. Veranda harika görünüyor ve 2 hafta içinde kuruldu.",
+        "author": "Peter Bakker",
+        "location": "Utrecht"
+      }
+    },
+    "info": {
+      "item1": {
+        "title": "Polikarbonat veranda nedir?",
+        "description": "Alusolutions'dan bir polikarbonat veranda, evinizi şık bir dış alanla genişleten dayanıklı bir teras veya bahçe üstüdür.",
+        "imageAlt": "Veranda nedir"
+      },
+      "item2": {
+        "title": "Polikarbonatın avantajları",
+        "description": "Polikarbonat, UV ışınlarına ve hava koşullarına karşı koruma sağlayan sağlam, ışık geçiren bir malzemedir.",
+        "imageAlt": "Avantajlar"
+      },
+      "item3": {
+        "title": "Neden Alusolutions'ı seçmelisiniz?",
+        "description": "Alusolutions'da kalite ve dayanıklılığı seçiyorsunuz. Verandalarımız güçlü ve bakım gerektirmez.",
+        "imageAlt": "Neden Alusolutions"
+      },
+      "item4": {
+        "title": "Verandanızı kişiselleştirin",
+        "description": "Her veranda LED aydınlatma, güneş koruması ve yan duvarlar gibi seçeneklerle kişiselleştirilebilir.",
+        "imageAlt": "Kişiselleştir"
+      },
+      "item5": {
+        "title": "Yerleştirme ve kurulum",
+        "description": "Uzmanlarımız verandanızın hızlı ve profesyonel kurulumunu sağlar.",
+        "imageAlt": "Kurulum"
+      },
+      "item6": {
+        "title": "Showroom'umuzu keşfedin",
+        "description": "Verandalarımızın kalitesini kendiniz deneyimlemek için showroom'umuzu ziyaret edin.",
+        "imageAlt": "Showroom"
+      }
+    },
+    "colors": {
+      "title": "Mevcut Renkler",
+      "subtitle": "Evinize uygun mükemmel rengi seçin",
+      "color1": "Antrasit",
+      "color2": "Beyaz",
+      "color3": "Krem",
+      "color4": "Kahverengi"
+    },
+    "cta": {
+      "title": "Hayalinizdeki veranda için hazır mısınız?",
+      "subtitle": "Bugün ücretsiz bir teklif isteyin ve olasılıkları keşfedin.",
+      "quoteButton": "Teklif isteyin",
+      "contactButton": "İletişime geçin",
+      "imageAlt": "Veranda arka planı"
+    },
+    "faq": {
+      "title": "Sık sorulan sorular",
+      "subtitle": "Polikarbonat verandanız için kolay adım adım rehberimizi keşfedin.",
+      "ctaButton": "Ücretsiz Teklif İsteyin",
+      "q1": {
+        "question": "Teras üstü yerleştirmek için izin gerekli mi?",
+        "answer": "Çoğu durumda, üst belirli koşulları karşılıyorsa izin gerekmez. Belediyenizdeki izinler hakkında tavsiye için bizimle iletişime geçin."
+      },
+      "q2": {
+        "question": "Teras üstü ne kadar dayanır?",
+        "answer": "Verandalarımız minimum bakımla yıllarca dayanır. Doğru bakımla 20+ yıl ömür bekleyebilirsiniz."
+      },
+      "q3": {
+        "question": "Teras üstleriniz tüm hava koşullarına dayanıklı mı?",
+        "answer": "Evet, ürünlerimiz Hollanda iklimine göre tasarlanmıştır ve yağmur, rüzgar, kar ve UV radyasyonuna dayanıklıdır."
+      },
+      "q4": {
+        "question": "Teras üstü kurmak ne kadar sürer?",
+        "answer": "3 hafta içinde teslimat ve profesyonel kurulum sağlıyoruz. Kurulum genellikle 1-2 gün sürer."
+      },
+      "q5": {
+        "question": "Verandamı daha sonra ekstra seçeneklerle genişletebilir miyim?",
+        "answer": "Evet, verandalarımız modüler olarak tasarlanmıştır. Daha sonra kolayca LED aydınlatma, yan duvarlar veya sürgülü kapılar ekleyebilirsiniz."
+      },
+      "q6": {
+        "question": "Finansman seçenekleri sunuyor musunuz?",
+        "answer": "Evet, çeşitli finansman ortaklarıyla çalışıyoruz. Kişisel danışmanlık görüşmeniz sırasında seçenekleri sorun."
+      }
+    },
+    "contact": {
+      "title": "İletişime geçin",
+      "subtitle": "Sorularınız mı var veya randevu mu almak istiyorsunuz? Bizimle iletişime geçmekten çekinmeyin!",
+      "address": {
+        "label": "Adres",
+        "value": "Mariastraat 22, 5953 NL Reuver"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+31 85 060 5036"
+      },
+      "email": {
+        "label": "E-posta",
+        "value": "Info@alusolutions.nl"
+      },
+      "hours": {
+        "label": "Açılış saatleri",
+        "weekdays": "Pzt-Cum: 08:00 - 17:00",
+        "saturday": "Cmt: 09:00 - 15:00"
+      },
+      "mapTitle": "AluSolutions Konumu"
+    }
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "section1": {
+      "title": "1. Giriş",
+      "content": "AluSolutions gizliliğinize saygı duyar ve bize sağladığınız kişisel bilgilerin gizli tutulmasını sağlar."
+    },
+    "section2": {
+      "title": "2. Topladığımız veriler",
+      "content": "Bizimle iletişime geçtiğinizde veya teklif talep ettiğinizde ad, adres, e-posta adresi ve telefon numarası gibi bize sağladığınız verileri topluyoruz."
+    },
+    "section3": {
+      "title": "3. Verilerin kullanımı",
+      "content": "Verileriniz talebinizi işlemek, teklifler göndermek ve hizmetlerimizi sunmak için kullanılır."
+    },
+    "section4": {
+      "title": "4. Saklama süresi",
+      "content": "Verilerinizi toplandıkları amaç için gerekli olandan daha uzun süre saklamayız."
+    },
+    "section5": {
+      "title": "5. Haklarınız",
+      "content": "Verilerinize erişim, düzeltme ve silme hakkına sahipsiniz. Bunun için lütfen bizimle iletişime geçin."
+    },
+    "section6": {
+      "title": "6. İletişim",
+      "content": "Gizlilik politikamız hakkında sorularınız için info@alusolutions.nl adresinden bizimle iletişime geçebilirsiniz"
+    }
+  },
+  "voorwaarden": {
+    "title": "Genel Şartlar",
+    "section1": {
+      "title": "Madde 1 - Tanımlar",
+      "content": "Bu şartlarda AluSolutions şu anlama gelir: Reuver'de bulunan ve KVK 90086449 numarası ile kayıtlı şirket."
+    },
+    "section2": {
+      "title": "Madde 2 - Uygulanabilirlik",
+      "content": "Bu şartlar AluSolutions'ın tüm teklifleri ve sözleşmeleri için geçerlidir."
+    },
+    "section3": {
+      "title": "Madde 3 - Teklifler",
+      "content": "Aksi belirtilmedikçe tüm teklifler bağlayıcı değildir ve 30 gün geçerlidir."
+    },
+    "section4": {
+      "title": "Madde 4 - Teslimat",
+      "content": "Teslimat süresi görüşülerek belirlenir ve gösterge niteliğindedir."
+    },
+    "section5": {
+      "title": "Madde 5 - Garanti",
+      "content": "AluSolutions normal kullanımda yapı için 10 yıl garanti sunar."
+    },
+    "section6": {
+      "title": "Madde 6 - Ödeme",
+      "content": "Ödeme, faturada belirtilen ödeme koşullarına göre yapılır."
+    }
+  },
+  "cookies": {
+    "title": "Çerez Politikası",
+    "section1": {
+      "title": "Çerezler nedir?",
+      "content": "Çerezler, web sitemizi ziyaret ettiğinizde cihazınızda saklanan küçük metin dosyalarıdır."
+    },
+    "section2": {
+      "title": "Hangi çerezleri kullanıyoruz?",
+      "functional": "İşlevsel çerezler:",
+      "functionalDesc": "Web sitesinin çalışması için gereklidir.",
+      "analytical": "Analitik çerezler:",
+      "analyticalDesc": "Web sitesinin kullanımı hakkında bilgi edinmek için."
+    },
+    "section3": {
+      "title": "Çerezleri yönetme",
+      "content": "Tarayıcı ayarlarınız aracılığıyla çerezleri engelleyebilir veya silebilirsiniz."
+    },
+    "section4": {
+      "title": "İletişim",
+      "content": "Çerez politikamız hakkında sorularınız mı var? info@alusolutions.nl adresinden bizimle iletişime geçin"
+    }
+  },
+  "inspiratie": {
+    "hero": {
+      "title": "İlham",
+      "subtitle": "Güzel projelerimizi keşfedin ve ilham alın"
+    },
+    "filters": {
+      "all": "Tüm projeler",
+      "polycarbonate": "Polikarbonat",
+      "glass": "Cam Veranda",
+      "slats": "Panjurlar",
+      "foldingRoof": "Katlanır Çatı",
+      "gardenRoom": "Bahçe Odası"
+    },
+    "gallery": {
+      "modernGlass": "Modern Cam Veranda",
+      "classicCover": "Klasik Üstü",
+      "cozyGarden": "Atmosferik Bahçe Odası",
+      "slatsVeranda": "Panjurlu Veranda",
+      "foldingSystem": "Katlanır Çatı Sistemi",
+      "straightLines": "Sıkı Çizgiler",
+      "luxuryLook": "Lüks Görünüm",
+      "timelessDesign": "Zamansız Tasarım",
+      "glassSlidingWall": "Cam Sürgülü Duvar",
+      "elegantSlats": "Zarif Panjurlar",
+      "compactSolution": "Kompakt Çözüm"
+    },
+    "cities": {
+      "amsterdam": "Amsterdam",
+      "rotterdam": "Rotterdam",
+      "utrecht": "Utrecht",
+      "denHaag": "Den Haag",
+      "eindhoven": "Eindhoven",
+      "tilburg": "Tilburg",
+      "groningen": "Groningen",
+      "almere": "Almere",
+      "breda": "Breda",
+      "nijmegen": "Nijmegen",
+      "arnhem": "Arnhem"
+    },
+    "featured": {
+      "title": "Öne Çıkan Projeler",
+      "subtitle": "En özel gerçekleştirmelerimizi görüntüleyin",
+      "viewProject": "Projeyi görüntüle",
+      "project1": {
+        "title": "Villa Amsterdam",
+        "description": "Amsterdam'da modern bir villa için güzel bir cam veranda. Entegre LED aydınlatma ve elektrikli güneşlik ile.",
+        "specs": {
+          "size": "Boyut: 6m x 4m",
+          "material": "Malzeme: Alüminyum çerçeve",
+          "glass": "Cam: Temperli emniyet camı"
+        }
+      },
+      "project2": {
+        "title": "Kırsal Bahçe Odası",
+        "description": "Bir köşk için cam sürgülü duvarlı komple bahçe odası. Tüm yıl kullanım için mükemmel.",
+        "specs": {
+          "size": "Boyut: 8m x 5m",
+          "includes": "Dahil: Cam sürgülü duvarlar",
+          "extra": "Ekstra: Yerden ısıtma hazır"
+        }
+      },
+      "project3": {
+        "title": "Modern Panjurlar",
+        "description": "Elektrikli kontrollü yenilikçi panjurlu veranda. Işık ve gölge üzerinde optimum kontrol.",
+        "specs": {
+          "size": "Boyut: 5m x 3.5m",
+          "control": "Kontrol: Uygulama ile elektrikli",
+          "color": "Renk: Antrasit"
+        }
+      }
+    },
+    "transformations": {
+      "title": "Dönüşümler",
+      "subtitle": "Dış mekanları nasıl dönüştürdüğümüzü görün",
+      "before": "Önce",
+      "after": "Sonra",
+      "project1": "Bahçe Yenileme Rotterdam",
+      "project2": "Teras Genişletme Utrecht"
+    },
+    "styles": {
+      "title": "Stiller ve Malzemeler",
+      "modern": {
+        "title": "Modern",
+        "description": "Sıkı çizgiler ve minimalist tasarım"
+      },
+      "classic": {
+        "title": "Klasik",
+        "description": "Zamansız zarafet ve sıcaklık"
+      },
+      "rustic": {
+        "title": "Kırsal",
+        "description": "Doğal malzemeler ve rahatlık"
+      },
+      "industrial": {
+        "title": "Endüstriyel",
+        "description": "Sağlam ve güçlü karakter"
+      }
+    },
+    "cta": {
+      "title": "İlham aldınız mı?",
+      "subtitle": "Hayalinizdeki verandayı gerçekleştirelim. Ücretsiz bir teklif isteyin!",
+      "quoteButton": "Teklif isteyin",
+      "contactButton": "İletişime geçin"
+    }
+  },
+  "showroom": {
+    "hero": {
+      "title": "Showroom'umuzu Ziyaret Edin",
+      "subtitle": "Verandalarımızı canlı olarak görün ve deneyimleyin"
+    },
+    "welcome": {
+      "title": "Showroom'umuza Hoş Geldiniz",
+      "paragraph1": "Showroom'umuzda çeşitli verandalar ve üst örtüleri görüntüleyebilir ve deneyimleyebilirsiniz. Danışmanlarımız tüm sorularınızı yanıtlamaya hazırdır.",
+      "paragraph2": "Kişisel tavsiye için randevu alın veya açılış saatlerinde uğrayın."
+    },
+    "hours": {
+      "title": "Açılış Saatleri",
+      "monday": "Pazartesi - Perşembe: 09:00 - 17:00",
+      "friday": "Cuma: Kapalı",
+      "saturday": "Cumartesi: 10:00 - 15:00",
+      "sunday": "Pazar: Kapalı"
+    },
+    "address": {
+      "title": "Adres",
+      "street": "Mariastraat 22",
+      "city": "5953 NL Reuver"
+    },
+    "cta": {
+      "title": "Randevu alın",
+      "subtitle": "Showroom ziyaretinizi planlayın",
+      "appointmentButton": "Randevu al",
+      "callButton": "Bizi arayın"
+    },
+    "mapTitle": "Showroom Konumu"
+  },
+  "faq": {
+    "hero": {
+      "title": "Sık Sorulan Sorular",
+      "subtitle": "En çok sorulan soruların yanıtlarını bulun"
+    },
+    "questions": {
+      "q1": {
+        "question": "Bir verandanın teslimatı ne kadar sürer?",
+        "answer": "Ortalama teslimat süresi siparişinizi verdikten sonra 3-4 haftadır. Bu, veranda türüne ve özel seçeneklere bağlı olarak değişebilir."
+      },
+      "q2": {
+        "question": "Bir veranda ne kadar tutar?",
+        "answer": "Bir verandanın fiyatı türe, boyutlara ve seçilen seçeneklere bağlıdır. Tam bir fiyat teklifi için ücretsiz bir teklif isteyin."
+      },
+      "q3": {
+        "question": "Montaj ne kadar sürer?",
+        "answer": "Montaj, verandanın büyüklüğüne ve karmaşıklığına bağlı olarak ortalama 1-2 gün sürer."
+      },
+      "q4": {
+        "question": "Veranda için garanti var mı?",
+        "answer": "Evet, yapı için 10 yıl ve motorlar gibi hareketli parçalar için 5 yıl garanti sunuyoruz."
+      },
+      "q5": {
+        "question": "İzne ihtiyacım var mı?",
+        "answer": "Çoğu durumda, belirli koşulları karşıladığı sürece veranda için izin gerekmez. Danışma görüşmesi sırasında size bu konuda tavsiye veririz."
+      },
+      "q6": {
+        "question": "Verandayı kendim kurabilir miyim?",
+        "answer": "Optimum sonuç ve garantinin korunması için montajın uzmanlarımız tarafından yapılmasını öneririz."
+      },
+      "q7": {
+        "question": "Hangi renkler mevcut?",
+        "answer": "Verandalarımız birçok standart renkte mevcuttur. Ayrıca, özel seçenek olarak her RAL rengi mümkündür."
+      },
+      "q8": {
+        "question": "Aydınlatma ve ısıtma ekleyebilir miyim?",
+        "answer": "Evet, yerleşik LED aydınlatma ve teras ısıtması için çeşitli seçenekler sunuyoruz."
+      },
+      "q9": {
+        "question": "Verandamı nasıl bakım yaparım?",
+        "answer": "Alüminyum veranda neredeyse bakım gerektirmez. Ara sıra su ve yumuşak bir bezle temizlemek yeterlidir."
+      },
+      "q10": {
+        "question": "Benim bölgemde de geliyor musunuz?",
+        "answer": "Hollanda genelinde veranda kuruyoruz. Seçenekleri tartışmak için bizimle iletişime geçin."
+      }
+    },
+    "cta": {
+      "title": "Sorunuz listede yok mu?",
+      "subtitle": "Bizimle iletişime geçmekten çekinmeyin",
+      "button": "İletişime geçin"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "subtitle": "Sizin için buradayız",
+      "imageAlt": "AluSolutions İletişim"
+    },
+    "form": {
+      "title": "İletişim formu",
+      "subtitle": "Formu doldurun, en kısa sürede sizinle iletişime geçelim.",
+      "name": "İsim *",
+      "namePlaceholder": "Ad ve soyad",
+      "phone": "Telefon *",
+      "phonePlaceholder": "Telefon numarası",
+      "email": "Email *",
+      "emailPlaceholder": "Email adresi",
+      "city": "Şehir",
+      "cityPlaceholder": "Şehir",
+      "subject": "Konu *",
+      "subjectPlaceholder": "Bir konu seçin",
+      "subjects": {
+        "polycarbonate": "Polikarbonat veranda",
+        "plateChange": "Plaka değişimi",
+        "glass": "Cam veranda",
+        "slats": "Panjurlu veranda",
+        "foldingRoof": "Katlanır çatı veranda",
+        "slidingWall": "Cam sürgülü duvar",
+        "other": "Diğer"
+      },
+      "message": "Mesaj *",
+      "messagePlaceholder": "Sorunuzu buraya yazın",
+      "photo": "Fotoğraf veya örnek (zorunlu değil)",
+      "submit": "Mesajı gönder",
+      "successMessage": "Mesajınız için teşekkür ederiz! En kısa sürede sizinle iletişime geçeceğiz."
+    },
+    "info": {
+      "title": "AluSolutions ile iletişime geçmek ister misiniz?",
+      "paragraph1": "Ürünlerimiz hakkında sorularınız mı var, yoksa sipariş verirken yardıma mı ihtiyacınız var? Belki sadece düşüncelerinizi paylaşmak istiyorsunuz? AluSolutions'da sizden haber almayı seviyoruz! Özel ekibimiz tüm sorularınıza hızlı ve verimli bir şekilde yanıt vermeye hazırdır.",
+      "paragraph2": "Doğrudan yardım için WhatsApp üzerinden bizimle iletişime geçmenizi öneririz. Ayrıca e-posta veya iletişim formumuz aracılığıyla da bize ulaşabilirsiniz.",
+      "phone": "Telefon",
+      "email": "Email",
+      "showroom": "Showroom",
+      "hours": "Açılış Saatleri",
+      "hoursWeekdays": "Pzt-Per: 09:00 - 17:00",
+      "hoursFriday": "Cuma: Kapalı",
+      "hoursSaturday": "Cmt: 10:00 - 15:00",
+      "followUs": "Bizi takip edin",
+      "social": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "whatsapp": "WhatsApp",
+        "youtube": "YouTube"
+      },
+      "makeAppointment": "Randevu al"
+    },
+    "map": {
+      "title": "Showroom'umuzu ziyaret edin",
+      "mapTitle": "AluSolutions Konumu"
+    },
+    "reviews": {
+      "title": "Müşterilerimiz ne diyor",
+      "rating": "64 incelemeye dayalı",
+      "highlights": {
+        "quality": "Yüksek kaliteli işçilik ve güvenilirlik",
+        "service": "Dostça hizmet ve özel çözümler",
+        "value": "İyi fiyat-kalite oranı ve profesyonel sonuç"
+      },
+      "writeReview": "Bir inceleme yazın",
+      "customer1": {
+        "name": "Bright Ride",
+        "date": "11 Kasım 2025",
+        "review": "Çocuklar harika bir iş çıkardılar ve cam sürgülü kapımın nihai sonucundan çok memnunum"
+      },
+      "customer2": {
+        "name": "Dennis Gerritzen",
+        "date": "4 Eylül 2025",
+        "review": "İyi hizmet, hoş profesyoneller ve hızlıca yapıldı."
+      },
+      "customer3": {
+        "name": "Carin Titulaer",
+        "date": "28 Nisan 2025",
+        "review": "Yeni verandamdan çok memnunum. İyi bir iş çıkarıldı"
+      },
+      "customer4": {
+        "name": "Orhan Yilmaz",
+        "date": "3 Mayıs 2024",
+        "review": "Üst düzey hizmet ve kalite, birlikte düşünür ve süper hızlı düzenlenir."
+      },
+      "customer5": {
+        "name": "Hanifi Pehlivan",
+        "date": "13 Eylül 2024",
+        "review": "Üst kalite! Güzel müşteri dostu. Yeni üst örtümüzden çok memnunuz. Çok bilgili ve dikkatli ve düzgün çalışır."
+      },
+      "customer6": {
+        "name": "Mandy Kessels",
+        "date": "6 Aralık 2024",
+        "review": "Süper yardımcı gerçek bir tavsiye sevgi dolu personel ve çok hızlı ve düzgün saygı"
+      }
+    },
+    "cta": {
+      "title": "Harika teklifleri şimdi keşfedin!",
+      "subtitle": "Bu fırsatı kaçırmayın ve bugün ücretsiz bir teklif isteyin",
+      "quoteButton": "Teklif isteyin",
+      "callButton": "Hemen arayın"
+    }
+  },
+  "products": {
+    "polycarbonaat": {
+      "hero": {
+        "title": "Polikarbonat Veranda",
+        "subtitle": "Dayanıklı, uygun fiyatlı ve ışık geçiren",
+        "imageAlt": "Polikarbonat Veranda"
+      },
+      "info": {
+        "title": "Polikarbonat Veranda Nedir?",
+        "description1": "Polikarbonat veranda, dayanıklı ve uygun fiyatlı bir teras üstü arayan herkes için ideal bir seçimdir. Güçlü ve berrak polikarbonat çatı panelleri sayesinde yağmur ve rüzgara karşı korunmadan ödün vermeden bol ışık alırsınız.",
+        "description2": "AluSolutions'da polikarbonat verandanızı isteklerinize tam olarak uygun şekilde sunuyoruz. 3 hafta içinde veranda yapımcılarımız hızlı teslimat ve profesyonel kurulum sağlar.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Polikarbonat Veranda örneği"
+      },
+      "benefits": {
+        "benefit1": "Mükemmel ışık geçirgenliği",
+        "benefit2": "UV'ye dayanıklı ve hava koşullarına dayanıklı",
+        "benefit3": "Hafif ama güçlü",
+        "benefit4": "Uygun fiyatlı seçenek",
+        "benefit5": "Kolay bakım",
+        "benefit6": "Uzun ömür (10-15 yıl)"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Polikarbonat panelli alüminyum çerçeve",
+        "thickness": "Panel kalınlığı",
+        "thicknessValue": "16mm veya 32mm kanallı paneller",
+        "colors": "Renkler",
+        "colorsValue": "Şeffaf, opak veya renkli",
+        "frameColors": "Çerçeve renkleri",
+        "frameColorsValue": "Antrasit, beyaz, krem veya RAL rengi",
+        "maxWidth": "Maksimum genişlik",
+        "maxWidthValue": "7 metreye kadar",
+        "warranty": "Garanti",
+        "warrantyValue": "Yapı için 10 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Polikarbonat Veranda ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin veya özel danışmanlık için randevu alın",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "glazen": {
+      "hero": {
+        "title": "Cam Veranda",
+        "subtitle": "Maksimum şeffaflık ve lüks görünüm",
+        "imageAlt": "Cam Veranda"
+      },
+      "info": {
+        "title": "Cam Veranda Nedir?",
+        "description1": "Cam veranda maksimum ışık girişi ve bahçenize engelsiz manzara sunar. Temperli cam güvenli, güçlü ve temizlemesi kolaydır.",
+        "description2": "AluSolutions'da yalnızca tüm güvenlik standartlarını karşılayan yüksek kaliteli temperli cam kullanıyoruz.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Cam Veranda"
+      },
+      "benefits": {
+        "benefit1": "Maksimum ışık girişi",
+        "benefit2": "Engelsiz manzara",
+        "benefit3": "Lüks görünüm",
+        "benefit4": "Temperli emniyet camı",
+        "benefit5": "Kendini temizleyen cam mevcuttur",
+        "benefit6": "Uzun ömür"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Temperli camlı alüminyum çerçeve",
+        "glassThickness": "Cam kalınlığı",
+        "glassThicknessValue": "8mm temperli emniyet camı",
+        "options": "Seçenekler",
+        "optionsValue": "Şeffaf, renkli veya kendini temizleyen",
+        "frameColors": "Çerçeve renkleri",
+        "frameColorsValue": "Tüm RAL renkleri mümkün",
+        "maxWidth": "Maksimum genişlik",
+        "maxWidthValue": "6 metreye kadar",
+        "warranty": "Garanti",
+        "warrantyValue": "Yapı için 10 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Cam Veranda ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "lamellen": {
+      "hero": {
+        "title": "Panjurlu Veranda",
+        "subtitle": "Optimum konfor için ayarlanabilir güneş koruması",
+        "imageAlt": "Panjurlu Veranda"
+      },
+      "info": {
+        "title": "Panjurlu Veranda Nedir?",
+        "description1": "Panjurlu veranda nihai esneklik sunar. Döner panjurlar, tamamen açıktan tamamen kapalıya kadar güneş ışığını ve havalandırmayı istediğiniz gibi düzenler.",
+        "description2": "Gün boyunca ışık ve gölge üzerinde maksimum kontrol isteyen herkes için mükemmel.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Panjurlu Veranda"
+      },
+      "benefits": {
+        "benefit1": "Ayarlanabilir panjurlar (0-135°)",
+        "benefit2": "Optimum güneş koruması",
+        "benefit3": "İyi havalandırma",
+        "benefit4": "Panjurlar aracılığıyla su tahliyesi",
+        "benefit5": "Elektrikli kontrol",
+        "benefit6": "Modern tasarım"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Alüminyum çerçeve ve panjurlar",
+        "operation": "Kontrol",
+        "operationValue": "Uzaktan kumandalı elektrikli",
+        "rotation": "Dönüş",
+        "rotationValue": "0° ila 135° ayarlanabilir",
+        "frameColors": "Çerçeve renkleri",
+        "frameColorsValue": "Tüm RAL renkleri mümkün",
+        "maxWidth": "Maksimum genişlik",
+        "maxWidthValue": "Bölüm başına 6 metreye kadar",
+        "warranty": "Garanti",
+        "warrantyValue": "Yapı için 10 yıl, motor için 5 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Panjurlu Veranda ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "vouwdak": {
+      "hero": {
+        "title": "Katlanır Çatı Veranda",
+        "subtitle": "Her mevsim için esnek katlanabilir",
+        "imageAlt": "Katlanır Çatı Veranda"
+      },
+      "info": {
+        "title": "Katlanır Çatı Veranda Nedir?",
+        "description1": "Katlanır çatı veranda korumayı esneklikle birleştirir. Kumaş elektrikli olarak açılıp kapatılabilir, böylece açık gökyüzünün altında ne zaman oturacağınıza siz karar verirsiniz.",
+        "description2": "Her iki dünyanın en iyisini isteyen herkes için ideal: gerektiğinde barınak, istendiğinde açık hava.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Katlanır Çatı Veranda"
+      },
+      "benefits": {
+        "benefit1": "Tamamen katlanabilir",
+        "benefit2": "Elektrikli kontrol",
+        "benefit3": "Su geçirmez ve UV korumalı kumaş",
+        "benefit4": "Atmosferik görünüm",
+        "benefit5": "Yerleşik LED aydınlatma mümkün",
+        "benefit6": "6 Beaufort'a kadar rüzgara dayanıklı"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "PVC kumaşlı alüminyum çerçeve",
+        "operation": "Kontrol",
+        "operationValue": "Uzaktan kumandalı elektrikli",
+        "fabric": "Kumaş",
+        "fabricValue": "Hava koşullarına dayanıklı, UV korumalı PVC",
+        "fabricColors": "Kumaş renkleri",
+        "fabricColorsValue": "Beyaz, krem, gri veya antrasit",
+        "maxWidth": "Maksimum genişlik",
+        "maxWidthValue": "7 metreye kadar",
+        "warranty": "Garanti",
+        "warrantyValue": "Çerçeve için 10 yıl, kumaş için 5 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Katlanır Çatı Veranda ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "schuifwand": {
+      "hero": {
+        "title": "Cam Sürgülü Duvar",
+        "subtitle": "Maksimum manzara ile rüzgarsız keyif",
+        "imageAlt": "Cam Sürgülü Duvar"
+      },
+      "info": {
+        "title": "Cam Sürgülü Duvar Nedir?",
+        "description1": "Cam sürgülü duvar, verandanızı rüzgarsız bir dış odaya dönüştürür. Paneller maksimum havalandırma için kolayca kenara kayar.",
+        "description2": "Mevcut verandanıza veya üstünüze ek olarak mükemmel.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Cam Sürgülü Duvar"
+      },
+      "benefits": {
+        "benefit1": "Rüzgarsız keyif",
+        "benefit2": "Açılması kolay",
+        "benefit3": "Engelsiz manzara",
+        "benefit4": "Dış mevsimi uzatın",
+        "benefit5": "Temperli emniyet camı",
+        "benefit6": "Çocuk güvenli kilit"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Temperli camlı alüminyum raylar",
+        "glassThickness": "Cam kalınlığı",
+        "glassThicknessValue": "8mm veya 10mm temperli cam",
+        "system": "Sistem",
+        "systemValue": "2, 3, 4 veya 5 ray",
+        "height": "Yükseklik",
+        "heightValue": "3 metreye kadar",
+        "panelWidth": "Panel başına genişlik",
+        "panelWidthValue": "1 metreye kadar",
+        "warranty": "Garanti",
+        "warrantyValue": "10 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Cam Sürgülü Duvar ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "cube": {
+      "hero": {
+        "title": "Küp Veranda",
+        "subtitle": "Bahçeniz için şık modern tasarım",
+        "imageAlt": "Küp Veranda"
+      },
+      "info": {
+        "title": "Küp Veranda Nedir?",
+        "description1": "Küp veranda modern tasarımın zirvesidir. Sıkı çizgiler ve minimalist bir görünümle bu mükemmel küp her modern bahçeye uyar.",
+        "description2": "Bağımsız veya eve bitişik, Küp her zaman etki yaratır.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Küp Veranda"
+      },
+      "benefits": {
+        "benefit1": "Ultra modern tasarım",
+        "benefit2": "Bağımsız mümkün",
+        "benefit3": "Sıkı bitirme",
+        "benefit4": "Yerleşik LED aydınlatma",
+        "benefit5": "Çeşitli çatı seçenekleri",
+        "benefit6": "Rüzgar perdeleri mümkün"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Premium alüminyum yapı",
+        "roofOptions": "Çatı seçenekleri",
+        "roofOptionsValue": "Cam, panjur veya polikarbonat",
+        "design": "Tasarım",
+        "designValue": "Minimalist küp şekli",
+        "frameColors": "Çerçeve renkleri",
+        "frameColorsValue": "Tüm RAL renkleri mümkün",
+        "dimensions": "Boyutlar",
+        "dimensionsValue": "Özel yapım",
+        "warranty": "Garanti",
+        "warrantyValue": "10 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Küp Veranda ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "tuinkamer": {
+      "hero": {
+        "title": "Bahçe Odası",
+        "subtitle": "Tüm yıl bahçenizin tadını çıkarın",
+        "imageAlt": "Bahçe Odası"
+      },
+      "info": {
+        "title": "Bahçe Odası Nedir?",
+        "description1": "Bahçe odası, hava koşullarından bağımsız olarak tüm yıl boyunca bahçenizin tadını çıkarabileceğiniz tamamen kapalı bir verandadır.",
+        "description2": "Bahçe manzaralı ekstra yaşam alanı, çalışma alanı veya hobi odası olarak mükemmel.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Bahçe Odası"
+      },
+      "benefits": {
+        "benefit1": "Tüm yıl kullanılabilir",
+        "benefit2": "Ekstra yaşam alanı",
+        "benefit3": "Tamamen yalıtılmış",
+        "benefit4": "Isıtma mümkün",
+        "benefit5": "Ev değerini artırır",
+        "benefit6": "Çeşitli bitirmeler"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Yalıtılmış alüminyum sistem",
+        "glazing": "Camlama",
+        "glazingValue": "HR++ yalıtım camı",
+        "roof": "Çatı",
+        "roofValue": "Yalıtılmış çatı panelleri",
+        "doors": "Kapılar",
+        "doorsValue": "Sürgülü veya katlanır kapılar",
+        "dimensions": "Boyutlar",
+        "dimensionsValue": "Tamamen özel",
+        "warranty": "Garanti",
+        "warrantyValue": "10 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Bahçe Odası ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    },
+    "carport": {
+      "hero": {
+        "title": "Garaj Üstü",
+        "subtitle": "Arabanızı şık bir şekilde koruyun",
+        "imageAlt": "Garaj Üstü"
+      },
+      "info": {
+        "title": "Garaj Üstü Nedir?",
+        "description1": "Alüminyum garaj üstü arabanızı yağmur, kar, dolu ve UV radyasyonuna karşı korur. Şık ve dayanıklı, evinize değerli bir katkı.",
+        "description2": "Bir veya birden fazla araba için mevcuttur, tamamen özel yapım.",
+        "benefitsTitle": "Avantajlar",
+        "imageAlt": "Garaj Üstü"
+      },
+      "benefits": {
+        "benefit1": "Hava koşullarına karşı koruma",
+        "benefit2": "Bakım gerektirmeyen alüminyum",
+        "benefit3": "Ev değerini artırır",
+        "benefit4": "Çeşitli çatı seçenekleri",
+        "benefit5": "Özel yapım",
+        "benefit6": "Hızlı montaj"
+      },
+      "specs": {
+        "title": "Özellikler",
+        "material": "Malzeme",
+        "materialValue": "Alüminyum yapı",
+        "roofOptions": "Çatı seçenekleri",
+        "roofOptionsValue": "Polikarbonat veya alüminyum",
+        "capacity": "Kapasite",
+        "capacityValue": "1, 2 veya daha fazla araba",
+        "frameColors": "Çerçeve renkleri",
+        "frameColorsValue": "Tüm RAL renkleri mümkün",
+        "dimensions": "Boyutlar",
+        "dimensionsValue": "Özel yapım",
+        "warranty": "Garanti",
+        "warrantyValue": "10 yıl"
+      },
+      "gallery": {
+        "title": "Projeler",
+        "project1Alt": "Proje 1",
+        "project2Alt": "Proje 2",
+        "project3Alt": "Proje 3",
+        "project4Alt": "Proje 4"
+      },
+      "cta": {
+        "title": "Garaj Üstü ile İlgileniyor musunuz?",
+        "description": "Ücretsiz bir teklif isteyin",
+        "quoteButton": "Teklif isteyin",
+        "appointmentButton": "Randevu alın"
+      }
+    }
+  },
+  "offerte": {
+    "required": "Zorunlu",
+    "optional": "İsteğe bağlı",
+    "nextButton": "İleri",
+    "backButton": "Geri",
+    "submitButton": "Teklif gönder",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Teşekkürler!",
+    "successMessage": "Teklif talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
+    "errorTitle": "Hata oluştu",
+    "errorMessage": "Talebiniz gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "step": "Adım",
+    "of": "/",
+    "step1": {
+      "title": "Üstü örtülü alanınızı nereye istiyorsunuz",
+      "standaard": "Standart",
+      "standaardDesc": "Mevcut duvar",
+      "vrijstaand": "Bağımsız",
+      "vrijstaandDesc": "Bahçede serbest"
+    },
+    "step2": {
+      "title": "Oluk tipi",
+      "rechteGoot": "Düz oluk",
+      "halfrondeGoot": "Yarım yuvarlak oluk"
+    },
+    "step3": {
+      "title": "Renk",
+      "wit": "Beyaz",
+      "cremeWit": "Krem beyaz",
+      "antraciet": "Antrasit",
+      "zwart": "Siyah"
+    },
+    "step4": {
+      "title": "Malzeme",
+      "placeholder": "Malzeme seçin",
+      "polycarbonaat": "Polikarbonat",
+      "glas": "Cam",
+      "lamellen": "Panjur",
+      "vouwdak": "Katlanır çatı"
+    },
+    "step5": {
+      "title": "Ölçüler",
+      "breedte": "Genişlik (m)",
+      "breedtePlaceholder": "Metre cinsinden genişlik",
+      "lengte": "Uzunluk (m)",
+      "lengtePlaceholder": "Metre cinsinden uzunluk"
+    },
+    "step6": {
+      "title": "Aydınlatma",
+      "placeholder": "Aydınlatma seçin",
+      "geen": "Aydınlatma yok",
+      "ledSpots": "LED spotlar",
+      "ledStrip": "LED şerit",
+      "beide": "Her ikisi (spot + şerit)"
+    },
+    "step7": {
+      "title": "Daha fazla özelleştirmek ister misiniz?",
+      "ja": "Evet",
+      "jaDesc": "Daha fazla seçenek yapılandırmak istiyorum",
+      "nee": "Hayır",
+      "neeDesc": "Montaja devam et"
+    },
+    "step8": {
+      "title": "Seçenekleri yapılandır",
+      "rechterKant": "Sağ taraf",
+      "rechterSpie": "Sağ destek",
+      "linkerKant": "Sol taraf",
+      "linkerSpie": "Sol destek",
+      "voorkant": "Ön taraf",
+      "achterkant": "Arka taraf",
+      "selectOption": "Seçenek seçin",
+      "glas": "Cam",
+      "screen": "Perde",
+      "geen": "Yok",
+      "ja": "Evet",
+      "nee": "Hayır",
+      "extraOptions": "Ekstra seçenekler",
+      "zonweringBoven": "Üstte güneşlik",
+      "screenVoorkant": "Ön perde",
+      "screenLinkerKant": "Sol perde",
+      "screenRechterKant": "Sağ perde"
+    },
+    "step9": {
+      "title": "Montaj",
+      "inclusief": "Montaj dahil",
+      "inclusiefDesc": "Biz montajı yapıyoruz",
+      "exclusief": "Montaj hariç",
+      "exclusiefDesc": "Kendim monte edeceğim"
+    },
+    "step10": {
+      "title": "Teklifi nereye gönderelim?",
+      "subtitle": "İletişim bilgilerinizi doldurun",
+      "naam": "İsim",
+      "naamPlaceholder": "İsim",
+      "straat": "Sokak adı + kapı no",
+      "straatPlaceholder": "Sokak adı + kapı no",
+      "woonplaats": "Şehir",
+      "woonplaatsPlaceholder": "Şehir",
+      "email": "E-posta adresi",
+      "emailPlaceholder": "E-posta adresi",
+      "telefoon": "Telefon numarası",
+      "opmerking": "Not",
+      "opmerkingPlaceholder": "Başka neleri dikkate alabiliriz?"
+    }
+  },
+  "appointment": {
+    "title": "Randevu Al",
+    "subtitle": "Ücretsiz ölçüm, showroom ziyareti veya danışma planla.",
+    "name": "İsim",
+    "namePlaceholder": "Tam adınız",
+    "email": "E-posta",
+    "emailPlaceholder": "eposta@ornek.com",
+    "phone": "Telefon",
+    "serviceType": "Randevu türü",
+    "selectService": "Bir tür seçin",
+    "preferredDate": "Tercih edilen tarih",
+    "preferredTime": "Tercih edilen saat",
+    "selectTime": "Bir saat seçin",
+    "message": "Mesaj",
+    "messagePlaceholder": "Size nasıl yardımcı olabiliriz...",
+    "submitButton": "Randevu Al",
+    "successTitle": "Randevu talep edildi!",
+    "successMessage": "Randevunuzu onaylamak için en kısa sürede sizinle iletişime geçeceğiz."
+  }
+}

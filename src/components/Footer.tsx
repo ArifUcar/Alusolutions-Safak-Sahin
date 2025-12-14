@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import '../styles/Footer.css'
 
 export default function Footer() {
+  const { t } = useTranslation()
+
   return (
     <footer className="main-footer">
       <div className="container">
@@ -9,11 +12,10 @@ export default function Footer() {
           <div className="footer-about">
             <div className="footer-logo">
               <h3>ALU<span>SOLUTIONS</span></h3>
-              <p className="footer-tagline">Wij Brengen Buitenleven Binnen</p>
+              <p className="footer-tagline">{t('header.tagline')}</p>
             </div>
             <p className="footer-description">
-              Specialist in hoogwaardige aluminium veranda's en overkappingen.
-              Al meer dan 15 jaar uw betrouwbare partner voor buitenleven.
+              {t('footer.description')}
             </p>
             <div className="footer-social">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -40,33 +42,33 @@ export default function Footer() {
           </div>
 
           <div className="footer-links">
-            <h4>Producten</h4>
+            <h4>{t('footer.products')}</h4>
             <ul>
-              <li><Link to="/offerte">Polycarbonaat Veranda</Link></li>
-              <li><Link to="/offerte">Glazen Veranda</Link></li>
-              <li><Link to="/offerte">Vouwdak Veranda</Link></li>
-              <li><Link to="/offerte">Lamellen Veranda</Link></li>
-              <li><Link to="/offerte">Glazen Schuifwand</Link></li>
-              <li><Link to="/offerte">Cube Veranda</Link></li>
-              <li><Link to="/offerte">Tuinkamer</Link></li>
+              <li><Link to="/producten/polycarbonaat">{t('products.polycarbonaat')}</Link></li>
+              <li><Link to="/producten/glazen">{t('products.glazen')}</Link></li>
+              <li><Link to="/producten/vouwdak">{t('products.vouwdak')}</Link></li>
+              <li><Link to="/producten/lamellen">{t('products.lamellen')}</Link></li>
+              <li><Link to="/producten/schuifwand">{t('products.schuifwand')}</Link></li>
+              <li><Link to="/producten/cube">{t('products.cube')}</Link></li>
+              <li><Link to="/producten/tuinkamer">{t('products.tuinkamer')}</Link></li>
             </ul>
           </div>
 
           <div className="footer-links">
-            <h4>Pagina's</h4>
+            <h4>{t('footer.pages')}</h4>
             <ul>
-              <li><Link to="/over-ons">Over Ons</Link></li>
-              <li><Link to="/inspiratie">Inspiratie</Link></li>
-              <li><Link to="/inspiratie">Galerij</Link></li>
-              <li><Link to="/contact">Blogs</Link></li>
-              <li><Link to="/offerte">Offerte Aanvragen</Link></li>
-              <li><Link to="/afspraak">Afspraak maken</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/over-ons">{t('header.about')}</Link></li>
+              <li><Link to="/inspiratie">{t('header.inspiration')}</Link></li>
+              <li><Link to="/inspiratie">{t('footer.gallery')}</Link></li>
+              <li><Link to="/contact">{t('footer.blogs')}</Link></li>
+              <li><Link to="/offerte">{t('header.requestQuote')}</Link></li>
+              <li><Link to="/afspraak">{t('header.makeAppointment')}</Link></li>
+              <li><Link to="/contact">{t('header.contact')}</Link></li>
             </ul>
           </div>
 
           <div className="footer-contact">
-            <h4>Contact</h4>
+            <h4>{t('header.contact')}</h4>
             <p>Mariastraat 22</p>
             <p>5953 NL Reuver</p>
             <p>+31 85 060 5036</p>
@@ -76,11 +78,11 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 AluSolutions. Wij brengen buitenleven binnen.</p>
+          <p>&copy; 2025 AluSolutions. {t('header.tagline')}</p>
           <div className="footer-bottom-links">
-            <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/voorwaarden">Algemene Voorwaarden</Link>
-            <Link to="/cookies">Cookies</Link>
+            <Link to="/privacy">{t('footer.privacy')}</Link>
+            <Link to="/voorwaarden">{t('footer.terms')}</Link>
+            <Link to="/cookies">{t('footer.cookies')}</Link>
           </div>
         </div>
       </div>

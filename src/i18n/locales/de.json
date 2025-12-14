@@ -1,0 +1,1349 @@
+{
+  "header": {
+    "services": "Unsere Dienstleistungen",
+    "verandas": "Veranden",
+    "other": "Sonstige",
+    "about": "Über uns",
+    "inspiration": "Inspiration",
+    "projectGallery": "Projektgalerie",
+    "beforeAfter": "Vorher & Nachher",
+    "styles": "Stile",
+    "blogsTips": "Blogs & Tipps",
+    "requestQuote": "Angebot anfordern",
+    "onlineQuote": "Online Angebot",
+    "freeMeasurement": "Kostenlose Vermessung",
+    "callDirect": "Direkt anrufen",
+    "quote": "Angebot anfordern",
+    "contact": "Kontakt",
+    "contactForm": "Kontaktformular",
+    "visitShowroom": "Showroom besuchen",
+    "faq": "Häufig gestellte Fragen",
+    "language": "Sprache",
+    "makeAppointment": "Termin vereinbaren",
+    "tagline": "Wir bringen das Außenleben ins Innere",
+    "darkMode": "Dunkelmodus",
+    "lightMode": "Hellmodus"
+  },
+  "products": {
+    "polycarbonaat": "Polycarbonat-Veranda",
+    "glazen": "Glaskonstruktion",
+    "lamellen": "Lamellen-Veranda",
+    "vouwdak": "Klappdach-Veranda",
+    "schuifwand": "Glas-Schiebewände",
+    "cube": "Cube Veranda",
+    "tuinkamer": "Gartenraum",
+    "carport": "Carport"
+  },
+  "menu": {
+    "verandas": "Veranden",
+    "polycarbonate": "Polycarbonat-Veranda",
+    "glass": "Glaskonstruktion",
+    "slats": "Lamellen-Veranda",
+    "foldingRoof": "Klappdach-Veranda",
+    "other": "Sonstige",
+    "slidingWall": "Glas-Schiebewände",
+    "cube": "Cube Veranda",
+    "gardenRoom": "Gartenraum",
+    "carport": "Carport",
+    "services": "Dienstleistungen",
+    "plateChange": "Plattenwechsel",
+    "maintenance": "Wartung",
+    "repair": "Reparatur",
+    "projectGallery": "Projektgalerie",
+    "beforeAfter": "Vorher & Nachher",
+    "styles": "Stile",
+    "blogsTips": "Blogs & Tipps",
+    "onlineQuote": "Online Angebot",
+    "freeMeasurement": "Kostenlose Vermessung",
+    "callDirect": "Direkt anrufen",
+    "contactForm": "Kontaktformular",
+    "visitShowroom": "Showroom besuchen",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "footer": {
+    "quickLinks": "Schnelllinks",
+    "products": "Produkte",
+    "contact": "Kontakt",
+    "followUs": "Folgen Sie uns",
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookies": "Cookies"
+  },
+  "common": {
+    "readMore": "Mehr lesen",
+    "contactUs": "Kontaktieren Sie uns",
+    "getQuote": "Angebot erhalten",
+    "viewProjects": "Projekte ansehen",
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolg!",
+    "submit": "Senden",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "close": "Schließen",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "back": "Zurück"
+  },
+  "about": {
+    "hero": {
+      "title": "Über uns",
+      "subtitle": "Ihr Partner für hochwertige Terrassenlösungen",
+      "imageAlt": "Über AluSolutions"
+    },
+    "whoAreWe": {
+      "title": "Wer sind wir?",
+      "paragraph1": "Wir sind ein führendes Unternehmen, das sich auf die Herstellung von stilvollen und langlebigen Terrassenlösungen spezialisiert hat. Mit Stolz bieten wir eine breite Palette an hochwertigen Produkten an, darunter Veranden, Glas-Schiebewände und Seitenwände, um Ihren Außenbereich in eine Oase aus Komfort und Schönheit zu verwandeln.",
+      "paragraph2": "Zögern Sie nicht länger und kontaktieren Sie uns noch heute, um Ihr Angebot anzufordern. Gemeinsam werden wir Ihren Außenbereich in einen Ort verwandeln, an dem Sie uneingeschränkt genießen können – unabhängig vom Wetter!",
+      "ctaButton": "Angebot anfordern",
+      "imageAlt": "AluSolutions Team"
+    },
+    "quality": {
+      "title": "Qualität und Handwerk",
+      "paragraph1": "Bei Alusolutions legen wir großen Wert auf Qualität und handwerkliches Können. Unsere Produkte werden aus hochwertigen Materialien und mit innovativen Technologien hergestellt, was zu langlebigen und zuverlässigen Lösungen führt. Unsere engagierten und erfahrenen Teammitglieder beraten Sie gerne und unterstützen Sie bei der Auswahl der besten Lösungen für Ihre individuelle Situation.",
+      "paragraph2": "Wir streben nach Kundenzufriedenheit und stellen uns mit Begeisterung jeder Herausforderung. Vom ersten Kontakt bis zur Installation und dem After-Sales-Service bemühen wir uns, hervorragenden Service zu bieten und eine langfristige Beziehung zu unseren Kunden aufzubauen.",
+      "imageAlt": "Qualität und Handwerk"
+    },
+    "featuresBanner": {
+      "title": "Entdecken Sie unsere zeitlosen und eleganten Terrassenlösungen",
+      "subtitle": "Lassen Sie Ihren Außenbereich mit unseren stilvollen Veranden und Glas-Schiebewänden erstrahlen, die Ihrem Zuhause eine zeitlose und elegante Optik verleihen."
+    },
+    "benefits": {
+      "benefit1": {
+        "title": "Individuelle Terrassenlösungen",
+        "description": "Bei Alusolutions glauben wir an Individualität. Wir entwerfen und erstellen Terrassenlösungen, die perfekt Ihre individuellen Wünsche erfüllen, damit Sie einen Außenbereich genießen können, der ganz Ihnen gehört."
+      },
+      "benefit2": {
+        "title": "Verbessern Sie Ihr Außenleben",
+        "description": "Unsere hochwertigen Terrassenlösungen verbessern Ihr Außenleben und ermöglichen Ihnen das optimale Genießen des Außenlebens in allen Jahreszeiten."
+      },
+      "benefit3": {
+        "title": "Komfort und Schutz",
+        "description": "Unsere Terrassenlösungen bieten nicht nur Komfort, sondern schützen Sie auch vor Wetter und Wind, damit Sie Ihren Außenbereich sorgenfrei genießen können."
+      }
+    },
+    "oasis": {
+      "title": "Schaffen Sie Ihre Außen-Oase",
+      "description": "Bei Alusolutions bemühen wir uns, Ihren Außenbereich in eine Oase aus Komfort, Stil und Eleganz zu verwandeln. Mit maßgefertigten Terrassenlösungen und hochwertigen Produkten machen wir Ihr Traumprojekt wahr. Fordern Sie noch heute ein Angebot an und entdecken Sie die Möglichkeiten für Ihre einzigartige Außenanlage.",
+      "ctaButton": "Kostenloses Angebot anfordern",
+      "imageAlt": "Außen-Oase"
+    },
+    "team": {
+      "title": "Unser Team",
+      "subtitle": "Lernen Sie unsere erfahrenen Fachleute kennen",
+      "member1": {
+        "name": "Jan van der Berg",
+        "position": "Geschäftsführer"
+      },
+      "member2": {
+        "name": "Lisa de Jong",
+        "position": "Vertriebsleiterin"
+      },
+      "member3": {
+        "name": "Mark Jansen",
+        "position": "Chefmonteur"
+      },
+      "member4": {
+        "name": "Emma Bakker",
+        "position": "Kundenservice"
+      },
+      "memberImageAlt": "Teammitglied"
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "value1": {
+        "title": "Qualität",
+        "description": "Nur die besten Materialien und Verarbeitung"
+      },
+      "value2": {
+        "title": "Zuverlässigkeit",
+        "description": "Wir halten immer unsere Versprechen"
+      },
+      "value3": {
+        "title": "Innovation",
+        "description": "Ständige Verbesserung unserer Produkte"
+      },
+      "value4": {
+        "title": "Kundenzufriedenheit",
+        "description": "Ihre Zufriedenheit ist unsere Priorität"
+      }
+    },
+    "cta": {
+      "title": "Bereit zu starten?",
+      "subtitle": "Kontaktieren Sie uns noch heute für ein unverbindliches Angebot",
+      "quoteButton": "Angebot anfordern",
+      "contactButton": "Kontakt aufnehmen"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Polycarbonat-Veranda",
+      "paragraph1": "Eine Polycarbonat-Veranda ist die ideale Wahl für alle, die eine langlebige und bezahlbare Terrassenüberdachung suchen. Dank der robusten und klaren Polycarbonat-Dachplatten genießen Sie viel Licht, ohne auf den Schutz vor Regen und Wind verzichten zu müssen.",
+      "paragraph2": "Bei AluSolutions liefern wir Ihre Polycarbonat-Veranda komplett auf Ihre Wünsche abgestimmt. Innerhalb von 3 Wochen sorgen unsere Veranda-Bauer für eine schnelle Lieferung und professionelle Installation.",
+      "ctaButton": "Fordern Sie einfach ein Angebot an!",
+      "imageAlt": "Moderne Veranda"
+    },
+    "galleryPreview": {
+      "image1Alt": "Glaskonstruktion",
+      "image2Alt": "Aluminium-Veranda",
+      "image3Alt": "Gartenraum mit Veranda",
+      "image4Alt": "Moderne Konstruktion"
+    },
+    "products": {
+      "title": "Unsere Produkte",
+      "subtitle": "Entdecken Sie unser komplettes Sortiment hochwertiger Veranden und Überdachungen",
+      "product1": {
+        "title": "Polycarbonat-Veranda",
+        "description": "Langlebig und erschwinglich mit exzellenter Lichtdurchlässigkeit",
+        "button": "Mehr Info",
+        "imageAlt": "Polycarbonat-Veranda"
+      },
+      "product2": {
+        "title": "Glaskonstruktion",
+        "description": "Maximale Transparenz für einen luxuriösen Look",
+        "button": "Mehr Info",
+        "imageAlt": "Glaskonstruktion"
+      },
+      "product3": {
+        "title": "Lamellen-Veranda",
+        "description": "Verstellbare Lamellen für optimalen Sonnenschutz",
+        "button": "Mehr Info",
+        "imageAlt": "Lamellen-Veranda"
+      },
+      "product4": {
+        "title": "Klappdach-Veranda",
+        "description": "Flexibles Klappdach für jede Jahreszeit",
+        "button": "Mehr Info",
+        "imageAlt": "Klappdach-Veranda"
+      },
+      "product5": {
+        "title": "Glas-Schiebewände",
+        "description": "Nahtloser Übergang zwischen Innen- und Außenbereich",
+        "button": "Mehr Info",
+        "imageAlt": "Glas-Schiebewände"
+      },
+      "product6": {
+        "title": "Gartenraum",
+        "description": "Komplette Erweiterung Ihres Wohnraums",
+        "button": "Mehr Info",
+        "imageAlt": "Gartenraum"
+      }
+    },
+    "benefits": {
+      "title": "Erleben Sie die einzigartigen Vorteile einer Polycarbonat-Veranda",
+      "subtitle": "Bezahlbare Eleganz mit unseren Polycarbonat-Veranden",
+      "paragraph1": "Die Investition in eine Polycarbonat-Veranda hängt von mehreren Faktoren ab, wie z.B. den Abmessungen der Konstruktion und der Wahl zusätzlicher Optionen wie eingebaute LED-Leuchten, Seitenwände oder Schiebetüren.",
+      "paragraph2": "Wir verstehen, dass die Wahl einer Veranda eine wichtige Entscheidung ist, die sowohl Ihrem Budget als auch Ihrem Lebensstil angepasst werden muss. Deshalb bieten wir persönliche Beratung und detaillierte Informationen zu den Möglichkeiten und Kosten.",
+      "ctaButton": "Kontakt aufnehmen",
+      "imageAlt": "Elegante Veranda"
+    },
+    "stats": {
+      "stat1": {
+        "number": "15+",
+        "label": "Jahre Erfahrung"
+      },
+      "stat2": {
+        "number": "500+",
+        "label": "Zufriedene Kunden"
+      },
+      "stat3": {
+        "number": "1000+",
+        "label": "Abgeschlossene Projekte"
+      },
+      "stat4": {
+        "number": "7",
+        "label": "Jahre Garantie"
+      }
+    },
+    "process": {
+      "title": "Wie funktioniert es?",
+      "subtitle": "In 4 einfachen Schritten zu Ihrer Traumveranda",
+      "step1": {
+        "title": "Angebot anfordern",
+        "description": "Füllen Sie unser Formular mit Ihren Wünschen aus und erhalten Sie innerhalb von 24 Stunden ein unverbindliches Angebot.",
+        "imageAlt": "Angebot anfordern"
+      },
+      "step2": {
+        "title": "Persönliche Beratung",
+        "description": "Unsere Experten besuchen Sie für eine kostenlose Vermessung und individuelle Beratung.",
+        "imageAlt": "Persönliche Beratung"
+      },
+      "step3": {
+        "title": "Produktion",
+        "description": "Ihre Veranda wird in unserer eigenen Produktionsstätte maßgefertigt.",
+        "imageAlt": "Produktion"
+      },
+      "step4": {
+        "title": "Installation",
+        "description": "Innerhalb von 3 Wochen wird Ihre Veranda von unseren Monteuren professionell installiert.",
+        "imageAlt": "Installation"
+      }
+    },
+    "quality": {
+      "title": "Bezahlbare Qualität Polycarbonat-Veranden",
+      "description": "Die Kosten einer Polycarbonat-Veranda hängen von der Größe und Extras wie Leuchten, Seitenwände oder Schiebetüren ab. Dennoch ist eine solche Veranda eine bezahlbare Wahl, die lange hält und schön aussieht.",
+      "list": {
+        "item1": "Materialkosten: günstiger als Glas, wirtschaftlich vorteilhaft",
+        "item2": "Niedrigere Installationskosten: einfache Installation reduziert Arbeitskosten",
+        "item3": "Langlebigkeit und Wartung: langlebig mit minimaler Wartung",
+        "item4": "Energieeffizienz: Dämmung reduziert Energiekosten",
+        "item5": "Vielseitigkeit: flexibles Design, effiziente Produktion"
+      },
+      "imageAlt": "Qualitäts-Veranda"
+    },
+    "features": {
+      "title": "Warum AluSolutions wählen?",
+      "feature1": {
+        "title": "Premium-Qualität",
+        "description": "Nur die besten Materialien für ein langlebiges Ergebnis"
+      },
+      "feature2": {
+        "title": "Professionelle Installation",
+        "description": "Erfahrene Monteure für eine perfekte Installation"
+      },
+      "feature3": {
+        "title": "Maßgefertigt",
+        "description": "Jede Veranda wird speziell für Sie entworfen"
+      },
+      "feature4": {
+        "title": "Wettbewerbsfähige Preise",
+        "description": "Qualität muss nicht teuer sein"
+      },
+      "feature5": {
+        "title": "Schnelle Lieferung",
+        "description": "Innerhalb von 3 Wochen installiert"
+      },
+      "feature6": {
+        "title": "Persönlicher Service",
+        "description": "Direkter Kontakt mit unseren Spezialisten"
+      }
+    },
+    "inspiration": {
+      "title": "Inspiration für Ihre Veranda",
+      "category1": "Luxus Veranda",
+      "category2": "Modern",
+      "category3": "Klassisch",
+      "category4": "Glaswände",
+      "category5": "Gartenraum",
+      "imageAlt": "Veranda Inspiration"
+    },
+    "recentProjects": {
+      "title": "Aktuelle Projekte",
+      "projectAlt": "Projekt"
+    },
+    "testimonials": {
+      "title": "Was unsere Kunden sagen",
+      "testimonial1": {
+        "quote": "Exzellenter Service und Qualität. Unsere Veranda ist perfekt geworden und die Monteure waren sehr professionell.",
+        "author": "Jan de Vries",
+        "location": "Amsterdam"
+      },
+      "testimonial2": {
+        "quote": "Vom Angebot bis zur Installation lief alles reibungslos. Sehr zufrieden mit dem Endergebnis!",
+        "author": "Maria Jansen",
+        "location": "Rotterdam"
+      },
+      "testimonial3": {
+        "quote": "Gutes Preis-Leistungs-Verhältnis. Die Veranda sieht wunderschön aus und wurde innerhalb von 2 Wochen installiert.",
+        "author": "Peter Bakker",
+        "location": "Utrecht"
+      }
+    },
+    "info": {
+      "item1": {
+        "title": "Was ist eine Polycarbonat-Veranda?",
+        "description": "Eine Polycarbonat-Veranda von Alusolutions ist eine langlebige Terrassen- oder Gartenüberdachung, die Ihr Zuhause mit einem stilvollen Außenbereich erweitert.",
+        "imageAlt": "Was ist Veranda"
+      },
+      "item2": {
+        "title": "Vorteile von Polycarbonat",
+        "description": "Polycarbonat ist ein robustes, lichtdurchlässiges Material, das Schutz vor UV-Strahlen und Witterungseinflüssen bietet.",
+        "imageAlt": "Vorteile"
+      },
+      "item3": {
+        "title": "Warum Alusolutions wählen?",
+        "description": "Bei Alusolutions wählen Sie Qualität und Langlebigkeit. Unsere Veranden sind robust und wartungsarm.",
+        "imageAlt": "Warum Alusolutions"
+      },
+      "item4": {
+        "title": "Personalisieren Sie Ihre Veranda",
+        "description": "Jede Veranda kann mit Optionen wie LED-Beleuchtung, Sonnenschutz und Seitenwände personalisiert werden.",
+        "imageAlt": "Personalisieren"
+      },
+      "item5": {
+        "title": "Aufstellung und Installation",
+        "description": "Unsere Experten sorgen für eine schnelle und professionelle Installation Ihrer Veranda.",
+        "imageAlt": "Installation"
+      },
+      "item6": {
+        "title": "Entdecken Sie unseren Showroom",
+        "description": "Besuchen Sie unseren Showroom, um die Qualität unserer Veranden selbst zu erleben.",
+        "imageAlt": "Showroom"
+      }
+    },
+    "colors": {
+      "title": "Verfügbare Farben",
+      "subtitle": "Wählen Sie die perfekte Farbe, die zu Ihrem Zuhause passt",
+      "color1": "Anthrazit",
+      "color2": "Weiß",
+      "color3": "Creme",
+      "color4": "Braun"
+    },
+    "cta": {
+      "title": "Bereit für Ihre Traumveranda?",
+      "subtitle": "Fordern Sie noch heute ein unverbindliches Angebot an und entdecken Sie die Möglichkeiten.",
+      "quoteButton": "Angebot anfordern",
+      "contactButton": "Kontakt aufnehmen",
+      "imageAlt": "Veranda Hintergrund"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Entdecken Sie unseren einfachen Schritt-für-Schritt-Leitfaden für Ihre Polycarbonat-Veranda.",
+      "ctaButton": "Kostenloses Angebot anfordern",
+      "q1": {
+        "question": "Wird eine Genehmigung für den Bau einer Terrassenüberdachung benötigt?",
+        "answer": "In den meisten Fällen ist keine Genehmigung erforderlich, wenn die Überdachung bestimmte Bedingungen erfüllt. Kontaktieren Sie uns für Beratung zu Genehmigungen in Ihrer Gemeinde."
+      },
+      "q2": {
+        "question": "Wie lange hält eine Terrassenüberdachung?",
+        "answer": "Unsere Veranden halten bei minimaler Wartung viele Jahre. Bei ordnungsgemäßer Pflege können Sie eine Lebensdauer von über 20 Jahren erwarten."
+      },
+      "q3": {
+        "question": "Sind Ihre Terrassenüberdachungen gegen alle Wetterbedingungen beständig?",
+        "answer": "Ja, unsere Produkte sind für das niederländische Klima konzipiert und widerstandsfähig gegen Regen, Wind, Schnee und UV-Strahlung."
+      },
+      "q4": {
+        "question": "Wie lange dauert die Installation einer Terrassenüberdachung?",
+        "answer": "Innerhalb von 3 Wochen sorgen wir für Lieferung und professionelle Installation. Die Installation selbst dauert in der Regel 1-2 Tage."
+      },
+      "q5": {
+        "question": "Kann ich meine Veranda später mit zusätzlichen Optionen erweitern?",
+        "answer": "Ja, unsere Veranden sind modular konzipiert. Sie können später problemlos LED-Beleuchtung, Seitenwände oder Schiebetüren hinzufügen."
+      },
+      "q6": {
+        "question": "Bieten Sie Finanzierungsmöglichkeiten?",
+        "answer": "Ja, wir arbeiten mit verschiedenen Finanzierungspartnern zusammen. Fragen Sie nach den Möglichkeiten während Ihrer persönlichen Beratung."
+      }
+    },
+    "contact": {
+      "title": "Kontakt aufnehmen",
+      "subtitle": "Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Zögern Sie nicht, uns zu kontaktieren!",
+      "address": {
+        "label": "Adresse",
+        "value": "Mariastraat 22, 5953 NL Reuver"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+31 85 060 5036"
+      },
+      "email": {
+        "label": "E-Mail",
+        "value": "Info@alusolutions.nl"
+      },
+      "hours": {
+        "label": "Öffnungszeiten",
+        "weekdays": "Mo-Fr: 08:00 - 17:00",
+        "saturday": "Sa: 09:00 - 15:00"
+      },
+      "mapTitle": "AluSolutions Standort"
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzbestimmungen",
+    "section1": {
+      "title": "1. Einleitung",
+      "content": "AluSolutions respektiert Ihre Privatsphäre und stellt sicher, dass die persönlichen Informationen, die Sie uns zur Verfügung stellen, vertraulich behandelt werden."
+    },
+    "section2": {
+      "title": "2. Von uns gesammelte Daten",
+      "content": "Wir sammeln Daten, die Sie uns zur Verfügung stellen, wie z.B. Name, Adresse, E-Mail-Adresse und Telefonnummer, wenn Sie uns kontaktieren oder ein Angebot anfordern."
+    },
+    "section3": {
+      "title": "3. Verwendung der Daten",
+      "content": "Ihre Daten werden verwendet, um Ihre Anfrage zu bearbeiten, Angebote zu senden und unsere Dienstleistungen zu erbringen."
+    },
+    "section4": {
+      "title": "4. Aufbewahrungsfrist",
+      "content": "Wir speichern Ihre Daten nicht länger als für den Zweck, für den sie erhoben wurden, erforderlich."
+    },
+    "section5": {
+      "title": "5. Ihre Rechte",
+      "content": "Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Bitte kontaktieren Sie uns dafür."
+    },
+    "section6": {
+      "title": "6. Kontakt",
+      "content": "Bei Fragen zu unseren Datenschutzbestimmungen können Sie uns über info@alusolutions.nl kontaktieren"
+    }
+  },
+  "voorwaarden": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "section1": {
+      "title": "Artikel 1 - Definitionen",
+      "content": "In diesen Allgemeinen Geschäftsbedingungen bedeutet AluSolutions: das in Reuver ansässige Unternehmen, eingetragen bei der Handelskammer unter der Nummer 90086449."
+    },
+    "section2": {
+      "title": "Artikel 2 - Anwendbarkeit",
+      "content": "Diese Bedingungen gelten für alle Angebote und Vereinbarungen von AluSolutions."
+    },
+    "section3": {
+      "title": "Artikel 3 - Angebote",
+      "content": "Alle Angebote sind unverbindlich und 30 Tage gültig, sofern nicht anders angegeben."
+    },
+    "section4": {
+      "title": "Artikel 4 - Lieferung",
+      "content": "Die Lieferzeit wird in Absprache festgelegt und ist als Richtwert zu verstehen."
+    },
+    "section5": {
+      "title": "Artikel 5 - Garantie",
+      "content": "AluSolutions bietet eine 10-jährige Garantie auf die Konstruktion bei normalem Gebrauch."
+    },
+    "section6": {
+      "title": "Artikel 6 - Zahlung",
+      "content": "Die Zahlung erfolgt gemäß den auf der Rechnung angegebenen Zahlungsbedingungen."
+    }
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "section1": {
+      "title": "Was sind Cookies?",
+      "content": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie unsere Website besuchen."
+    },
+    "section2": {
+      "title": "Welche Cookies verwenden wir?",
+      "functional": "Funktionale Cookies:",
+      "functionalDesc": "Notwendig für die Funktionsfähigkeit der Website.",
+      "analytical": "Analytische Cookies:",
+      "analyticalDesc": "Um Einblicke in die Nutzung der Website zu gewinnen."
+    },
+    "section3": {
+      "title": "Cookies verwalten",
+      "content": "Sie können Cookies über Ihre Browsereinstellungen blockieren oder löschen."
+    },
+    "section4": {
+      "title": "Kontakt",
+      "content": "Fragen zu unserer Cookie-Richtlinie? Kontaktieren Sie uns über info@alusolutions.nl"
+    }
+  },
+  "inspiratie": {
+    "hero": {
+      "title": "Inspiration",
+      "subtitle": "Entdecken Sie unsere wunderschönen Projekte und lassen Sie sich inspirieren"
+    },
+    "filters": {
+      "all": "Alle Projekte",
+      "polycarbonate": "Polycarbonat",
+      "glass": "Glaskonstruktion",
+      "slats": "Lamellen",
+      "foldingRoof": "Klappdach",
+      "gardenRoom": "Gartenraum"
+    },
+    "gallery": {
+      "modernGlass": "Moderne Glaskonstruktion",
+      "classicCover": "Klassische Überdachung",
+      "cozyGarden": "Atmosphärischer Gartenraum",
+      "slatsVeranda": "Lamellen-Veranda",
+      "foldingSystem": "Klappdach-System",
+      "straightLines": "Geradliniges Design",
+      "luxuryLook": "Luxus-Aussehen",
+      "timelessDesign": "Zeitloses Design",
+      "glassSlidingWall": "Glas-Schiebewände",
+      "elegantSlats": "Elegante Lamellen",
+      "compactSolution": "Kompakte Lösung"
+    },
+    "cities": {
+      "amsterdam": "Amsterdam",
+      "rotterdam": "Rotterdam",
+      "utrecht": "Utrecht",
+      "denHaag": "Den Haag",
+      "eindhoven": "Eindhoven",
+      "tilburg": "Tilburg",
+      "groningen": "Groningen",
+      "almere": "Almere",
+      "breda": "Breda",
+      "nijmegen": "Nijmegen",
+      "arnhem": "Arnhem"
+    },
+    "featured": {
+      "title": "Besondere Projekte",
+      "subtitle": "Sehen Sie sich unsere speziellsten Realisierungen an",
+      "viewProject": "Projekt ansehen",
+      "project1": {
+        "title": "Villa Amsterdam",
+        "description": "Eine wunderschöne Glaskonstruktion für eine moderne Villa in Amsterdam. Mit integrierter LED-Beleuchtung und elektrischen Sonnenschutzjalousien.",
+        "specs": {
+          "size": "Größe: 6m x 4m",
+          "material": "Material: Aluminiumrahmen",
+          "glass": "Glas: Einscheibensicherheitsglas"
+        }
+      },
+      "project2": {
+        "title": "Ländlicher Gartenraum",
+        "description": "Kompletter Gartenraum mit Glas-Schiebewänden für ein Landhaus. Perfekt für den ganzjährigen Gebrauch.",
+        "specs": {
+          "size": "Größe: 8m x 5m",
+          "includes": "Enthält: Glas-Schiebewände",
+          "extra": "Extra: Fußbodenheizung vorbereitet"
+        }
+      },
+      "project3": {
+        "title": "Moderne Lamellen",
+        "description": "Innovative Lamellen-Veranda mit elektrischem Betrieb. Optimale Kontrolle über Licht und Schatten.",
+        "specs": {
+          "size": "Größe: 5m x 3,5m",
+          "control": "Steuerung: Elektrisch mit App",
+          "color": "Farbe: Anthrazit"
+        }
+      }
+    },
+    "transformations": {
+      "title": "Transformationen",
+      "subtitle": "Sehen Sie, wie wir Außenräume verwandeln",
+      "before": "Vorher",
+      "after": "Nachher",
+      "project1": "Gartenrenovierung Rotterdam",
+      "project2": "Terrassenerweiterung Utrecht"
+    },
+    "styles": {
+      "title": "Stile & Materialien",
+      "modern": {
+        "title": "Modern",
+        "description": "Geradliniges Design und Minimalismus"
+      },
+      "classic": {
+        "title": "Klassisch",
+        "description": "Zeitlose Eleganz und Wärme"
+      },
+      "rustic": {
+        "title": "Ländlich",
+        "description": "Naturmaterialien und Gemütlichkeit"
+      },
+      "industrial": {
+        "title": "Industriell",
+        "description": "Robust und starkes Charakter"
+      }
+    },
+    "cta": {
+      "title": "Sind Sie inspiriert?",
+      "subtitle": "Lassen Sie uns Ihre Traumveranda realisieren. Fordern Sie ein unverbindliches Angebot an!",
+      "quoteButton": "Angebot anfordern",
+      "contactButton": "Kontakt aufnehmen"
+    }
+  },
+  "showroom": {
+    "hero": {
+      "title": "Besuchen Sie unseren Showroom",
+      "subtitle": "Sehen und erfahren Sie unsere Veranden live"
+    },
+    "welcome": {
+      "title": "Willkommen in unserem Showroom",
+      "paragraph1": "In unserem Showroom können Sie verschiedene Veranden und Überdachungen sehen und erleben. Unsere Berater stehen bereit, alle Ihre Fragen zu beantworten.",
+      "paragraph2": "Vereinbaren Sie einen Termin für eine persönliche Beratung oder schauen Sie während der Öffnungszeiten vorbei."
+    },
+    "hours": {
+      "title": "Öffnungszeiten",
+      "monday": "Montag - Donnerstag: 09:00 - 17:00",
+      "friday": "Freitag: Geschlossen",
+      "saturday": "Samstag: 10:00 - 15:00",
+      "sunday": "Sonntag: Geschlossen"
+    },
+    "address": {
+      "title": "Adresse",
+      "street": "Mariastraat 22",
+      "city": "5953 NL Reuver"
+    },
+    "cta": {
+      "title": "Vereinbaren Sie einen Termin",
+      "subtitle": "Planen Sie Ihren Besuch in unserem Showroom",
+      "appointmentButton": "Termin vereinbaren",
+      "callButton": "Rufen Sie uns an"
+    },
+    "mapTitle": "Showroom Standort"
+  },
+  "faq": {
+    "hero": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Finden Sie Antworten auf die häufigsten Fragen"
+    },
+    "questions": {
+      "q1": {
+        "question": "Wie lange dauert die Lieferung einer Veranda?",
+        "answer": "Die durchschnittliche Lieferzeit beträgt 3-4 Wochen nach Auftragserteilung. Dies kann je nach Art der Veranda und eventuellen Sonderoptionen variieren."
+      },
+      "q2": {
+        "question": "Was kostet eine Veranda?",
+        "answer": "Der Preis einer Veranda hängt von der Art, den Abmessungen und den gewählten Optionen ab. Fordern Sie ein unverbindliches Angebot an, um den genauen Preis zu erfahren."
+      },
+      "q3": {
+        "question": "Wie lange dauert die Installation?",
+        "answer": "Die Installation dauert durchschnittlich 1-2 Tage, abhängig von der Größe und Komplexität der Veranda."
+      },
+      "q4": {
+        "question": "Gibt es eine Garantie auf die Veranda?",
+        "answer": "Ja, wir bieten 10 Jahre Garantie auf die Konstruktion und 5 Jahre auf bewegliche Teile wie Motoren."
+      },
+      "q5": {
+        "question": "Benötige ich eine Genehmigung?",
+        "answer": "In den meisten Fällen ist eine Veranda genehmigungsfrei, sofern sie bestimmte Bedingungen erfüllt. Wir beraten Sie hierzu während der Konsultation."
+      },
+      "q6": {
+        "question": "Kann ich die Veranda selbst installieren?",
+        "answer": "Wir empfehlen, die Installation durch unsere Fachkräfte durchführen zu lassen, um optimale Ergebnisse zu erzielen und die Garantie zu wahren."
+      },
+      "q7": {
+        "question": "Welche Farben sind verfügbar?",
+        "answer": "Unsere Veranden sind in vielen Standardfarben erhältlich. Außerdem ist jede RAL-Farbe als Sonderoption möglich."
+      },
+      "q8": {
+        "question": "Kann ich Beleuchtung und Heizung hinzufügen?",
+        "answer": "Ja, wir bieten verschiedene Optionen für eingebaute LED-Beleuchtung und Terrassenheizung."
+      },
+      "q9": {
+        "question": "Wie pflege ich meine Veranda?",
+        "answer": "Eine Aluminium-Veranda ist nahezu wartungsfrei. Gelegentliches Reinigen mit Wasser und einem weichen Tuch genügt."
+      },
+      "q10": {
+        "question": "Kommen Sie auch in mein Gebiet?",
+        "answer": "Wir installieren Veranden in ganz den Niederlanden. Kontaktieren Sie uns, um die Möglichkeiten zu besprechen."
+      }
+    },
+    "cta": {
+      "title": "Ist Ihre Frage nicht aufgeführt?",
+      "subtitle": "Zögern Sie nicht, uns zu kontaktieren",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakt",
+      "subtitle": "Wir sind für Sie da",
+      "imageAlt": "Kontakt AluSolutions"
+    },
+    "form": {
+      "title": "Kontaktformular",
+      "subtitle": "Füllen Sie das Formular aus und wir werden Sie so schnell wie möglich kontaktieren.",
+      "name": "Name *",
+      "namePlaceholder": "Vor- und Nachname",
+      "phone": "Telefon *",
+      "phonePlaceholder": "Telefonnummer",
+      "email": "E-Mail *",
+      "emailPlaceholder": "E-Mail-Adresse",
+      "city": "Stadt",
+      "cityPlaceholder": "Stadt",
+      "subject": "Betreff *",
+      "subjectPlaceholder": "Wählen Sie einen Betreff",
+      "subjects": {
+        "polycarbonate": "Polycarbonat-Veranda",
+        "plateChange": "Plattenwechsel",
+        "glass": "Glaskonstruktion",
+        "slats": "Lamellen-Veranda",
+        "foldingRoof": "Klappdach-Veranda",
+        "slidingWall": "Glas-Schiebewand",
+        "other": "Sonstiges"
+      },
+      "message": "Nachricht *",
+      "messagePlaceholder": "Stellen Sie hier Ihre Frage",
+      "photo": "Foto oder Beispiel (nicht erforderlich)",
+      "submit": "Nachricht senden",
+      "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden Sie so schnell wie möglich kontaktieren."
+    },
+    "info": {
+      "title": "Möchten Sie AluSolutions kontaktieren?",
+      "paragraph1": "Haben Sie Fragen zu unseren Produkten, oder benötigen Sie Hilfe bei der Bestellung? Vielleicht möchten Sie einfach Ihre Gedanken teilen? Bei AluSolutions freuen wir uns, von Ihnen zu hören! Unser engagiertes Team ist bereit, schnell und effizient auf alle Ihre Fragen zu reagieren.",
+      "paragraph2": "Für sofortige Hilfe empfehlen wir Ihnen, uns per WhatsApp zu kontaktieren. Wir sind auch per E-Mail oder über unser Kontaktformular erreichbar.",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "showroom": "Showroom",
+      "hours": "Öffnungszeiten",
+      "hoursWeekdays": "Mo-Do: 09:00 - 17:00",
+      "hoursFriday": "Freitag: Geschlossen",
+      "hoursSaturday": "Sa: 10:00 - 15:00",
+      "followUs": "Folgen Sie uns",
+      "social": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "whatsapp": "WhatsApp",
+        "youtube": "YouTube"
+      },
+      "makeAppointment": "Machen Sie einen Termin"
+    },
+    "map": {
+      "title": "Besuchen Sie unseren Showroom",
+      "mapTitle": "AluSolutions Standort"
+    },
+    "reviews": {
+      "title": "Was unsere Kunden sagen",
+      "rating": "Basierend auf 64 Bewertungen",
+      "highlights": {
+        "quality": "Hohe Qualität, Handwerk und Zuverlässigkeit",
+        "service": "Freundlicher Service und maßgeschneiderte Lösungen",
+        "value": "Gutes Preis-Leistungs-Verhältnis und professionelle Ergebnisse"
+      },
+      "writeReview": "Schreiben Sie eine Bewertung",
+      "customer1": {
+        "name": "Bright Ride",
+        "date": "11. November 2025",
+        "review": "Die Jungs haben großartige Arbeit geleistet und ich bin sehr zufrieden mit dem Endergebnis meiner Glastür"
+      },
+      "customer2": {
+        "name": "Dennis Gerritzen",
+        "date": "4. September 2025",
+        "review": "Guter Service, nette Fachkräfte und schnell erledigt."
+      },
+      "customer3": {
+        "name": "Carin Titulaer",
+        "date": "28. April 2025",
+        "review": "Sehr zufrieden mit meiner neuen Veranda. Gute Arbeit geleistet"
+      },
+      "customer4": {
+        "name": "Orhan Yilmaz",
+        "date": "3. Mai 2024",
+        "review": "Erster Service und erstklassige Qualität, denkt mit und super schnell geregelt."
+      },
+      "customer5": {
+        "name": "Hanifi Pehlivan",
+        "date": "13. September 2024",
+        "review": "Erstklassige Qualität! Netter kundenfreundlich. Wir sind sehr zufrieden mit unserer neuen Überdachung. Sehr wissenswert und arbeitet genau und sauber."
+      },
+      "customer6": {
+        "name": "Mandy Kessels",
+        "date": "6. Dezember 2024",
+        "review": "Super hilfreich echte Empfehlung liebe Mitarbeiter und sehr schnell und sauber respekt"
+      }
+    },
+    "cta": {
+      "title": "Entdecken Sie jetzt die tollen Angebote!",
+      "subtitle": "Verpassen Sie diese Gelegenheit nicht und fordern Sie noch heute ein unverbindliches Angebot an",
+      "quoteButton": "Angebot anfordern",
+      "callButton": "Jetzt anrufen"
+    }
+  },
+  "products": {
+    "polycarbonaat": {
+      "hero": {
+        "title": "Polycarbonat-Veranda",
+        "subtitle": "Langlebig, bezahlbar und lichtdurchlässig",
+        "imageAlt": "Polycarbonat-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Polycarbonat-Veranda?",
+        "description1": "Eine Polycarbonat-Veranda ist die ideale Wahl für alle, die eine langlebige und bezahlbare Terrassenüberdachung suchen. Dank der robusten und klaren Polycarbonat-Dachplatten genießen Sie viel Licht, ohne auf den Schutz vor Regen und Wind verzichten zu müssen.",
+        "description2": "Bei AluSolutions liefern wir Ihre Polycarbonat-Veranda komplett auf Ihre Wünsche abgestimmt. Innerhalb von 3 Wochen sorgen unsere Veranda-Bauer für eine schnelle Lieferung und professionelle Installation.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Beispiel für Polycarbonat-Veranda"
+      },
+      "benefits": {
+        "benefit1": "Exzellente Lichtdurchlässigkeit",
+        "benefit2": "UV-beständig und wetterfest",
+        "benefit3": "Leichtgewicht aber stark",
+        "benefit4": "Bezahlbare Option",
+        "benefit5": "Leicht zu pflegen",
+        "benefit6": "Lange Haltbarkeit (10-15 Jahre)"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen mit Polycarbonatplatten",
+        "thickness": "Plattendicke",
+        "thicknessValue": "16mm oder 32mm Kanalplatten",
+        "colors": "Farben",
+        "colorsValue": "Klar, opak oder getönt",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Anthrazit, weiß, creme oder RAL-Farbe",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 7 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf Konstruktion"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einer Polycarbonat-Veranda?",
+        "description": "Fordern Sie ein unverbindliches Angebot an oder vereinbaren Sie einen Termin für individuelle Beratung",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "glazen": {
+      "hero": {
+        "title": "Glaskonstruktion",
+        "subtitle": "Maximale Transparenz und luxuriöses Erscheinungsbild",
+        "imageAlt": "Glaskonstruktion"
+      },
+      "info": {
+        "title": "Was ist eine Glaskonstruktion?",
+        "description1": "Eine Glaskonstruktion bietet maximales Licht und eine uneingeschränkte Sicht auf Ihren Garten. Das Sicherheitsglas ist sicher, stark und leicht zu reinigen.",
+        "description2": "Bei AluSolutions verwenden wir ausschließlich hochwertiges Sicherheitsglas, das alle Sicherheitsstandards erfüllt.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Glaskonstruktion"
+      },
+      "benefits": {
+        "benefit1": "Maximale Lichteinbringung",
+        "benefit2": "Uneingeschränkte Sicht",
+        "benefit3": "Luxuriöses Erscheinungsbild",
+        "benefit4": "Sicherheitsglas",
+        "benefit5": "Selbstreinigendes Glas erhältlich",
+        "benefit6": "Langlebigkeit"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen mit Sicherheitsglas",
+        "glassThickness": "Glasdicke",
+        "glassThicknessValue": "8mm Sicherheitsglas",
+        "options": "Optionen",
+        "optionsValue": "Klar, getönt oder selbstreinigend",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 6 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf Konstruktion"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einer Glaskonstruktion?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "lamellen": {
+      "hero": {
+        "title": "Lamellen-Veranda",
+        "subtitle": "Verstellbarer Sonnenschutz für optimalen Komfort",
+        "imageAlt": "Lamellen-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Lamellen-Veranda?",
+        "description1": "Eine Lamellen-Veranda bietet ultimativen Komfort. Die drehbaren Lamellen regulieren Licht und Belüftung nach Wunsch, von vollständig offen bis vollständig geschlossen.",
+        "description2": "Perfekt für diejenigen, die maximale Kontrolle über Licht und Schatten im Laufe des Tages wünschen.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Lamellen-Veranda"
+      },
+      "benefits": {
+        "benefit1": "Verstellbare Lamellen (0-135°)",
+        "benefit2": "Optimaler Sonnenschutz",
+        "benefit3": "Gute Belüftung",
+        "benefit4": "Wasserabfluss durch Lamellen",
+        "benefit5": "Elektrisch bedienbar",
+        "benefit6": "Modernes Design"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminumrahmen und Lamellen",
+        "operation": "Betrieb",
+        "operationValue": "Elektrisch mit Fernbedienung",
+        "rotation": "Drehung",
+        "rotationValue": "0° bis 135° einstellbar",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 6 Meter pro Abschnitt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf Konstruktion, 5 Jahre auf Motor"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einer Lamellen-Veranda?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "vouwdak": {
+      "hero": {
+        "title": "Klappdach-Veranda",
+        "subtitle": "Flexibel faltbar für jede Jahreszeit",
+        "imageAlt": "Klappdach-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Klappdach-Veranda?",
+        "description1": "Eine Klappdach-Veranda kombiniert Schutz mit Flexibilität. Die Bahn kann elektrisch geöffnet und geschlossen werden, so entscheiden Sie, wann Sie unter offenen Himmel sitzen.",
+        "description2": "Ideal für diejenigen, die das Beste aus beiden Welten wollen: Schutz wenn benötigt, Freiluft wenn gewünscht.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Klappdach-Veranda"
+      },
+      "benefits": {
+        "benefit1": "Vollständig faltbar",
+        "benefit2": "Elektrischer Betrieb",
+        "benefit3": "Wasser- und UV-beständiges Tuch",
+        "benefit4": "Atmosphärisches Erscheinungsbild",
+        "benefit5": "Eingebaute LED-Beleuchtung möglich",
+        "benefit6": "Windbeständig bis 6 Beaufort"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen mit PVC-Tuch",
+        "operation": "Betrieb",
+        "operationValue": "Elektrisch mit Fernbedienung",
+        "fabric": "Tuch",
+        "fabricValue": "Witterungsbeständiges, UV-beständiges PVC",
+        "fabricColors": "Tuchfarben",
+        "fabricColorsValue": "Weiß, creme, grau oder anthrazit",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 7 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf Rahmen, 5 Jahre auf Tuch"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einer Klappdach-Veranda?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "schuifwand": {
+      "hero": {
+        "title": "Glas-Schiebewände",
+        "subtitle": "Windfreies Genießen mit maximalem Blick",
+        "imageAlt": "Glas-Schiebewände"
+      },
+      "info": {
+        "title": "Was ist eine Glas-Schiebewand?",
+        "description1": "Eine Glas-Schiebewand verwandelt Ihre Veranda in einen windfreien Außenraum. Die Paneele gleiten leicht zur Seite für maximale Belüftung.",
+        "description2": "Perfekt als Ergänzung zu Ihrer bestehenden Veranda oder Überdachung.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Glas-Schiebewände"
+      },
+      "benefits": {
+        "benefit1": "Windfreies Genießen",
+        "benefit2": "Leicht zu öffnen",
+        "benefit3": "Uneingeschränkter Blick",
+        "benefit4": "Verlängern Sie Ihre Außen-Saison",
+        "benefit5": "Sicherheitsglas",
+        "benefit6": "Kinder-sicheres Schloss"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumschienen mit Sicherheitsglas",
+        "glassThickness": "Glasdicke",
+        "glassThicknessValue": "8mm oder 10mm Sicherheitsglas",
+        "system": "System",
+        "systemValue": "2, 3, 4 oder 5 Schienen",
+        "height": "Höhe",
+        "heightValue": "Bis zu 3 Meter",
+        "panelWidth": "Breite pro Paneel",
+        "panelWidthValue": "Bis zu 1 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einer Glas-Schiebewand?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "cube": {
+      "hero": {
+        "title": "Cube Veranda",
+        "subtitle": "Schickes modernes Design für Ihren Garten",
+        "imageAlt": "Cube Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Cube Veranda?",
+        "description1": "Die Cube Veranda ist die Spitze modernen Designs. Mit geraden Linien und einem minimalistischen Erscheinungsbild passt sich diese perfekte Würfel in jeden modernen Garten.",
+        "description2": "Stehend oder an das Haus angelehnt, macht die Cube immer Eindruck.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Cube Veranda"
+      },
+      "benefits": {
+        "benefit1": "Ultra modernes Design",
+        "benefit2": "Stehend möglich",
+        "benefit3": "Saubere Verarbeitung",
+        "benefit4": "Integrierte LED-Beleuchtung",
+        "benefit5": "Verschiedene Dachoptionen",
+        "benefit6": "Windschutz möglich"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Premium-Aluminiumkonstruktion",
+        "roofOptions": "Dachoptionen",
+        "roofOptionsValue": "Glas, Lamellen oder Polycarbonat",
+        "design": "Design",
+        "designValue": "Minimalistische Würfelform",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "dimensions": "Abmessungen",
+        "dimensionsValue": "Maßgefertigt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einer Cube Veranda?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "tuinkamer": {
+      "hero": {
+        "title": "Gartenraum",
+        "subtitle": "Genießen Sie Ihren Garten das ganze Jahr",
+        "imageAlt": "Gartenraum"
+      },
+      "info": {
+        "title": "Was ist ein Gartenraum?",
+        "description1": "Ein Gartenraum ist eine vollständig umschlossene Veranda, die es Ihnen ermöglicht, Ihren Garten das ganze Jahr über zu genießen, unabhängig vom Wetter.",
+        "description2": "Perfekt als zusätzlicher Wohnraum, Arbeitsplatz oder Hobbyraum mit Blick auf den Garten.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Gartenraum"
+      },
+      "benefits": {
+        "benefit1": "Das ganze Jahr nutzbar",
+        "benefit2": "Zusätzlicher Wohnraum",
+        "benefit3": "Vollständig isoliert",
+        "benefit4": "Heizung möglich",
+        "benefit5": "Erhöht den Wohnwert",
+        "benefit6": "Verschiedene Ausführungen"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Isoliertes Aluminiumsystem",
+        "glazing": "Verglasung",
+        "glazingValue": "HR++ Isolierglas",
+        "roof": "Dach",
+        "roofValue": "Isolierte Dachplatten",
+        "doors": "Türen",
+        "doorsValue": "Schiebe- oder Falttüren",
+        "dimensions": "Abmessungen",
+        "dimensionsValue": "Vollständig maßgeschneidert",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einem Gartenraum?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "carport": {
+      "hero": {
+        "title": "Carport",
+        "subtitle": "Schützen Sie Ihr Auto stilvoll",
+        "imageAlt": "Carport"
+      },
+      "info": {
+        "title": "Was ist ein Carport?",
+        "description1": "Ein Aluminium-Carport schützt Ihr Auto vor Regen, Schnee, Hagel und UV-Strahlung. Stilvoll und langlebig, ein wertvoller Zugang zu Ihrem Zuhause.",
+        "description2": "Erhältlich für ein oder mehrere Autos, komplett maßgeschneidert.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Carport"
+      },
+      "benefits": {
+        "benefit1": "Schutz vor Wetter",
+        "benefit2": "Wartungsfreies Aluminium",
+        "benefit3": "Erhöht den Wohnwert",
+        "benefit4": "Verschiedene Dachoptionen",
+        "benefit5": "Maßgefertigt",
+        "benefit6": "Schnelle Installation"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumkonstruktion",
+        "roofOptions": "Dachoptionen",
+        "roofOptionsValue": "Polycarbonat oder Aluminium",
+        "capacity": "Kapazität",
+        "capacityValue": "1, 2 oder mehr Autos",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "dimensions": "Abmessungen",
+        "dimensionsValue": "Maßgefertigt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interesse an einem Carport?",
+        "description": "Fordern Sie ein unverbindliches Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    }
+  },
+  "offerte": {
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "nextButton": "Weiter",
+    "backButton": "Zurück",
+    "submitButton": "Angebot senden",
+    "submitting": "Wird gesendet...",
+    "successTitle": "Vielen Dank!",
+    "successMessage": "Ihre Angebotsanfrage wurde erfolgreich übermittelt. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "errorTitle": "Fehler aufgetreten",
+    "errorMessage": "Beim Senden Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+    "step": "Schritt",
+    "of": "von",
+    "step1": {
+      "title": "Wo möchten Sie die Überdachung",
+      "standaard": "Standard",
+      "standaardDesc": "Bestehende Wand",
+      "vrijstaand": "Freistehend",
+      "vrijstaandDesc": "Frei im Garten"
+    },
+    "step2": {
+      "title": "Dachrinnentyp",
+      "rechteGoot": "Gerade Dachrinne",
+      "halfrondeGoot": "Halbrunde Dachrinne"
+    },
+    "step3": {
+      "title": "Farbe",
+      "wit": "Weiß",
+      "cremeWit": "Cremeweiß",
+      "antraciet": "Anthrazit",
+      "zwart": "Schwarz"
+    },
+    "step4": {
+      "title": "Material",
+      "placeholder": "Material auswählen",
+      "polycarbonaat": "Polycarbonat",
+      "glas": "Glas",
+      "lamellen": "Lamellen",
+      "vouwdak": "Faltdach"
+    },
+    "step5": {
+      "title": "Abmessungen",
+      "breedte": "Breite (m)",
+      "breedtePlaceholder": "Breite in Metern",
+      "lengte": "Länge (m)",
+      "lengtePlaceholder": "Länge in Metern"
+    },
+    "step6": {
+      "title": "Beleuchtung",
+      "placeholder": "Beleuchtung auswählen",
+      "geen": "Keine Beleuchtung",
+      "ledSpots": "LED-Spots",
+      "ledStrip": "LED-Streifen",
+      "beide": "Beides (Spots + Streifen)"
+    },
+    "step7": {
+      "title": "Möchten Sie weitere Optionen hinzufügen?",
+      "ja": "Ja",
+      "jaDesc": "Ich möchte weitere Optionen konfigurieren",
+      "nee": "Nein",
+      "neeDesc": "Weiter zur Montage"
+    },
+    "step8": {
+      "title": "Optionen konfigurieren",
+      "rechterKant": "Rechte Seite",
+      "rechterSpie": "Rechte Stütze",
+      "linkerKant": "Linke Seite",
+      "linkerSpie": "Linke Stütze",
+      "voorkant": "Vorderseite",
+      "achterkant": "Rückseite",
+      "selectOption": "Option auswählen",
+      "glas": "Glas",
+      "screen": "Rollo",
+      "geen": "Keine",
+      "ja": "Ja",
+      "nee": "Nein",
+      "extraOptions": "Zusatzoptionen",
+      "zonweringBoven": "Sonnenschutz oben",
+      "screenVoorkant": "Rollo vorne",
+      "screenLinkerKant": "Rollo links",
+      "screenRechterKant": "Rollo rechts"
+    },
+    "step9": {
+      "title": "Montage",
+      "inclusief": "Inklusive Montage",
+      "inclusiefDesc": "Wir übernehmen die Montage",
+      "exclusief": "Exklusive Montage",
+      "exclusiefDesc": "Ich montiere selbst"
+    },
+    "step10": {
+      "title": "Wohin können wir das Angebot senden?",
+      "subtitle": "Füllen Sie Ihre Kontaktdaten aus",
+      "naam": "Name",
+      "naamPlaceholder": "Name",
+      "straat": "Straße + Hausnummer",
+      "straatPlaceholder": "Straße + Hausnummer",
+      "woonplaats": "Stadt",
+      "woonplaatsPlaceholder": "Stadt",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "E-Mail-Adresse",
+      "telefoon": "Telefonnummer",
+      "opmerking": "Anmerkung",
+      "opmerkingPlaceholder": "Was sollten wir noch berücksichtigen?"
+    }
+  },
+  "appointment": {
+    "title": "Einen Termin vereinbaren",
+    "subtitle": "Planen Sie eine kostenlose Vermessung, Showroom-Besuch oder Beratung.",
+    "name": "Name",
+    "namePlaceholder": "Ihr vollständiger Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "ihre.email@beispiel.de",
+    "phone": "Telefon",
+    "serviceType": "Terminart",
+    "selectService": "Wählen Sie eine Art",
+    "preferredDate": "Wunschdatum",
+    "preferredTime": "Wunschzeit",
+    "selectTime": "Wählen Sie eine Zeit",
+    "message": "Nachricht",
+    "messagePlaceholder": "Sagen Sie uns, wie wir Ihnen helfen können...",
+    "submitButton": "Termin vereinbaren",
+    "successTitle": "Termin angefragt!",
+    "successMessage": "Wir werden Sie so schnell wie möglich kontaktieren, um Ihren Termin zu bestätigen."
+  }
+}
