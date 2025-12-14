@@ -35,6 +35,11 @@
   border-radius: 0 !important;
   padding: 1rem 2.5rem !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
 .custom-menubar .p-menubar-root-list {
