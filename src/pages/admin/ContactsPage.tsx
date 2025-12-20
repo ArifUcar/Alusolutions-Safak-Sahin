@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import { supabase } from '../../lib/supabase'
 import type { Contact } from '../../lib/supabase'
 
 export default function ContactsPage() {
+  const { t } = useTranslation()
   const [contacts, setContacts] = useState<Contact[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedContact, setSelectedContact] = useState<Contact | null>(null)
@@ -50,7 +52,7 @@ export default function ContactsPage() {
   }
 
   const handleDelete = async (id: string) => {
-    if (!confirm('Bu mesajı silmek istediğinizden emin misiniz?')) return
+    if (!confirm(t('admin.contacts.deleteConfirm'))) return
 
     try {
       const { error } = await supabase
@@ -76,19 +78,19 @@ export default function ContactsPage() {
   return (
     <div className="admin-page">
       <div className="admin-page-header">
-        <h1>Mesajlar</h1>
+        <h1>{t('admin.contacts.title')}</h1>
         <button
           className={`admin-btn ${filterUnread ? 'admin-btn-primary' : 'admin-btn-secondary'}`}
           onClick={() => setFilterUnread(!filterUnread)}
         >
-          {filterUnread ? 'Tümünü Göster' : 'Sadece Okunmamış'}
+          {filterUnread ? t('admin.contacts.filterAll') : t('admin.contacts.filterUnread')}
         </button>
       </div>
 
       {loading ? (
         <div className="loading-screen">
           <div className="spinner"></div>
-          <p>Yükleniyor...</p>
+          <p>{t('admin.contacts.loading')}</p>
         </div>
       ) : contacts.length === 0 ? (
         <div className="empty-state">
@@ -96,7 +98,7 @@ export default function ContactsPage() {
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
-          <h3>Mesaj bulunamadı</h3>
+          <h3>{t('admin.contacts.noMessages')}</h3>
         </div>
       ) : (
         <div style={{ display: 'grid', gridTemplateColumns: selectedContact ? '1fr 1fr' : '1fr', gap: '20px' }}>
@@ -104,9 +106,9 @@ export default function ContactsPage() {
             <table className="admin-table">
               <thead>
                 <tr>
-                  <th>Gönderen</th>
-                  <th>Konu</th>
-                  <th>Tarih</th>
+                  <th>{t('admin.contacts.tableSender')}</th>
+                  <th>{t('admin.contacts.tableSubject')}</th>
+                  <th>{t('admin.contacts.tableDate')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -147,18 +149,18 @@ export default function ContactsPage() {
               </div>
 
               <div style={{ marginBottom: '15px' }}>
-                <strong>Gönderen:</strong> {selectedContact.name}
+                <strong>{t('admin.contacts.detailSender')}</strong> {selectedContact.name}
               </div>
               <div style={{ marginBottom: '15px' }}>
-                <strong>Email:</strong> {selectedContact.email}
+                <strong>{t('admin.contacts.detailEmail')}</strong> {selectedContact.email}
               </div>
               {selectedContact.phone && (
                 <div style={{ marginBottom: '15px' }}>
-                  <strong>Telefon:</strong> {selectedContact.phone}
+                  <strong>{t('admin.contacts.detailPhone')}</strong> {selectedContact.phone}
                 </div>
               )}
               <div style={{ marginBottom: '15px' }}>
-                <strong>Tarih:</strong> {new Date(selectedContact.created_at).toLocaleString('tr-TR')}
+                <strong>{t('admin.contacts.detailDate')}</strong> {new Date(selectedContact.created_at).toLocaleString('tr-TR')}
               </div>
 
               <hr style={{ margin: '20px 0', border: 'none', borderTop: '1px solid #e0e0e0' }} />
@@ -172,13 +174,13 @@ export default function ContactsPage() {
                   href={`mailto:${selectedContact.email}?subject=Re: ${selectedContact.subject}`}
                   className="admin-btn admin-btn-primary"
                 >
-                  Yanıtla
+                  {t('admin.contacts.replyButton')}
                 </a>
                 <button
                   className="admin-btn admin-btn-danger"
                   onClick={() => handleDelete(selectedContact.id)}
                 >
-                  Sil
+                  {t('admin.contacts.deleteButton')}
                 </button>
               </div>
             </div>

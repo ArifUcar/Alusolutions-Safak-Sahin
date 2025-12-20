@@ -24,16 +24,7 @@
     "darkMode": "Donkere modus",
     "lightMode": "Lichte modus"
   },
-  "products": {
-    "polycarbonaat": "Polycarbonaat Veranda",
-    "glazen": "Glazen Veranda",
-    "lamellen": "Lamellen Veranda",
-    "vouwdak": "Vouwdak Veranda",
-    "schuifwand": "Glazen Schuifwand",
-    "cube": "Cube Veranda",
-    "tuinkamer": "Tuinkamer",
-    "carport": "Carport"
-  },
+ 
   "menu": {
     "verandas": "Veranda's",
     "polycarbonate": "Polycarbonaat Veranda",
@@ -208,9 +199,7 @@
       "lamellen": {
         "description": "Verstelbare lamellen voor optimale zonwering"
       },
-      "vouwdak": {
-        "description": "Flexibel opvouwbaar dak voor elk seizoen"
-      },
+      "vouwdak": "Vouwdak Veranda",
       "schuifwand": {
         "description": "Naadloze overgang tussen binnen en buiten"
       },
@@ -771,6 +760,140 @@
     }
   },
   "products": {
+    "polycarbonaat": "Polycarbonaat Veranda",
+    "glazen": "Glazen Veranda",
+    "lamellen": "Lamellen Veranda",
+    "vouwdak": "Vouwdak Veranda",
+    "schuifwand": "Glazen Schuifwand",
+    "cube": "Cube Veranda",
+    "tuinkamer": "Tuinkamer",
+    "carport": "Carport"
+  },
+  "offerte": {
+    "required": "Verplicht",
+    "optional": "Optioneel",
+    "nextButton": "Volgende",
+    "backButton": "Terug",
+    "submitButton": "Offerte versturen",
+    "submitting": "Versturen...",
+    "successTitle": "Bedankt!",
+    "successMessage": "Uw offerte aanvraag is succesvol verzonden. We nemen zo spoedig mogelijk contact met u op.",
+    "errorTitle": "Fout opgetreden",
+    "errorMessage": "Er is een fout opgetreden bij het versturen van uw aanvraag. Probeer het later opnieuw.",
+    "step": "Stap",
+    "of": "van",
+    "step1": {
+      "title": "Waar wilt u overkapping",
+      "standaard": "Standaard",
+      "standaardDesc": "Bestaande muur",
+      "vrijstaand": "Vrijstaand",
+      "vrijstaandDesc": "Vrij in de tuin"
+    },
+    "step2": {
+      "title": "Goot type",
+      "rechteGoot": "Rechte goot",
+      "halfrondeGoot": "Halfronde goot"
+    },
+    "step3": {
+      "title": "Kleur",
+      "wit": "Wit",
+      "cremeWit": "Crème wit",
+      "antraciet": "Antraciet",
+      "zwart": "Zwart"
+    },
+    "step4": {
+      "title": "Materiaal",
+      "placeholder": "Selecteer materiaal",
+      "polycarbonaat": "Polycarbonaat",
+      "glas": "Glas",
+      "lamellen": "Lamellen",
+      "vouwdak": "Vouwdak"
+    },
+    "step5": {
+      "title": "Afmetingen",
+      "breedte": "Breedte (m)",
+      "breedtePlaceholder": "Breedte in meters",
+      "lengte": "Lengte (m)",
+      "lengtePlaceholder": "Lengte in meters"
+    },
+    "step6": {
+      "title": "Verlichting",
+      "placeholder": "Selecteer verlichting",
+      "geen": "Geen verlichting",
+      "ledSpots": "LED spots",
+      "ledStrip": "LED strip",
+      "beide": "Beide (spots + strip)"
+    },
+    "step7": {
+      "title": "Wilt u meer opties toevoegen?",
+      "ja": "Ja",
+      "jaDesc": "Ik wil meer opties configureren",
+      "nee": "Nee",
+      "neeDesc": "Doorgaan naar montage"
+    },
+    "step8": {
+      "title": "Opties configureren",
+      "rechterKant": "Rechter kant",
+      "rechterSpie": "Rechter spie",
+      "linkerKant": "Linker kant",
+      "linkerSpie": "Linker spie",
+      "voorkant": "Voorkant",
+      "achterkant": "Achterkant",
+      "selectOption": "Selecteer optie",
+      "glas": "Glas",
+      "screen": "Screen",
+      "geen": "Geen",
+      "ja": "Ja",
+      "nee": "Nee",
+      "extraOptions": "Extra opties",
+      "zonweringBoven": "Zonwering boven",
+      "screenVoorkant": "Screen voorkant",
+      "screenLinkerKant": "Screen linker kant",
+      "screenRechterKant": "Screen rechter kant"
+    },
+    "step9": {
+      "title": "Montage",
+      "inclusief": "Inclusief montage",
+      "inclusiefDesc": "Wij verzorgen de montage",
+      "exclusief": "Exclusief montage",
+      "exclusiefDesc": "Ik monteer zelf"
+    },
+    "step10": {
+      "title": "Waar mogen wij de offerte naartoe sturen?",
+      "subtitle": "Vul uw contactgegevens in",
+      "naam": "Naam",
+      "naamPlaceholder": "Naam",
+      "straat": "Straatnaam + huisnummer",
+      "straatPlaceholder": "Straatnaam + huisnummer",
+      "woonplaats": "Woonplaats",
+      "woonplaatsPlaceholder": "Woonplaats",
+      "email": "E-mailadres",
+      "emailPlaceholder": "E-mailadres",
+      "telefoon": "Telefoonnummer",
+      "opmerking": "Opmerking",
+      "opmerkingPlaceholder": "Waar kunnen wij nog rekening houden?"
+    }
+  },
+  "appointment": {
+    "title": "Maak een Afspraak",
+    "subtitle": "Plan een gratis opmeting, showroom bezoek of adviesgesprek.",
+    "name": "Naam",
+    "namePlaceholder": "Uw volledige naam",
+    "email": "E-mail",
+    "emailPlaceholder": "uw.email@voorbeeld.nl",
+    "phone": "Telefoon",
+    "serviceType": "Type afspraak",
+    "selectService": "Selecteer een type",
+    "preferredDate": "Voorkeursdatum",
+    "preferredTime": "Voorkeurtijd",
+    "selectTime": "Selecteer een tijd",
+    "message": "Bericht",
+    "messagePlaceholder": "Vertel ons waar we u mee kunnen helpen...",
+    "submitButton": "Afspraak Maken",
+    "successTitle": "Afspraak aangevraagd!",
+    "successMessage": "We nemen zo spoedig mogelijk contact met u op om uw afspraak te bevestigen."
+  },
+  "product": {
     "polycarbonaat": {
       "hero": {
         "title": "Polycarbonaat Veranda",
@@ -1172,128 +1295,90 @@
       }
     }
   },
-  "offerte": {
-    "required": "Verplicht",
-    "optional": "Optioneel",
-    "nextButton": "Volgende",
-    "backButton": "Terug",
-    "submitButton": "Offerte versturen",
-    "submitting": "Versturen...",
-    "successTitle": "Bedankt!",
-    "successMessage": "Uw offerte aanvraag is succesvol verzonden. We nemen zo spoedig mogelijk contact met u op.",
-    "errorTitle": "Fout opgetreden",
-    "errorMessage": "Er is een fout opgetreden bij het versturen van uw aanvraag. Probeer het later opnieuw.",
-    "step": "Stap",
-    "of": "van",
-    "step1": {
-      "title": "Waar wilt u overkapping",
-      "standaard": "Standaard",
-      "standaardDesc": "Bestaande muur",
-      "vrijstaand": "Vrijstaand",
-      "vrijstaandDesc": "Vrij in de tuin"
-    },
-    "step2": {
-      "title": "Goot type",
-      "rechteGoot": "Rechte goot",
-      "halfrondeGoot": "Halfronde goot"
-    },
-    "step3": {
-      "title": "Kleur",
-      "wit": "Wit",
-      "cremeWit": "Crème wit",
-      "antraciet": "Antraciet",
-      "zwart": "Zwart"
-    },
-    "step4": {
-      "title": "Materiaal",
-      "placeholder": "Selecteer materiaal",
-      "polycarbonaat": "Polycarbonaat",
-      "glas": "Glas",
-      "lamellen": "Lamellen",
-      "vouwdak": "Vouwdak"
-    },
-    "step5": {
-      "title": "Afmetingen",
-      "breedte": "Breedte (m)",
-      "breedtePlaceholder": "Breedte in meters",
-      "lengte": "Lengte (m)",
-      "lengtePlaceholder": "Lengte in meters"
-    },
-    "step6": {
-      "title": "Verlichting",
-      "placeholder": "Selecteer verlichting",
-      "geen": "Geen verlichting",
-      "ledSpots": "LED spots",
-      "ledStrip": "LED strip",
-      "beide": "Beide (spots + strip)"
-    },
-    "step7": {
-      "title": "Wilt u meer opties toevoegen?",
-      "ja": "Ja",
-      "jaDesc": "Ik wil meer opties configureren",
-      "nee": "Nee",
-      "neeDesc": "Doorgaan naar montage"
-    },
-    "step8": {
-      "title": "Opties configureren",
-      "rechterKant": "Rechter kant",
-      "rechterSpie": "Rechter spie",
-      "linkerKant": "Linker kant",
-      "linkerSpie": "Linker spie",
-      "voorkant": "Voorkant",
-      "achterkant": "Achterkant",
-      "selectOption": "Selecteer optie",
-      "glas": "Glas",
-      "screen": "Screen",
-      "geen": "Geen",
-      "ja": "Ja",
-      "nee": "Nee",
-      "extraOptions": "Extra opties",
-      "zonweringBoven": "Zonwering boven",
-      "screenVoorkant": "Screen voorkant",
-      "screenLinkerKant": "Screen linker kant",
-      "screenRechterKant": "Screen rechter kant"
-    },
-    "step9": {
-      "title": "Montage",
-      "inclusief": "Inclusief montage",
-      "inclusiefDesc": "Wij verzorgen de montage",
-      "exclusief": "Exclusief montage",
-      "exclusiefDesc": "Ik monteer zelf"
-    },
-    "step10": {
-      "title": "Waar mogen wij de offerte naartoe sturen?",
-      "subtitle": "Vul uw contactgegevens in",
-      "naam": "Naam",
-      "naamPlaceholder": "Naam",
-      "straat": "Straatnaam + huisnummer",
-      "straatPlaceholder": "Straatnaam + huisnummer",
-      "woonplaats": "Woonplaats",
-      "woonplaatsPlaceholder": "Woonplaats",
-      "email": "E-mailadres",
-      "emailPlaceholder": "E-mailadres",
-      "telefoon": "Telefoonnummer",
-      "opmerking": "Opmerking",
-      "opmerkingPlaceholder": "Waar kunnen wij nog rekening houden?"
+  "admin": {
+    "contacts": {
+      "title": "Mesajlar",
+      "filterAll": "Tümünü Göster",
+      "filterUnread": "Sadece Okunmamış",
+      "loading": "Yükleniyor...",
+      "noMessages": "Mesaj bulunamadı",
+      "tableSender": "Gönderen",
+      "tableSubject": "Konu",
+      "tableDate": "Tarih",
+      "detailSender": "Gönderen:",
+      "detailEmail": "Email:",
+      "detailPhone": "Telefon:",
+      "detailDate": "Tarih:",
+      "replyButton": "Yanıtla",
+      "deleteButton": "Sil",
+      "deleteConfirm": "Bu mesajı silmek istediğinizden emin misiniz?"
     }
   },
-  "appointment": {
-    "title": "Maak een Afspraak",
-    "subtitle": "Plan een gratis opmeting, showroom bezoek of adviesgesprek.",
-    "name": "Naam",
-    "namePlaceholder": "Uw volledige naam",
-    "email": "E-mail",
-    "emailPlaceholder": "uw.email@voorbeeld.nl",
-    "phone": "Telefoon",
-    "serviceType": "Type afspraak",
-    "selectService": "Selecteer een type",
-    "preferredDate": "Voorkeursdatum",
-    "preferredTime": "Voorkeurtijd",
-    "selectTime": "Selecteer een tijd",
-    "message": "Bericht",
-    "messagePlaceholder": "Vertel ons waar we u mee kunnen helpen...",
-    "submitButton": "Afspraak Maken",
-    "successTitle": "Afspraak aangevraagd!",
-    "successMessage": "We nemen zo spoedig mogelijk contact met u op om uw afspraak te bevestigen."
+  "contactPage": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Wij staan voor u klaar"
+    },
+    "form": {
+      "title": "Contact formulier",
+      "subtitle": "Vul het formulier in en wij nemen zo snel mogelijk contact met u op.",
+      "name": "Naam",
+      "namePlaceholder": "Voor- en achternaam",
+      "phone": "Telefoon",
+      "phonePlaceholder": "Telefoonnummer",
+      "email": "Email",
+      "emailPlaceholder": "Email adres",
+      "city": "Woonplaats",
+      "cityPlaceholder": "Stad",
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Selecteer een onderwerp",
+      "subjectPolycarbonaat": "Polycarbonaat veranda",
+      "subjectPlatenwissel": "Platenwissel",
+      "subjectGlazen": "Glazen veranda",
+      "subjectLamellen": "Lamellen veranda",
+      "subjectVouwdak": "Vouwdak veranda",
+      "subjectSchuifwand": "Glazen schuifwand",
+      "subjectOverige": "Overige",
+      "message": "Bericht",
+      "messagePlaceholder": "Stel hier uw vraag",
+      "photo": "Foto of voorbeeld (niet verplicht)",
+      "submit": "Verstuur bericht",
+      "successMessage": "Bedankt voor uw bericht! Wij nemen zo snel mogelijk contact met u op."
+    },
+    "info": {
+      "title": "Wil je contact opnemen met AluSolutions?",
+      "intro1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij AluSolutions horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
+      "intro2": "Voor directe hulp adviseren we je om contact met ons op te nemen via WhatsApp. Daarnaast zijn we ook bereikbaar via e-mail of ons contactformulier.",
+      "phone": "Telefoon",
+      "email": "Email",
+      "showroom": "Showroom",
+      "hours": "Openingstijden",
+      "hoursMonThu": "Ma-Do: 09:00 - 17:00",
+      "hoursFri": "Vrijdag: Gesloten",
+      "hoursSat": "Za: 10:00 - 15:00",
+      "followUs": "Volg ons",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "appointment": "Maak een afspraak"
+    },
+    "map": {
+      "title": "Bezoek onze showroom"
+    },
+    "reviews": {
+      "title": "Wat onze klanten zeggen",
+      "rating": "Gebaseerd op 64 recensies",
+      "highlight1": "Hoge kwaliteit vakmanschap en betrouwbaarheid",
+      "highlight2": "Vriendelijke service en oplossingen op maat",
+      "highlight3": "Goede prijs-kwaliteitverhouding en professioneel resultaat",
+      "writeReview": "Schrijf een review"
+    },
+    "cta": {
+      "title": "Ontdek nu de geweldige aanbiedingen!",
+      "subtitle": "Mis deze kans niet en vraag vandaag nog een vrijblijvende offerte aan",
+      "quote": "Offerte aanvragen",
+      "call": "Bel ons direct"
+    }
   }
 }

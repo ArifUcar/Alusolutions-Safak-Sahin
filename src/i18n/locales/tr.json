@@ -26,13 +26,13 @@
   },
   "products": {
     "polycarbonaat": "Polikarbonat Veranda",
-    "glazen": "Camlı Veranda",
+    "glazen": "Cam Veranda",
     "lamellen": "Lamel Veranda",
     "vouwdak": "Katlanır Çatı Veranda",
-    "schuifwand": "Camlı Sürgülü Duvar",
-    "cube": "Cube Veranda",
-    "tuinkamer": "Bahçe Odası",
-    "carport": "Carport"
+    "schuifwand": "Cam Sürgülü Duvar",
+    "cube": "Küp Veranda",
+    "tuinkamer": "Kış Bahçesi",
+    "carport": "Otopark Sundurması"
   },
   "menu": {
     "verandas": "Veranda'lar",
@@ -894,7 +894,7 @@
     "successTitle": "Randevu talep edildi!",
     "successMessage": "Randevunuzu onaylamak için en kısa sürede sizinle iletişime geçeceğiz."
   },
-  "products": {
+  "product": {
     "polycarbonaat": {
       "hero": {
         "title": "Polikarbonat Veranda",
@@ -1282,6 +1282,92 @@
         "quoteButton": "Teklif İste",
         "appointmentButton": "Randevu Al"
       }
+    }
+  },
+  "admin": {
+    "contacts": {
+      "title": "Mesajlar",
+      "filterAll": "Tümünü Göster",
+      "filterUnread": "Sadece Okunmamış",
+      "loading": "Yükleniyor...",
+      "noMessages": "Mesaj bulunamadı",
+      "tableSender": "Gönderen",
+      "tableSubject": "Konu",
+      "tableDate": "Tarih",
+      "detailSender": "Gönderen:",
+      "detailEmail": "E-posta:",
+      "detailPhone": "Telefon:",
+      "detailDate": "Tarih:",
+      "replyButton": "Yanıtla",
+      "deleteButton": "Sil",
+      "deleteConfirm": "Bu mesajı silmek istediğinizden emin misiniz?"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "İletişim",
+      "subtitle": "Sizin için buradayız"
+    },
+    "form": {
+      "title": "İletişim formu",
+      "subtitle": "Formu doldurun, en kısa sürede sizinle iletişime geçeceğiz.",
+      "name": "İsim",
+      "namePlaceholder": "Ad ve soyad",
+      "phone": "Telefon",
+      "phonePlaceholder": "Telefon numarası",
+      "email": "E-posta",
+      "emailPlaceholder": "E-posta adresi",
+      "city": "Şehir",
+      "cityPlaceholder": "Şehir",
+      "subject": "Konu",
+      "subjectPlaceholder": "Bir konu seçin",
+      "subjectPolycarbonaat": "Polikarbonat veranda",
+      "subjectPlatenwissel": "Panel değişimi",
+      "subjectGlazen": "Cam veranda",
+      "subjectLamellen": "Panjurlu veranda",
+      "subjectVouwdak": "Katlanır çatılı veranda",
+      "subjectSchuifwand": "Cam sürgülü duvar",
+      "subjectOverige": "Diğer",
+      "message": "Mesaj",
+      "messagePlaceholder": "Sorunuzu buraya yazın",
+      "photo": "Fotoğraf veya örnek (zorunlu değil)",
+      "submit": "Mesajı gönder",
+      "successMessage": "Mesajınız için teşekkürler! En kısa sürede sizinle iletişime geçeceğiz."
+    },
+    "info": {
+      "title": "AluSolutions ile iletişime geçmek ister misiniz?",
+      "intro1": "Ürünlerimiz hakkında sorularınız mı var veya sipariş vermekte yardıma mı ihtiyacınız var? Belki sadece düşüncelerinizi paylaşmak istiyorsunuz? AluSolutions'da sizden haber almayı çok isteriz! Deneyimli ekibimiz tüm sorularınıza hızlı ve etkili şekilde yanıt vermeye hazır.",
+      "intro2": "Anında yardım için WhatsApp üzerinden bizimle iletişime geçmenizi öneririz. Ayrıca e-posta veya iletişim formumuz üzerinden de bize ulaşabilirsiniz.",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "showroom": "Showroom",
+      "hours": "Çalışma saatleri",
+      "hoursMonThu": "Pzt-Per: 09:00 - 17:00",
+      "hoursFri": "Cuma: Kapalı",
+      "hoursSat": "Cmt: 10:00 - 15:00",
+      "followUs": "Bizi takip edin",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "appointment": "Randevu alın"
+    },
+    "map": {
+      "title": "Showroom'umuzu ziyaret edin"
+    },
+    "reviews": {
+      "title": "Müşterilerimiz ne diyor",
+      "rating": "64 incelemeye dayalı",
+      "highlight1": "Yüksek kaliteli işçilik ve güvenilirlik",
+      "highlight2": "Dostane hizmet ve özel çözümler",
+      "highlight3": "İyi fiyat-kalite oranı ve profesyonel sonuçlar",
+      "writeReview": "Yorum yazın"
+    },
+    "cta": {
+      "title": "Şimdi harika teklifleri keşfedin!",
+      "subtitle": "Bu fırsatı kaçırmayın ve bugün ücretsiz teklif isteyin",
+      "quote": "Teklif isteyin",
+      "call": "Bizi doğrudan arayın"
     }
   }
 }

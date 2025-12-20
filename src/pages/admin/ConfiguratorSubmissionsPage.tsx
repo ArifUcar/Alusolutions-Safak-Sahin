@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
-import type { ConfiguratorSubmission, Configurator } from '../../lib/supabase'
+import type { ConfiguratorSubmission, MultiLanguageText } from '../../lib/supabase'
+
+interface ConfiguratorListItem {
+  id: string
+  slug: string
+  name: MultiLanguageText
+}
 
 export default function ConfiguratorSubmissionsPage() {
   const [submissions, setSubmissions] = useState<ConfiguratorSubmission[]>([])
-  const [configurators, setConfigurators] = useState<Configurator[]>([])
+  const [configurators, setConfigurators] = useState<ConfiguratorListItem[]>([])
   const [loading, setLoading] = useState(true)
   const [filterConfigurator, setFilterConfigurator] = useState('all')
   const [filterStatus, setFilterStatus] = useState('all')

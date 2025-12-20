@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { supabase } from '../../lib/supabase'
-import type { Configurator, MultiLanguageText, ConfiguratorStep, ConfiguratorOption, StepInputType } from '../../lib/supabase'
+import type { MultiLanguageText, ConfiguratorStep, ConfiguratorOption } from '../../lib/supabase'
 import StepFormModal from '../../components/StepFormModal'
 import OptionFormModal from '../../components/OptionFormModal'
 import DynamicConfigurator from '../../components/DynamicConfigurator'

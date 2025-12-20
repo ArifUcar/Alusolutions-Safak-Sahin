@@ -9,7 +9,7 @@ export default function ShowroomPage() {
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
-          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" alt="Showroom" />
+          <img src="/alusolutions-ons-project-1.webp" alt="Showroom" />
         </div>
         <div className="container product-hero-content">
           <h1>Bezoek onze Showroom</h1>

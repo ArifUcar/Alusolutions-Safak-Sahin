@@ -9,7 +9,7 @@ export default function GlazenPage() {
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
-          <img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=1920&q=80" alt="Glazen Veranda" />
+          <img src="/Glazen-Overkapping.webp" alt="Glazen Veranda" />
         </div>
         <div className="container product-hero-content">
           <h1>Glazen Veranda</h1>
@@ -35,7 +35,7 @@ export default function GlazenPage() {
               </ul>
             </div>
             <div className="product-image">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Glazen Veranda" />
+              <img src="/glasLux-home.webp" alt="Glazen Veranda" />
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function GlazenPage() {
         <div className="container">
           <h2>Projecten</h2>
           <div className="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Project 1" />
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Project 2" />
-            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Project 3" />
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Project 4" />
+            <img src="/Glazendak-cremewit-1.webp" alt="Project 1" />
+            <img src="/Antra-veranda-GC3-1-300x300.webp" alt="Project 2" />
+            <img src="/antra-veranda-GCD5-300x300.webp" alt="Project 3" />
+            <img src="/Glazenwand-1.webp" alt="Project 4" />
           </div>
         </div>
       </section>

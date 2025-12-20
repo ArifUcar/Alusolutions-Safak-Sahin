@@ -59,7 +59,7 @@ export default function OptionFormModal({ stepId, option, onClose, onSave }: Opt
       const filePath = `configurator-images/${fileName}`
 
       // Upload to Supabase Storage
-      const { data, error } = await supabase.storage
+      const { error } = await supabase.storage
         .from('gallery')
         .upload(filePath, file, {
           cacheControl: '3600',

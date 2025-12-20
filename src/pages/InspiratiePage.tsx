@@ -12,7 +12,7 @@ export default function InspiratiePage() {
       <section className="inspiratie-hero">
         <div className="inspiratie-hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+            src="/glasLux-home.webp"
             alt="Inspiratie"
           />
         </div>
@@ -41,7 +41,7 @@ export default function InspiratiePage() {
         <div className="container">
           <div className="gallery-masonry">
             <div className="gallery-item large">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Luxe veranda" />
+              <img src="/Glazen-Overkapping.webp" alt="Luxe veranda" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Glazen Veranda</span>
                 <h3>Moderne Glazen Veranda</h3>
@@ -49,7 +49,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Polycarbonaat" />
+              <img src="/Overkapping-Helder-poly.webp" alt="Polycarbonaat" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Polycarbonaat</span>
                 <h3>Klassieke Overkapping</h3>
@@ -57,7 +57,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Tuinkamer" />
+              <img src="/tuinkamer-antraciet-met-glazenwand-vast.webp" alt="Tuinkamer" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Tuinkamer</span>
                 <h3>Sfeervolle Tuinkamer</h3>
@@ -65,7 +65,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Lamellen" />
+              <img src="/lamellen-overkapping.webp" alt="Lamellen" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Lamellen</span>
                 <h3>Lamellen Veranda</h3>
@@ -73,7 +73,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item large">
-              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" alt="Vouwdak" />
+              <img src="/Vouwdak-halfopen.webp" alt="Vouwdak" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Vouwdak</span>
                 <h3>Vouwdak Systeem</h3>
@@ -81,7 +81,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Modern" />
+              <img src="/Glazendak-cremewit-1.webp" alt="Modern" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Glazen Veranda</span>
                 <h3>Strakke Lijnen</h3>
@@ -89,7 +89,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Luxe" />
+              <img src="/Tuinkamer-met-glazenschuifwanden-r96cf3vfsj301y31nv8v88rmlr026cvk5ly402n4i0.webp" alt="Luxe" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Tuinkamer</span>
                 <h3>Luxe Uitstraling</h3>
@@ -97,7 +97,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Klassiek" />
+              <img src="/antra-veranda-PC5-1.webp" alt="Klassiek" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Polycarbonaat</span>
                 <h3>Tijdloos Design</h3>
@@ -105,7 +105,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item large">
-              <img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80" alt="Schuifwand" />
+              <img src="/glazen-schuifwand-5-rails.webp" alt="Schuifwand" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Glazen Schuifwand</span>
                 <h3>Glazen Schuifwand</h3>
@@ -113,7 +113,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Elegant" />
+              <img src="/Lamellen-dak-open.webp" alt="Elegant" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Lamellen</span>
                 <h3>Elegante Lamellen</h3>
@@ -121,7 +121,7 @@ export default function InspiratiePage() {
               </div>
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600&q=80" alt="Compact" />
+              <img src="/Polycarbonaat-kleuren.webp" alt="Compact" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Polycarbonaat</span>
                 <h3>Compacte Oplossing</h3>
@@ -141,7 +141,7 @@ export default function InspiratiePage() {
           <div className="featured-grid">
             <div className="featured-item">
               <div className="featured-image">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Project 1" />
+                <img src="/Glazen-Overkapping.webp" alt="Project 1" />
               </div>
               <div className="featured-content">
                 <span className="featured-category">Glazen Veranda</span>
@@ -161,7 +161,7 @@ export default function InspiratiePage() {
 
             <div className="featured-item reverse">
               <div className="featured-image">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Project 2" />
+                <img src="/tuinkamer-antraciet-met-glazenwand-vast.webp" alt="Project 2" />
               </div>
               <div className="featured-content">
                 <span className="featured-category">Tuinkamer</span>
@@ -181,7 +181,7 @@ export default function InspiratiePage() {
 
             <div className="featured-item">
               <div className="featured-image">
-                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80" alt="Project 3" />
+                <img src="/Lamellen-dak-open.webp" alt="Project 3" />
               </div>
               <div className="featured-content">
                 <span className="featured-category">Lamellen Veranda</span>
@@ -212,11 +212,11 @@ export default function InspiratiePage() {
             <div className="transformation-item">
               <div className="transformation-images">
                 <div className="before">
-                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Voor" />
+                  <img src="/Grondstof-Polycarbonaat.webp" alt="Voor" />
                   <span>Voor</span>
                 </div>
                 <div className="after">
-                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Na" />
+                  <img src="/Glazen-Overkapping.webp" alt="Na" />
                   <span>Na</span>
                 </div>
               </div>
@@ -225,11 +225,11 @@ export default function InspiratiePage() {
             <div className="transformation-item">
               <div className="transformation-images">
                 <div className="before">
-                  <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Voor" />
+                  <img src="/cozy-patio-with-sofas-table-pergola-shade-patio-2048x1365.jpg.webp" alt="Voor" />
                   <span>Voor</span>
                 </div>
                 <div className="after">
-                  <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Na" />
+                  <img src="/tuinkamer-antraciet-met-glazenwand-vast.webp" alt="Na" />
                   <span>Na</span>
                 </div>
               </div>
@@ -245,22 +245,22 @@ export default function InspiratiePage() {
           <h2>Stijlen & Materialen</h2>
           <div className="styles-grid">
             <div className="style-card">
-              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80" alt="Modern" />
+              <img src="/cube-Overkapping.webp" alt="Modern" />
               <h3>Modern</h3>
               <p>Strakke lijnen en minimalistisch design</p>
             </div>
             <div className="style-card">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&q=80" alt="Klassiek" />
+              <img src="/Glazendak-cremewit-1.webp" alt="Klassiek" />
               <h3>Klassiek</h3>
               <p>Tijdloze elegantie en warmte</p>
             </div>
             <div className="style-card">
-              <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&q=80" alt="Landelijk" />
+              <img src="/Overkapping-met-spie.webp" alt="Landelijk" />
               <h3>Landelijk</h3>
               <p>Natuurlijke materialen en gezelligheid</p>
             </div>
             <div className="style-card">
-              <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=500&q=80" alt="Industrieel" />
+              <img src="/LuxeLine-lamellendak-vrijstaand-dicht.webp" alt="Industrieel" />
               <h3>Industrieel</h3>
               <p>Robuust en stoer karakter</p>
             </div>

@@ -7,8 +7,7 @@ import nl from './locales/nl.json'
 import tr from './locales/tr.json'
 import en from './locales/en.json'
 import de from './locales/de.json'
-import it from './locales/it.json'
-import fr from './locales/fr.json'
+
 
 
 i18n
@@ -20,8 +19,7 @@ i18n
       tr: { translation: tr },
       en: { translation: en },
       de: { translation: de },
-      it: { translation: it },
-      fr: { translation: fr }
+
     },
     fallbackLng: 'nl',
     debug: false,

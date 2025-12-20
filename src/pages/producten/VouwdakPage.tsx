@@ -9,7 +9,7 @@ export default function VouwdakPage() {
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
-          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80" alt="Vouwdak Veranda" />
+          <img src="/Vouwdak-halfopen.webp" alt="Vouwdak Veranda" />
         </div>
         <div className="container product-hero-content">
           <h1>Vouwdak Veranda</h1>
@@ -35,7 +35,7 @@ export default function VouwdakPage() {
               </ul>
             </div>
             <div className="product-image">
-              <img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80" alt="Vouwdak Veranda" />
+              <img src="/Vouwdak-open-details.webp" alt="Vouwdak Veranda" />
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function VouwdakPage() {
         <div className="container">
           <h2>Projecten</h2>
           <div className="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Project 1" />
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Project 2" />
-            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Project 3" />
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Project 4" />
+            <img src="/Verdaca-binnenkant-open-4.webp" alt="Project 1" />
+            <img src="/Vouwdak-halfopen.webp" alt="Project 2" />
+            <img src="/Vouwdak-open-details.webp" alt="Project 3" />
+            <img src="/cozy-patio-with-sofas-table-pergola-shade-patio-2048x1365.jpg.webp" alt="Project 4" />
           </div>
         </div>
       </section>

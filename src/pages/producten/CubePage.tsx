@@ -9,7 +9,7 @@ export default function CubePage() {
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
-          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" alt="Cube Veranda" />
+          <img src="/cube-Overkapping.webp" alt="Cube Veranda" />
         </div>
         <div className="container product-hero-content">
           <h1>Cube Veranda</h1>
@@ -35,7 +35,7 @@ export default function CubePage() {
               </ul>
             </div>
             <div className="product-image">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Cube Veranda" />
+              <img src="/cube-veranda.webp" alt="Cube Veranda" />
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function CubePage() {
         <div className="container">
           <h2>Projecten</h2>
           <div className="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Project 1" />
-            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Project 2" />
-            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Project 3" />
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Project 4" />
+            <img src="/cube-Overkapping.webp" alt="Project 1" />
+            <img src="/cube-veranda.webp" alt="Project 2" />
+            <img src="/LuxeLine-lamellendak-vrijstaand-dicht.webp" alt="Project 3" />
+            <img src="/cozy-patio-with-sofas-table-pergola-shade-patio-2048x1365.jpg.webp" alt="Project 4" />
           </div>
         </div>
       </section>

@@ -131,7 +131,6 @@ export default function DynamicConfigurator({ configuratorSlug }: DynamicConfigu
     // If there are non-required steps and no "more_customization" field in data yet
     const hasNonRequiredSteps = filtered.some(step => !step.is_required)
     const requiredSteps = filtered.filter(step => step.is_required)
-    const nonRequiredSteps = filtered.filter(step => !step.is_required)
 
     // If we have both required and non-required steps, inject a gateway question
     if (hasNonRequiredSteps && requiredSteps.length > 0) {
@@ -313,9 +312,9 @@ export default function DynamicConfigurator({ configuratorSlug }: DynamicConfigu
     }
   }
 
-  const getCurrentPreviewImage = (): string | null => {
+  const getCurrentPreviewImage = (): string => {
     const currentStep = getCurrentStep()
-    if (!currentStep) return configurator?.image_url || null
+    if (!currentStep) return configurator?.image_url || ''
 
     // If show_preview_image is enabled, find the selected option's image
     if (currentStep.show_preview_image) {
@@ -330,7 +329,7 @@ export default function DynamicConfigurator({ configuratorSlug }: DynamicConfigu
       }
     }
 
-    return configurator?.image_url || null
+    return configurator?.image_url || ''
   }
 
   if (loading) {

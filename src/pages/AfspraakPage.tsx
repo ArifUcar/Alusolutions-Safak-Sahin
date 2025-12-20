@@ -60,10 +60,10 @@ export default function AfspraakPage() {
   }
 
   const stepImages = [
-    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
-    'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80'
+    '/glasLux-home.webp',
+    '/Glazen-Overkapping.webp',
+    '/tuinkamer-antraciet-met-glazenwand-vast.webp',
+    '/lamellen-overkapping.webp'
   ]
 
   const timeSlots = [

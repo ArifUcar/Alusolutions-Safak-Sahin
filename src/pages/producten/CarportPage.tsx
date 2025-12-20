@@ -9,7 +9,7 @@ export default function CarportPage() {
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80" alt="Carport" />
+          <img src="/antra-veranda-PHCAR9-300x300.webp" alt="Carport" />
         </div>
         <div className="container product-hero-content">
           <h1>Carport</h1>
@@ -35,7 +35,7 @@ export default function CarportPage() {
               </ul>
             </div>
             <div className="product-image">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Carport" />
+              <img src="/Overkapping-met-spie.webp" alt="Carport" />
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function CarportPage() {
         <div className="container">
           <h2>Projecten</h2>
           <div className="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Project 1" />
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Project 2" />
-            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Project 3" />
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Project 4" />
+            <img src="/antra-veranda-PHCAR9-300x300.webp" alt="Project 1" />
+            <img src="/Overkapping-met-spie.webp" alt="Project 2" />
+            <img src="/Overkapping-Helder-poly.webp" alt="Project 3" />
+            <img src="/antra-veranda-PC5-1.webp" alt="Project 4" />
           </div>
         </div>
       </section>

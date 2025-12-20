@@ -9,7 +9,7 @@ export default function SchuifwandPage() {
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
-          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1920&q=80" alt="Glazen Schuifwand" />
+          <img src="/glazen-schuifwand-5-rails.webp" alt="Glazen Schuifwand" />
         </div>
         <div className="container product-hero-content">
           <h1>Glazen Schuifwand</h1>
@@ -35,7 +35,7 @@ export default function SchuifwandPage() {
               </ul>
             </div>
             <div className="product-image">
-              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Glazen Schuifwand" />
+              <img src="/5-rails-wand-stijlvol.webp" alt="Glazen Schuifwand" />
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function SchuifwandPage() {
         <div className="container">
           <h2>Projecten</h2>
           <div className="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Project 1" />
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Project 2" />
-            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80" alt="Project 3" />
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Project 4" />
+            <img src="/glazen-wand-4-rails-samen.webp" alt="Project 1" />
+            <img src="/6-rails-glazenschuifwand-laag.webp" alt="Project 2" />
+            <img src="/Glazenschuifwand-6-rails.webp" alt="Project 3" />
+            <img src="/Glazenwanden-met-jacuzi.webp" alt="Project 4" />
           </div>
         </div>
       </section>

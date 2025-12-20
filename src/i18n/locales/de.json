@@ -25,12 +25,12 @@
     "lightMode": "Heller Modus"
   },
   "products": {
-    "polycarbonaat": "Polycarbonat-Veranda",
-    "glazen": "Glas-Veranda",
-    "lamellen": "Lamellen-Veranda",
-    "vouwdak": "Faltdach-Veranda",
-    "schuifwand": "Glas-Schiebewand",
-    "cube": "Cube-Veranda",
+    "polycarbonaat": "Polycarbonat Veranda",
+    "glazen": "Glasveranda",
+    "lamellen": "Lamellen Veranda",
+    "vouwdak": "Faltdach Veranda",
+    "schuifwand": "Glasschiebewand",
+    "cube": "Cube Veranda",
     "tuinkamer": "Gartenzimmer",
     "carport": "Carport"
   },
@@ -402,30 +402,30 @@
     }
   },
   "privacy": {
-    "title": "Privacy Policy",
+    "title": "Datenschutz",
     "section1": {
-      "title": "1. Inleiding",
-      "content": "AluSolutions respecteert uw privacy en zorgt ervoor dat de persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld."
+      "title": "1. Einleitung",
+      "content": "AluSolutions respektiert Ihre Privatsphäre und stellt sicher, dass die persönlichen Informationen, die Sie uns zur Verfügung stellen, vertraulich behandelt werden."
     },
     "section2": {
-      "title": "2. Gegevens die wij verzamelen",
-      "content": "Wij verzamelen gegevens die u zelf aan ons verstrekt, zoals naam, adres, e-mailadres en telefoonnummer wanneer u contact met ons opneemt of een offerte aanvraagt."
+      "title": "2. Von uns gesammelte Daten",
+      "content": "Wir sammeln Daten, die Sie uns selbst zur Verfügung stellen, wie Name, Adresse, E-Mail-Adresse und Telefonnummer, wenn Sie Kontakt mit uns aufnehmen oder ein Angebot anfordern."
     },
     "section3": {
-      "title": "3. Gebruik van gegevens",
-      "content": "Uw gegevens worden gebruikt voor het verwerken van uw aanvraag, het versturen van offertes en het leveren van onze diensten."
+      "title": "3. Verwendung der Daten",
+      "content": "Ihre Daten werden verwendet, um Ihre Anfrage zu bearbeiten, Angebote zu versenden und unsere Dienstleistungen bereitzustellen."
     },
     "section4": {
-      "title": "4. Bewaartermijn",
-      "content": "Wij bewaren uw gegevens niet langer dan noodzakelijk voor het doel waarvoor ze zijn verzameld."
+      "title": "4. Aufbewahrungsfrist",
+      "content": "Wir bewahren Ihre Daten nicht länger auf als für den Zweck, für den sie erhoben wurden, notwendig ist."
     },
     "section5": {
-      "title": "5. Uw rechten",
-      "content": "U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op."
+      "title": "5. Ihre Rechte",
+      "content": "Sie haben das Recht auf Einsicht, Berichtigung und Löschung Ihrer Daten. Wenden Sie sich hierfür an uns."
     },
     "section6": {
-      "title": "6. Contact",
-      "content": "Voor vragen over ons privacybeleid kunt u contact opnemen via info@alusolutions.nl"
+      "title": "6. Kontakt",
+      "content": "Für Fragen zu unserer Datenschutzpolitik können Sie Kontakt mit uns aufnehmen unter info@alusolutions.nl"
     }
   },
   "voorwaarden": {
@@ -893,5 +893,481 @@
     "submitButton": "Afspraak Maken",
     "successTitle": "Afspraak aangevraagd!",
     "successMessage": "We nemen zo spoedig mogelijk contact met u op om uw afspraak te bevestigen."
+  },
+  "product": {
+    "polycarbonaat": {
+      "hero": {
+        "title": "Polycarbonat-Veranda",
+        "subtitle": "Langlebig, erschwinglich und lichtdurchlässig",
+        "imageAlt": "Polycarbonat-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Polycarbonat-Veranda?",
+        "description1": "Eine Polycarbonat-Veranda von AluSolutions ist eine langlebige Terrassen- oder Gartenüberdachung, die Ihr Zuhause um einen stilvollen Außenbereich erweitert.",
+        "description2": "Bei AluSolutions liefern wir Ihre Polycarbonat-Veranda vollständig nach Ihren Wünschen. Innerhalb von 3 Wochen sorgen unsere Veranda-Bauer für eine schnelle Lieferung und fachgerechte Montage.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Polycarbonat-Veranda Beispiel"
+      },
+      "benefits": {
+        "benefit1": "Hervorragende Lichtdurchlässigkeit",
+        "benefit2": "UV-beständig und witterungsbeständig",
+        "benefit3": "Leicht aber robust",
+        "benefit4": "Kostengünstige Option",
+        "benefit5": "Pflegeleicht",
+        "benefit6": "Lange Lebensdauer (10-15 Jahre)"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen mit Polycarbonatplatten",
+        "thickness": "Plattenstärke",
+        "thicknessValue": "16mm oder 32mm Hohlkammerplatten",
+        "colors": "Farben",
+        "colorsValue": "Transparent, opal oder farbig",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Anthrazit, weiß, creme oder RAL-Farbe",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 7 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf die Konstruktion"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einer Polycarbonat-Veranda?",
+        "description": "Fordern Sie ein kostenloses Angebot an oder vereinbaren Sie einen Termin für persönliche Beratung",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "glazen": {
+      "hero": {
+        "title": "Glas-Veranda",
+        "subtitle": "Maximale Transparenz und luxuriöse Ausstrahlung",
+        "imageAlt": "Glas-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Glas-Veranda?",
+        "description1": "Eine Glas-Veranda bietet maximalen Lichteinfall und eine ungehinderte Aussicht auf Ihren Garten. Gehärtetes Glas ist sicher, robust und leicht zu reinigen.",
+        "description2": "Bei AluSolutions verwenden wir ausschließlich hochwertiges gehärtetes Glas, das alle Sicherheitsstandards erfüllt.",
+        "benefitsTitle": "Vorteile",
+        "imageAlt": "Glas-Veranda"
+      },
+      "benefits": {
+        "benefit1": "Maximaler Lichteinfall",
+        "benefit2": "Ungehinderte Aussicht",
+        "benefit3": "Luxuriöse Ausstrahlung",
+        "benefit4": "Gehärtetes Sicherheitsglas",
+        "benefit5": "Selbstreinigendes Glas verfügbar",
+        "benefit6": "Lange Lebensdauer"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen mit gehärtetem Glas",
+        "glassThickness": "Glasstärke",
+        "glassThicknessValue": "8mm gehärtetes Sicherheitsglas",
+        "options": "Optionen",
+        "optionsValue": "Transparent, getönt oder selbstreinigend",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 6 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf die Konstruktion"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einer Glas-Veranda?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "lamellen": {
+      "hero": {
+        "title": "Lamellen-Veranda",
+        "subtitle": "Verstellbarer Sonnenschutz für optimalen Komfort",
+        "imageAlt": "Lamellen-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Lamellen-Veranda?",
+        "description1": "Eine Lamellen-Veranda bietet ultimative Flexibilität. Die drehbaren Lamellen regulieren Sonnenlicht und Belüftung ganz nach Ihren Wünschen - von vollständig offen bis vollständig geschlossen.",
+        "description2": "Perfekt für diejenigen, die maximale Kontrolle über Licht und Schatten während des Tages wünschen."
+      },
+      "benefits": {
+        "benefit1": "Verstellbare Lamellen (0-135°)",
+        "benefit2": "Optimaler Sonnenschutz",
+        "benefit3": "Gute Belüftung",
+        "benefit4": "Wasserableitung über Lamellen",
+        "benefit5": "Elektrische Steuerung",
+        "benefit6": "Modernes Design"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen und Lamellen",
+        "operation": "Steuerung",
+        "operationValue": "Elektrisch mit Fernbedienung",
+        "rotation": "Drehung",
+        "rotationValue": "0° bis 135° verstellbar",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 6 Meter pro Abschnitt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf Konstruktion, 5 Jahre auf Motor"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einer Lamellen-Veranda?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "vouwdak": {
+      "hero": {
+        "title": "Faltdach-Veranda",
+        "subtitle": "Flexibel faltbar für jede Jahreszeit",
+        "imageAlt": "Faltdach-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Faltdach-Veranda?",
+        "description1": "Eine Faltdach-Veranda kombiniert Schutz mit Flexibilität. Das Gewebe kann elektrisch geöffnet und geschlossen werden, sodass Sie selbst entscheiden, wann Sie unter freiem Himmel sitzen möchten.",
+        "description2": "Ideal für diejenigen, die das Beste aus beiden Welten wollen: Schutz bei Bedarf, Freiluft wenn gewünscht."
+      },
+      "benefits": {
+        "benefit1": "Vollständig faltbar",
+        "benefit2": "Elektrische Steuerung",
+        "benefit3": "Wasserdichtes und UV-schützendes Gewebe",
+        "benefit4": "Atmosphärische Ausstrahlung",
+        "benefit5": "Integrierte LED-Beleuchtung möglich",
+        "benefit6": "Windbeständig bis 6 Beaufort"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumrahmen mit PVC-Gewebe",
+        "operation": "Steuerung",
+        "operationValue": "Elektrisch mit Fernbedienung",
+        "fabric": "Gewebe",
+        "fabricValue": "Wetterbeständiges, UV-schützendes PVC",
+        "fabricColors": "Gewebefarben",
+        "fabricColorsValue": "Weiß, creme, grau oder anthrazit",
+        "maxWidth": "Maximale Breite",
+        "maxWidthValue": "Bis zu 7 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre auf Rahmen, 5 Jahre auf Gewebe"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einer Faltdach-Veranda?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "schuifwand": {
+      "hero": {
+        "title": "Glas-Schiebewand",
+        "subtitle": "Windfreier Genuss mit maximaler Aussicht",
+        "imageAlt": "Glas-Schiebewand"
+      },
+      "info": {
+        "title": "Was ist eine Glas-Schiebewand?",
+        "description1": "Eine Glas-Schiebewand verwandelt Ihre Veranda in einen windfreien Außenraum. Die Paneele schieben sich mühelos zur Seite für maximale Belüftung.",
+        "description2": "Eine perfekte Ergänzung zu Ihrer bestehenden Veranda oder Überdachung."
+      },
+      "benefits": {
+        "benefit1": "Windfreier Genuss",
+        "benefit2": "Einfach zu öffnen",
+        "benefit3": "Ungehinderte Aussicht",
+        "benefit4": "Verlängern Sie Ihre Außensaison",
+        "benefit5": "Gehärtetes Sicherheitsglas",
+        "benefit6": "Kindersichere Verriegelung"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumschienen mit gehärtetem Glas",
+        "glassThickness": "Glasstärke",
+        "glassThicknessValue": "8mm oder 10mm gehärtetes Glas",
+        "system": "System",
+        "systemValue": "2, 3, 4 oder 5 Schienen",
+        "height": "Höhe",
+        "heightValue": "Bis zu 3 Meter",
+        "panelWidth": "Breite pro Paneel",
+        "panelWidthValue": "Bis zu 1 Meter",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einer Glas-Schiebewand?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "cube": {
+      "hero": {
+        "title": "Cube-Veranda",
+        "subtitle": "Schlankes modernes Design für Ihren Garten",
+        "imageAlt": "Cube-Veranda"
+      },
+      "info": {
+        "title": "Was ist eine Cube-Veranda?",
+        "description1": "Die Cube-Veranda ist der Gipfel des modernen Designs. Mit geraden Linien und minimalistischer Ausstrahlung passt dieser perfekte Würfel in jeden modernen Garten.",
+        "description2": "Freistehend oder an das Haus angebaut, der Cube macht immer Eindruck."
+      },
+      "benefits": {
+        "benefit1": "Ultra-modernes Design",
+        "benefit2": "Freistehend möglich",
+        "benefit3": "Saubere Verarbeitung",
+        "benefit4": "Integrierte LED-Beleuchtung",
+        "benefit5": "Verschiedene Dachoptionen",
+        "benefit6": "Windschutz möglich"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Premium-Aluminiumkonstruktion",
+        "roofOptions": "Dachoptionen",
+        "roofOptionsValue": "Glas, Lamellen oder Polycarbonat",
+        "design": "Design",
+        "designValue": "Minimalistische Würfelform",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "dimensions": "Abmessungen",
+        "dimensionsValue": "Maßanfertigung",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einer Cube-Veranda?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "tuinkamer": {
+      "hero": {
+        "title": "Gartenzimmer",
+        "subtitle": "Genießen Sie Ihren Garten das ganze Jahr über",
+        "imageAlt": "Gartenzimmer"
+      },
+      "info": {
+        "title": "Was ist ein Gartenzimmer?",
+        "description1": "Ein Gartenzimmer ist eine vollständig geschlossene Veranda, in der Sie das ganze Jahr über Ihren Garten genießen können, unabhängig vom Wetter.",
+        "description2": "Perfekt als zusätzlicher Wohnraum, Arbeitsbereich oder Hobbyraum mit Gartenblick."
+      },
+      "benefits": {
+        "benefit1": "Ganzjährig nutzbar",
+        "benefit2": "Zusätzlicher Wohnraum",
+        "benefit3": "Vollständig isoliert",
+        "benefit4": "Beheizung möglich",
+        "benefit5": "Steigert den Hauswert",
+        "benefit6": "Verschiedene Ausführungen"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Isoliertes Aluminiumsystem",
+        "glazing": "Verglasung",
+        "glazingValue": "HR++ Isolierglas",
+        "roof": "Dach",
+        "roofValue": "Isolierte Dachpaneele",
+        "doors": "Türen",
+        "doorsValue": "Schiebe- oder Falttüren",
+        "dimensions": "Abmessungen",
+        "dimensionsValue": "Vollständig maßgefertigt",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einem Gartenzimmer?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    },
+    "carport": {
+      "hero": {
+        "title": "Carport",
+        "subtitle": "Schützen Sie Ihr Auto stilvoll",
+        "imageAlt": "Carport"
+      },
+      "info": {
+        "title": "Was ist ein Carport?",
+        "description1": "Ein Aluminium-Carport schützt Ihr Auto vor Regen, Schnee, Hagel und UV-Strahlung. Stilvoll und langlebig, eine wertvolle Ergänzung zu Ihrem Zuhause.",
+        "description2": "Vollständig maßgefertigt für ein oder mehrere Autos."
+      },
+      "benefits": {
+        "benefit1": "Schutz vor Witterungseinflüssen",
+        "benefit2": "Wartungsfreies Aluminium",
+        "benefit3": "Steigert den Hauswert",
+        "benefit4": "Verschiedene Dachoptionen",
+        "benefit5": "Maßanfertigung",
+        "benefit6": "Schnelle Montage"
+      },
+      "specs": {
+        "title": "Spezifikationen",
+        "material": "Material",
+        "materialValue": "Aluminiumkonstruktion",
+        "roofOptions": "Dachoptionen",
+        "roofOptionsValue": "Polycarbonat oder Aluminium",
+        "capacity": "Kapazität",
+        "capacityValue": "1, 2 oder mehr Autos",
+        "frameColors": "Rahmenfarben",
+        "frameColorsValue": "Alle RAL-Farben möglich",
+        "dimensions": "Abmessungen",
+        "dimensionsValue": "Maßanfertigung",
+        "warranty": "Garantie",
+        "warrantyValue": "10 Jahre"
+      },
+      "gallery": {
+        "title": "Projekte",
+        "project1Alt": "Projekt 1",
+        "project2Alt": "Projekt 2",
+        "project3Alt": "Projekt 3",
+        "project4Alt": "Projekt 4"
+      },
+      "cta": {
+        "title": "Interessiert an einem Carport?",
+        "description": "Fordern Sie ein kostenloses Angebot an",
+        "quoteButton": "Angebot anfordern",
+        "appointmentButton": "Termin vereinbaren"
+      }
+    }
+  },
+  "admin": {
+    "contacts": {
+      "title": "Nachrichten",
+      "filterAll": "Alle anzeigen",
+      "filterUnread": "Nur ungelesene",
+      "loading": "Wird geladen...",
+      "noMessages": "Keine Nachrichten gefunden",
+      "tableSender": "Absender",
+      "tableSubject": "Betreff",
+      "tableDate": "Datum",
+      "detailSender": "Absender:",
+      "detailEmail": "E-Mail:",
+      "detailPhone": "Telefon:",
+      "detailDate": "Datum:",
+      "replyButton": "Antworten",
+      "deleteButton": "Löschen",
+      "deleteConfirm": "Sind Sie sicher, dass Sie diese Nachricht löschen möchten?"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Kontakt",
+      "subtitle": "Wir sind für Sie da"
+    },
+    "form": {
+      "title": "Kontaktformular",
+      "subtitle": "Füllen Sie das Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "name": "Name",
+      "namePlaceholder": "Vor- und Nachname",
+      "phone": "Telefon",
+      "phonePlaceholder": "Telefonnummer",
+      "email": "E-Mail",
+      "emailPlaceholder": "E-Mail-Adresse",
+      "city": "Stadt",
+      "cityPlaceholder": "Stadt",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Wählen Sie einen Betreff",
+      "subjectPolycarbonaat": "Polycarbonat-Veranda",
+      "subjectPlatenwissel": "Plattenwechsel",
+      "subjectGlazen": "Glas-Veranda",
+      "subjectLamellen": "Lamellen-Veranda",
+      "subjectVouwdak": "Faltdach-Veranda",
+      "subjectSchuifwand": "Glas-Schiebewand",
+      "subjectOverige": "Sonstiges",
+      "message": "Nachricht",
+      "messagePlaceholder": "Stellen Sie hier Ihre Frage",
+      "photo": "Foto oder Beispiel (nicht erforderlich)",
+      "submit": "Nachricht senden",
+      "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden."
+    },
+    "info": {
+      "title": "Möchten Sie Kontakt mit AluSolutions aufnehmen?",
+      "intro1": "Haben Sie Fragen zu unseren Produkten oder benötigen Sie Hilfe bei der Bestellung? Vielleicht möchten Sie einfach Ihre Gedanken teilen? Bei AluSolutions freuen wir uns von Ihnen zu hören! Unser engagiertes Team steht bereit, um schnell und effizient auf all Ihre Fragen zu reagieren.",
+      "intro2": "Für sofortige Hilfe empfehlen wir Ihnen, uns über WhatsApp zu kontaktieren. Wir sind auch per E-Mail oder über unser Kontaktformular erreichbar.",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "showroom": "Showroom",
+      "hours": "Öffnungszeiten",
+      "hoursMonThu": "Mo-Do: 09:00 - 17:00",
+      "hoursFri": "Freitag: Geschlossen",
+      "hoursSat": "Sa: 10:00 - 15:00",
+      "followUs": "Folgen Sie uns",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "appointment": "Termin vereinbaren"
+    },
+    "map": {
+      "title": "Besuchen Sie unseren Showroom"
+    },
+    "reviews": {
+      "title": "Was unsere Kunden sagen",
+      "rating": "Basierend auf 64 Bewertungen",
+      "highlight1": "Hochwertige Handwerkskunst und Zuverlässigkeit",
+      "highlight2": "Freundlicher Service und maßgeschneiderte Lösungen",
+      "highlight3": "Gutes Preis-Leistungs-Verhältnis und professionelle Ergebnisse",
+      "writeReview": "Bewertung schreiben"
+    },
+    "cta": {
+      "title": "Entdecken Sie jetzt die tollen Angebote!",
+      "subtitle": "Verpassen Sie diese Gelegenheit nicht und fordern Sie noch heute ein unverbindliches Angebot an",
+      "quote": "Angebot anfordern",
+      "call": "Rufen Sie uns direkt an"
+    }
   }
 }

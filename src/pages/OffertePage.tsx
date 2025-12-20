@@ -66,13 +66,13 @@ export default function OffertePage() {
   }
 
   const stepImages = [
-    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80'
+    '/glasLux-home.webp',
+    '/Glazen-Overkapping.webp',
+    '/lamellen-overkapping.webp',
+    '/Vouwdak-halfopen.webp',
+    '/tuinkamer-antraciet-met-glazenwand-vast.webp',
+    '/glazen-schuifwand-5-rails.webp',
+    '/cube-Overkapping.webp'
   ]
 
   return (
@@ -155,7 +155,7 @@ export default function OffertePage() {
                         <strong>Halfronde Goot</strong>
                         <span>Klassiek Ontwerp</span>
                       </div>
-                      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&q=80" alt="Halfronde Goot" />
+                      <img src="/Offorte/glazen-veranda/goot-type/Halfronde-Goot.png" alt="Halfronde Goot" />
                     </label>
 
                     <label className={`option-card with-image ${formData.gootType === 'recht' ? 'selected' : ''}`}>
@@ -170,7 +170,7 @@ export default function OffertePage() {
                         <strong>Rechte Goot</strong>
                         <span>Moderne Afwerking</span>
                       </div>
-                      <img src="https://images.unsplash.com/photo-1558618047-f4b511cc0c0b?w=100&q=80" alt="Rechte Goot" />
+                      <img src="/Offorte/glazen-veranda/goot-type/Rechte-Goot.png" alt="Rechte Goot" />
                     </label>
                   </div>
                 </div>

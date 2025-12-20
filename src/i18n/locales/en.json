@@ -893,5 +893,481 @@
     "submitButton": "Make Appointment",
     "successTitle": "Appointment requested!",
     "successMessage": "We will contact you as soon as possible to confirm your appointment."
+  },
+  "product": {
+    "polycarbonaat": {
+      "hero": {
+        "title": "Polycarbonate Veranda",
+        "subtitle": "Durable, affordable and light-permeable",
+        "imageAlt": "Polycarbonate Veranda"
+      },
+      "info": {
+        "title": "What is a Polycarbonate Veranda?",
+        "description1": "A polycarbonate veranda is the ideal choice for anyone looking for a durable and affordable patio cover. Thanks to the strong and clear polycarbonate roof panels, you enjoy plenty of light without compromising on protection from rain and wind.",
+        "description2": "At AluSolutions, we deliver your polycarbonate veranda completely customized to your needs. Within 3 weeks, our veranda experts ensure fast delivery and professional installation.",
+        "benefitsTitle": "Benefits",
+        "imageAlt": "Polycarbonate Veranda example"
+      },
+      "benefits": {
+        "benefit1": "Excellent light transmission",
+        "benefit2": "UV resistant and weatherproof",
+        "benefit3": "Lightweight yet strong",
+        "benefit4": "Affordable option",
+        "benefit5": "Easy to maintain",
+        "benefit6": "Long lifespan (10-15 years)"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Aluminum frame with polycarbonate panels",
+        "thickness": "Panel thickness",
+        "thicknessValue": "16mm or 32mm channeled panels",
+        "colors": "Colors",
+        "colorsValue": "Clear, opal or colored",
+        "frameColors": "Frame colors",
+        "frameColorsValue": "Anthracite, white, cream or RAL color",
+        "maxWidth": "Maximum width",
+        "maxWidthValue": "Up to 7 meters",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years on construction"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Polycarbonate Veranda?",
+        "description": "Request a free quote or make an appointment for personalized advice",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "glazen": {
+      "hero": {
+        "title": "Glass Veranda",
+        "subtitle": "Maximum transparency and luxurious appearance",
+        "imageAlt": "Glass Veranda"
+      },
+      "info": {
+        "title": "What is a Glass Veranda?",
+        "description1": "A glass veranda offers maximum light entry and an unobstructed view of your garden. Tempered glass is safe, strong and easy to clean.",
+        "description2": "At AluSolutions, we only use high-quality tempered glass that meets all safety standards.",
+        "benefitsTitle": "Benefits",
+        "imageAlt": "Glass Veranda"
+      },
+      "benefits": {
+        "benefit1": "Maximum light entry",
+        "benefit2": "Unobstructed view",
+        "benefit3": "Luxurious appearance",
+        "benefit4": "Tempered safety glass",
+        "benefit5": "Self-cleaning glass available",
+        "benefit6": "Long lifespan"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Aluminum frame with tempered glass",
+        "glassThickness": "Glass thickness",
+        "glassThicknessValue": "8mm tempered safety glass",
+        "options": "Options",
+        "optionsValue": "Clear, colored or self-cleaning",
+        "frameColors": "Frame colors",
+        "frameColorsValue": "All RAL colors possible",
+        "maxWidth": "Maximum width",
+        "maxWidthValue": "Up to 6 meters",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years on construction"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Glass Veranda?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "lamellen": {
+      "hero": {
+        "title": "Louvered Veranda",
+        "subtitle": "Adjustable sun protection for optimal comfort",
+        "imageAlt": "Louvered Veranda"
+      },
+      "info": {
+        "title": "What is a Louvered Veranda?",
+        "description1": "A louvered veranda offers ultimate flexibility. The rotating louvers allow you to adjust sunlight and ventilation exactly as you wish, from fully open to completely closed.",
+        "description2": "Perfect for those who want maximum control over light and shade throughout the day."
+      },
+      "benefits": {
+        "benefit1": "Adjustable louvers (0-135°)",
+        "benefit2": "Optimal sun protection",
+        "benefit3": "Excellent ventilation",
+        "benefit4": "Water drainage through louvers",
+        "benefit5": "Electric control",
+        "benefit6": "Modern design"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Aluminum frame and louvers",
+        "operation": "Control",
+        "operationValue": "Electric with remote control",
+        "rotation": "Rotation",
+        "rotationValue": "Adjustable from 0° to 135°",
+        "frameColors": "Frame colors",
+        "frameColorsValue": "All RAL colors possible",
+        "maxWidth": "Maximum width",
+        "maxWidthValue": "Up to 6 meters per section",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years on construction, 5 years on motor"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Louvered Veranda?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "vouwdak": {
+      "hero": {
+        "title": "Folding Roof Veranda",
+        "subtitle": "Flexibly foldable for every season",
+        "imageAlt": "Folding Roof Veranda"
+      },
+      "info": {
+        "title": "What is a Folding Roof Veranda?",
+        "description1": "A folding roof veranda combines protection with flexibility. The fabric can be electrically opened and closed, so you decide when you want to sit under the open sky.",
+        "description2": "Ideal for those who want the best of both worlds: protection when needed, open air when desired."
+      },
+      "benefits": {
+        "benefit1": "Fully retractable",
+        "benefit2": "Electric control",
+        "benefit3": "Waterproof and UV-protective fabric",
+        "benefit4": "Atmospheric appearance",
+        "benefit5": "Integrated LED lighting possible",
+        "benefit6": "Wind resistant up to 6 Beaufort"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Aluminum frame with PVC fabric",
+        "operation": "Control",
+        "operationValue": "Electric with remote control",
+        "fabric": "Fabric",
+        "fabricValue": "Weatherproof, UV-protective PVC",
+        "fabricColors": "Fabric colors",
+        "fabricColorsValue": "White, cream, gray or anthracite",
+        "maxWidth": "Maximum width",
+        "maxWidthValue": "Up to 7 meters",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years on frame, 5 years on fabric"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Folding Roof Veranda?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "schuifwand": {
+      "hero": {
+        "title": "Glass Sliding Wall",
+        "subtitle": "Wind-free enjoyment with maximum view",
+        "imageAlt": "Glass Sliding Wall"
+      },
+      "info": {
+        "title": "What is a Glass Sliding Wall?",
+        "description1": "A glass sliding wall transforms your veranda into a wind-free outdoor room. The panels slide easily to the side for maximum ventilation.",
+        "description2": "The perfect addition to your existing veranda or canopy."
+      },
+      "benefits": {
+        "benefit1": "Wind-free enjoyment",
+        "benefit2": "Easy to open",
+        "benefit3": "Unobstructed view",
+        "benefit4": "Extend your outdoor season",
+        "benefit5": "Tempered safety glass",
+        "benefit6": "Child-safe lock"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Aluminum tracks with tempered glass",
+        "glassThickness": "Glass thickness",
+        "glassThicknessValue": "8mm or 10mm tempered glass",
+        "system": "System",
+        "systemValue": "2, 3, 4 or 5 tracks",
+        "height": "Height",
+        "heightValue": "Up to 3 meters",
+        "panelWidth": "Width per panel",
+        "panelWidthValue": "Up to 1 meter",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Glass Sliding Wall?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "cube": {
+      "hero": {
+        "title": "Cube Veranda",
+        "subtitle": "Sleek modern design for your garden",
+        "imageAlt": "Cube Veranda"
+      },
+      "info": {
+        "title": "What is a Cube Veranda?",
+        "description1": "The Cube veranda is the pinnacle of modern design. With straight lines and a minimalist appearance, this perfect cube fits into any modern garden.",
+        "description2": "Freestanding or attached to the house, the Cube always makes an impression."
+      },
+      "benefits": {
+        "benefit1": "Ultra-modern design",
+        "benefit2": "Freestanding possible",
+        "benefit3": "Clean finish",
+        "benefit4": "Integrated LED lighting",
+        "benefit5": "Various roof options",
+        "benefit6": "Wind screen possible"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Premium aluminum construction",
+        "roofOptions": "Roof options",
+        "roofOptionsValue": "Glass, louvers or polycarbonate",
+        "design": "Design",
+        "designValue": "Minimalist cube shape",
+        "frameColors": "Frame colors",
+        "frameColorsValue": "All RAL colors possible",
+        "dimensions": "Dimensions",
+        "dimensionsValue": "Custom-made",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Cube Veranda?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "tuinkamer": {
+      "hero": {
+        "title": "Garden Room",
+        "subtitle": "Enjoy your garden all year round",
+        "imageAlt": "Garden Room"
+      },
+      "info": {
+        "title": "What is a Garden Room?",
+        "description1": "A garden room is a fully enclosed veranda where you can enjoy your garden all year round, regardless of the weather.",
+        "description2": "Perfect as extra living space, workspace or hobby room with a garden view."
+      },
+      "benefits": {
+        "benefit1": "Usable year-round",
+        "benefit2": "Extra living space",
+        "benefit3": "Fully insulated",
+        "benefit4": "Heating possible",
+        "benefit5": "Increases home value",
+        "benefit6": "Various finishes"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Insulated aluminum system",
+        "glazing": "Glazing",
+        "glazingValue": "HR++ insulation glass",
+        "roof": "Roof",
+        "roofValue": "Insulated roof panels",
+        "doors": "Doors",
+        "doorsValue": "Sliding or folding doors",
+        "dimensions": "Dimensions",
+        "dimensionsValue": "Fully custom",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Garden Room?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    },
+    "carport": {
+      "hero": {
+        "title": "Carport",
+        "subtitle": "Protect your car stylishly",
+        "imageAlt": "Carport"
+      },
+      "info": {
+        "title": "What is a Carport?",
+        "description1": "An aluminum carport protects your car from rain, snow, hail and UV rays. Stylish and durable, a valuable addition to your home.",
+        "description2": "Completely custom-made for one or more cars."
+      },
+      "benefits": {
+        "benefit1": "Protection against weather conditions",
+        "benefit2": "Maintenance-free aluminum",
+        "benefit3": "Increases home value",
+        "benefit4": "Various roof options",
+        "benefit5": "Custom-made",
+        "benefit6": "Quick installation"
+      },
+      "specs": {
+        "title": "Specifications",
+        "material": "Material",
+        "materialValue": "Aluminum construction",
+        "roofOptions": "Roof options",
+        "roofOptionsValue": "Polycarbonate or aluminum",
+        "capacity": "Capacity",
+        "capacityValue": "1, 2 or more cars",
+        "frameColors": "Frame colors",
+        "frameColorsValue": "All RAL colors possible",
+        "dimensions": "Dimensions",
+        "dimensionsValue": "Custom-made",
+        "warranty": "Warranty",
+        "warrantyValue": "10 years"
+      },
+      "gallery": {
+        "title": "Projects",
+        "project1Alt": "Project 1",
+        "project2Alt": "Project 2",
+        "project3Alt": "Project 3",
+        "project4Alt": "Project 4"
+      },
+      "cta": {
+        "title": "Interested in a Carport?",
+        "description": "Request a free quote",
+        "quoteButton": "Request Quote",
+        "appointmentButton": "Make Appointment"
+      }
+    }
+  },
+  "admin": {
+    "contacts": {
+      "title": "Messages",
+      "filterAll": "Show All",
+      "filterUnread": "Unread Only",
+      "loading": "Loading...",
+      "noMessages": "No messages found",
+      "tableSender": "Sender",
+      "tableSubject": "Subject",
+      "tableDate": "Date",
+      "detailSender": "Sender:",
+      "detailEmail": "Email:",
+      "detailPhone": "Phone:",
+      "detailDate": "Date:",
+      "replyButton": "Reply",
+      "deleteButton": "Delete",
+      "deleteConfirm": "Are you sure you want to delete this message?"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "We are here for you"
+    },
+    "form": {
+      "title": "Contact form",
+      "subtitle": "Fill out the form and we will contact you as soon as possible.",
+      "name": "Name",
+      "namePlaceholder": "First and last name",
+      "phone": "Phone",
+      "phonePlaceholder": "Phone number",
+      "email": "Email",
+      "emailPlaceholder": "Email address",
+      "city": "City",
+      "cityPlaceholder": "City",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjectPolycarbonaat": "Polycarbonate veranda",
+      "subjectPlatenwissel": "Panel replacement",
+      "subjectGlazen": "Glass veranda",
+      "subjectLamellen": "Louvered veranda",
+      "subjectVouwdak": "Folding roof veranda",
+      "subjectSchuifwand": "Glass sliding wall",
+      "subjectOverige": "Other",
+      "message": "Message",
+      "messagePlaceholder": "Ask your question here",
+      "photo": "Photo or example (not required)",
+      "submit": "Send message",
+      "successMessage": "Thank you for your message! We will contact you as soon as possible."
+    },
+    "info": {
+      "title": "Want to get in touch with AluSolutions?",
+      "intro1": "Do you have questions about our products, or do you need help placing an order? Maybe you just want to share your thoughts? At AluSolutions, we'd love to hear from you! Our dedicated team is ready to respond quickly and efficiently to all your questions.",
+      "intro2": "For immediate help, we recommend contacting us via WhatsApp. We are also available via email or our contact form.",
+      "phone": "Phone",
+      "email": "Email",
+      "showroom": "Showroom",
+      "hours": "Opening hours",
+      "hoursMonThu": "Mon-Thu: 09:00 - 17:00",
+      "hoursFri": "Friday: Closed",
+      "hoursSat": "Sat: 10:00 - 15:00",
+      "followUs": "Follow us",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube",
+      "appointment": "Make an appointment"
+    },
+    "map": {
+      "title": "Visit our showroom"
+    },
+    "reviews": {
+      "title": "What our customers say",
+      "rating": "Based on 64 reviews",
+      "highlight1": "High quality craftsmanship and reliability",
+      "highlight2": "Friendly service and custom solutions",
+      "highlight3": "Good value for money and professional results",
+      "writeReview": "Write a review"
+    },
+    "cta": {
+      "title": "Discover the amazing offers now!",
+      "subtitle": "Don't miss this opportunity and request a free quote today",
+      "quote": "Request quote",
+      "call": "Call us directly"
+    }
   }
 }

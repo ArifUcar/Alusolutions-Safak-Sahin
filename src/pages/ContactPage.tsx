@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/ContactPage.css'
 
 export default function ContactPage() {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     naam: '',
     telefoon: '',
@@ -23,7 +25,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
-    alert('Bedankt voor uw bericht! Wij nemen zo snel mogelijk contact met u op.')
+    alert(t('contactPage.form.successMessage'))
   }
 
   return (
@@ -34,13 +36,13 @@ export default function ContactPage() {
       <section className="contact-hero">
         <div className="contact-hero-bg">
           <img
-            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
-            alt="Contact AluSolutions"
+            src="/glasLux-home.webp"
+            alt={t('contactPage.hero.title')}
           />
         </div>
         <div className="container contact-hero-content">
-          <h1>Contact</h1>
-          <p>Wij staan voor u klaar</p>
+          <h1>{t('contactPage.hero.title')}</h1>
+          <p>{t('contactPage.hero.subtitle')}</p>
         </div>
       </section>
 
@@ -50,30 +52,30 @@ export default function ContactPage() {
           <div className="contact-grid">
             {/* Contact Form */}
             <div className="contact-form-wrapper">
-              <h2>Contact formulier</h2>
-              <p>Vul het formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+              <h2>{t('contactPage.form.title')}</h2>
+              <p>{t('contactPage.form.subtitle')}</p>
 
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="naam">Naam *</label>
+                    <label htmlFor="naam">{t('contactPage.form.name')} *</label>
                     <input
                       type="text"
                       id="naam"
                       name="naam"
-                      placeholder="Voor- en achternaam"
+                      placeholder={t('contactPage.form.namePlaceholder')}
                       value={formData.naam}
                       onChange={handleChange}
                       required
                     />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="telefoon">Telefoon *</label>
+                    <label htmlFor="telefoon">{t('contactPage.form.phone')} *</label>
                     <input
                       type="tel"
                       id="telefoon"
                       name="telefoon"
-                      placeholder="Telefoonnummer"
+                      placeholder={t('contactPage.form.phonePlaceholder')}
                       value={formData.telefoon}
                       onChange={handleChange}
                       required
@@ -83,24 +85,24 @@ export default function ContactPage() {
 
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="email">Email *</label>
+                    <label htmlFor="email">{t('contactPage.form.email')} *</label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="Email adres"
+                      placeholder={t('contactPage.form.emailPlaceholder')}
                       value={formData.email}
                       onChange={handleChange}
                       required
                     />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="woonplaats">Woonplaats</label>
+                    <label htmlFor="woonplaats">{t('contactPage.form.city')}</label>
                     <input
                       type="text"
                       id="woonplaats"
                       name="woonplaats"
-                      placeholder="Stad"
+                      placeholder={t('contactPage.form.cityPlaceholder')}
                       value={formData.woonplaats}
                       onChange={handleChange}
                     />
@@ -108,7 +110,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="onderwerp">Onderwerp *</label>
+                  <label htmlFor="onderwerp">{t('contactPage.form.subject')} *</label>
                   <select
                     id="onderwerp"
                     name="onderwerp"
@@ -116,23 +118,23 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                   >
-                    <option value="">Selecteer een onderwerp</option>
-                    <option value="polycarbonaat">Polycarbonaat veranda</option>
-                    <option value="platenwissel">Platenwissel</option>
-                    <option value="glazen">Glazen veranda</option>
-                    <option value="lamellen">Lamellen veranda</option>
-                    <option value="vouwdak">Vouwdak veranda</option>
-                    <option value="schuifwand">Glazen schuifwand</option>
-                    <option value="overige">Overige</option>
+                    <option value="">{t('contactPage.form.subjectPlaceholder')}</option>
+                    <option value="polycarbonaat">{t('contactPage.form.subjectPolycarbonaat')}</option>
+                    <option value="platenwissel">{t('contactPage.form.subjectPlatenwissel')}</option>
+                    <option value="glazen">{t('contactPage.form.subjectGlazen')}</option>
+                    <option value="lamellen">{t('contactPage.form.subjectLamellen')}</option>
+                    <option value="vouwdak">{t('contactPage.form.subjectVouwdak')}</option>
+                    <option value="schuifwand">{t('contactPage.form.subjectSchuifwand')}</option>
+                    <option value="overige">{t('contactPage.form.subjectOverige')}</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="bericht">Bericht *</label>
+                  <label htmlFor="bericht">{t('contactPage.form.message')} *</label>
                   <textarea
                     id="bericht"
                     name="bericht"
-                    placeholder="Stel hier uw vraag"
+                    placeholder={t('contactPage.form.messagePlaceholder')}
                     rows={5}
                     value={formData.bericht}
                     onChange={handleChange}
@@ -141,7 +143,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="foto">Foto of voorbeeld (niet verplicht)</label>
+                  <label htmlFor="foto">{t('contactPage.form.photo')}</label>
                   <input
                     type="file"
                     id="foto"
@@ -152,7 +154,7 @@ export default function ContactPage() {
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-large">
-                  Verstuur bericht
+                  {t('contactPage.form.submit')}
                 </button>
               </form>
             </div>
@@ -160,15 +162,12 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="contact-info-wrapper">
               <div className="contact-intro">
-                <h2>Wil je contact opnemen met AluSolutions?</h2>
+                <h2>{t('contactPage.info.title')}</h2>
                 <p>
-                  Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling?
-                  Misschien wil je gewoon je gedachten delen? Bij AluSolutions horen we graag van je!
-                  Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.
+                  {t('contactPage.info.intro1')}
                 </p>
                 <p>
-                  Voor directe hulp adviseren we je om contact met ons op te nemen via WhatsApp.
-                  Daarnaast zijn we ook bereikbaar via e-mail of ons contactformulier.
+                  {t('contactPage.info.intro2')}
                 </p>
               </div>
 
@@ -176,7 +175,7 @@ export default function ContactPage() {
                 <div className="contact-detail-item">
                   <div className="detail-icon">📞</div>
                   <div className="detail-content">
-                    <strong>Telefoon</strong>
+                    <strong>{t('contactPage.info.phone')}</strong>
                     <p>+31 85 060 5036</p>
                   </div>
                 </div>
@@ -184,7 +183,7 @@ export default function ContactPage() {
                 <div className="contact-detail-item">
                   <div className="detail-icon">✉️</div>
                   <div className="detail-content">
-                    <strong>Email</strong>
+                    <strong>{t('contactPage.info.email')}</strong>
                     <p>info@alusolutions.nl</p>
                   </div>
                 </div>
@@ -192,7 +191,7 @@ export default function ContactPage() {
                 <div className="contact-detail-item">
                   <div className="detail-icon">📍</div>
                   <div className="detail-content">
-                    <strong>Showroom</strong>
+                    <strong>{t('contactPage.info.showroom')}</strong>
                     <p>Mariastraat 22</p>
                     <p>5953 NL Reuver</p>
                   </div>
@@ -201,26 +200,26 @@ export default function ContactPage() {
                 <div className="contact-detail-item">
                   <div className="detail-icon">🕐</div>
                   <div className="detail-content">
-                    <strong>Openingstijden</strong>
-                    <p>Ma-Do: 09:00 - 17:00</p>
-                    <p>Vrijdag: Gesloten</p>
-                    <p>Za: 10:00 - 15:00</p>
+                    <strong>{t('contactPage.info.hours')}</strong>
+                    <p>{t('contactPage.info.hoursMonThu')}</p>
+                    <p>{t('contactPage.info.hoursFri')}</p>
+                    <p>{t('contactPage.info.hoursSat')}</p>
                   </div>
                 </div>
               </div>
 
               <div className="social-contact">
-                <h3>Volg ons</h3>
+                <h3>{t('contactPage.info.followUs')}</h3>
                 <div className="social-buttons">
-                  <a href="#" className="social-btn facebook">Facebook</a>
-                  <a href="#" className="social-btn instagram">Instagram</a>
-                  <a href="#" className="social-btn whatsapp">WhatsApp</a>
-                  <a href="#" className="social-btn youtube">YouTube</a>
+                  <a href="#" className="social-btn facebook">{t('contactPage.info.facebook')}</a>
+                  <a href="#" className="social-btn instagram">{t('contactPage.info.instagram')}</a>
+                  <a href="#" className="social-btn whatsapp">{t('contactPage.info.whatsapp')}</a>
+                  <a href="#" className="social-btn youtube">{t('contactPage.info.youtube')}</a>
                 </div>
               </div>
 
               <a href="#" className="btn btn-primary btn-large appointment-btn">
-                Maak een afspraak
+                {t('contactPage.info.appointment')}
               </a>
             </div>
           </div>
@@ -230,7 +229,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="map-section">
         <div className="container">
-          <h2>Bezoek onze showroom</h2>
+          <h2>{t('contactPage.map.title')}</h2>
           <div className="map-wrapper">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5!2d6.0789!3d51.2876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74b8a5c8b1a1f%3A0x1234567890abcdef!2sMariastraat%2022%2C%205953%20NL%20Reuver%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1234567890"
@@ -250,26 +249,26 @@ export default function ContactPage() {
       <section className="reviews-section">
         <div className="container">
           <div className="reviews-header">
-            <h2>Wat onze klanten zeggen</h2>
+            <h2>{t('contactPage.reviews.title')}</h2>
             <div className="reviews-summary">
               <div className="rating-score">4.8</div>
               <div className="rating-info">
                 <div className="stars">★★★★★</div>
-                <p>Gebaseerd op 64 recensies</p>
+                <p>{t('contactPage.reviews.rating')}</p>
               </div>
             </div>
           </div>
 
           <div className="reviews-highlights">
-            <div className="highlight-item">✓ Hoge kwaliteit vakmanschap en betrouwbaarheid</div>
-            <div className="highlight-item">✓ Vriendelijke service en oplossingen op maat</div>
-            <div className="highlight-item">✓ Goede prijs-kwaliteitverhouding en professioneel resultaat</div>
+            <div className="highlight-item">✓ {t('contactPage.reviews.highlight1')}</div>
+            <div className="highlight-item">✓ {t('contactPage.reviews.highlight2')}</div>
+            <div className="highlight-item">✓ {t('contactPage.reviews.highlight3')}</div>
           </div>
 
           <div className="reviews-grid">
             <div className="review-card">
               <div className="review-header">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Bright Ride" />
+                <div className="review-avatar">BR</div>
                 <div>
                   <strong>Bright Ride</strong>
                   <span>11 November 2025</span>
@@ -281,7 +280,7 @@ export default function ContactPage() {
 
             <div className="review-card">
               <div className="review-header">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Dennis Gerritzen" />
+                <div className="review-avatar">DG</div>
                 <div>
                   <strong>Dennis Gerritzen</strong>
                   <span>4 September 2025</span>
@@ -293,7 +292,7 @@ export default function ContactPage() {
 
             <div className="review-card">
               <div className="review-header">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Carin Titulaer" />
+                <div className="review-avatar">CT</div>
                 <div>
                   <strong>Carin Titulaer</strong>
                   <span>28 April 2025</span>
@@ -305,7 +304,7 @@ export default function ContactPage() {
 
             <div className="review-card">
               <div className="review-header">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Orhan Yilmaz" />
+                <div className="review-avatar">OY</div>
                 <div>
                   <strong>Orhan Yilmaz</strong>
                   <span>3 Mei 2024</span>
@@ -317,7 +316,7 @@ export default function ContactPage() {
 
             <div className="review-card">
               <div className="review-header">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80" alt="Hanifi Pehlivan" />
+                <div className="review-avatar">HP</div>
                 <div>
                   <strong>Hanifi Pehlivan</strong>
                   <span>13 September 2024</span>
@@ -329,7 +328,7 @@ export default function ContactPage() {
 
             <div className="review-card">
               <div className="review-header">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" alt="Mandy Kessels" />
+                <div className="review-avatar">MK</div>
                 <div>
                   <strong>Mandy Kessels</strong>
                   <span>6 December 2024</span>
@@ -341,7 +340,7 @@ export default function ContactPage() {
           </div>
 
           <div className="reviews-cta">
-            <a href="#" className="btn btn-secondary">Schrijf een review</a>
+            <a href="#" className="btn btn-secondary">{t('contactPage.reviews.writeReview')}</a>
           </div>
         </div>
       </section>
@@ -349,11 +348,11 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="contact-cta">
         <div className="container">
-          <h2>Ontdek nu de geweldige aanbiedingen!</h2>
-          <p>Mis deze kans niet en vraag vandaag nog een vrijblijvende offerte aan</p>
+          <h2>{t('contactPage.cta.title')}</h2>
+          <p>{t('contactPage.cta.subtitle')}</p>
           <div className="cta-buttons">
-            <a href="/#offerte" className="btn btn-primary btn-large">Offerte aanvragen</a>
-            <a href="#" className="btn btn-secondary btn-large">Bel ons direct</a>
+            <a href="/#offerte" className="btn btn-primary btn-large">{t('contactPage.cta.quote')}</a>
+            <a href="#" className="btn btn-secondary btn-large">{t('contactPage.cta.call')}</a>
           </div>
         </div>
       </section>
