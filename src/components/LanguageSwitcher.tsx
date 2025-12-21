@@ -7,8 +7,6 @@ const languages = [
   { code: 'nl', name: 'Nederlands', flagCode: 'nl' },
   { code: 'de', name: 'Deutsch', flagCode: 'de' },
   { code: 'en', name: 'English', flagCode: 'gb' },
-  { code: 'fr', name: 'Français', flagCode: 'fr' },
-  { code: 'it', name: 'Italiano', flagCode: 'it' },
   { code: 'tr', name: 'Türkçe', flagCode: 'tr' }
 ]
 

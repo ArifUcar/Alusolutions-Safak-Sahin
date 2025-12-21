@@ -491,17 +491,19 @@
       "gardenRoom": "Tuinkamer"
     },
     "gallery": {
-      "modernGlass": "Moderne Glazen Veranda",
-      "classicCover": "Klassieke Overkapping",
-      "cozyGarden": "Sfeervolle Tuinkamer",
-      "slatsVeranda": "Lamellen Veranda",
-      "foldingSystem": "Vouwdak Systeem",
-      "straightLines": "Strakke Lijnen",
-      "luxuryLook": "Luxe Uitstraling",
-      "timelessDesign": "Tijdloos Design",
-      "glassSlidingWall": "Glazen Schuifwand",
+      "modernGlass": "Moderne Glasveranda",
+      "classicCover": "Klassische Überdachung",
+      "cozyGarden": "Gemütlicher Gartenzimmer",
+      "slatsVeranda": "Lamellen-Veranda",
+      "foldingSystem": "Faltdach-System",
+      "straightLines": "Klare Linien",
+      "luxuryLook": "Luxuriöses Aussehen",
+      "timelessDesign": "Zeitloses Design",
+      "glassSlidingWall": "Glas-Schiebewand",
       "elegantSlats": "Elegante Lamellen",
-      "compactSolution": "Compacte Oplossing"
+      "compactSolution": "Kompakte Lösung",
+      "noImages": "Noch keine Fotos",
+      "noImagesDescription": "Es gibt noch keine Fotos in dieser Kategorie."
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -876,23 +878,78 @@
     }
   },
   "appointment": {
-    "title": "Maak een Afspraak",
-    "subtitle": "Plan een gratis opmeting, showroom bezoek of adviesgesprek.",
-    "name": "Naam",
-    "namePlaceholder": "Uw volledige naam",
-    "email": "E-mail",
-    "emailPlaceholder": "uw.email@voorbeeld.nl",
-    "phone": "Telefoon",
-    "serviceType": "Type afspraak",
-    "selectService": "Selecteer een type",
-    "preferredDate": "Voorkeursdatum",
-    "preferredTime": "Voorkeurtijd",
-    "selectTime": "Selecteer een tijd",
-    "message": "Bericht",
-    "messagePlaceholder": "Vertel ons waar we u mee kunnen helpen...",
-    "submitButton": "Afspraak Maken",
-    "successTitle": "Afspraak aangevraagd!",
-    "successMessage": "We nemen zo spoedig mogelijk contact met u op om uw afspraak te bevestigen."
+    "title": "Termin Vereinbaren",
+    "subtitle": "Planen Sie eine kostenlose Messung, Showroom-Besuch oder Beratung.",
+    "required": "Erforderlich",
+    "next": "Weiter",
+    "confirm": "Termin Bestätigen",
+    "submitting": "Wird gesendet...",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "openingHours": "Wir sind geöffnet: Mo-Do 09:00-17:00, Sa 10:00-15:00",
+    "selectDateFirst": "Bitte wählen Sie zuerst ein Datum",
+    "closedSunday": "Wir sind sonntags geschlossen",
+    "slotBooked": "Dieser Zeitslot ist bereits gebucht",
+    "slotPast": "Dieser Zeitslot ist bereits vorbei",
+    "available": "Verfügbar",
+    "booked": "Gebucht",
+    "step1": {
+      "title": "Terminart",
+      "subtitle": "Welche Art von Termin möchten Sie vereinbaren?"
+    },
+    "step2": {
+      "title": "Datum & Uhrzeit",
+      "subtitle": "Wählen Sie Ihr bevorzugtes Datum und Uhrzeit"
+    },
+    "step3": {
+      "title": "Ihre Daten",
+      "subtitle": "Geben Sie Ihre Kontaktdaten ein"
+    },
+    "step4": {
+      "title": "Bestätigung",
+      "subtitle": "Überprüfen Sie Ihre Termindaten"
+    },
+    "types": {
+      "showroom": "Showroom-Besuch",
+      "showroomDesc": "Sehen Sie sich unsere Veranden in unserem Showroom an",
+      "homeVisit": "Hausbesuch",
+      "homeVisitDesc": "Kostenlose Messung und Beratung bei Ihnen zu Hause",
+      "advice": "Beratungsgespräch",
+      "adviceDesc": "Telefon- oder Videoberatung"
+    },
+    "form": {
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre@email.de",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 123 4567890",
+      "address": "Adresse",
+      "addressPlaceholder": "Straße und Hausnummer",
+      "postcode": "Postleitzahl",
+      "postcodePlaceholder": "12345",
+      "city": "Stadt",
+      "cityPlaceholder": "Ihre Stadt",
+      "remarks": "Bemerkungen",
+      "remarksPlaceholder": "Haben Sie Fragen oder Anmerkungen?"
+    },
+    "summary": {
+      "yourAppointment": "Ihr Termin:",
+      "type": "Typ",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "notSelected": "Nicht ausgewählt",
+      "notFilled": "Nicht ausgefüllt"
+    },
+    "success": {
+      "title": "Termin Angefragt!",
+      "message": "Vielen Dank für Ihre Terminanfrage. Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
+      "note": "Sie erhalten eine E-Mail-Bestätigung, sobald Ihr Termin genehmigt wurde."
+    }
   },
   "product": {
     "polycarbonaat": {
@@ -1368,6 +1425,65 @@
       "subtitle": "Verpassen Sie diese Gelegenheit nicht und fordern Sie noch heute ein unverbindliches Angebot an",
       "quote": "Angebot anfordern",
       "call": "Rufen Sie uns direkt an"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Tipps, Neuigkeiten und Inspiration fur Ihren Aussenbereich"
+    },
+    "allPosts": "Alle Artikel",
+    "noPosts": "Noch keine Blogartikel",
+    "noPostsDescription": "Es wurden noch keine Blogartikel veroffentlicht. Schauen Sie bald wieder vorbei!",
+    "postNotFound": "Artikel nicht gefunden",
+    "postNotFoundDescription": "Der gesuchte Artikel existiert nicht oder wurde entfernt.",
+    "backToBlog": "Zuruck zum Blog",
+    "cta": {
+      "title": "Haben Sie Fragen?",
+      "subtitle": "Kontaktieren Sie uns fur personliche Beratung",
+      "quoteButton": "Angebot anfordern",
+      "contactButton": "Kontakt aufnehmen"
+    }
+  },
+  "admin": {
+    "blog": {
+      "title": "Blog-Verwaltung",
+      "filterAll": "Alle",
+      "filterPublished": "Veroffentlicht",
+      "filterDraft": "Entwurf",
+      "newPost": "Neuer Artikel",
+      "noPosts": "Noch keine Blogartikel",
+      "createFirst": "Erstellen Sie Ihren ersten Artikel",
+      "tableTitle": "Titel",
+      "tableCategory": "Kategorie",
+      "tableStatus": "Status",
+      "tableDate": "Datum",
+      "tableActions": "Aktionen",
+      "published": "Veroffentlicht",
+      "draft": "Entwurf",
+      "publish": "Veroffentlichen",
+      "unpublish": "Ausblenden",
+      "editPost": "Artikel bearbeiten",
+      "createPost": "Artikel erstellen",
+      "slug": "Slug (URL)",
+      "slugHelp": "URL-freundliche Kennung",
+      "category": "Kategorie",
+      "author": "Autor",
+      "featuredImage": "Beitragsbild",
+      "publishPost": "Artikel veroffentlichen",
+      "multiLanguage": "Mehrsprachiger Inhalt",
+      "postTitle": "Titel",
+      "titlePlaceholder": "Artikeltitel",
+      "excerpt": "Zusammenfassung",
+      "excerptPlaceholder": "Kurze Zusammenfassung des Artikels",
+      "excerptHelp": "Wird auf der Blog-Ubersichtsseite angezeigt",
+      "content": "Inhalt",
+      "contentPlaceholder": "Schreiben Sie hier Ihren Artikel...",
+      "contentHelp": "Verwenden Sie Leerzeilen fur neue Absatze",
+      "deleteConfirm": "Sind Sie sicher, dass Sie diesen Artikel loschen mochten?",
+      "loadError": "Fehler beim Laden des Artikels",
+      "saveError": "Fehler beim Speichern",
+      "slugExists": "Dieser Slug existiert bereits"
     }
   }
 }

@@ -39,8 +39,8 @@ export default function ConfiguratorEditPage() {
     display_order: number
   }>({
     slug: '',
-    name: { nl: '', en: '', tr: '', de: '', fr: '', it: '' },
-    description: { nl: '', en: '', tr: '', de: '', fr: '', it: '' },
+    name: { nl: '', en: '', tr: '', de: '' },
+    description: { nl: '', en: '', tr: '', de: '' },
     category: 'veranda',
     image_url: '',
     is_active: true,
@@ -52,9 +52,7 @@ export default function ConfiguratorEditPage() {
     { code: 'nl', name: 'Nederlands' },
     { code: 'en', name: 'English' },
     { code: 'tr', name: 'Türkçe' },
-    { code: 'de', name: 'Deutsch' },
-    { code: 'fr', name: 'Français' },
-    { code: 'it', name: 'Italiano' }
+    { code: 'de', name: 'Deutsch' }
   ]
 
   useEffect(() => {
@@ -80,7 +78,7 @@ export default function ConfiguratorEditPage() {
       setFormData({
         slug: data.slug,
         name: data.name,
-        description: data.description || { nl: '', en: '', tr: '', de: '', fr: '', it: '' },
+        description: data.description || { nl: '', en: '', tr: '', de: '' },
         category: data.category || 'veranda',
         image_url: data.image_url || '',
         is_active: data.is_active,

@@ -35,7 +35,7 @@
   border-radius: 0 !important;
   padding: 1rem 2.5rem !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex !important;
   justify-content: space-between !important;
@@ -43,14 +43,15 @@
 }
 
 .custom-menubar .p-menubar-root-list {
-  gap: 0.25rem;
+  gap: 0.75rem;
 }
 
 .custom-menubar .p-menuitem-link {
   color: var(--header-text) !important;
   font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.625rem 1rem !important;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.85rem !important;
+  white-space: nowrap;
   border-radius: 6px;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -436,53 +437,74 @@
     display: none !important;
   }
 
+  /* Hide language button on mobile - accessible in sidebar */
+  .lang-toggle {
+    display: none !important;
+  }
+
   .custom-menubar {
-    padding: 0.875rem 1.25rem !important;
+    padding: 0.75rem 1rem !important;
   }
 }
 
 @media (max-width: 768px) {
   .logo h1 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .logo .tagline {
-    font-size: 0.6rem;
-    letter-spacing: 1px;
+    display: none;
   }
 
   .custom-menubar {
-    padding: 0.75rem 1rem !important;
+    padding: 0.6rem 0.75rem !important;
   }
 
   .header-actions {
     gap: 0.25rem;
   }
 
+  /* Hide theme toggle on small screens - accessible in sidebar */
+  .theme-toggle {
+    display: none !important;
+  }
+
   .header-actions .p-button-text {
-    padding: 0.375rem !important;
+    padding: 0.35rem !important;
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-actions .p-button-text .pi {
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 480px) {
   .logo h1 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
-  .logo .tagline {
-    font-size: 0.55rem;
+  .custom-menubar {
+    padding: 0.5rem 0.65rem !important;
+  }
+
+  .header-actions .p-button-text {
+    width: 32px;
+    height: 32px;
+    padding: 0.25rem !important;
   }
 
   .mobile-sidebar {
-    width: 90vw !important;
+    width: 85vw !important;
   }
 
   .mobile-logo h2 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   .mobile-logo p {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
   }
 }
 

@@ -1,331 +1,218 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import TimeSlotPicker from '../components/TimeSlotPicker'
+import { supabase } from '../lib/supabase'
 import '../styles/AfspraakPage.css'
 
-interface FormData {
-  afspraakType: string
-  datum: string
-  tijd: string
-  naam: string
-  email: string
-  telefoon: string
-  adres: string
-  postcode: string
-  woonplaats: string
-  opmerking: string
-}
-
 export default function AfspraakPage() {
-  const [currentStep, setCurrentStep] = useState(1)
-  const totalSteps = 4
+  const { t } = useTranslation()
+  const [submitting, setSubmitting] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
 
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     afspraakType: '',
     datum: '',
     tijd: '',
     naam: '',
     email: '',
     telefoon: '',
-    adres: '',
-    postcode: '',
-    woonplaats: '',
     opmerking: ''
   })
 
-  const handleOptionSelect = (field: keyof FormData, value: string) => {
-    setFormData({ ...formData, [field]: value })
-  }
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const nextStep = () => {
-    if (currentStep < totalSteps) {
-      setCurrentStep(currentStep + 1)
-    }
+  const handleTimeSelect = (time: string) => {
+    setFormData({ ...formData, tijd: time })
   }
 
-  const prevStep = () => {
-    if (currentStep > 1) {
-      setCurrentStep(currentStep - 1)
-    }
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Afspraak submitted:', formData)
-    alert('Bedankt voor uw afspraak! Wij nemen binnen 24 uur contact met u op ter bevestiging.')
+    setSubmitting(true)
+    setError('')
+
+    try {
+      const { error: dbError } = await supabase
+        .from('appointments')
+        .insert({
+          name: formData.naam,
+          email: formData.email,
+          phone: formData.telefoon,
+          service_type: formData.afspraakType,
+          preferred_date: formData.datum,
+          preferred_time: formData.tijd,
+          message: formData.opmerking || null,
+          status: 'pending'
+        })
+
+      if (dbError) throw dbError
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Error submitting appointment:', err)
+      setError(t('appointment.error'))
+    } finally {
+      setSubmitting(false)
+    }
   }
 
-  const stepImages = [
-    '/glasLux-home.webp',
-    '/Glazen-Overkapping.webp',
-    '/tuinkamer-antraciet-met-glazenwand-vast.webp',
-    '/lamellen-overkapping.webp'
-  ]
+  const getServiceTypeLabel = (type: string) => {
+    switch (type) {
+      case 'showroom': return t('appointment.types.showroom')
+      case 'thuisbezoek': return t('appointment.types.homeVisit')
+      case 'advies': return t('appointment.types.advice')
+      default: return type
+    }
+  }
 
-  const timeSlots = [
-    '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
-    '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00'
-  ]
+  if (submitted) {
+    return (
+      <div className="afspraak-page">
+        <Header />
+        <section className="afspraak-simple">
+          <div className="container">
+            <div className="success-message">
+              <div className="success-icon">✓</div>
+              <h2>{t('appointment.success.title')}</h2>
+              <p>{t('appointment.success.message')}</p>
+              <div className="success-details">
+                <p><strong>{t('appointment.summary.type')}:</strong> {getServiceTypeLabel(formData.afspraakType)}</p>
+                <p><strong>{t('appointment.summary.date')}:</strong> {formData.datum}</p>
+                <p><strong>{t('appointment.summary.time')}:</strong> {formData.tijd}</p>
+              </div>
+              <p className="success-note">{t('appointment.success.note')}</p>
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </div>
+    )
+  }
 
   return (
     <div className="afspraak-page">
       <Header />
 
-      {/* Main Form Section */}
-      <section className="afspraak-main">
-        <div className="afspraak-container">
-          {/* Left Image */}
-          <div className="afspraak-image">
-            <img src={stepImages[currentStep - 1]} alt="Showroom" />
+      <section className="afspraak-simple">
+        <div className="container">
+          <div className="afspraak-header">
+            <h1>{t('appointment.title')}</h1>
+            <p>{t('appointment.subtitle')}</p>
           </div>
 
-          {/* Right Form */}
-          <div className="afspraak-form-wrapper">
-            {/* Progress Bar */}
-            <div className="progress-bar">
-              <div
-                className="progress-fill"
-                style={{ width: `${(currentStep / totalSteps) * 100}%` }}
-              ></div>
+          <form onSubmit={handleSubmit} className="afspraak-form">
+            {/* Appointment Type */}
+            <div className="form-group">
+              <label htmlFor="afspraakType">{t('appointment.step1.title')} *</label>
+              <select
+                id="afspraakType"
+                name="afspraakType"
+                value={formData.afspraakType}
+                onChange={handleChange}
+                required
+              >
+                <option value="">{t('appointment.summary.notSelected')}</option>
+                <option value="showroom">{t('appointment.types.showroom')}</option>
+                <option value="thuisbezoek">{t('appointment.types.homeVisit')}</option>
+                <option value="advies">{t('appointment.types.advice')}</option>
+              </select>
             </div>
 
-            <form onSubmit={handleSubmit}>
-              {/* Step 1: Appointment Type */}
-              {currentStep === 1 && (
-                <div className="form-step">
-                  <h2>Type Afspraak</h2>
-                  <p className="step-label">Wat voor soort afspraak wilt u maken?<span className="required">Verplicht</span></p>
-
-                  <div className="option-cards">
-                    <label className={`option-card ${formData.afspraakType === 'showroom' ? 'selected' : ''}`}>
-                      <input
-                        type="radio"
-                        name="afspraakType"
-                        value="showroom"
-                        checked={formData.afspraakType === 'showroom'}
-                        onChange={() => handleOptionSelect('afspraakType', 'showroom')}
-                      />
-                      <div className="option-content">
-                        <strong>Showroom Bezoek</strong>
-                        <span>Bekijk onze veranda's in onze showroom</span>
-                      </div>
-                    </label>
-
-                    <label className={`option-card ${formData.afspraakType === 'thuisbezoek' ? 'selected' : ''}`}>
-                      <input
-                        type="radio"
-                        name="afspraakType"
-                        value="thuisbezoek"
-                        checked={formData.afspraakType === 'thuisbezoek'}
-                        onChange={() => handleOptionSelect('afspraakType', 'thuisbezoek')}
-                      />
-                      <div className="option-content">
-                        <strong>Thuisbezoek</strong>
-                        <span>Gratis inmeten en advies bij u thuis</span>
-                      </div>
-                    </label>
-
-                    <label className={`option-card ${formData.afspraakType === 'advies' ? 'selected' : ''}`}>
-                      <input
-                        type="radio"
-                        name="afspraakType"
-                        value="advies"
-                        checked={formData.afspraakType === 'advies'}
-                        onChange={() => handleOptionSelect('afspraakType', 'advies')}
-                      />
-                      <div className="option-content">
-                        <strong>Adviesgesprek</strong>
-                        <span>Telefonisch of video adviesgesprek</span>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-              )}
-
-              {/* Step 2: Date & Time */}
-              {currentStep === 2 && (
-                <div className="form-step">
-                  <h2>Datum & Tijd</h2>
-                  <p className="step-label">Kies uw gewenste datum en tijd<span className="required">Verplicht</span></p>
-
-                  <div className="datetime-section">
-                    <div className="form-group">
-                      <label htmlFor="datum">Datum*</label>
-                      <input
-                        type="date"
-                        id="datum"
-                        name="datum"
-                        value={formData.datum}
-                        onChange={handleInputChange}
-                        min={new Date().toISOString().split('T')[0]}
-                        required
-                      />
-                    </div>
-
-                    <div className="time-slots">
-                      <label>Tijd*</label>
-                      <div className="slots-grid">
-                        {timeSlots.map((time) => (
-                          <button
-                            key={time}
-                            type="button"
-                            className={`time-slot ${formData.tijd === time ? 'selected' : ''}`}
-                            onClick={() => handleOptionSelect('tijd', time)}
-                          >
-                            {time}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="availability-note">
-                    <p>📅 Wij zijn geopend: Ma-Do 09:00-17:00, Za 10:00-15:00</p>
-                  </div>
-                </div>
-              )}
-
-              {/* Step 3: Personal Info */}
-              {currentStep === 3 && (
-                <div className="form-step">
-                  <h2>Uw Gegevens</h2>
-                  <p className="step-label">Vul uw contactgegevens in<span className="required">Verplicht</span></p>
-
-                  <div className="personal-info-grid">
-                    <div className="form-group">
-                      <label htmlFor="naam">Naam*</label>
-                      <input
-                        type="text"
-                        id="naam"
-                        name="naam"
-                        placeholder="Uw volledige naam"
-                        value={formData.naam}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="email">Email*</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="uw@email.nl"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="telefoon">Telefoon*</label>
-                      <input
-                        type="tel"
-                        id="telefoon"
-                        name="telefoon"
-                        placeholder="06 12345678"
-                        value={formData.telefoon}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="adres">Adres</label>
-                      <input
-                        type="text"
-                        id="adres"
-                        name="adres"
-                        placeholder="Straat en huisnummer"
-                        value={formData.adres}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="postcode">Postcode</label>
-                      <input
-                        type="text"
-                        id="postcode"
-                        name="postcode"
-                        placeholder="1234 AB"
-                        value={formData.postcode}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="woonplaats">Woonplaats</label>
-                      <input
-                        type="text"
-                        id="woonplaats"
-                        name="woonplaats"
-                        placeholder="Uw woonplaats"
-                        value={formData.woonplaats}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Step 4: Summary */}
-              {currentStep === 4 && (
-                <div className="form-step">
-                  <h2>Bevestiging</h2>
-                  <p className="step-label">Controleer uw afspraak gegevens</p>
-
-                  <div className="summary-section">
-                    <h3>Uw afspraak:</h3>
-                    <ul className="summary-list">
-                      <li><strong>Type:</strong> {formData.afspraakType || 'Niet geselecteerd'}</li>
-                      <li><strong>Datum:</strong> {formData.datum || 'Niet geselecteerd'}</li>
-                      <li><strong>Tijd:</strong> {formData.tijd || 'Niet geselecteerd'}</li>
-                      <li><strong>Naam:</strong> {formData.naam || 'Niet ingevuld'}</li>
-                      <li><strong>Email:</strong> {formData.email || 'Niet ingevuld'}</li>
-                      <li><strong>Telefoon:</strong> {formData.telefoon || 'Niet ingevuld'}</li>
-                    </ul>
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="opmerking">Opmerkingen</label>
-                    <textarea
-                      id="opmerking"
-                      name="opmerking"
-                      placeholder="Heeft u nog vragen of opmerkingen?"
-                      rows={4}
-                      value={formData.opmerking}
-                      onChange={handleInputChange}
-                    ></textarea>
-                  </div>
-                </div>
-              )}
-
-              {/* Navigation Buttons */}
-              <div className="form-navigation">
-                {currentStep > 1 && (
-                  <button type="button" className="btn-back" onClick={prevStep}>
-                    <span>←</span>
-                  </button>
-                )}
-
-                {currentStep < totalSteps ? (
-                  <button type="button" className="btn-next" onClick={nextStep}>
-                    Volgende <span>→</span>
-                  </button>
-                ) : (
-                  <button type="submit" className="btn-submit">
-                    Bevestig Afspraak <span>→</span>
-                  </button>
-                )}
+            {/* Date & Time */}
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="datum">{t('appointment.form.date')} *</label>
+                <input
+                  type="date"
+                  id="datum"
+                  name="datum"
+                  value={formData.datum}
+                  onChange={handleChange}
+                  min={new Date().toISOString().split('T')[0]}
+                  required
+                />
               </div>
-            </form>
-          </div>
+            </div>
+
+            <div className="form-group">
+              <label>{t('appointment.form.time')} *</label>
+              <TimeSlotPicker
+                selectedDate={formData.datum}
+                selectedTime={formData.tijd}
+                onTimeSelect={handleTimeSelect}
+              />
+            </div>
+
+            {/* Contact Info */}
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="naam">{t('appointment.form.name')} *</label>
+                <input
+                  type="text"
+                  id="naam"
+                  name="naam"
+                  placeholder={t('appointment.form.namePlaceholder')}
+                  value={formData.naam}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="telefoon">{t('appointment.form.phone')} *</label>
+                <input
+                  type="tel"
+                  id="telefoon"
+                  name="telefoon"
+                  placeholder={t('appointment.form.phonePlaceholder')}
+                  value={formData.telefoon}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">{t('appointment.form.email')} *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder={t('appointment.form.emailPlaceholder')}
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="opmerking">{t('appointment.form.remarks')}</label>
+              <textarea
+                id="opmerking"
+                name="opmerking"
+                placeholder={t('appointment.form.remarksPlaceholder')}
+                rows={4}
+                value={formData.opmerking}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+
+            {error && (
+              <div className="error-message">
+                <p>{error}</p>
+              </div>
+            )}
+
+            <div className="opening-hours">
+              <p>{t('appointment.openingHours')}</p>
+            </div>
+
+            <button type="submit" className="btn btn-primary btn-large" disabled={submitting || !formData.tijd}>
+              {submitting ? t('appointment.submitting') : t('appointment.confirm')}
+            </button>
+          </form>
         </div>
       </section>
 

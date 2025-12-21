@@ -1,0 +1,143 @@
+.time-slot-picker {
+  margin-top: 1rem;
+}
+
+.select-date-first,
+.weekend-closed {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.weekend-closed {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.loading-slots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  color: #6c757d;
+}
+
+.spinner-small {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e9ecef;
+  border-top-color: #10b981;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.time-slot {
+  padding: 12px 8px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.time-slot:hover:not(:disabled) {
+  border-color: #10b981;
+  background: #f0fdf4;
+}
+
+.time-slot.selected {
+  border-color: #10b981;
+  background: #10b981;
+  color: white;
+}
+
+.time-slot.blocked {
+  background: #fee2e2;
+  border-color: #fecaca;
+  color: #dc2626;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.time-slot.past {
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.time-slot:disabled {
+  cursor: not-allowed;
+}
+
+.blocked-icon {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 0.7rem;
+  color: #dc2626;
+}
+
+.slots-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.legend-dot.available {
+  background: #10b981;
+}
+
+.legend-dot.blocked {
+  background: #dc2626;
+}
+
+@media (max-width: 480px) {
+  .slots-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .time-slot {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+
+  .slots-legend {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

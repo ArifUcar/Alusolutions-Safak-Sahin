@@ -3,8 +3,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import InspiratiePage from './pages/InspiratiePage'
-import AppointmentPage from './pages/AppointmentPage'
-import SimpleAppointmentPage from './pages/SimpleAppointmentPage'
+import AfspraakPage from './pages/AfspraakPage'
 import DynamicConfiguratorPage from './pages/DynamicConfiguratorPage'
 
 // Product pages
@@ -35,7 +34,12 @@ import AppointmentsPage from './pages/admin/AppointmentsPage'
 import OffertesPage from './pages/admin/OffertesPage'
 import ConfiguratorsPage from './pages/admin/ConfiguratorsPage'
 import ConfiguratorEditPage from './pages/admin/ConfiguratorEditPage'
-import ConfiguratorSubmissionsPage from './pages/admin/ConfiguratorSubmissionsPage'
+import BlogPostsPage from './pages/admin/BlogPostsPage'
+import BlogEditPage from './pages/admin/BlogEditPage'
+
+// Blog pages
+import BlogPage from './pages/BlogPage'
+import BlogPostPage from './pages/BlogPostPage'
 
 // Components
 import ScrollToTop from './components/ScrollToTop'
@@ -56,8 +60,7 @@ function App() {
             <Route path="/over-ons" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/inspiratie" element={<InspiratiePage />} />
-            <Route path="/afspraak" element={<AppointmentPage />} />
-            <Route path="/afspraak-maken" element={<SimpleAppointmentPage />} />
+            <Route path="/afspraak" element={<AfspraakPage />} />
             <Route path="/offerte" element={<Navigate to="/offerte/glazen-veranda" replace />} />
             <Route path="/offerte/:configuratorSlug" element={<DynamicConfiguratorPage />} />
 
@@ -78,6 +81,10 @@ function App() {
             <Route path="/voorwaarden" element={<VoorwaardenPage />} />
             <Route path="/cookies" element={<CookiesPage />} />
 
+            {/* Blog pages */}
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+
             {/* Admin routes */}
             <Route path="/admin/login" element={<LoginPage />} />
             <Route path="/admin" element={<ProtectedRoute><AdminLayout /></ProtectedRoute>}>
@@ -92,7 +99,9 @@ function App() {
               <Route path="configurators" element={<ConfiguratorsPage />} />
               <Route path="configurators/new" element={<ConfiguratorEditPage />} />
               <Route path="configurators/:id" element={<ConfiguratorEditPage />} />
-              <Route path="configurator-submissions" element={<ConfiguratorSubmissionsPage />} />
+              <Route path="blog" element={<BlogPostsPage />} />
+              <Route path="blog/new" element={<BlogEditPage />} />
+              <Route path="blog/:id" element={<BlogEditPage />} />
             </Route>
           </Routes>
         </Router>

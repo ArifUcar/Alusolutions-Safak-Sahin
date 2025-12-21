@@ -53,8 +53,23 @@ export interface Appointment {
   service_type: string
   preferred_date: string
   preferred_time: string
+  address?: string
+  postcode?: string
+  city?: string
   message?: string
   status: 'pending' | 'confirmed' | 'completed' | 'cancelled'
+  created_at: string
+  updated_at?: string
+}
+
+/**
+ * Blocked time slots - created when appointment is confirmed
+ */
+export interface BlockedSlot {
+  id: string
+  appointment_id: string
+  date: string
+  time: string
   created_at: string
 }
 
@@ -114,15 +129,13 @@ export interface Offerte {
 
 /**
  * Multi-language text object
- * Each key is a language code (nl, en, tr, de, fr, it)
+ * Each key is a language code (nl, en, tr, de)
  */
 export type MultiLanguageText = {
   nl: string
   en?: string
   tr?: string
   de?: string
-  fr?: string
-  it?: string
 }
 
 /**
@@ -231,4 +244,23 @@ export interface ConfiguratorWithSteps extends Configurator {
   configurator_steps: (ConfiguratorStep & {
     configurator_options: ConfiguratorOption[]
   })[]
+}
+
+/**
+ * Blog post definition
+ */
+export interface BlogPost {
+  id: string
+  slug: string
+  title: MultiLanguageText
+  excerpt?: MultiLanguageText
+  content: MultiLanguageText
+  featured_image?: string
+  category?: string
+  author?: string
+  is_published: boolean
+  published_at?: string
+  view_count: number
+  created_at: string
+  updated_at: string
 }

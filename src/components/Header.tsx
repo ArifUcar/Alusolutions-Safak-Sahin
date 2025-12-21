@@ -64,14 +64,6 @@ export default function Header() {
     {
       label: '🇩🇪 Deutsch',
       command: () => changeLanguage('de')
-    },
-    {
-      label: '🇫🇷 Français',
-      command: () => changeLanguage('fr')
-    },
-    {
-      label: '🇮🇹 Italiano',
-      command: () => changeLanguage('it')
     }
   ]
 
@@ -171,7 +163,7 @@ export default function Header() {
         {
           label: t('header.blogsTips'),
           icon: 'pi pi-book',
-          command: () => navigate('/contact')
+          command: () => navigate('/blog')
         }
       ]
     },
@@ -238,7 +230,7 @@ export default function Header() {
       <Menu model={languageOptions} popup ref={langMenuRef} />
       <Button
         icon="pi pi-globe"
-        className="p-button-text p-button-rounded"
+        className="p-button-text p-button-rounded lang-toggle"
         onClick={(e) => langMenuRef.current?.toggle(e)}
         tooltip={i18n.language.toUpperCase()}
         tooltipOptions={{ position: 'bottom' }}
@@ -246,7 +238,7 @@ export default function Header() {
 
       <Button
         icon={theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}
-        className="p-button-text p-button-rounded"
+        className="p-button-text p-button-rounded theme-toggle"
         onClick={toggleTheme}
         tooltip={theme === 'light' ? t('header.darkMode') : t('header.lightMode')}
         tooltipOptions={{ position: 'bottom' }}

@@ -490,7 +490,9 @@
       "timelessDesign": "Tijdloos Design",
       "glassSlidingWall": "Glazen Schuifwand",
       "elegantSlats": "Elegante Lamellen",
-      "compactSolution": "Compacte Oplossing"
+      "compactSolution": "Compacte Oplossing",
+      "noImages": "Nog geen foto's",
+      "noImagesDescription": "Er zijn nog geen foto's in deze categorie."
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -877,21 +879,76 @@
   "appointment": {
     "title": "Maak een Afspraak",
     "subtitle": "Plan een gratis opmeting, showroom bezoek of adviesgesprek.",
-    "name": "Naam",
-    "namePlaceholder": "Uw volledige naam",
-    "email": "E-mail",
-    "emailPlaceholder": "uw.email@voorbeeld.nl",
-    "phone": "Telefoon",
-    "serviceType": "Type afspraak",
-    "selectService": "Selecteer een type",
-    "preferredDate": "Voorkeursdatum",
-    "preferredTime": "Voorkeurtijd",
-    "selectTime": "Selecteer een tijd",
-    "message": "Bericht",
-    "messagePlaceholder": "Vertel ons waar we u mee kunnen helpen...",
-    "submitButton": "Afspraak Maken",
-    "successTitle": "Afspraak aangevraagd!",
-    "successMessage": "We nemen zo spoedig mogelijk contact met u op om uw afspraak te bevestigen."
+    "required": "Verplicht",
+    "next": "Volgende",
+    "confirm": "Bevestig Afspraak",
+    "submitting": "Versturen...",
+    "error": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "openingHours": "Wij zijn geopend: Ma-Do 09:00-17:00, Za 10:00-15:00",
+    "selectDateFirst": "Selecteer eerst een datum",
+    "closedSunday": "Wij zijn op zondag gesloten",
+    "slotBooked": "Dit tijdslot is al geboekt",
+    "slotPast": "Dit tijdslot is al gepasseerd",
+    "available": "Beschikbaar",
+    "booked": "Geboekt",
+    "step1": {
+      "title": "Type Afspraak",
+      "subtitle": "Wat voor soort afspraak wilt u maken?"
+    },
+    "step2": {
+      "title": "Datum & Tijd",
+      "subtitle": "Kies uw gewenste datum en tijd"
+    },
+    "step3": {
+      "title": "Uw Gegevens",
+      "subtitle": "Vul uw contactgegevens in"
+    },
+    "step4": {
+      "title": "Bevestiging",
+      "subtitle": "Controleer uw afspraak gegevens"
+    },
+    "types": {
+      "showroom": "Showroom Bezoek",
+      "showroomDesc": "Bekijk onze veranda's in onze showroom",
+      "homeVisit": "Thuisbezoek",
+      "homeVisitDesc": "Gratis inmeten en advies bij u thuis",
+      "advice": "Adviesgesprek",
+      "adviceDesc": "Telefonisch of video adviesgesprek"
+    },
+    "form": {
+      "date": "Datum",
+      "time": "Tijd",
+      "name": "Naam",
+      "namePlaceholder": "Uw volledige naam",
+      "email": "Email",
+      "emailPlaceholder": "uw@email.nl",
+      "phone": "Telefoon",
+      "phonePlaceholder": "06 12345678",
+      "address": "Adres",
+      "addressPlaceholder": "Straat en huisnummer",
+      "postcode": "Postcode",
+      "postcodePlaceholder": "1234 AB",
+      "city": "Woonplaats",
+      "cityPlaceholder": "Uw woonplaats",
+      "remarks": "Opmerkingen",
+      "remarksPlaceholder": "Heeft u nog vragen of opmerkingen?"
+    },
+    "summary": {
+      "yourAppointment": "Uw afspraak:",
+      "type": "Type",
+      "date": "Datum",
+      "time": "Tijd",
+      "name": "Naam",
+      "email": "Email",
+      "phone": "Telefoon",
+      "notSelected": "Niet geselecteerd",
+      "notFilled": "Niet ingevuld"
+    },
+    "success": {
+      "title": "Afspraak Aangevraagd!",
+      "message": "Bedankt voor uw afspraak aanvraag. Wij nemen binnen 24 uur contact met u op ter bevestiging.",
+      "note": "U ontvangt een bevestiging per e-mail zodra uw afspraak is goedgekeurd."
+    }
   },
   "product": {
     "polycarbonaat": {
@@ -1295,7 +1352,64 @@
       }
     }
   },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Tips, nieuws en inspiratie voor uw buitenruimte"
+    },
+    "allPosts": "Alle artikelen",
+    "noPosts": "Nog geen blogartikelen",
+    "noPostsDescription": "Er zijn nog geen blogartikelen gepubliceerd. Kom snel terug!",
+    "postNotFound": "Artikel niet gevonden",
+    "postNotFoundDescription": "Het artikel dat u zoekt bestaat niet of is verwijderd.",
+    "backToBlog": "Terug naar blog",
+    "cta": {
+      "title": "Heeft u vragen?",
+      "subtitle": "Neem contact met ons op voor persoonlijk advies",
+      "quoteButton": "Offerte aanvragen",
+      "contactButton": "Neem contact op"
+    }
+  },
   "admin": {
+    "blog": {
+      "title": "Blog Beheer",
+      "filterAll": "Alle",
+      "filterPublished": "Gepubliceerd",
+      "filterDraft": "Concept",
+      "newPost": "Nieuw artikel",
+      "noPosts": "Nog geen blogartikelen",
+      "createFirst": "Maak uw eerste artikel",
+      "tableTitle": "Titel",
+      "tableCategory": "Categorie",
+      "tableStatus": "Status",
+      "tableDate": "Datum",
+      "tableActions": "Acties",
+      "published": "Gepubliceerd",
+      "draft": "Concept",
+      "publish": "Publiceren",
+      "unpublish": "Verbergen",
+      "editPost": "Artikel bewerken",
+      "createPost": "Artikel aanmaken",
+      "slug": "Slug (URL)",
+      "slugHelp": "URL-friendly identifier",
+      "category": "Categorie",
+      "author": "Auteur",
+      "featuredImage": "Uitgelichte afbeelding",
+      "publishPost": "Publiceer artikel",
+      "multiLanguage": "Meertalige inhoud",
+      "postTitle": "Titel",
+      "titlePlaceholder": "Artikel titel",
+      "excerpt": "Samenvatting",
+      "excerptPlaceholder": "Korte samenvatting van het artikel",
+      "excerptHelp": "Wordt getoond op de blog overzichtspagina",
+      "content": "Inhoud",
+      "contentPlaceholder": "Schrijf hier uw artikel...",
+      "contentHelp": "Gebruik lege regels voor nieuwe paragrafen",
+      "deleteConfirm": "Weet u zeker dat u dit artikel wilt verwijderen?",
+      "loadError": "Fout bij laden artikel",
+      "saveError": "Fout bij opslaan",
+      "slugExists": "Deze slug bestaat al"
+    },
     "contacts": {
       "title": "Mesajlar",
       "filterAll": "Tümünü Göster",

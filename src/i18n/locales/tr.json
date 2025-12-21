@@ -501,7 +501,9 @@
       "timelessDesign": "Zamansız Tasarım",
       "glassSlidingWall": "Camlı Sürgülü Duvar",
       "elegantSlats": "Zarif Lamellar",
-      "compactSolution": "Kompakt Çözüm"
+      "compactSolution": "Kompakt Çözüm",
+      "noImages": "Henüz fotoğraf yok",
+      "noImagesDescription": "Bu kategoride henüz fotoğraf bulunmuyor."
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -878,21 +880,76 @@
   "appointment": {
     "title": "Randevu Al",
     "subtitle": "Ücretsiz ölçüm, showroom ziyareti veya danışma randevusu planlayın.",
-    "name": "Ad",
-    "namePlaceholder": "Tam adınız",
-    "email": "E-posta",
-    "emailPlaceholder": "sizin.email@ornek.nl",
-    "phone": "Telefon",
-    "serviceType": "Randevu tipi",
-    "selectService": "Bir tip seçin",
-    "preferredDate": "Tercih edilen tarih",
-    "preferredTime": "Tercih edilen saat",
-    "selectTime": "Bir saat seçin",
-    "message": "Mesaj",
-    "messagePlaceholder": "Size nasıl yardımcı olabileceğimizi bize söyleyin...",
-    "submitButton": "Randevu Al",
-    "successTitle": "Randevu talep edildi!",
-    "successMessage": "Randevunuzu onaylamak için en kısa sürede sizinle iletişime geçeceğiz."
+    "required": "Zorunlu",
+    "next": "İleri",
+    "confirm": "Randevuyu Onayla",
+    "submitting": "Gönderiliyor...",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "openingHours": "Açılış saatleri: Pzt-Per 09:00-17:00, Cmt 10:00-15:00",
+    "selectDateFirst": "Lütfen önce bir tarih seçin",
+    "closedSunday": "Pazar günleri kapalıyız",
+    "slotBooked": "Bu saat dolu",
+    "slotPast": "Bu saat geçmiş",
+    "available": "Müsait",
+    "booked": "Dolu",
+    "step1": {
+      "title": "Randevu Tipi",
+      "subtitle": "Ne tür bir randevu almak istiyorsunuz?"
+    },
+    "step2": {
+      "title": "Tarih & Saat",
+      "subtitle": "Tercih ettiğiniz tarih ve saati seçin"
+    },
+    "step3": {
+      "title": "Bilgileriniz",
+      "subtitle": "İletişim bilgilerinizi girin"
+    },
+    "step4": {
+      "title": "Onay",
+      "subtitle": "Randevu bilgilerinizi kontrol edin"
+    },
+    "types": {
+      "showroom": "Showroom Ziyareti",
+      "showroomDesc": "Showroom'umuzdaki verandalarımızı görün",
+      "homeVisit": "Ev Ziyareti",
+      "homeVisitDesc": "Evinizde ücretsiz ölçüm ve danışmanlık",
+      "advice": "Danışma",
+      "adviceDesc": "Telefon veya video danışması"
+    },
+    "form": {
+      "date": "Tarih",
+      "time": "Saat",
+      "name": "Ad",
+      "namePlaceholder": "Tam adınız",
+      "email": "E-posta",
+      "emailPlaceholder": "sizin@email.nl",
+      "phone": "Telefon",
+      "phonePlaceholder": "06 12345678",
+      "address": "Adres",
+      "addressPlaceholder": "Sokak ve kapı numarası",
+      "postcode": "Posta kodu",
+      "postcodePlaceholder": "1234 AB",
+      "city": "Şehir",
+      "cityPlaceholder": "Şehriniz",
+      "remarks": "Açıklama",
+      "remarksPlaceholder": "Sorularınız veya notlarınız var mı?"
+    },
+    "summary": {
+      "yourAppointment": "Randevunuz:",
+      "type": "Tip",
+      "date": "Tarih",
+      "time": "Saat",
+      "name": "Ad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "notSelected": "Seçilmedi",
+      "notFilled": "Doldurulmadı"
+    },
+    "success": {
+      "title": "Randevu Talep Edildi!",
+      "message": "Randevu talebiniz için teşekkürler. 24 saat içinde sizinle iletişime geçeceğiz.",
+      "note": "Randevunuz onaylandığında e-posta ile bilgilendirileceksiniz."
+    }
   },
   "product": {
     "polycarbonaat": {
@@ -1301,6 +1358,45 @@
       "replyButton": "Yanıtla",
       "deleteButton": "Sil",
       "deleteConfirm": "Bu mesajı silmek istediğinizden emin misiniz?"
+    },
+    "blog": {
+      "title": "Blog Yonetimi",
+      "filterAll": "Tumunu Goster",
+      "filterPublished": "Yayinlanmis",
+      "filterDraft": "Taslak",
+      "newPost": "Yeni yazi",
+      "noPosts": "Henuz blog yazisi yok",
+      "createFirst": "Ilk yazinizi olusturun",
+      "tableTitle": "Baslik",
+      "tableCategory": "Kategori",
+      "tableStatus": "Durum",
+      "tableDate": "Tarih",
+      "tableActions": "Islemler",
+      "published": "Yayinlandi",
+      "draft": "Taslak",
+      "publish": "Yayinla",
+      "unpublish": "Gizle",
+      "editPost": "Yaziyi duzenle",
+      "createPost": "Yazi olustur",
+      "slug": "Slug (URL)",
+      "slugHelp": "URL-dostu tanimlayici",
+      "category": "Kategori",
+      "author": "Yazar",
+      "featuredImage": "One cikan gorsel",
+      "publishPost": "Yaziyi yayinla",
+      "multiLanguage": "Cok dilli icerik",
+      "postTitle": "Baslik",
+      "titlePlaceholder": "Yazi basligi",
+      "excerpt": "Ozet",
+      "excerptPlaceholder": "Yazinin kisa ozeti",
+      "excerptHelp": "Blog genel bakis sayfasinda gosterilir",
+      "content": "Icerik",
+      "contentPlaceholder": "Yazinizi buraya yazin...",
+      "contentHelp": "Yeni paragraflar icin bos satirlar kullanin",
+      "deleteConfirm": "Bu yaziyi silmek istediginizden emin misiniz?",
+      "loadError": "Yazi yuklenirken hata olustu",
+      "saveError": "Kaydetme hatasi",
+      "slugExists": "Bu slug zaten mevcut"
     }
   },
   "contactPage": {
@@ -1368,6 +1464,24 @@
       "subtitle": "Bu fırsatı kaçırmayın ve bugün ücretsiz teklif isteyin",
       "quote": "Teklif isteyin",
       "call": "Bizi doğrudan arayın"
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Dis mekanlariniz icin ipuclari, haberler ve ilham"
+    },
+    "allPosts": "Tum yazilar",
+    "noPosts": "Henuz blog yazisi yok",
+    "noPostsDescription": "Henuz blog yazisi yayinlanmadi. Yakinda tekrar kontrol edin!",
+    "postNotFound": "Yazi bulunamadi",
+    "postNotFoundDescription": "Aradiginiz yazi mevcut degil veya kaldirilmis.",
+    "backToBlog": "Bloga don",
+    "cta": {
+      "title": "Sorulariniz mi var?",
+      "subtitle": "Kisisel tavsiye icin bizimle iletisime gecin",
+      "quoteButton": "Teklif isteyin",
+      "contactButton": "Iletisime gecin"
     }
   }
 }
