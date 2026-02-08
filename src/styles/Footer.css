@@ -22,24 +22,63 @@
 }
 
 /* Footer Logo */
-.main-footer .footer-logo h3 {
-  font-size: 1.8rem;
-  margin: 0 0 5px 0;
-  color: #fff;
-  font-weight: 800;
-  letter-spacing: 2px;
+.main-footer .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
-.main-footer .footer-logo h3 span {
+.main-footer .footer-logo-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+  flex-shrink: 0;
+}
+
+.main-footer .footer-logo-icon svg {
+  width: 26px;
+  height: 26px;
+  color: white;
+}
+
+.main-footer .footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.main-footer .footer-logo h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
+
+.main-footer .footer-logo h3 .logo-viva {
+  color: #fff;
+  font-weight: 800;
+}
+
+.main-footer .footer-logo h3 .logo-verandas {
   color: #22c55e;
+  font-weight: 800;
 }
 
 .main-footer .footer-tagline {
-  font-size: 0.7rem;
-  color: #22c55e;
-  margin: 0 0 20px 0;
-  letter-spacing: 1px;
-  opacity: 0.9;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .main-footer .footer-description {
@@ -161,6 +200,24 @@
   margin: 0;
 }
 
+.main-footer .footer-subsidiary {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-top: 5px !important;
+}
+
+.main-footer .footer-subsidiary a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.main-footer .footer-subsidiary a:hover {
+  color: #4ade80;
+  text-decoration: underline;
+}
+
 .main-footer .footer-bottom-links {
   display: flex;
   gap: 25px;
@@ -215,11 +272,21 @@
   }
 
   .main-footer .footer-logo h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .main-footer .footer-logo-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .main-footer .footer-logo-icon svg {
+    width: 22px;
+    height: 22px;
   }
 
   .main-footer .footer-tagline {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   .main-footer .footer-description {

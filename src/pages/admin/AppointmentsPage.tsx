@@ -1,16 +1,59 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import { supabase } from '../../lib/supabase'
-import type { Appointment } from '../../lib/supabase'
+import type { Appointment, AppointmentSettings } from '../../lib/supabase'
+
+// Time slots for calculating consecutive slots
+const TIME_SLOTS = [
+  '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
+  '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30'
+]
 
 export default function AppointmentsPage() {
+  const { t, i18n } = useTranslation()
   const [appointments, setAppointments] = useState<Appointment[]>([])
+  const [appointmentSettings, setAppointmentSettings] = useState<AppointmentSettings[]>([])
   const [loading, setLoading] = useState(true)
   const [filterStatus, setFilterStatus] = useState('all')
   const [processingId, setProcessingId] = useState<string | null>(null)
 
   useEffect(() => {
     loadAppointments()
+    loadAppointmentSettings()
   }, [filterStatus])
+
+  const loadAppointmentSettings = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('appointment_settings')
+        .select('*')
+        .eq('is_active', true)
+
+      if (!error && data) {
+        setAppointmentSettings(data)
+      }
+    } catch (error) {
+      console.error('Error loading appointment settings:', error)
+    }
+  }
+
+  const getDurationSlots = (serviceType: string): number => {
+    const setting = appointmentSettings.find(s => s.service_type === serviceType)
+    return setting?.duration_slots || 2 // Default 1 hour (2 x 30min)
+  }
+
+  const getConsecutiveSlots = (startTime: string, count: number): string[] => {
+    const startIndex = TIME_SLOTS.indexOf(startTime)
+    if (startIndex === -1) return [startTime]
+
+    const slots: string[] = []
+    for (let i = 0; i < count; i++) {
+      if (startIndex + i < TIME_SLOTS.length) {
+        slots.push(TIME_SLOTS[startIndex + i])
+      }
+    }
+    return slots.length > 0 ? slots : [startTime]
+  }
 
   const loadAppointments = async () => {
     setLoading(true)
@@ -36,29 +79,34 @@ export default function AppointmentsPage() {
     }
   }
 
-  const blockTimeSlot = async (appointmentId: string, date: string, time: string) => {
+  const blockTimeSlots = async (appointmentId: string, date: string, startTime: string, serviceType: string) => {
     try {
-      // Check if slot already exists
-      const { data: existing } = await supabase
-        .from('blocked_slots')
-        .select('id')
-        .eq('date', date)
-        .eq('time', time)
-        .single()
+      const durationSlots = getDurationSlots(serviceType)
+      const slotsToBlock = getConsecutiveSlots(startTime, durationSlots)
 
-      if (!existing) {
-        const { error } = await supabase
+      for (const time of slotsToBlock) {
+        // Check if slot already exists
+        const { data: existing } = await supabase
           .from('blocked_slots')
-          .insert({
-            appointment_id: appointmentId,
-            date: date,
-            time: time
-          })
+          .select('id')
+          .eq('date', date)
+          .eq('time', time)
+          .single()
 
-        if (error) throw error
+        if (!existing) {
+          const { error } = await supabase
+            .from('blocked_slots')
+            .insert({
+              appointment_id: appointmentId,
+              date: date,
+              time: time
+            })
+
+          if (error) throw error
+        }
       }
     } catch (error) {
-      console.error('Error blocking slot:', error)
+      console.error('Error blocking slots:', error)
       throw error
     }
   }
@@ -84,12 +132,12 @@ export default function AppointmentsPage() {
     setProcessingId(appointment.id)
 
     try {
-      // If changing TO confirmed, block the time slot
+      // If changing TO confirmed, block the time slots based on duration
       if (newStatus === 'confirmed') {
-        await blockTimeSlot(appointment.id, appointment.preferred_date, appointment.preferred_time)
+        await blockTimeSlots(appointment.id, appointment.preferred_date, appointment.preferred_time, appointment.service_type)
       }
 
-      // If changing FROM confirmed to something else, unblock the time slot
+      // If changing FROM confirmed to something else, unblock all slots for this appointment
       if (oldStatus === 'confirmed' && newStatus !== 'confirmed') {
         await unblockTimeSlot(appointment.id)
       }
@@ -105,14 +153,14 @@ export default function AppointmentsPage() {
       loadAppointments()
     } catch (error) {
       console.error('Error updating status:', error)
-      alert('Durum güncellenirken hata oluştu!')
+      alert(t('admin.appointments.statusUpdateError'))
     } finally {
       setProcessingId(null)
     }
   }
 
   const handleDelete = async (appointment: Appointment) => {
-    if (!confirm('Bu randevuyu silmek istediğinizden emin misiniz?')) return
+    if (!confirm(t('admin.appointments.deleteConfirm'))) return
 
     setProcessingId(appointment.id)
 
@@ -131,7 +179,7 @@ export default function AppointmentsPage() {
       loadAppointments()
     } catch (error) {
       console.error('Error deleting:', error)
-      alert('Silme işlemi başarısız!')
+      alert(t('admin.appointments.deleteError'))
     } finally {
       setProcessingId(null)
     }
@@ -149,26 +197,41 @@ export default function AppointmentsPage() {
 
   const getStatusText = (status: string) => {
     switch (status) {
-      case 'pending': return 'Bekliyor'
-      case 'confirmed': return 'Onaylandı'
-      case 'completed': return 'Tamamlandı'
-      case 'cancelled': return 'İptal'
+      case 'pending': return t('admin.appointments.statusPending')
+      case 'confirmed': return t('admin.appointments.statusConfirmed')
+      case 'completed': return t('admin.appointments.statusCompleted')
+      case 'cancelled': return t('admin.appointments.statusCancelled')
       default: return status
     }
   }
 
   const getServiceTypeText = (type: string) => {
+    const setting = appointmentSettings.find(s => s.service_type === type)
+    if (setting) {
+      const name = setting.name as Record<string, string>
+      return name[i18n.language] || name['nl'] || name['en'] || type
+    }
+    // Fallback for legacy types
     switch (type) {
-      case 'showroom': return 'Showroom Ziyareti'
-      case 'thuisbezoek': return 'Ev Ziyareti'
-      case 'advies': return 'Danışmanlık'
+      case 'showroom': return t('admin.appointments.serviceShowroom')
+      case 'thuisbezoek': return t('admin.appointments.serviceHomeVisit')
+      case 'advies': return t('admin.appointments.serviceConsultation')
       default: return type
     }
   }
 
+  const getServiceDurationText = (type: string) => {
+    const slots = getDurationSlots(type)
+    const hours = (slots * 30) / 60
+    if (hours < 1) return `${slots * 30} ${t('admin.appointments.minutes')}`
+    if (hours === 1) return `1 ${t('admin.appointments.hour')}`
+    return `${hours} ${t('admin.appointments.hours')}`
+  }
+
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr)
-    return date.toLocaleDateString('nl-NL', {
+    const locale = i18n.language === 'tr' ? 'tr-TR' : 'nl-NL'
+    return date.toLocaleDateString(locale, {
       weekday: 'short',
       day: 'numeric',
       month: 'short',
@@ -182,7 +245,7 @@ export default function AppointmentsPage() {
   return (
     <div className="admin-page">
       <div className="admin-page-header">
-        <h1>Randevu Yönetimi</h1>
+        <h1>{t('admin.appointments.title')}</h1>
         <div className="appointment-stats" style={{ display: 'flex', gap: '15px' }}>
           <span style={{
             background: '#fef3c7',
@@ -192,7 +255,7 @@ export default function AppointmentsPage() {
             fontSize: '0.85rem',
             fontWeight: '500'
           }}>
-            Bekleyen: {pendingCount}
+            {t('admin.appointments.pending')}: {pendingCount}
           </span>
           <span style={{
             background: '#d1fae5',
@@ -202,7 +265,7 @@ export default function AppointmentsPage() {
             fontSize: '0.85rem',
             fontWeight: '500'
           }}>
-            Onaylı: {confirmedCount}
+            {t('admin.appointments.confirmed')}: {confirmedCount}
           </span>
         </div>
       </div>
@@ -214,7 +277,7 @@ export default function AppointmentsPage() {
             className={`admin-btn ${filterStatus === status ? 'admin-btn-primary' : 'admin-btn-secondary'}`}
             onClick={() => setFilterStatus(status)}
           >
-            {status === 'all' ? 'Tümü' : getStatusText(status)}
+            {status === 'all' ? t('admin.appointments.all') : getStatusText(status)}
           </button>
         ))}
       </div>
@@ -222,7 +285,7 @@ export default function AppointmentsPage() {
       {loading ? (
         <div className="loading-screen">
           <div className="spinner"></div>
-          <p>Yükleniyor...</p>
+          <p>{t('admin.appointments.loading')}</p>
         </div>
       ) : appointments.length === 0 ? (
         <div className="empty-state">
@@ -232,8 +295,8 @@ export default function AppointmentsPage() {
             <line x1="8" y1="2" x2="8" y2="6"></line>
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
-          <h3>Randevu bulunamadı</h3>
-          <p>Henüz randevu kaydı bulunmuyor.</p>
+          <h3>{t('admin.appointments.noAppointments')}</h3>
+          <p>{t('admin.appointments.noAppointmentsDesc')}</p>
         </div>
       ) : (
         <div className="appointments-grid">
@@ -295,7 +358,20 @@ export default function AppointmentsPage() {
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
-                  <span>{getServiceTypeText(apt.service_type)}</span>
+                  <span>
+                    {getServiceTypeText(apt.service_type)}
+                    <span style={{
+                      marginLeft: '8px',
+                      background: '#dbeafe',
+                      color: '#1e40af',
+                      padding: '2px 8px',
+                      borderRadius: '12px',
+                      fontSize: '0.75rem',
+                      fontWeight: '500'
+                    }}>
+                      {getServiceDurationText(apt.service_type)}
+                    </span>
+                  </span>
                 </div>
 
                 {(apt.address || apt.city) && (
@@ -329,7 +405,7 @@ export default function AppointmentsPage() {
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    Onayla ve Kilitle
+                    {t('admin.appointments.confirmAndLock')}
                   </button>
                 )}
 
@@ -339,10 +415,10 @@ export default function AppointmentsPage() {
                   className="appointment-status-select"
                   disabled={processingId === apt.id}
                 >
-                  <option value="pending">Bekliyor</option>
-                  <option value="confirmed">Onaylandı (Kilitli)</option>
-                  <option value="completed">Tamamlandı</option>
-                  <option value="cancelled">İptal</option>
+                  <option value="pending">{t('admin.appointments.statusPending')}</option>
+                  <option value="confirmed">{t('admin.appointments.statusConfirmedLocked')}</option>
+                  <option value="completed">{t('admin.appointments.statusCompleted')}</option>
+                  <option value="cancelled">{t('admin.appointments.statusCancelled')}</option>
                 </select>
 
                 <button
@@ -355,7 +431,7 @@ export default function AppointmentsPage() {
                     <polyline points="3 6 5 6 21 6"></polyline>
                     <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                   </svg>
-                  Sil
+                  {t('admin.appointments.delete')}
                 </button>
               </div>
             </div>

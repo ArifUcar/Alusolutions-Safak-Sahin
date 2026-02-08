@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Editor } from 'primereact/editor'
 import { supabase } from '../../lib/supabase'
 import type { MultiLanguageText } from '../../lib/supabase'
 import 'quill/dist/quill.snow.css'
+
+
 
 export default function BlogEditPage() {
   const { id } = useParams()
@@ -12,6 +13,7 @@ export default function BlogEditPage() {
   const { t } = useTranslation()
   const isEditing = id !== 'new' && id !== undefined
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const contentImageInputRef = useRef<HTMLInputElement>(null)
 
   const [loading, setLoading] = useState(isEditing)
   const [saving, setSaving] = useState(false)
@@ -38,12 +40,14 @@ export default function BlogEditPage() {
   })
 
   const [currentLanguage, setCurrentLanguage] = useState<keyof MultiLanguageText>('nl')
+  const [contentImageUploading, setContentImageUploading] = useState(false)
+
   const languages: { code: keyof MultiLanguageText; name: string }[] = [
     { code: 'nl', name: 'Nederlands' },
     { code: 'en', name: 'English' },
-    { code: 'tr', name: 'Turkce' },
     { code: 'de', name: 'Deutsch' }
   ]
+
 
   useEffect(() => {
     if (isEditing && id) {
@@ -64,11 +68,12 @@ export default function BlogEditPage() {
 
       if (error) throw error
 
+      const loadedContent = data.content || { nl: '', en: '', tr: '', de: '' }
       setFormData({
         slug: data.slug,
         title: data.title || { nl: '', en: '', tr: '', de: '' },
         excerpt: data.excerpt || { nl: '', en: '', tr: '', de: '' },
-        content: data.content || { nl: '', en: '', tr: '', de: '' },
+        content: loadedContent,
         featured_image: data.featured_image || '',
         category: data.category || '',
         author: data.author || '',
@@ -173,6 +178,49 @@ export default function BlogEditPage() {
   const handleRemoveImage = () => {
     setFormData({ ...formData, featured_image: '' })
   }
+
+  const handleContentImageUpload = async (file: File) => {
+    setContentImageUploading(true);
+
+    try {
+      const fileExt = file.name.split('.').pop()?.toLowerCase();
+      const fileName = `blog-content-${Date.now()}-${Math.random().toString(36).substr(2, 9)}.${fileExt}`;
+
+      // Upload to Supabase Storage
+      const { error: uploadError } = await supabase.storage
+        .from('gallery')
+        .upload(fileName, file);
+
+      if (uploadError) {
+        console.error('Upload error:', uploadError);
+        alert('Resim yükleme hatası!');
+        return;
+      }
+
+      // Get public URL
+      const { data: { publicUrl } } = supabase.storage
+        .from('gallery')
+        .getPublicUrl(fileName);
+
+      // Insert image tag at cursor position in textarea
+      const imgTag = `\n<img src="${publicUrl}" alt="Blog görseli" />\n`;
+      const currentValue = formData.content[currentLanguage] || '';
+      const newValue = currentValue + imgTag;
+
+      setFormData({
+        ...formData,
+        content: { ...formData.content, [currentLanguage]: newValue }
+      });
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      alert('Resim yükleme hatası!');
+    } finally {
+      setContentImageUploading(false);
+      if (contentImageInputRef.current) {
+        contentImageInputRef.current.value = '';
+      }
+    }
+  };
 
   if (loading) {
     return (
@@ -386,17 +434,47 @@ export default function BlogEditPage() {
           </div>
 
           <div className="form-group">
-            <label>{t('admin.blog.content')} ({languages.find(l => l.code === currentLanguage)?.name}) *</label>
-            <Editor
-              value={formData.content[currentLanguage] || ''}
-              onTextChange={(e) => setFormData({
-                ...formData,
-                content: { ...formData.content, [currentLanguage]: e.htmlValue || '' }
-              })}
-              style={{ height: '400px' }}
-              placeholder={t('admin.blog.contentPlaceholder')}
+            <label style={{ marginBottom: '0.75rem', display: 'block' }}>
+              {t('admin.blog.content')} ({languages.find(l => l.code === currentLanguage)?.name}) *
+            </label>
+            {/* Hidden file input for content image upload */}
+            <input
+              ref={contentImageInputRef}
+              type="file"
+              accept="image/png,image/jpeg,image/jpg,image/webp,image/gif"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) {
+                  handleContentImageUpload(file);
+                }
+              }}
+              style={{ display: 'none' }}
             />
-            <small style={{ marginTop: '0.5rem', display: 'block' }}>Kalın, italik, liste ve daha fazla biçimlendirme seçeneği mevcuttur</small>
+            <div className="blog-editor-wrapper">
+              <textarea
+                value={formData.content[currentLanguage] || ''}
+                onChange={(e) => setFormData({
+                  ...formData,
+                  content: { ...formData.content, [currentLanguage]: e.target.value }
+                })}
+                placeholder="Blog içeriğini HTML olarak buraya yazın..."
+                className="blog-content-textarea"
+              />
+              <div style={{ marginTop: '0.5rem', display: 'flex', gap: '0.5rem' }}>
+                <button
+                  type="button"
+                  className="admin-btn admin-btn-secondary"
+                  onClick={() => contentImageInputRef.current?.click()}
+                  disabled={contentImageUploading}
+                  style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                >
+                  {contentImageUploading ? 'Yükleniyor...' : 'Görsel Ekle'}
+                </button>
+                <small style={{ alignSelf: 'center', color: 'var(--muted-text)' }}>
+                  HTML etiketlerini doğrudan yazabilirsiniz
+                </small>
+              </div>
+            </div>
           </div>
         </div>
 

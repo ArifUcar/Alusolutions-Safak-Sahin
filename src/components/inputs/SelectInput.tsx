@@ -21,7 +21,6 @@ export default function SelectInput({ options, value, onChange, error, getLocali
         {options.map((option) => (
           <option key={option.id} value={option.option_value}>
             {getLocalizedText(option.label)}
-            {option.price_modifier !== 0 && ` (${option.price_modifier > 0 ? '+' : ''}${option.price_modifier}€)`}
           </option>
         ))}
       </select>

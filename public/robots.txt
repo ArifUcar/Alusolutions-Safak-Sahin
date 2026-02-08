@@ -1,0 +1,27 @@
+# robots.txt for VivaVerandas
+# https://vivaverandas.nl
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://vivaverandas.nl/sitemap.xml
+
+# Block admin pages
+Disallow: /admin/
+Disallow: /api/
+
+# Allow search engines to index everything else
+Allow: /producten/
+Allow: /contact
+Allow: /over-ons
+Allow: /showroom
+Allow: /inspiratie
+Allow: /blog
+Allow: /faq
+Allow: /offerte/
+Allow: /afspraak
+
+# Block temporary and system files
+Disallow: /*.json$
+Disallow: /*?*

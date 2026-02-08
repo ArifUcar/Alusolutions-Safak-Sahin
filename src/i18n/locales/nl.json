@@ -1,5 +1,7 @@
 {
   "header": {
+    "home": "Home",
+    "products": "Producten",
     "services": "Onze diensten",
     "verandas": "Veranda's",
     "other": "Overige",
@@ -22,9 +24,14 @@
     "makeAppointment": "Afspraak maken",
     "tagline": "Wij Brengen Buitenleven Binnen",
     "darkMode": "Donkere modus",
-    "lightMode": "Lichte modus"
+    "lightMode": "Lichte modus",
+    "cubeVeranda": "Cube Veranda",
+    "lamelVeranda": "Lamellen Veranda",
+    "glazenVeranda": "Glazen Veranda",
+    "polycarbonaatVeranda": "Polycarbonaat Veranda",
+    "plateReplace": "Platen wisselen"
   },
- 
+
   "menu": {
     "verandas": "Veranda's",
     "polycarbonate": "Polycarbonaat Veranda",
@@ -51,6 +58,14 @@
     "visitShowroom": "Showroom Bezoeken",
     "faq": "Veelgestelde Vragen"
   },
+  "reviews": {
+    "googleReviews": "Google Reviews",
+    "title": "Wat onze klanten zeggen",
+    "basedOn": "Gebaseerd op",
+    "reviews": "beoordelingen",
+    "viewAll": "Bekijk alle reviews op Google",
+    "writeReview": "Schrijf een review"
+  },
   "footer": {
     "tagline": "Wij Brengen Buitenleven Binnen",
     "description": "Specialist in hoogwaardige aluminium veranda's en overkappingen. Al meer dan 15 jaar uw betrouwbare partner voor buitenleven.",
@@ -68,7 +83,10 @@
     "copyright": "Wij brengen buitenleven binnen.",
     "privacyPolicy": "Privacy Policy",
     "termsConditions": "Algemene Voorwaarden",
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "subsidiary": "Een onderdeel van"
   },
   "common": {
     "readMore": "Lees meer",
@@ -86,7 +104,52 @@
     "close": "Sluiten",
     "next": "Volgende",
     "previous": "Vorige",
-    "back": "Terug"
+    "back": "Terug",
+    "yes": "Ja",
+    "no": "Nee"
+  },
+  "configuratorForm": {
+    "imagePreview": "Afbeelding voorbeeld",
+    "stepOf": "Stap {{current}} van {{total}}",
+    "gatewayTitle": "Wilt u meer aanpassen?",
+    "gatewaySubtitle": "U kunt extra aanpassingsopties bekijken indien gewenst.",
+    "gatewayYes": "Ja",
+    "gatewayYesDesc": "Ik wil meer opties zien",
+    "gatewayNo": "Nee",
+    "gatewayNoDesc": "Ik wil doorgaan",
+    "contactTitle": "Uw gegevens",
+    "contactSubtitle": "Vul uw contactgegevens in om uw offerte te ontvangen",
+    "name": "Naam",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "address": "Adres",
+    "city": "Woonplaats",
+    "notes": "Opmerkingen",
+    "notesPlaceholder": "Extra opmerkingen of vragen...",
+    "appointmentTitle": "Wilt u een afspraak maken?",
+    "appointmentSubtitle": "Plan direct een afspraak in voor een vrijblijvend adviesgesprek",
+    "appointmentYes": "Ja, plan een afspraak",
+    "appointmentNo": "Nee, alleen offerte",
+    "appointmentType": "Type afspraak",
+    "date": "Datum",
+    "selectDate": "Selecteer een datum",
+    "time": "Tijd",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "submitting": "Verzenden...",
+    "requestQuote": "Offerte aanvragen",
+    "required": "Dit veld is verplicht",
+    "minValue": "Minimum waarde is {{value}}",
+    "maxValue": "Maximum waarde is {{value}}",
+    "invalidInput": "Ongeldige invoer",
+    "fillRequired": "Vul alstublieft alle verplichte velden in",
+    "fillAppointment": "Vul alstublieft de afspraak gegevens in",
+    "successMessage": "Uw aanvraag is succesvol verzonden! We nemen zo snel mogelijk contact met u op.",
+    "errorMessage": "Er is een fout opgetreden. Probeer het later opnieuw.",
+    "notFound": "Configurator niet gevonden",
+    "loadError": "Fout bij het laden van de configurator",
+    "selectOption": "Selecteer een optie",
+    "dimensionHint": "Waarde tussen {{min}} en {{max}} {{unit}}"
   },
   "about": {
     "hero": {
@@ -101,7 +164,7 @@
     },
     "quality": {
       "title": "Kwaliteit en vakmanschap",
-      "description1": "Bij Alusolutions hechten we veel waarde aan kwaliteit en vakmanschap. Onze producten zijn vervaardigd met hoogwaardige materialen en innovatieve technologieën, wat resulteert in duurzame en betrouwbare oplossingen. Onze toegewijde en ervaren teamleden staan altijd klaar om u te adviseren en te begeleiden bij het maken van de beste keuzes voor uw specifieke situatie.",
+      "description1": "Bij VivaVerandas hechten we veel waarde aan kwaliteit en vakmanschap. Onze producten zijn vervaardigd met hoogwaardige materialen en innovatieve technologieën, wat resulteert in duurzame en betrouwbare oplossingen. Onze toegewijde en ervaren teamleden staan altijd klaar om u te adviseren en te begeleiden bij het maken van de beste keuzes voor uw specifieke situatie.",
       "description2": "We streven naar klanttevredenheid en nemen elke uitdaging met enthousiasme aan. Vanaf het eerste contact tot de installatie en nazorg, wij streven ernaar om een uitstekende service te bieden en een langdurige relatie met onze klanten op te bouwen."
     },
     "banner": {
@@ -111,7 +174,7 @@
     "benefits": {
       "custom": {
         "title": "Maatwerk terrasoplossingen",
-        "description": "Bij Alusolutions geloven we in maatwerk. Wij ontwerpen en creëren terrasoplossingen die perfect passen bij uw specifieke wensen, zodat u kunt genieten van een buitenruimte die helemaal van u is."
+        "description": "Bij VivaVerandas geloven we in maatwerk. Wij ontwerpen en creëren terrasoplossingen die perfect passen bij uw specifieke wensen, zodat u kunt genieten van een buitenruimte die helemaal van u is."
       },
       "experience": {
         "title": "Verbeter uw buitenbeleving",
@@ -124,7 +187,7 @@
     },
     "oasis": {
       "title": "Creëer Uw Buitenoase",
-      "description": "Bij Alusolutions streven we ernaar om uw buitenruimte te transformeren in een oase van comfort, stijl en elegantie. Met op maat gemaakte terrasoplossingen en hoogwaardige producten, maken we uw droomproject werkelijkheid. Vraag vandaag nog een offerte aan en ontdek de mogelijkheden voor uw unieke buitenomgeving.",
+      "description": "Bij VivaVerandas streven we ernaar om uw buitenruimte te transformeren in een oase van comfort, stijl en elegantie. Met op maat gemaakte terrasoplossingen en hoogwaardige producten, maken we uw droomproject werkelijkheid. Vraag vandaag nog een offerte aan en ontdek de mogelijkheden voor uw unieke buitenomgeving.",
       "cta": "Gratis Offerte Aanvragen"
     },
     "team": {
@@ -175,9 +238,9 @@
   },
   "home": {
     "hero": {
-      "title": "Polycarbonaat veranda",
-      "description1": "Een polycarbonaat veranda is de ideale keuze voor wie op zoek is naar een duurzame en betaalbare terrasoverkapping. Dankzij de sterke en heldere polycarbonaat dakplaten geniet je van veel lichtinval, zonder in te leveren op bescherming tegen regen en wind.",
-      "description2": "Bij AluSolutions leveren wij jouw polycarbonaat veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
+      "title": "Veranda",
+      "description1": "Een veranda is de ideale keuze voor wie op zoek is naar een duurzame en stijlvolle terrasoverkapping. Geniet van veel lichtinval en bescherming tegen regen en wind met onze hoogwaardige veranda's.",
+      "description2": "Bij VivaVerandas leveren wij jouw veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
       "cta": "Vraag eenvoudig een offerte aan!"
     },
     "galleryPreview": {
@@ -190,6 +253,9 @@
       "title": "Onze Producten",
       "subtitle": "Ontdek ons complete assortiment hoogwaardige veranda's en overkappingen",
       "moreInfo": "Meer info",
+      "cube": {
+        "description": "Modern strak design met vlak dak voor een luxe uitstraling"
+      },
       "poly": {
         "description": "Duurzaam en betaalbaar met uitstekende lichtdoorlatendheid"
       },
@@ -208,11 +274,14 @@
       }
     },
     "benefits": {
-      "title": "Ervaar de unieke voordelen van een polycarbonaat veranda",
-      "subtitle": "Betaalbare elegantie met onze polycarbonaat veranda's",
-      "paragraph1": "De investering in een polycarbonaat veranda is afhankelijk van meerdere factoren, zoals de afmetingen van de constructie en de keuze voor aanvullende opties zoals ingebouwde LED-spots, zijwanden of schuifdeuren.",
+      "title": "Ervaar de unieke voordelen van een veranda",
+      "subtitle": "Betaalbare elegantie met onze veranda's",
+      "description1": "De investering in een veranda is afhankelijk van meerdere factoren, zoals de afmetingen van de constructie en de keuze voor aanvullende opties zoals ingebouwde LED-spots, zijwanden of schuifdeuren.",
+      "description2": "Wij begrijpen dat de keuze voor een veranda een belangrijke beslissing is die afgestemd moet zijn op zowel uw budget als uw levensstijl. Daarom bieden we persoonlijk advies en gedetailleerde informatie over de mogelijkheden en kosten.",
+      "paragraph1": "De investering in een veranda is afhankelijk van meerdere factoren, zoals de afmetingen van de constructie en de keuze voor aanvullende opties zoals ingebouwde LED-spots, zijwanden of schuifdeuren.",
       "paragraph2": "Wij begrijpen dat de keuze voor een veranda een belangrijke beslissing is die afgestemd moet zijn op zowel uw budget als uw levensstijl. Daarom bieden we persoonlijk advies en gedetailleerde informatie over de mogelijkheden en kosten.",
       "ctaButton": "Neem contact op",
+      "cta": "Neem contact op",
       "imageAlt": "Elegante veranda"
     },
     "stats": {
@@ -246,16 +315,16 @@
       }
     },
     "quality": {
-      "title": "Betaalbare kwaliteit polycarbonaat veranda's",
-      "description": "De kosten van een polycarbonaat veranda hangen af van de grootte en extra's zoals spots, zijwanden of schuifdeuren. Toch is zo'n veranda een voordelige keuze die lang meegaat en er mooi uitziet.",
-      "feature1": "Kosten van materialen: goedkoper dan glas, economisch voordelig",
+      "title": "Betaalbare kwaliteit veranda's",
+      "description": "De kosten van een veranda hangen af van de grootte en extra's zoals spots, zijwanden of schuifdeuren. Onze veranda's zijn een voordelige keuze die lang meegaat en er mooi uitziet.",
+      "feature1": "Hoogwaardige materialen: duurzaam frame",
       "feature2": "Lagere installatiekosten: eenvoudige installatie verlaagt arbeidskosten",
       "feature3": "Duurzaamheid en onderhoud: langdurig met minimaal onderhoud",
       "feature4": "Energie-efficiëntie: isolatie verlaagt energiekosten",
       "feature5": "Veelzijdigheid: flexibel ontwerp, efficiënte productie"
     },
     "features": {
-      "title": "Waarom kiezen voor AluSolutions?",
+      "title": "Waarom kiezen voor VivaVerandas?",
       "quality": {
         "title": "Premium Kwaliteit",
         "description": "Alleen de beste materialen voor een langdurig resultaat"
@@ -279,7 +348,16 @@
       "service": {
         "title": "Persoonlijke Service",
         "description": "Direct contact met onze specialisten"
+      },
+      "openingTypes": {
+        "title": "Glazen Schuifwanden",
+        "description": "Wij leveren zowel schuifwanden als vouwwanden (midden openend)"
       }
+    },
+    "glassWalls": {
+      "sliding": "Schuifwanden",
+      "folding": "Vouwwanden",
+      "cta": "Bekijk meer voorbeelden"
     },
     "inspiration": {
       "title": "Inspiratie voor jouw veranda",
@@ -311,17 +389,19 @@
       }
     },
     "info": {
+      "title": "Ontdek Onze Veranda's",
+      "subtitle": "Alles wat u moet weten over onze hoogwaardige veranda's",
       "what": {
-        "title": "Wat is een polycarbonaat veranda?",
-        "description": "Een polycarbonaat veranda van Alusolutions is een duurzame terras- of tuinoverkapping die je woning verlengt met een stijlvolle buitenruimte."
+        "title": "Wat is een veranda?",
+        "description": "Een veranda van VivaVerandas is een duurzame terras- of tuinoverkapping die je woning verlengt met een stijlvolle buitenruimte."
       },
       "benefits": {
-        "title": "Voordelen van polycarbonaat",
-        "description": "Polycarbonaat is een robuust, lichtdoorlatend materiaal dat bescherming biedt tegen UV-stralen en weersinvloeden."
+        "title": "Voordelen van een veranda",
+        "description": "Onze veranda's zijn robuust en onderhoudsarm, met uitstekende bescherming tegen weersinvloeden."
       },
       "whyUs": {
-        "title": "Waarom kiezen voor Alusolutions?",
-        "description": "Bij Alusolutions kies je voor kwaliteit en duurzaamheid. Onze veranda's zijn sterk en onderhoudsarm."
+        "title": "Waarom kiezen voor VivaVerandas?",
+        "description": "Bij VivaVerandas kies je voor kwaliteit en duurzaamheid. Onze veranda's zijn sterk en onderhoudsarm."
       },
       "personalize": {
         "title": "Personaliseer je veranda",
@@ -342,7 +422,7 @@
       "anthracite": "Antraciet",
       "white": "Wit",
       "cream": "Crème",
-      "brown": "Bruin"
+      "black": "Zwart"
     },
     "cta": {
       "title": "Klaar voor jouw droomveranda?",
@@ -394,7 +474,7 @@
     "title": "Privacy Policy",
     "section1": {
       "title": "1. Inleiding",
-      "content": "AluSolutions respecteert uw privacy en zorgt ervoor dat de persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld."
+      "content": "VivaVerandas respecteert uw privacy en zorgt ervoor dat de persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld."
     },
     "section2": {
       "title": "2. Gegevens die wij verzamelen",
@@ -414,18 +494,18 @@
     },
     "section6": {
       "title": "6. Contact",
-      "content": "Voor vragen over ons privacybeleid kunt u contact opnemen via info@alusolutions.nl"
+      "content": "Voor vragen over ons privacybeleid kunt u contact opnemen via info@vivaverandas.nl"
     }
   },
   "voorwaarden": {
     "title": "Algemene Voorwaarden",
     "section1": {
       "title": "Artikel 1 - Definities",
-      "content": "In deze voorwaarden wordt verstaan onder AluSolutions: de onderneming gevestigd te Reuver, ingeschreven bij de KVK onder nummer 90086449."
+      "content": "In deze voorwaarden wordt verstaan onder VivaVerandas: de onderneming gevestigd te Reuver, ingeschreven bij de KVK onder nummer 90086449."
     },
     "section2": {
       "title": "Artikel 2 - Toepasselijkheid",
-      "content": "Deze voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten van AluSolutions."
+      "content": "Deze voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten van VivaVerandas."
     },
     "section3": {
       "title": "Artikel 3 - Offertes",
@@ -437,12 +517,34 @@
     },
     "section5": {
       "title": "Artikel 5 - Garantie",
-      "content": "AluSolutions biedt 10 jaar garantie op de constructie bij normaal gebruik."
+      "content": "VivaVerandas biedt 10 jaar garantie op de constructie bij normaal gebruik."
     },
     "section6": {
       "title": "Artikel 6 - Betaling",
       "content": "Betaling geschiedt conform de op de factuur vermelde betalingsvoorwaarden."
     }
+  },
+  "cookieBanner": {
+    "title": "We waarderen uw privacy",
+    "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud weer te geven en ons verkeer te analyseren. Door op \"Alles accepteren\" te klikken, stemt u in met ons gebruik van cookies.",
+    "acceptAll": "Alles accepteren",
+    "rejectAll": "Alles weigeren",
+    "customize": "Aanpassen",
+    "savePreferences": "Voorkeuren opslaan",
+    "learnMore": "Meer informatie",
+    "preferencesTitle": "Toestemmingsvoorkeuren aanpassen",
+    "preferencesIntro": "We gebruiken cookies om u te helpen efficiënt te navigeren en bepaalde functies uit te voeren. U vindt gedetailleerde informatie over alle cookies onder de relevante toestemmingscategorie hieronder.",
+    "necessary": "Noodzakelijk",
+    "necessaryDesc": "Noodzakelijke cookies zijn cruciaal voor de basisfuncties van de website en zonder deze werkt de website niet op de beoogde manier. Deze cookies slaan geen persoonlijk identificeerbare gegevens op.",
+    "functional": "Functioneel",
+    "functionalDesc": "Functionele cookies helpen bepaalde functionaliteiten uit te voeren, zoals het delen van de inhoud van de website op sociale mediaplatforms, het verzamelen van feedback en andere functies van derden.",
+    "analytical": "Analytisch",
+    "analyticalDesc": "Analytische cookies worden gebruikt om te begrijpen hoe bezoekers omgaan met de website. Deze cookies helpen informatie te verstrekken over de statistieken van het aantal bezoekers, het bouncepercentage, de verkeersbron, enz.",
+    "performance": "Prestatie",
+    "performanceDesc": "Prestatiecookies worden gebruikt om de belangrijkste prestatie-indexen van de website te begrijpen en te analyseren, wat helpt bij het leveren van een betere gebruikerservaring voor de bezoekers.",
+    "advertising": "Advertentie",
+    "advertisingDesc": "Advertentiecookies worden gebruikt om bezoekers gepersonaliseerde advertenties te bezorgen op basis van de eerder bezochte pagina's en om de effectiviteit van de advertentiecampagne te analyseren.",
+    "alwaysActive": "Altijd actief"
   },
   "cookies": {
     "title": "Cookiebeleid",
@@ -463,7 +565,7 @@
     },
     "section4": {
       "title": "Contact",
-      "content": "Vragen over ons cookiebeleid? Neem contact op via info@alusolutions.nl"
+      "content": "Vragen over ons cookiebeleid? Neem contact op via info@vivaverandas.nl"
     }
   },
   "inspiratie": {
@@ -492,7 +594,8 @@
       "elegantSlats": "Elegante Lamellen",
       "compactSolution": "Compacte Oplossing",
       "noImages": "Nog geen foto's",
-      "noImagesDescription": "Er zijn nog geen foto's in deze categorie."
+      "noImagesDescription": "Er zijn nog geen foto's in deze categorie.",
+      "loadMore": "Meer laden"
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -660,7 +763,7 @@
     "hero": {
       "title": "Contact",
       "subtitle": "Wij staan voor u klaar",
-      "imageAlt": "Contact AluSolutions"
+      "imageAlt": "Contact VivaVerandas"
     },
     "form": {
       "title": "Contact formulier",
@@ -691,8 +794,8 @@
       "successMessage": "Bedankt voor uw bericht! Wij nemen zo snel mogelijk contact met u op."
     },
     "info": {
-      "title": "Wil je contact opnemen met AluSolutions?",
-      "paragraph1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij AluSolutions horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
+      "title": "Wil je contact opnemen met VivaVerandas?",
+      "paragraph1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij VivaVerandas horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
       "paragraph2": "Voor directe hulp adviseren we je om contact met ons op te nemen via WhatsApp. Daarnaast zijn we ook bereikbaar via e-mail of ons contactformulier.",
       "phone": "Telefoon",
       "email": "Email",
@@ -712,7 +815,7 @@
     },
     "map": {
       "title": "Bezoek onze showroom",
-      "mapTitle": "AluSolutions Locatie"
+      "mapTitle": "VivaVerandas Locatie"
     },
     "reviews": {
       "title": "Wat onze klanten zeggen",
@@ -772,6 +875,30 @@
     "carport": "Carport"
   },
   "offerte": {
+    "pageTitle": "Offerte Aanvragen",
+    "pageDescription": "Vraag eenvoudig en snel een vrijblijvende offerte aan voor uw droomveranda",
+    "title": "Offerte Aanvragen",
+    "subtitle": "Configureer uw droomveranda en ontvang binnen 24 uur een vrijblijvende offerte",
+    "chooseProduct": "Kies uw product",
+    "chooseProductSubtitle": "Selecteer het product waarvoor u een offerte wilt aanvragen",
+    "startConfigurator": "Start configurator",
+    "noConfigurators": "Er zijn momenteel geen configurators beschikbaar",
+    "benefit1": {
+      "title": "Vrijblijvend",
+      "description": "Ontvang een offerte zonder enige verplichting"
+    },
+    "benefit2": {
+      "title": "Snel antwoord",
+      "description": "Binnen 24 uur een reactie van onze specialisten"
+    },
+    "benefit3": {
+      "title": "Beste prijs",
+      "description": "Scherpe prijzen voor kwaliteitsproducten"
+    },
+    "alternativeTitle": "Liever persoonlijk advies?",
+    "alternativeDescription": "Maak een afspraak voor een vrijblijvend adviesgesprek of bel ons direct",
+    "makeAppointment": "Afspraak maken",
+    "callUs": "Bel ons",
     "required": "Verplicht",
     "optional": "Optioneel",
     "nextButton": "Volgende",
@@ -887,10 +1014,20 @@
     "openingHours": "Wij zijn geopend: Ma-Do 09:00-17:00, Za 10:00-15:00",
     "selectDateFirst": "Selecteer eerst een datum",
     "closedSunday": "Wij zijn op zondag gesloten",
+    "closedDay": "Wij zijn op {{day}} gesloten",
     "slotBooked": "Dit tijdslot is al geboekt",
     "slotPast": "Dit tijdslot is al gepasseerd",
     "available": "Beschikbaar",
     "booked": "Geboekt",
+    "durationInfo": "Deze afspraak duurt {{duration}} uur",
+    "notEnoughTime": "Onvoldoende beschikbare tijd",
+    "badge": "Gratis Advies",
+    "imageTitle": "Uw Droomveranda",
+    "imageSubtitle": "Wij helpen u graag bij het realiseren van uw ideale buitenruimte",
+    "feature1": "Persoonlijk advies",
+    "feature2": "Vrijblijvende offerte",
+    "feature3": "Vakkundige montage",
+    "contactInfo": "Contactgegevens",
     "step1": {
       "title": "Type Afspraak",
       "subtitle": "Wat voor soort afspraak wilt u maken?"
@@ -916,6 +1053,7 @@
       "adviceDesc": "Telefonisch of video adviesgesprek"
     },
     "form": {
+      "dateTime": "Datum & Tijd",
       "date": "Datum",
       "time": "Tijd",
       "name": "Naam",
@@ -960,7 +1098,7 @@
       "info": {
         "title": "Wat is een Polycarbonaat Veranda?",
         "description1": "Een polycarbonaat veranda is de ideale keuze voor wie op zoek is naar een duurzame en betaalbare terrasoverkapping. Dankzij de sterke en heldere polycarbonaat dakplaten geniet je van veel lichtinval, zonder in te leveren op bescherming tegen regen en wind.",
-        "description2": "Bij AluSolutions leveren wij jouw polycarbonaat veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
+        "description2": "Bij VivaVerandas leveren wij jouw polycarbonaat veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
         "benefitsTitle": "Voordelen",
         "imageAlt": "Polycarbonaat Veranda voorbeeld"
       },
@@ -1010,7 +1148,7 @@
       "info": {
         "title": "Wat is een Glazen Veranda?",
         "description1": "Een glazen veranda biedt maximale lichtinval en een onbelemmerd uitzicht op uw tuin. Het gehard glas is veilig, sterk en gemakkelijk te reinigen.",
-        "description2": "Bij AluSolutions gebruiken we uitsluitend hoogwaardig gehard glas dat voldoet aan alle veiligheidsnormen.",
+        "description2": "Bij VivaVerandas gebruiken we uitsluitend hoogwaardig gehard glas dat voldoet aan alle veiligheidsnormen.",
         "benefitsTitle": "Voordelen",
         "imageAlt": "Glazen Veranda"
       },
@@ -1371,6 +1509,281 @@
     }
   },
   "admin": {
+    "sidebar": {
+      "title": "Admin Paneel",
+      "dashboard": "Dashboard",
+      "gallery": "Galerij",
+      "appointments": "Afspraken",
+      "appointmentSettings": "Afspraak Instellingen",
+      "offertes": "Offertes",
+      "configurators": "Configuratoren",
+      "configuratorSubmissions": "Configurator Aanvragen",
+      "messages": "Berichten",
+      "blog": "Blog",
+      "logout": "Uitloggen"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "welcome": "Welkom",
+      "loading": "Laden...",
+      "statistics": "Statistieken",
+      "recentAppointments": "Recente Afspraken",
+      "recentMessages": "Recente Berichten",
+      "totalAppointments": "Totaal Afspraken",
+      "pendingAppointments": "Wachtende Afspraken",
+      "totalMessages": "Totaal Berichten",
+      "unreadMessages": "Ongelezen Berichten",
+      "totalOffertes": "Totaal Offertes",
+      "totalPages": "Totaal Pagina's",
+      "galleryImages": "Galerij Afbeeldingen",
+      "products": "Producten",
+      "appointments": "Afspraken",
+      "quickAccess": "Snelle Toegang",
+      "addPage": "Pagina Toevoegen",
+      "uploadImage": "Afbeelding Uploaden",
+      "addProduct": "Product Toevoegen",
+      "viewAppointments": "Afspraken Bekijken",
+      "viewMessages": "Berichten Bekijken",
+      "viewOffertes": "Offertes Bekijken",
+      "manageBlog": "Blog Beheren",
+      "viewAll": "Alles Bekijken",
+      "noRecentAppointments": "Nog geen afspraken",
+      "noRecentMessages": "Nog geen berichten"
+    },
+    "appointments": {
+      "title": "Afsprakenbeheer",
+      "filterAll": "Alle",
+      "filterPending": "Wachtend",
+      "filterConfirmed": "Bevestigd",
+      "filterCompleted": "Voltooid",
+      "filterCancelled": "Geannuleerd",
+      "noAppointments": "Geen afspraken gevonden",
+      "noAppointmentsDesc": "Er zijn nog geen afspraken geregistreerd.",
+      "loading": "Laden...",
+      "all": "Alle",
+      "pending": "Wachtend",
+      "confirmed": "Bevestigd",
+      "statusPending": "Wachtend",
+      "statusConfirmed": "Bevestigd",
+      "statusCompleted": "Voltooid",
+      "statusCancelled": "Geannuleerd",
+      "statusConfirmedLocked": "Bevestigd (Vergrendeld)",
+      "status": {
+        "pending": "Wachtend",
+        "confirmed": "Bevestigd",
+        "completed": "Voltooid",
+        "cancelled": "Geannuleerd"
+      },
+      "confirm": "Bevestigen",
+      "confirmAndLock": "Bevestigen en Vergrendelen",
+      "complete": "Voltooien",
+      "cancel": "Annuleren",
+      "delete": "Verwijderen",
+      "deleteConfirm": "Weet u zeker dat u deze afspraak wilt verwijderen?",
+      "deleteError": "Verwijderen mislukt!",
+      "statusUpdateError": "Fout bij het bijwerken van de status!",
+      "duration": "Duur",
+      "minutes": "min",
+      "hour": "uur",
+      "hours": "uur",
+      "serviceShowroom": "Showroombezoek",
+      "serviceHomeVisit": "Thuisbezoek",
+      "serviceConsultation": "Adviesgesprek"
+    },
+    "appointmentSettings": {
+      "title": "Afspraak Instellingen",
+      "addNew": "Nieuw Toevoegen",
+      "serviceType": "Service Type",
+      "duration": "Duur",
+      "name": "Naam",
+      "description": "Beschrijving",
+      "active": "Actief",
+      "order": "Volgorde",
+      "save": "Opslaan",
+      "cancel": "Annuleren",
+      "edit": "Bewerken",
+      "delete": "Verwijderen",
+      "deleteConfirm": "Weet u zeker dat u deze instelling wilt verwijderen?",
+      "minutes": "minuten",
+      "hour": "uur",
+      "hours": "uur"
+    },
+    "offertes": {
+      "title": "Offerte Aanvragen",
+      "filterAll": "Alle",
+      "filterNew": "Nieuw",
+      "filterInProgress": "In Behandeling",
+      "filterCompleted": "Voltooid",
+      "noOffertes": "Geen offertes gevonden",
+      "noOffertesDesc": "Er zijn nog geen offerte aanvragen.",
+      "loading": "Laden...",
+      "all": "Alle",
+      "total": "Totaal",
+      "statusNew": "Nieuw",
+      "statusViewed": "Bekeken",
+      "statusQuoted": "Offerte verzonden",
+      "statusAccepted": "Geaccepteerd",
+      "statusRejected": "Afgewezen",
+      "status": {
+        "new": "Nieuw",
+        "inProgress": "In Behandeling",
+        "completed": "Voltooid"
+      },
+      "details": "Details",
+      "delete": "Verwijderen",
+      "deleteConfirm": "Weet u zeker dat u deze offerte wilt verwijderen?",
+      "coverType": "Overkapping",
+      "gutterType": "Goot type",
+      "color": "Kleur",
+      "material": "Materiaal",
+      "dimensions": "Afmetingen",
+      "lighting": "Verlichting",
+      "installation": "Montage",
+      "extraOptions": "Extra opties",
+      "rightSide": "Rechter kant",
+      "rightWedge": "Rechter spie",
+      "leftSide": "Linker kant",
+      "leftWedge": "Linker spie",
+      "front": "Voorkant",
+      "back": "Achterkant",
+      "remarks": "Opmerking",
+      "showDetails": "Toon alle details",
+      "hideDetails": "Verberg details"
+    },
+    "configuratorSubmissions": {
+      "title": "Configurator Aanvragen",
+      "total": "Totaal",
+      "all": "Alle",
+      "allConfigurators": "Alle Configuratoren",
+      "filterStatus": "Status",
+      "filterConfigurator": "Configurator",
+      "noSubmissions": "Nog geen aanvragen",
+      "noSubmissionsDesc": "Wanneer klanten de configurator invullen, verschijnen ze hier.",
+      "deleteConfirm": "Weet u zeker dat u deze aanvraag wilt verwijderen?",
+      "statusNew": "Nieuw",
+      "statusViewed": "Bekeken",
+      "statusQuoted": "Offerte verzonden",
+      "statusAccepted": "Geaccepteerd",
+      "statusRejected": "Afgewezen",
+      "appointmentRequested": "Afspraak Aangevraagd",
+      "serviceType": "Type dienst",
+      "date": "Datum",
+      "time": "Tijd",
+      "showDetails": "Toon details",
+      "hideDetails": "Verberg details",
+      "configurationDetails": "Configuratie Details",
+      "notes": "Opmerkingen"
+    },
+    "configurators": {
+      "title": "Configurator Beheer",
+      "addNew": "Nieuw Toevoegen",
+      "noConfigurators": "Nog geen configuratoren",
+      "noConfiguratorsDesc": "Klik op de knop om een nieuwe configurator te maken",
+      "loading": "Laden...",
+      "name": "Naam",
+      "slug": "Slug",
+      "steps": "Stappen",
+      "active": "Actief",
+      "edit": "Bewerken",
+      "delete": "Verwijderen",
+      "deleteConfirm": "Weet u zeker dat u deze configurator wilt verwijderen?",
+      "deleteConfirmFull": "Weet u zeker dat u deze configurator wilt verwijderen? Alle stappen en opties worden ook verwijderd.",
+      "deleteError": "Verwijderen mislukt!",
+      "duplicateError": "Kopiëren mislukt!",
+      "copy": "Kopie",
+      "category": "Categorie",
+      "status": "Status",
+      "all": "Alle",
+      "statusActive": "Actief",
+      "statusInactive": "Inactief",
+      "newConfigurator": "Nieuwe Configurator",
+      "editConfigurator": "Configurator Bewerken",
+      "hide": "Verbergen",
+      "publish": "Publiceren",
+      "duplicate": "Kopiëren",
+      "loadError": "Configurator kon niet worden geladen!",
+      "saved": "Opgeslagen!",
+      "slugExists": "Deze slug wordt al gebruikt!",
+      "saveError": "Opslaan mislukt!",
+      "saving": "Opslaan...",
+      "saveFirst": "Eerst opslaan",
+      "tabGeneral": "Algemeen",
+      "tabSteps": "Stappen",
+      "tabPreview": "Voorbeeld",
+      "generalInfo": "Algemene Informatie",
+      "slugLabel": "Slug (URL)",
+      "slugHelp": "URL-vriendelijke unieke identificatie",
+      "categoryLabel": "Categorie",
+      "categoryOther": "Overige",
+      "displayOrder": "Volgorde",
+      "displayOrderHelp": "Voor sortering in de lijst",
+      "activePublished": "Actief (Gepubliceerd)",
+      "activeHelp": "Als u dit aanvinkt, wordt de configurator zichtbaar op de website",
+      "multiLanguageInfo": "Meertalige Informatie",
+      "nameLabel": "Naam",
+      "descriptionLabel": "Beschrijving",
+      "requiredField": "Dit veld is verplicht (standaard taal)",
+      "update": "Bijwerken",
+      "create": "Aanmaken",
+      "stepsCount": "Stappen ({{count}})",
+      "newStep": "Nieuwe Stap",
+      "noSteps": "Nog geen stappen",
+      "noStepsDesc": "Klik op de knop om een nieuwe stap toe te voegen",
+      "required": "Verplicht",
+      "optionsCount": "opties",
+      "conditional": "Voorwaardelijk",
+      "moveUp": "Omhoog verplaatsen",
+      "moveDown": "Omlaag verplaatsen",
+      "deleteStepConfirm": "Weet u zeker dat u deze stap wilt verwijderen? Alle opties worden ook verwijderd.",
+      "moveStepError": "Kan stap volgorde niet wijzigen!",
+      "deleteOptionConfirm": "Weet u zeker dat u deze optie wilt verwijderen?",
+      "titleEN": "Titel (EN)",
+      "titleTR": "Titel (TR)",
+      "subtitle": "Ondertitel",
+      "helpText": "Help Tekst",
+      "previewImage": "Voorbeeld Afbeelding",
+      "condition": "Voorwaarde",
+      "optionsLabel": "Opties",
+      "newOption": "Nieuwe Optie",
+      "noOptions": "Nog geen opties. Klik op de knop hierboven om toe te voegen.",
+      "livePreview": "Live Voorbeeld",
+      "livePreviewDesc": "Dit is een live voorbeeld van hoe uw configurator eruitziet voor gebruikers. Het wordt automatisch bijgewerkt wanneer u uw wijzigingen opslaat.",
+      "previewError": "Sla de configurator eerst op en voer een slug in voor het voorbeeld."
+    },
+    "gallery": {
+      "title": "Galerijbeheer",
+      "upload": "Uploaden",
+      "uploadButton": "+ Afbeelding Uploaden",
+      "delete": "Verwijderen",
+      "deleteConfirm": "Weet u zeker dat u deze afbeelding wilt verwijderen?",
+      "deleteError": "Verwijderen mislukt!",
+      "uploadError": "Uploaden mislukt!",
+      "noImages": "Nog geen afbeeldingen",
+      "noImagesDesc": "Klik op de knop hierboven om afbeeldingen te uploaden",
+      "loading": "Laden...",
+      "uploading": "Uploaden...",
+      "all": "Alle",
+      "other": "Overige",
+      "active": "Actief",
+      "inactive": "Inactief"
+    },
+    "contacts": {
+      "title": "Berichten",
+      "filterAll": "Alles Tonen",
+      "filterUnread": "Alleen Ongelezen",
+      "loading": "Laden...",
+      "noMessages": "Geen berichten gevonden",
+      "tableSender": "Afzender",
+      "tableSubject": "Onderwerp",
+      "tableDate": "Datum",
+      "detailSender": "Afzender:",
+      "detailEmail": "Email:",
+      "detailPhone": "Telefoon:",
+      "detailDate": "Datum:",
+      "replyButton": "Beantwoorden",
+      "deleteButton": "Verwijderen",
+      "deleteConfirm": "Weet u zeker dat u dit bericht wilt verwijderen?"
+    },
     "blog": {
       "title": "Blog Beheer",
       "filterAll": "Alle",
@@ -1409,23 +1822,6 @@
       "loadError": "Fout bij laden artikel",
       "saveError": "Fout bij opslaan",
       "slugExists": "Deze slug bestaat al"
-    },
-    "contacts": {
-      "title": "Mesajlar",
-      "filterAll": "Tümünü Göster",
-      "filterUnread": "Sadece Okunmamış",
-      "loading": "Yükleniyor...",
-      "noMessages": "Mesaj bulunamadı",
-      "tableSender": "Gönderen",
-      "tableSubject": "Konu",
-      "tableDate": "Tarih",
-      "detailSender": "Gönderen:",
-      "detailEmail": "Email:",
-      "detailPhone": "Telefon:",
-      "detailDate": "Tarih:",
-      "replyButton": "Yanıtla",
-      "deleteButton": "Sil",
-      "deleteConfirm": "Bu mesajı silmek istediğinizden emin misiniz?"
     }
   },
   "contactPage": {
@@ -1460,8 +1856,8 @@
       "successMessage": "Bedankt voor uw bericht! Wij nemen zo snel mogelijk contact met u op."
     },
     "info": {
-      "title": "Wil je contact opnemen met AluSolutions?",
-      "intro1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij AluSolutions horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
+      "title": "Wil je contact opnemen met VivaVerandas?",
+      "intro1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij VivaVerandas horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
       "intro2": "Voor directe hulp adviseren we je om contact met ons op te nemen via WhatsApp. Daarnaast zijn we ook bereikbaar via e-mail of ons contactformulier.",
       "phone": "Telefoon",
       "email": "Email",
@@ -1493,6 +1889,242 @@
       "subtitle": "Mis deze kans niet en vraag vandaag nog een vrijblijvende offerte aan",
       "quote": "Offerte aanvragen",
       "call": "Bel ons direct"
+    }
+  },
+  "productPages": {
+    "common": {
+      "specifications": "Specificaties",
+      "projectGallery": "Projecten Galerij",
+      "benefits": "Voordelen",
+      "material": "Materiaal",
+      "maxWidth": "Maximale breedte",
+      "guarantee": "Garantie",
+      "yearsGuarantee": "jaar garantie",
+      "requestQuote": "Afspraak maken",
+      "callUs": "Bel ons direct",
+      "interestedIn": "Interesse in een",
+      "requestQuoteSubtitle": "Vraag vrijblijvend een offerte aan of maak een afspraak voor persoonlijk advies"
+    },
+    "cube": {
+      "title": "Cube Veranda",
+      "subtitle": "Modern design voor een tijdloze buitenruimte",
+      "heroAlt": "Cube Veranda",
+      "mainTitle": "De Cube Veranda: Strak & Modern Design",
+      "description1": "De Cube Veranda is de perfecte combinatie van hedendaags design en ultiem buitencomfort. Met zijn kenmerkende strakke lijnen en platte dak past deze overkapping perfect bij moderne architectuur. Dankzij de hoogwaardige aluminium constructie bent u verzekerd van een duurzame en onderhoudsarme oplossing die jarenlang meegaat.",
+      "description2": "Bij VivaVerandas ontwerpen en plaatsen we uw Cube Veranda volledig op maat. Of u nu kiest voor een minimalistische uitvoering of een volledig uitgeruste buitenruimte met LED-verlichting, glazen schuifwanden en zonwering: wij leveren een oplossing die zowel praktisch als elegant is. Binnen enkele weken geniet u van uw nieuwe luxe buitenruimte, inclusief professionele montage en afwerking.",
+      "benefitsTitle": "Ervaar de unieke voordelen van een Cube Veranda",
+      "benefit1": "Strak, modern design met plat dak voor een tijdloze uitstraling",
+      "benefit2": "Hoogwaardig aluminium frame, bestand tegen alle weersomstandigheden",
+      "benefit3": "100% op maat gemaakt, perfect passend bij uw woning",
+      "benefit4": "Geïntegreerde LED-verlichting voor sfeervolle avonden",
+      "benefit5": "Combineerbaar met glazen schuifwanden voor een tuinkamer",
+      "benefit6": "Onderhoudsarm en corrosiebestendig",
+      "benefit7": "10 jaar fabrieksgarantie op de constructie",
+      "whatIsTitle": "Wat is een Cube Veranda?",
+      "whatIsText": "Een Cube Veranda van VivaVerandas is een moderne aluminium overkapping met een strak, minimalistisch ontwerp. Het platte dak en de rechte lijnen zorgen voor een hedendaagse uitstraling die naadloos aansluit bij moderne woningen. De duurzame constructie biedt bescherming tegen zon en regen, terwijl u optimaal geniet van uw buitenruimte.",
+      "whyChooseTitle": "Waarom kiezen voor een Cube Veranda?",
+      "whyChooseText": "De Cube Veranda is ideaal voor wie houdt van een strakke, moderne look. De robuuste aluminium constructie is onderhoudsarm en gaat jarenlang mee. Met de vele uitbreidingsmogelijkheden zoals LED-verlichting, zonwering en glazen wanden creëert u uw ideale buitenruimte.",
+      "customizeTitle": "Personaliseer uw Cube Veranda",
+      "customizeText": "Maak uw Cube Veranda compleet met diverse opties zoals geïntegreerde LED-spots, elektrische screens, glazen schuifwanden of zijwanden voor extra beschutting. Kies uit verschillende RAL-kleuren om de overkapping perfect aan te laten sluiten bij uw woning.",
+      "installationTitle": "Plaatsing en installatie",
+      "installationText": "Onze ervaren vakmensen zorgen voor een snelle en professionele montage van uw Cube Veranda. Of u nu kiest voor een vrijstaande opstelling of een aanbouw aan uw woning, wij bieden flexibele plaatsingsopties die passen bij uw situatie.",
+      "specMaterial": "Hoogwaardig aluminium, gepoedercoat in elke RAL-kleur",
+      "specRoof": "Dakbedekking",
+      "specRoofValue": "Geïsoleerde dakplaten of glazen dak",
+      "specWidthValue": "Tot 7 meter zonder tussenstaanders",
+      "specDepth": "Maximale uitval",
+      "specDepthValue": "Tot 5 meter diepte",
+      "specLighting": "Verlichting",
+      "specLightingValue": "Optionele ingebouwde LED-spots",
+      "specGuaranteeValue": "10 jaar op constructie",
+      "experienceYears": "15+ jaar ervaring",
+      "colorOptions": "Elke RAL-kleur mogelijk",
+      "serviceText": "Betrouwbare service en vakmanschap"
+    },
+    "lamel": {
+      "title": "Lamellen Veranda",
+      "subtitle": "Luxe, comfort en volledige controle over uw buitenruimte",
+      "heroAlt": "Lamellen Veranda",
+      "mainTitle": "De Lamellen Veranda: Ultiem Comfort & Flexibiliteit",
+      "description1": "Een lamellen veranda is de perfecte combinatie van luxe, comfort en controle over uw buitenruimte. Dankzij de elektrisch verstelbare lamellen bepaalt u zelf de ideale hoeveelheid zonlicht, ventilatie en schaduw, helemaal afgestemd op elk seizoen. Deze moderne aluminium lamellen overkapping biedt bescherming tegen zon, regen én wind, zodat u het hele jaar door van uw terras kunt genieten.",
+      "description2": "Bij VivaVerandas ontwerpen en plaatsen we uw lamellen veranda volledig op maat. Of u nu kiest voor een vrijstaande lamellen overkapping in de tuin of een aanbouw aan uw woning met geïntegreerde zonwering: wij leveren een oplossing die zowel praktisch als elegant is. Binnen enkele weken geniet u van een duurzame aluminium overkapping met lamellendak, inclusief professionele montage en afwerking.",
+      "benefitsTitle": "Ervaar de unieke voordelen van een lamellen veranda",
+      "benefit1": "Verstelbare lamellen (0° - 135°) voor perfecte controle over licht en schaduw",
+      "benefit2": "100% waterdicht bij gesloten lamellen - geniet ook bij regen buiten",
+      "benefit3": "Elektrische bediening met afstandsbediening of smartphone app",
+      "benefit4": "Automatische regensensor voor zorgeloos buitenplezier",
+      "benefit5": "Geïntegreerde waterafvoer via de staanders",
+      "benefit6": "Sfeervolle LED-verlichting tussen de lamellen mogelijk",
+      "benefit7": "Combineerbaar met screens, glazen schuifwanden en zijwanden",
+      "whatIsTitle": "Wat is een lamellen veranda?",
+      "whatIsText": "Een lamellen veranda van VivaVerandas biedt de perfecte combinatie van stijl, comfort en functionaliteit voor uw buitenruimte. Dankzij de verstelbare lamellen kunt u eenvoudig de hoeveelheid zonlicht en ventilatie reguleren, waardoor u altijd een aangename buitenomgeving heeft. Onze hoogwaardige aluminium constructies zijn weerbestendig en duurzaam, ideaal voor het Nederlandse klimaat.",
+      "whyChooseTitle": "Waarom kiezen voor een lamellen veranda?",
+      "whyChooseText": "Lamellen overkappingen bieden een unieke flexibiliteit doordat u de lamellen kunt kantelen tot de gewenste stand. Zo geniet u van optimale schaduw, maximale lichtinval of volledige beschutting tegen regen. De aluminium lamellen zijn onderhoudsarm en bestand tegen diverse weersomstandigheden, waardoor u jarenlang zorgeloos kunt genieten.",
+      "customizeTitle": "Personaliseer uw lamellen veranda",
+      "customizeText": "Maak uw lamellen veranda compleet met diverse opties zoals geïntegreerde LED-verlichting, glazen schuifwanden of zijwanden voor extra beschutting. U kunt kiezen uit verschillende kleuren en afmetingen om de overkapping perfect aan te laten sluiten bij uw woning.",
+      "installationTitle": "Plaatsing en installatie",
+      "installationText": "Onze ervaren vakmensen zorgen voor een snelle en professionele montage van uw lamellen veranda. Of u nu kiest voor een vrijstaande opstelling of een aanbouw aan uw woning, wij bieden flexibele en efficiënte plaatsingsopties die passen bij uw situatie.",
+      "affordableTitle": "Betaalbare luxe",
+      "affordableText": "De prijs van een lamellen veranda is afhankelijk van de afmetingen en de gekozen uitbreidingen, zoals LED-verlichting, zijwanden of schuifpanelen. Toch blijft dit type overkapping een slimme én stijlvolle keuze. Vraag een vrijblijvende offerte aan om te ontdekken wat het voor u kost.",
+      "specMaterial": "Aluminium lamellen en frame, gepoedercoat in elke RAL-kleur",
+      "specLamelSize": "Lamel afmeting",
+      "specLamelSizeValue": "200mm breed, kantelbaar van 0° tot 135°",
+      "specWidthValue": "Tot 6 meter per sectie",
+      "specControl": "Bediening",
+      "specControlValue": "Elektrisch met afstandsbediening of app (Somfy)",
+      "specSensors": "Sensoren",
+      "specSensorsValue": "Optionele wind- en regensensor",
+      "specGuaranteeValue": "5 jaar op motor, 10 jaar op constructie",
+      "experienceYears": "15+ jaar ervaring",
+      "colorOptions": "RAL 7024 en meer",
+      "roofType": "Verstelbare lamellen",
+      "serviceText": "Betrouwbare service en vakmanschap"
+    },
+    "glazen": {
+      "title": "Glazen Veranda",
+      "subtitle": "Maximaal natuurlijk licht, maximaal buitengevoel",
+      "heroAlt": "Glazen Veranda",
+      "mainTitle": "De Glazen Veranda: Licht, Luxe & Ruimte",
+      "description1": "Een glazen veranda is de perfecte manier om uw buitenruimte te transformeren tot een lichte, luxueuze leefomgeving. Het hoogwaardige gelaagd veiligheidsglas zorgt voor een elegante uitstraling en geeft uw tuin of terras een ruimtelijk gevoel. Dankzij het transparante dak geniet u van maximaal daglicht en blijft u toch beschermd tegen regen en wind.",
+      "description2": "Bij VivaVerandas ontwerpen we uw glazen veranda volledig op maat. Het glazen dak kan worden uitgevoerd met zonwerend of zelfreinigend glas, zodat u ook op warme dagen comfortabel buiten kunt vertoeven. De robuuste aluminium draagconstructie is duurzaam, onderhoudsarm en verkrijgbaar in elke RAL-kleur. Zo creëert u een buitenruimte die perfect aansluit bij uw woning.",
+      "benefitsTitle": "Ervaar de voordelen van een glazen veranda",
+      "benefit1": "Maximaal natuurlijk daglicht door het transparante glazen dak",
+      "benefit2": "Gehard VSG veiligheidsglas voor optimale veiligheid",
+      "benefit3": "Zonwerend glas houdt de ruimte koel op warme dagen",
+      "benefit4": "Zelfreinigende glascoating voor minimaal onderhoud",
+      "benefit5": "Luxe, tijdloze uitstraling die de waarde van uw woning verhoogt",
+      "benefit6": "Duurzame aluminium draagconstructie, corrosiebestendig",
+      "benefit7": "Combineerbaar met zonwering, screens en glazen schuifwanden",
+      "whatIsTitle": "Wat is een glazen veranda?",
+      "whatIsText": "Een glazen veranda van VivaVerandas is een aluminium overkapping met een transparant glazen dak. Door het gebruik van hoogwaardig veiligheidsglas geniet u van maximaal daglicht terwijl u beschermd bent tegen regen en wind. De glazen veranda is de ideale keuze voor wie houdt van een lichte, open buitenruimte.",
+      "whyChooseTitle": "Waarom kiezen voor een glazen veranda?",
+      "whyChooseText": "Een glazen veranda biedt het beste van twee werelden: de beschutting van een overkapping én het gevoel van buiten zijn. Het transparante dak zorgt voor een lichte sfeer en maakt uw buitenruimte visueel groter. De robuuste aluminium constructie gaat jarenlang mee met minimaal onderhoud.",
+      "customizeTitle": "Personaliseer uw glazen veranda",
+      "customizeText": "Maak uw glazen veranda compleet met diverse opties zoals zonwering, geïntegreerde LED-verlichting, glazen schuifwanden of elektrische screens. Kies uit helder, zonwerend of zelfreinigend glas en selecteer de perfecte RAL-kleur voor uw aluminium frame.",
+      "installationTitle": "Vakkundige plaatsing",
+      "installationText": "Onze ervaren monteurs plaatsen uw glazen veranda snel en professioneel. Of het nu gaat om een aanbouw aan uw woning of een vrijstaande constructie in de tuin, wij zorgen voor een perfecte afwerking en waterdichte aansluiting.",
+      "specFrame": "Frame",
+      "specFrameValue": "Aluminium, gepoedercoat in elke RAL-kleur",
+      "specGlassType": "Glastype",
+      "specGlassTypeValue": "VSG gelaagd veiligheidsglas 8.8mm",
+      "specOptions": "Glasopties",
+      "specOptionsValue": "Zonwerend, zelfreinigend of helder glas",
+      "specWidthValue": "Tot 6 meter zonder tussenstaanders",
+      "specDrainage": "Waterafvoer",
+      "specDrainageValue": "Geïntegreerd afvoersysteem in goten",
+      "specGuaranteeValue": "10 jaar op constructie, 5 jaar op glas",
+      "experienceYears": "15+ jaar ervaring",
+      "colorOptions": "4+ RAL-kleuren",
+      "guaranteeYears": "7 jaar garantie",
+      "serviceText": "Betrouwbare service en vakmanschap"
+    },
+    "polycarbonaat": {
+      "title": "Polycarbonaat Veranda",
+      "subtitle": "Betaalbare kwaliteit voor elk budget",
+      "heroAlt": "Polycarbonaat Veranda",
+      "mainTitle": "De Polycarbonaat Veranda: Slim & Betaalbaar",
+      "description1": "Een polycarbonaat veranda is de ideale keuze voor wie op zoek is naar een kwalitatieve overkapping met een uitstekende prijs-kwaliteitverhouding. De meerkamerige polycarbonaat dakplaten zijn lichtdoorlatend, isolerend en vrijwel onbreekbaar. U geniet van bescherming tegen zon en regen zonder in te leveren op daglicht.",
+      "description2": "Bij VivaVerandas leveren we polycarbonaat veranda's volledig op maat. De hoogwaardige aluminium constructie is duurzaam en onderhoudsarm, terwijl de polycarbonaat platen zorgen voor uitstekende warmte-isolatie en gedempt regengeluid. Beschikbaar in diverse kleuren, van helder tot opaal, brons of grijs. Zo vindt u altijd de perfecte uitstraling voor uw woning.",
+      "benefitsTitle": "Ontdek de voordelen van polycarbonaat",
+      "benefit1": "Uitstekende prijs-kwaliteitverhouding - luxe uitstraling, scherpe prijs",
+      "benefit2": "Lichtdoorlatend materiaal voor een aangename sfeer",
+      "benefit3": "Superieure warmte-isolatie dankzij meerkamerige structuur",
+      "benefit4": "Vrijwel onbreekbaar - 250x sterker dan glas",
+      "benefit5": "UV-bestendig met 10 jaar fabrieksgarantie",
+      "benefit6": "Gedempt regengeluid voor extra comfort",
+      "benefit7": "Lichtgewicht constructie, geschikt voor diverse situaties",
+      "whatIsTitle": "Wat is een polycarbonaat veranda?",
+      "whatIsText": "Een polycarbonaat veranda is een aluminium overkapping met dakplaten van meerkamerig polycarbonaat. Dit kunststof materiaal is lichter dan glas, maar vele malen sterker en biedt uitstekende isolatie. Het is de perfecte keuze voor wie comfort en kwaliteit zoekt zonder het budget te overschrijden.",
+      "whyChooseTitle": "Waarom kiezen voor polycarbonaat?",
+      "whyChooseText": "Polycarbonaat is een slimme keuze voor wie het beste wil voor de beste prijs. De platen zijn UV-bestendig, slagvast en bieden goede warmte-isolatie. Bovendien dempt polycarbonaat het geluid van regen aanzienlijk, zodat u ook bij een bui rustig buiten kunt zitten.",
+      "customizeTitle": "Maatwerk voor uw situatie",
+      "customizeText": "Elke polycarbonaat veranda wordt op maat gemaakt voor uw specifieke situatie. Kies de gewenste afmetingen, plaatkleur (helder, opaal, brons of grijs) en RAL-kleur voor het aluminium frame. Optioneel kunt u de veranda uitbreiden met zijwanden, screens of LED-verlichting.",
+      "installationTitle": "Snelle en vakkundige montage",
+      "installationText": "Onze professionele monteurs plaatsen uw polycarbonaat veranda efficiënt en zorgvuldig. Het lichtgewicht materiaal maakt de installatie sneller dan bij andere daktypen, wat resulteert in lagere montagekosten en minder overlast.",
+      "affordableTitle": "Betaalbare kwaliteit",
+      "affordableText": "Een polycarbonaat veranda is de meest betaalbare optie zonder concessies te doen aan kwaliteit. De combinatie van duurzaam aluminium en hoogwaardige polycarbonaat platen zorgt voor een overkapping waar u jarenlang van geniet.",
+      "specFrame": "Frame",
+      "specFrameValue": "Aluminium, gepoedercoat in elke RAL-kleur",
+      "specPanels": "Dakplaten",
+      "specPanelsValue": "16mm meerkamerige polycarbonaat",
+      "specColors": "Plaat kleuren",
+      "specColorsValue": "Helder, opaal, brons of grijs",
+      "specWidthValue": "Tot 8 meter zonder tussenstaanders",
+      "specInsulation": "Isolatiewaarde",
+      "specInsulationValue": "U-waarde: 2.3 W/m²K",
+      "specGuaranteeValue": "10 jaar op constructie en platen",
+      "experienceYears": "15+ jaar ervaring",
+      "colorOptions": "4 plaat kleuren",
+      "serviceText": "Betrouwbare service en vakmanschap"
+    }
+  },
+  "plateReplace": {
+    "pageTitle": "Polycarbonaat Platen Wisselen",
+    "metaDescription": "Vraag een offerte aan voor het wisselen van polycarbonaat platen. Gratis inmeting binnen 70 km van Reuver.",
+    "title": "Offerte aanvraag plaat wisselen",
+    "subtitle": "Polycarbonaat meerwandige platen in verschillende kleuren.",
+    "form": {
+      "firstName": "Naam",
+      "lastName": "Achternaam",
+      "address": "Adres",
+      "addressPlaceholder": "Adres + Huisnummer",
+      "postcode": "Postcode",
+      "city": "Woonplaats",
+      "phone": "Telefoonnummer",
+      "email": "E-mail",
+      "plateCount": "Aantal platen",
+      "depth": "Diepte",
+      "roofType": "Soort dak",
+      "roofTypeSelect": "Selecteer...",
+      "plateType": "Type platen gewenst",
+      "photo": "Foto toevoegen van huidige situatie",
+      "noFile": "Geen bestand geselecteerd",
+      "message": "Bericht",
+      "submit": "Offerte aanvragen",
+      "submitting": "Verzenden...",
+      "error": "Er is een fout opgetreden. Probeer het opnieuw."
+    },
+    "roofTypes": {
+      "veranda": "Veranda",
+      "carport": "Carport",
+      "tuinoverkapping": "Tuinoverkapping",
+      "serre": "Serre",
+      "maatwerk": "Maatwerk constructie"
+    },
+    "plateTypes": {
+      "helder": "Helder",
+      "opaal": "Opaal",
+      "brons": "Brons",
+      "grijs": "Grijs"
+    },
+    "steps": {
+      "step1": "Stap 1",
+      "step1Desc": "Gratis inmeting binnen 70 km van Reuver",
+      "step2": "Stap 2",
+      "step2Desc": "We controleren jouw huidige constructie",
+      "step3": "Stap 3",
+      "step3Desc": "Je kiest uit verschillende soorten polycarbonaat platen",
+      "step4": "Stap 4",
+      "step4Desc": "We zorgen voor vakkundige montage binnen 3 weken"
+    },
+    "info": {
+      "whyTitle": "Waarom je polycarbonaat platen tijdig moet vervangen",
+      "whyText1": "Polycarbonaat dakplaten gaan jarenlang mee, maar na verloop van tijd kunnen ze verkleuren, kleine scheurtjes vertonen of zelfs gaan lekken. Dit tast niet alleen het uiterlijk, maar ook de kwaliteit van je veranda of carport aan. Door je polycarbonaat dakplaten tijdig te vervangen, voorkom je schade en geniet je weer van een strak, helder en lichtdoorlatend dak dat er als nieuw uitziet.",
+      "whyText2": "Bij VivaVerandas zorgen we voor een snelle en professionele vervanging, meestal binnen 3 weken, inclusief gratis inmeting binnen 70 km van Reuver. We gebruiken uitsluitend hoogwaardig helder of opaal polycarbonaat en monteren alles met precisie en vakmanschap. Zo ben je verzekerd van een duurzaam resultaat waar je weer jarenlang plezier van hebt.",
+      "forTitle": "Polycarbonaat platen wisselen voor elke overkapping",
+      "forText": "Wij vervangen dakplaten op:",
+      "forList1": "Aluminium veranda's",
+      "forList2": "Carports",
+      "forList3": "Tuinoverkappingen",
+      "forList4": "Serres en maatwerk constructies",
+      "forText2": "Het maakt niet uit welk merk je huidige overkapping is: we kunnen vrijwel elk systeem voorzien van nieuwe polycarbonaat platen.",
+      "areaTitle": "Werkgebied & service",
+      "areaText": "Wij zijn actief in Limburg, Noord-Brabant en delen van Gelderland. Bij jou in de buurt? Dan komen we gratis inmeten en ontvang je snel een vrijblijvende offerte."
+    },
+    "success": {
+      "title": "Bedankt voor uw aanvraag!",
+      "text1": "We hebben uw offerte aanvraag voor het wisselen van polycarbonaat platen ontvangen.",
+      "text2": "We nemen binnen 24 uur contact met u op."
     }
   }
 }

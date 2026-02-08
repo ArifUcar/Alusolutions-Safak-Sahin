@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/FAQPage.css'
@@ -21,6 +22,29 @@ export default function FAQPage() {
 
   return (
     <div className="faq-page">
+      <Helmet>
+        <title>Veelgestelde Vragen (FAQ) | VivaVerandas</title>
+        <meta name="description" content="Vind antwoorden op veelgestelde vragen over veranda's, overkappingen, levertijden, garantie en meer bij VivaVerandas." />
+        <link rel="canonical" href="https://vivaverandas.nl/faq" />
+        <meta property="og:title" content="Veelgestelde Vragen | VivaVerandas" />
+        <meta property="og:description" content="Vind antwoorden op veelgestelde vragen over veranda's en overkappingen." />
+        <meta property="og:url" content="https://vivaverandas.nl/faq" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
+
       <Header />
       <section className="faq-hero">
         <div className="container">

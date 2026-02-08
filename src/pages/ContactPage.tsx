@@ -1,11 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
+import { supabase } from '../lib/supabase'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import GoogleReviews from '../components/GoogleReviews'
 import '../styles/ContactPage.css'
 
+const CONTACT_WEBHOOK_URL = import.meta.env.VITE_N8N_CONTACT_WEBHOOK_URL
+
+interface WorkingHours {
+  day_of_week: number
+  is_open: boolean
+  open_time: string
+  close_time: string
+  break_start: string | null
+  break_end: string | null
+}
+
 export default function ContactPage() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [workingHours, setWorkingHours] = useState<WorkingHours[]>([])
   const [formData, setFormData] = useState({
     naam: '',
     telefoon: '',
@@ -14,6 +30,93 @@ export default function ContactPage() {
     onderwerp: '',
     bericht: ''
   })
+  const [selectedFile, setSelectedFile] = useState<File | null>(null)
+
+  useEffect(() => {
+    loadWorkingHours()
+  }, [])
+
+  const loadWorkingHours = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('working_hours')
+        .select('*')
+        .order('day_of_week', { ascending: true })
+
+      if (!error && data) {
+        setWorkingHours(data)
+      }
+    } catch (err) {
+      console.error('Error loading working hours:', err)
+    }
+  }
+
+  const formatTime = (time: string) => {
+    return time.substring(0, 5) // "09:00:00" -> "09:00"
+  }
+
+  const getDayName = (dayOfWeek: number): string => {
+    const lang = i18n.language
+    const days: Record<string, string[]> = {
+      nl: ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'],
+      en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      de: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+      tr: ['Pazar', 'Pazartesi', 'Sali', 'Carsamba', 'Persembe', 'Cuma', 'Cumartesi']
+    }
+    return (days[lang] || days['nl'])[dayOfWeek]
+  }
+
+  const formatWorkingHoursDisplay = () => {
+    if (workingHours.length === 0) {
+      // Fallback to static text if no data
+      return (
+        <>
+          <p>{t('contactPage.info.hoursMonThu')}</p>
+          <p>{t('contactPage.info.hoursFri')}</p>
+          <p>{t('contactPage.info.hoursSat')}</p>
+        </>
+      )
+    }
+
+    // Group days with same hours
+    const groupedHours: { days: number[]; hours: WorkingHours }[] = []
+
+    workingHours.forEach(wh => {
+      const existing = groupedHours.find(g =>
+        g.hours.is_open === wh.is_open &&
+        g.hours.open_time === wh.open_time &&
+        g.hours.close_time === wh.close_time
+      )
+      if (existing) {
+        existing.days.push(wh.day_of_week)
+      } else {
+        groupedHours.push({ days: [wh.day_of_week], hours: wh })
+      }
+    })
+
+    return groupedHours.map((group, idx) => {
+      const { days, hours } = group
+      let dayLabel = ''
+
+      // Check for consecutive days
+      const sortedDays = days.sort((a, b) => a - b)
+      if (sortedDays.length > 2 && sortedDays[sortedDays.length - 1] - sortedDays[0] === sortedDays.length - 1) {
+        dayLabel = `${getDayName(sortedDays[0])} - ${getDayName(sortedDays[sortedDays.length - 1])}`
+      } else {
+        dayLabel = sortedDays.map(d => getDayName(d)).join(', ')
+      }
+
+      if (!hours.is_open) {
+        return <p key={idx}>{dayLabel}: {t('contactPage.info.closed', 'Gesloten')}</p>
+      }
+
+      return (
+        <p key={idx}>
+          {dayLabel}: {formatTime(hours.open_time)} - {formatTime(hours.close_time)}
+        </p>
+      )
+    })
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -22,14 +125,124 @@ export default function ContactPage() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setSelectedFile(e.target.files[0])
+    }
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert(t('contactPage.form.successMessage'))
+    setIsSubmitting(true)
+
+    try {
+      let imageUrl: string | null = null
+
+      // Upload file to Supabase Storage if selected
+      if (selectedFile) {
+        const fileExt = selectedFile.name.split('.').pop()
+        const fileName = `contact_${Date.now()}.${fileExt}`
+        const filePath = `contact-photos/${fileName}`
+
+        const { error: uploadError } = await supabase.storage
+          .from('uploads')
+          .upload(filePath, selectedFile)
+
+        if (uploadError) {
+          console.error('Upload error:', uploadError)
+        } else {
+          const { data: urlData } = supabase.storage
+            .from('uploads')
+            .getPublicUrl(filePath)
+          imageUrl = urlData.publicUrl
+        }
+      }
+
+      // Save to Supabase
+      const { error: supabaseError } = await supabase
+        .from('contacts')
+        .insert({
+          name: formData.naam,
+          email: formData.email,
+          phone: formData.telefoon || null,
+          subject: formData.onderwerp,
+          message: formData.bericht,
+          city: formData.woonplaats || null,
+          image_url: imageUrl,
+          is_read: false
+        })
+
+      if (supabaseError) {
+        console.error('Supabase error:', supabaseError)
+        throw supabaseError
+      }
+
+      // Send to n8n webhook
+      if (CONTACT_WEBHOOK_URL) {
+        const webhookPayload = {
+          contact: {
+            name: formData.naam,
+            email: formData.email,
+            phone: formData.telefoon,
+            city: formData.woonplaats
+          },
+          message: {
+            subject: formData.onderwerp,
+            body: formData.bericht
+          },
+          photo: imageUrl,
+          source: {
+            type: 'contact_page',
+            page: 'ContactPage'
+          },
+          metadata: {
+            submittedAt: new Date().toISOString(),
+            language: i18n.language
+          }
+        }
+
+        await fetch(CONTACT_WEBHOOK_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'text/plain'
+          },
+          body: JSON.stringify(webhookPayload)
+        })
+      }
+
+      console.log('Form submitted:', formData)
+      alert(t('contactPage.form.successMessage'))
+
+      // Reset form
+      setFormData({
+        naam: '',
+        telefoon: '',
+        email: '',
+        woonplaats: '',
+        onderwerp: '',
+        bericht: ''
+      })
+      setSelectedFile(null)
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert(t('contactPage.form.errorMessage', 'Er is een fout opgetreden. Probeer het opnieuw.'))
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>{t('contactPage.hero.title')} | VivaVerandas</title>
+        <meta name="description" content={t('contactPage.hero.subtitle')} />
+        <link rel="canonical" href="https://vivaverandas.nl/contact" />
+        <meta property="og:title" content={`${t('contactPage.hero.title')} | VivaVerandas`} />
+        <meta property="og:description" content={t('contactPage.hero.subtitle')} />
+        <meta property="og:url" content="https://vivaverandas.nl/contact" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}
@@ -150,11 +363,19 @@ export default function ContactPage() {
                     name="foto"
                     accept="image/*"
                     className="file-input"
+                    onChange={handleFileChange}
                   />
+                  {selectedFile && (
+                    <span className="file-selected">{selectedFile.name}</span>
+                  )}
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-large">
-                  {t('contactPage.form.submit')}
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-large"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? t('common.sending', 'Verzenden...') : t('contactPage.form.submit')}
                 </button>
               </form>
             </div>
@@ -176,7 +397,7 @@ export default function ContactPage() {
                   <div className="detail-icon">📞</div>
                   <div className="detail-content">
                     <strong>{t('contactPage.info.phone')}</strong>
-                    <p>+31 85 060 5036</p>
+                    <p>+31 77 390 2201</p>
                   </div>
                 </div>
 
@@ -184,7 +405,7 @@ export default function ContactPage() {
                   <div className="detail-icon">✉️</div>
                   <div className="detail-content">
                     <strong>{t('contactPage.info.email')}</strong>
-                    <p>info@alusolutions.nl</p>
+                    <p>info@vivaverandas.nl</p>
                   </div>
                 </div>
 
@@ -201,24 +422,12 @@ export default function ContactPage() {
                   <div className="detail-icon">🕐</div>
                   <div className="detail-content">
                     <strong>{t('contactPage.info.hours')}</strong>
-                    <p>{t('contactPage.info.hoursMonThu')}</p>
-                    <p>{t('contactPage.info.hoursFri')}</p>
-                    <p>{t('contactPage.info.hoursSat')}</p>
+                    {formatWorkingHoursDisplay()}
                   </div>
                 </div>
               </div>
 
-              <div className="social-contact">
-                <h3>{t('contactPage.info.followUs')}</h3>
-                <div className="social-buttons">
-                  <a href="#" className="social-btn facebook">{t('contactPage.info.facebook')}</a>
-                  <a href="#" className="social-btn instagram">{t('contactPage.info.instagram')}</a>
-                  <a href="#" className="social-btn whatsapp">{t('contactPage.info.whatsapp')}</a>
-                  <a href="#" className="social-btn youtube">{t('contactPage.info.youtube')}</a>
-                </div>
-              </div>
-
-              <a href="#" className="btn btn-primary btn-large appointment-btn">
+              <a href="/afspraak" className="btn btn-primary btn-large appointment-btn">
                 {t('contactPage.info.appointment')}
               </a>
             </div>
@@ -232,118 +441,21 @@ export default function ContactPage() {
           <h2>{t('contactPage.map.title')}</h2>
           <div className="map-wrapper">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5!2d6.0789!3d51.2876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74b8a5c8b1a1f%3A0x1234567890abcdef!2sMariastraat%2022%2C%205953%20NL%20Reuver%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500!2d6.082766!3d51.280102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74f53a508958d%3A0x618238c611b6b837!2sAluSolutions%20%7C%20Veranda's%20%26%20Overkappingen!5e0!3m2!1snl!2snl"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="AluSolutions Locatie"
+              title="VivaVerandas Locatie"
             ></iframe>
           </div>
         </div>
       </section>
 
-      {/* Reviews Section */}
-      <section className="reviews-section">
-        <div className="container">
-          <div className="reviews-header">
-            <h2>{t('contactPage.reviews.title')}</h2>
-            <div className="reviews-summary">
-              <div className="rating-score">4.8</div>
-              <div className="rating-info">
-                <div className="stars">★★★★★</div>
-                <p>{t('contactPage.reviews.rating')}</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="reviews-highlights">
-            <div className="highlight-item">✓ {t('contactPage.reviews.highlight1')}</div>
-            <div className="highlight-item">✓ {t('contactPage.reviews.highlight2')}</div>
-            <div className="highlight-item">✓ {t('contactPage.reviews.highlight3')}</div>
-          </div>
-
-          <div className="reviews-grid">
-            <div className="review-card">
-              <div className="review-header">
-                <div className="review-avatar">BR</div>
-                <div>
-                  <strong>Bright Ride</strong>
-                  <span>11 November 2025</span>
-                </div>
-              </div>
-              <div className="review-stars">★★★★★</div>
-              <p>De jongens hebben een top werk geleverd en zeer tevreden over het eind resultaat van mijn glazen schuif deur</p>
-            </div>
-
-            <div className="review-card">
-              <div className="review-header">
-                <div className="review-avatar">DG</div>
-                <div>
-                  <strong>Dennis Gerritzen</strong>
-                  <span>4 September 2025</span>
-                </div>
-              </div>
-              <div className="review-stars">★★★★★</div>
-              <p>Goede service, aardige vakmensen en snel gemaakt.</p>
-            </div>
-
-            <div className="review-card">
-              <div className="review-header">
-                <div className="review-avatar">CT</div>
-                <div>
-                  <strong>Carin Titulaer</strong>
-                  <span>28 April 2025</span>
-                </div>
-              </div>
-              <div className="review-stars">★★★★★</div>
-              <p>Erg blij met mijn nieuwe veranda. Goed werk geleverd</p>
-            </div>
-
-            <div className="review-card">
-              <div className="review-header">
-                <div className="review-avatar">OY</div>
-                <div>
-                  <strong>Orhan Yilmaz</strong>
-                  <span>3 Mei 2024</span>
-                </div>
-              </div>
-              <div className="review-stars">★★★★★</div>
-              <p>Topservice en topkwaliteit, denkt mee en supersnel geregeld.</p>
-            </div>
-
-            <div className="review-card">
-              <div className="review-header">
-                <div className="review-avatar">HP</div>
-                <div>
-                  <strong>Hanifi Pehlivan</strong>
-                  <span>13 September 2024</span>
-                </div>
-              </div>
-              <div className="review-stars">★★★★★</div>
-              <p>Top kwaliteit! Fijn klantvriendelijk. Wij zijn erg tevreden met onze nieuwe overkapping. Zeer deskundig en werkt secuur en netjes.</p>
-            </div>
-
-            <div className="review-card">
-              <div className="review-header">
-                <div className="review-avatar">MK</div>
-                <div>
-                  <strong>Mandy Kessels</strong>
-                  <span>6 December 2024</span>
-                </div>
-              </div>
-              <div className="review-stars">★★★★★</div>
-              <p>Super geholpen echte aanrader lief personeel en erg snel n netjes respect</p>
-            </div>
-          </div>
-
-          <div className="reviews-cta">
-            <a href="#" className="btn btn-secondary">{t('contactPage.reviews.writeReview')}</a>
-          </div>
-        </div>
-      </section>
+      {/* Google Reviews */}
+      <GoogleReviews />
 
       {/* CTA Section */}
       <section className="contact-cta">

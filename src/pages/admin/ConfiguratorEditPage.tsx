@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { supabase } from '../../lib/supabase'
 import type { MultiLanguageText, ConfiguratorStep, ConfiguratorOption } from '../../lib/supabase'
 import StepFormModal from '../../components/StepFormModal'
@@ -9,6 +10,7 @@ import DynamicConfigurator from '../../components/DynamicConfigurator'
 type ActiveTab = 'general' | 'steps' | 'preview'
 
 export default function ConfiguratorEditPage() {
+  const { t } = useTranslation()
   const { id } = useParams()
   const navigate = useNavigate()
   const isEditing = id !== 'new' && id !== undefined
@@ -35,6 +37,7 @@ export default function ConfiguratorEditPage() {
     description: MultiLanguageText
     category: string
     image_url: string
+    icon: string
     is_active: boolean
     display_order: number
   }>({
@@ -43,9 +46,180 @@ export default function ConfiguratorEditPage() {
     description: { nl: '', en: '', tr: '', de: '' },
     category: 'veranda',
     image_url: '',
+    icon: 'pi pi-cog',
     is_active: true,
     display_order: 0
   })
+
+  const [showIconPicker, setShowIconPicker] = useState(false)
+  const [uploadingImage, setUploadingImage] = useState(false)
+  const [iconInputMode, setIconInputMode] = useState<'select' | 'manual'>('select')
+
+  // Handle image upload to Supabase Storage
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    // Validate file type
+    const allowedTypes = ['image/jpeg', 'image/png', 'image/webp', 'image/gif']
+    if (!allowedTypes.includes(file.type)) {
+      alert(t('admin.configurators.invalidFileType', 'Ongeldig bestandstype. Gebruik JPG, PNG, WebP of GIF.'))
+      return
+    }
+
+    // Validate file size (max 5MB)
+    if (file.size > 5 * 1024 * 1024) {
+      alert(t('admin.configurators.fileTooLarge', 'Bestand is te groot. Maximum 5MB.'))
+      return
+    }
+
+    setUploadingImage(true)
+
+    try {
+      // Generate unique filename
+      const fileExt = file.name.split('.').pop()
+      const fileName = `configurator-${formData.slug || Date.now()}-${Date.now()}.${fileExt}`
+      const filePath = `configurators/${fileName}`
+
+      // Upload to Supabase Storage
+      const { error: uploadError } = await supabase.storage
+        .from('uploads')
+        .upload(filePath, file, {
+          cacheControl: '3600',
+          upsert: true
+        })
+
+      if (uploadError) throw uploadError
+
+      // Get public URL
+      const { data: { publicUrl } } = supabase.storage
+        .from('uploads')
+        .getPublicUrl(filePath)
+
+      setFormData({ ...formData, image_url: publicUrl })
+    } catch (error) {
+      console.error('Error uploading image:', error)
+      alert(t('admin.configurators.uploadError', 'Fout bij uploaden van afbeelding.'))
+    } finally {
+      setUploadingImage(false)
+    }
+  }
+
+  // Popular PrimeNG icons for configurators
+  const availableIcons = [
+    // Veranda & Overkapping (Most Relevant)
+    'pi pi-home', 'pi pi-building', 'pi pi-warehouse', 'pi pi-shop',
+    'pi pi-window-maximize', 'pi pi-window-minimize', 'pi pi-stop',
+    'pi pi-th-large', 'pi pi-table', 'pi pi-objects-column',
+    'pi pi-box', 'pi pi-inbox', 'pi pi-server', 'pi pi-database',
+    'pi pi-align-justify', 'pi pi-bars', 'pi pi-list', 'pi pi-grip-vertical',
+    'pi pi-grip-horizontal', 'pi pi-ellipsis-h', 'pi pi-minus',
+    'pi pi-sun', 'pi pi-cloud', 'pi pi-bolt', 'pi pi-moon',
+    'pi pi-eye', 'pi pi-shield', 'pi pi-lock', 'pi pi-verified',
+    'pi pi-expand', 'pi pi-arrows-alt', 'pi pi-arrows-h', 'pi pi-arrows-v',
+    'pi pi-chevron-up', 'pi pi-angle-up', 'pi pi-caret-up',
+    'pi pi-sliders-h', 'pi pi-sliders-v', 'pi pi-cog', 'pi pi-cogs',
+    'pi pi-wrench', 'pi pi-hammer', 'pi pi-palette',
+
+    // Buildings & Structures
+    'pi pi-building', 'pi pi-warehouse', 'pi pi-shop', 'pi pi-box',
+    'pi pi-objects-column', 'pi pi-window-maximize', 'pi pi-window-minimize',
+    'pi pi-stop', 'pi pi-th-large', 'pi pi-table', 'pi pi-grip-vertical',
+
+    // Nature & Weather
+    'pi pi-sun', 'pi pi-moon', 'pi pi-cloud', 'pi pi-bolt', 'pi pi-wave',
+
+    // Tools & Construction
+    'pi pi-cog', 'pi pi-cogs', 'pi pi-wrench', 'pi pi-hammer', 'pi pi-palette',
+    'pi pi-pencil', 'pi pi-eraser', 'pi pi-sliders-h', 'pi pi-sliders-v',
+
+    // Shapes & Objects
+    'pi pi-circle', 'pi pi-circle-fill', 'pi pi-square', 'pi pi-stop-circle',
+    'pi pi-box', 'pi pi-cube', 'pi pi-star', 'pi pi-star-fill', 'pi pi-heart',
+    'pi pi-heart-fill', 'pi pi-flag', 'pi pi-flag-fill', 'pi pi-bookmark',
+    'pi pi-bookmark-fill', 'pi pi-tag', 'pi pi-tags',
+
+    // Arrows & Directions
+    'pi pi-arrow-up', 'pi pi-arrow-down', 'pi pi-arrow-left', 'pi pi-arrow-right',
+    'pi pi-arrow-up-right', 'pi pi-arrow-down-left', 'pi pi-arrows-h', 'pi pi-arrows-v',
+    'pi pi-arrows-alt', 'pi pi-chevron-up', 'pi pi-chevron-down', 'pi pi-chevron-left',
+    'pi pi-chevron-right', 'pi pi-angle-up', 'pi pi-angle-down', 'pi pi-angle-left',
+    'pi pi-angle-right', 'pi pi-angle-double-up', 'pi pi-angle-double-down',
+    'pi pi-angle-double-left', 'pi pi-angle-double-right', 'pi pi-caret-up',
+    'pi pi-caret-down', 'pi pi-caret-left', 'pi pi-caret-right', 'pi pi-expand',
+    'pi pi-compress', 'pi pi-external-link', 'pi pi-directions', 'pi pi-compass',
+
+    // Actions
+    'pi pi-check', 'pi pi-check-circle', 'pi pi-check-square', 'pi pi-times',
+    'pi pi-times-circle', 'pi pi-plus', 'pi pi-plus-circle', 'pi pi-minus',
+    'pi pi-minus-circle', 'pi pi-search', 'pi pi-search-plus', 'pi pi-search-minus',
+    'pi pi-filter', 'pi pi-filter-fill', 'pi pi-filter-slash', 'pi pi-sort',
+    'pi pi-sort-alpha-down', 'pi pi-sort-alpha-up', 'pi pi-sort-amount-down',
+    'pi pi-sort-amount-up', 'pi pi-sync', 'pi pi-refresh', 'pi pi-replay',
+    'pi pi-undo', 'pi pi-redo', 'pi pi-history', 'pi pi-trash', 'pi pi-copy',
+    'pi pi-clone', 'pi pi-save', 'pi pi-print', 'pi pi-download', 'pi pi-upload',
+    'pi pi-cloud-upload', 'pi pi-cloud-download',
+
+    // Media & Images
+    'pi pi-image', 'pi pi-images', 'pi pi-camera', 'pi pi-video', 'pi pi-play',
+    'pi pi-pause', 'pi pi-stop', 'pi pi-forward', 'pi pi-backward', 'pi pi-eject',
+    'pi pi-volume-up', 'pi pi-volume-down', 'pi pi-volume-off', 'pi pi-microphone',
+
+    // Files & Documents
+    'pi pi-file', 'pi pi-file-edit', 'pi pi-file-pdf', 'pi pi-file-word',
+    'pi pi-file-excel', 'pi pi-file-import', 'pi pi-file-export', 'pi pi-folder',
+    'pi pi-folder-open', 'pi pi-folder-plus', 'pi pi-paperclip', 'pi pi-inbox',
+    'pi pi-envelope', 'pi pi-send', 'pi pi-receipt',
+
+    // Users & People
+    'pi pi-user', 'pi pi-users', 'pi pi-user-plus', 'pi pi-user-minus',
+    'pi pi-user-edit', 'pi pi-id-card', 'pi pi-address-book',
+
+    // Communication
+    'pi pi-phone', 'pi pi-mobile', 'pi pi-tablet', 'pi pi-desktop', 'pi pi-comments',
+    'pi pi-comment', 'pi pi-whatsapp', 'pi pi-discord', 'pi pi-slack',
+    'pi pi-telegram', 'pi pi-facebook', 'pi pi-twitter', 'pi pi-instagram',
+    'pi pi-youtube', 'pi pi-linkedin', 'pi pi-github', 'pi pi-google',
+    'pi pi-microsoft', 'pi pi-apple', 'pi pi-amazon', 'pi pi-paypal',
+
+    // E-commerce & Money
+    'pi pi-shopping-cart', 'pi pi-shopping-bag', 'pi pi-wallet', 'pi pi-credit-card',
+    'pi pi-money-bill', 'pi pi-euro', 'pi pi-dollar', 'pi pi-percentage',
+    'pi pi-calculator', 'pi pi-chart-bar', 'pi pi-chart-line', 'pi pi-chart-pie',
+
+    // Navigation & Location
+    'pi pi-map', 'pi pi-map-marker', 'pi pi-globe', 'pi pi-car', 'pi pi-truck',
+    'pi pi-sitemap', 'pi pi-directions', 'pi pi-compass',
+
+    // Security
+    'pi pi-shield', 'pi pi-lock', 'pi pi-lock-open', 'pi pi-unlock', 'pi pi-key',
+    'pi pi-eye', 'pi pi-eye-slash', 'pi pi-verified', 'pi pi-ban',
+    'pi pi-exclamation-circle', 'pi pi-exclamation-triangle', 'pi pi-info-circle',
+    'pi pi-question-circle',
+
+    // Time & Calendar
+    'pi pi-calendar', 'pi pi-calendar-plus', 'pi pi-calendar-minus',
+    'pi pi-calendar-times', 'pi pi-clock', 'pi pi-stopwatch', 'pi pi-hourglass',
+
+    // Layout & UI
+    'pi pi-bars', 'pi pi-list', 'pi pi-align-left', 'pi pi-align-center',
+    'pi pi-align-right', 'pi pi-align-justify', 'pi pi-ellipsis-h', 'pi pi-ellipsis-v',
+    'pi pi-grip-vertical', 'pi pi-grip-horizontal', 'pi pi-th-large', 'pi pi-table',
+    'pi pi-list-check', 'pi pi-ticket',
+
+    // Technology
+    'pi pi-wifi', 'pi pi-bluetooth', 'pi pi-link', 'pi pi-share-alt', 'pi pi-server',
+    'pi pi-database', 'pi pi-code', 'pi pi-terminal', 'pi pi-qrcode', 'pi pi-barcode',
+    'pi pi-microchip', 'pi pi-power-off',
+
+    // Other
+    'pi pi-bell', 'pi pi-bell-slash', 'pi pi-thumbs-up', 'pi pi-thumbs-down',
+    'pi pi-trophy', 'pi pi-megaphone', 'pi pi-bullseye', 'pi pi-gift', 'pi pi-crown',
+    'pi pi-sparkles', 'pi pi-prime', 'pi pi-lightbulb', 'pi pi-graduation-cap',
+    'pi pi-briefcase', 'pi pi-palette', 'pi pi-spinner', 'pi pi-at', 'pi pi-hashtag',
+    'pi pi-percentage', 'pi pi-asterisk', 'pi pi-equals', 'pi pi-info',
+    'pi pi-question', 'pi pi-exclamation'
+  ]
 
   const [currentLanguage, setCurrentLanguage] = useState<keyof MultiLanguageText>('nl')
   const languages: { code: keyof MultiLanguageText; name: string }[] = [
@@ -81,12 +255,13 @@ export default function ConfiguratorEditPage() {
         description: data.description || { nl: '', en: '', tr: '', de: '' },
         category: data.category || 'veranda',
         image_url: data.image_url || '',
+        icon: data.icon || 'pi pi-cog',
         is_active: data.is_active,
         display_order: data.display_order
       })
     } catch (error) {
       console.error('Error loading configurator:', error)
-      alert('Konfigüratör yüklenemedi!')
+      alert(t('admin.configurators.loadError'))
       navigate('/admin/configurators')
     } finally {
       setLoading(false)
@@ -104,6 +279,7 @@ export default function ConfiguratorEditPage() {
         description: formData.description,
         category: formData.category,
         image_url: formData.image_url || null,
+        icon: formData.icon || null,
         is_active: formData.is_active,
         display_order: formData.display_order
       }
@@ -128,13 +304,13 @@ export default function ConfiguratorEditPage() {
         navigate(`/admin/configurators/${data.id}`, { replace: true })
       }
 
-      alert('Kaydedildi!')
+      alert(t('admin.configurators.saved'))
     } catch (error: any) {
       console.error('Error saving configurator:', error)
       if (error.code === '23505') {
-        alert('Bu slug zaten kullanılıyor!')
+        alert(t('admin.configurators.slugExists'))
       } else {
-        alert('Kaydetme hatası!')
+        alert(t('admin.configurators.saveError'))
       }
     } finally {
       setSaving(false)
@@ -174,7 +350,7 @@ export default function ConfiguratorEditPage() {
 
   // Delete step
   const handleDeleteStep = async (stepId: string) => {
-    if (!confirm('Bu adımı silmek istediğinizden emin misiniz? Tüm seçenekler de silinecektir.')) return
+    if (!confirm(t('admin.configurators.deleteStepConfirm'))) return
 
     try {
       const { error } = await supabase
@@ -186,7 +362,7 @@ export default function ConfiguratorEditPage() {
       loadSteps()
     } catch (error) {
       console.error('Error deleting step:', error)
-      alert('Silme hatası!')
+      alert(t('admin.configurators.deleteError'))
     }
   }
 
@@ -226,13 +402,13 @@ export default function ConfiguratorEditPage() {
       loadSteps()
     } catch (error) {
       console.error('Error moving step:', error)
-      alert('Adım sırası değiştirilemedi!')
+      alert(t('admin.configurators.moveStepError'))
     }
   }
 
   // Delete option
   const handleDeleteOption = async (optionId: string) => {
-    if (!confirm('Bu seçeneği silmek istediğinizden emin misiniz?')) return
+    if (!confirm(t('admin.configurators.deleteOptionConfirm'))) return
 
     try {
       const { error } = await supabase
@@ -244,7 +420,7 @@ export default function ConfiguratorEditPage() {
       loadSteps()
     } catch (error) {
       console.error('Error deleting option:', error)
-      alert('Silme hatası!')
+      alert(t('admin.configurators.deleteError'))
     }
   }
 
@@ -253,7 +429,7 @@ export default function ConfiguratorEditPage() {
       <div className="admin-page">
         <div className="loading-screen">
           <div className="spinner"></div>
-          <p>Yükleniyor...</p>
+          <p>{t('common.loading')}</p>
         </div>
       </div>
     )
@@ -268,10 +444,10 @@ export default function ConfiguratorEditPage() {
             onClick={() => navigate('/admin/configurators')}
             style={{ marginRight: '1rem' }}
           >
-            ← Geri
+            ← {t('common.back')}
           </button>
           <h1 style={{ display: 'inline' }}>
-            {isEditing ? 'Konfigüratör Düzenle' : 'Yeni Konfigüratör'}
+            {isEditing ? t('admin.configurators.editConfigurator') : t('admin.configurators.newConfigurator')}
           </h1>
         </div>
         <button
@@ -279,7 +455,7 @@ export default function ConfiguratorEditPage() {
           onClick={handleSubmit}
           disabled={saving}
         >
-          {saving ? 'Kaydediliyor...' : 'Kaydet'}
+          {saving ? t('admin.configurators.saving') : t('common.save')}
         </button>
       </div>
 
@@ -293,7 +469,7 @@ export default function ConfiguratorEditPage() {
               <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
               <circle cx="12" cy="12" r="3"></circle>
             </svg>
-            Genel
+            {t('admin.configurators.tabGeneral')}
           </button>
           <button
             className={`tab-btn ${activeTab === 'steps' ? 'active' : ''}`}
@@ -308,7 +484,7 @@ export default function ConfiguratorEditPage() {
               <line x1="3" y1="12" x2="3.01" y2="12"></line>
               <line x1="3" y1="18" x2="3.01" y2="18"></line>
             </svg>
-            Adımlar {!isEditing && '(Önce kaydedin)'}
+            {t('admin.configurators.tabSteps')} {!isEditing && `(${t('admin.configurators.saveFirst')})`}
           </button>
           <button
             className={`tab-btn ${activeTab === 'preview' ? 'active' : ''}`}
@@ -319,7 +495,7 @@ export default function ConfiguratorEditPage() {
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
               <circle cx="12" cy="12" r="3"></circle>
             </svg>
-            Önizleme {!isEditing && '(Önce kaydedin)'}
+            {t('admin.configurators.tabPreview')} {!isEditing && `(${t('admin.configurators.saveFirst')})`}
           </button>
         </div>
 
@@ -328,10 +504,10 @@ export default function ConfiguratorEditPage() {
           {activeTab === 'general' && (
             <form onSubmit={handleSubmit} className="admin-form">
               <div className="form-section">
-                <h3>Temel Bilgiler</h3>
+                <h3>{t('admin.configurators.generalInfo')}</h3>
 
                 <div className="form-group">
-                  <label>Slug (URL) *</label>
+                  <label>{t('admin.configurators.slugLabel')} *</label>
                   <input
                     type="text"
                     value={formData.slug}
@@ -339,11 +515,11 @@ export default function ConfiguratorEditPage() {
                     placeholder="glazen-veranda"
                     required
                   />
-                  <small>URL-friendly identifier. Örnek: glazen-veranda</small>
+                  <small>{t('admin.configurators.slugHelp')}</small>
                 </div>
 
                 <div className="form-group">
-                  <label>Kategori *</label>
+                  <label>{t('admin.configurators.categoryLabel')} *</label>
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
@@ -353,19 +529,131 @@ export default function ConfiguratorEditPage() {
                     <option value="carport">Carport</option>
                     <option value="tuinkamer">Tuinkamer</option>
                     <option value="lamellen">Lamellen</option>
-                    <option value="other">Other</option>
+                    <option value="other">{t('admin.configurators.categoryOther')}</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  <label>Sıra</label>
+                  <label>{t('admin.configurators.displayOrder')}</label>
                   <input
                     type="number"
                     value={formData.display_order}
                     onChange={(e) => setFormData({ ...formData, display_order: parseInt(e.target.value) || 0 })}
                     min="0"
                   />
-                  <small>Liste gösteriminde sıralama için</small>
+                  <small>{t('admin.configurators.displayOrderHelp')}</small>
+                </div>
+
+                <div className="form-group">
+                  <label>{t('admin.configurators.imageLabel', 'Afbeelding')}</label>
+                  <div className="image-upload-wrapper">
+                    <div className="image-upload-input">
+                      <label className="file-upload-btn">
+                        <input
+                          type="file"
+                          accept="image/jpeg,image/png,image/webp,image/gif"
+                          onChange={handleImageUpload}
+                          disabled={uploadingImage}
+                          style={{ display: 'none' }}
+                        />
+                        <i className={uploadingImage ? 'pi pi-spin pi-spinner' : 'pi pi-upload'}></i>
+                        <span>
+                          {uploadingImage
+                            ? t('admin.configurators.uploading', 'Uploaden...')
+                            : t('admin.configurators.chooseFile', 'Kies afbeelding')}
+                        </span>
+                      </label>
+                      {formData.image_url && (
+                        <button
+                          type="button"
+                          className="remove-image-btn"
+                          onClick={() => setFormData({ ...formData, image_url: '' })}
+                          title={t('common.delete', 'Verwijderen')}
+                        >
+                          <i className="pi pi-times"></i>
+                        </button>
+                      )}
+                    </div>
+                    {formData.image_url && (
+                      <div className="image-preview">
+                        <img src={formData.image_url} alt="Preview" onError={(e) => (e.currentTarget.style.display = 'none')} />
+                        <span className="image-url-text">{formData.image_url.split('/').pop()}</span>
+                      </div>
+                    )}
+                  </div>
+                  <small>{t('admin.configurators.imageHelp', 'Afbeelding die op de offerte pagina wordt getoond (max 5MB)')}</small>
+                </div>
+
+                <div className="form-group">
+                  <label>{t('admin.configurators.iconLabel', 'Menu Icoon')}</label>
+
+                  {/* Mode Toggle */}
+                  <div className="icon-mode-toggle">
+                    <button
+                      type="button"
+                      className={`mode-btn ${iconInputMode === 'select' ? 'active' : ''}`}
+                      onClick={() => setIconInputMode('select')}
+                    >
+                      <i className="pi pi-th-large"></i>
+                      {t('admin.configurators.selectIcon', 'Seç')}
+                    </button>
+                    <button
+                      type="button"
+                      className={`mode-btn ${iconInputMode === 'manual' ? 'active' : ''}`}
+                      onClick={() => setIconInputMode('manual')}
+                    >
+                      <i className="pi pi-pencil"></i>
+                      {t('admin.configurators.manualIcon', 'Manuel')}
+                    </button>
+                  </div>
+
+                  {/* Select Mode */}
+                  {iconInputMode === 'select' && (
+                    <div className="icon-selector">
+                      <div className="icon-preview-box" onClick={() => setShowIconPicker(!showIconPicker)}>
+                        <i className={formData.icon}></i>
+                        <span>{formData.icon}</span>
+                        <i className="pi pi-chevron-down"></i>
+                      </div>
+                      {showIconPicker && (
+                        <div className="icon-picker-dropdown">
+                          <div className="icon-picker-grid">
+                            {availableIcons.map(icon => (
+                              <button
+                                key={icon}
+                                type="button"
+                                className={`icon-picker-item ${formData.icon === icon ? 'selected' : ''}`}
+                                onClick={() => {
+                                  setFormData({ ...formData, icon })
+                                  setShowIconPicker(false)
+                                }}
+                                title={icon}
+                              >
+                                <i className={icon}></i>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Manual Mode */}
+                  {iconInputMode === 'manual' && (
+                    <div className="icon-manual-input">
+                      <div className="icon-input-with-preview">
+                        <i className={formData.icon || 'pi pi-question'}></i>
+                        <input
+                          type="text"
+                          value={formData.icon}
+                          onChange={(e) => setFormData({ ...formData, icon: e.target.value })}
+                          placeholder="pi pi-home"
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  <small>{t('admin.configurators.iconHelp', 'Icoon dat in het header menu wordt getoond (örn: pi pi-home)')}</small>
                 </div>
 
                 <div className="form-group">
@@ -375,16 +663,16 @@ export default function ConfiguratorEditPage() {
                       checked={formData.is_active}
                       onChange={(e) => setFormData({ ...formData, is_active: e.target.checked })}
                     />
-                    <span>Aktif (Yayında)</span>
+                    <span>{t('admin.configurators.activePublished')}</span>
                   </label>
                   <small style={{ display: 'block', marginTop: '0.5rem', marginLeft: '1.75rem' }}>
-                    Bu seçeneği işaretlerseniz konfigüratör web sitesinde görünür olur
+                    {t('admin.configurators.activeHelp')}
                   </small>
                 </div>
               </div>
 
               <div className="form-section">
-                <h3>Çoklu Dil Bilgileri</h3>
+                <h3>{t('admin.configurators.multiLanguageInfo')}</h3>
 
                 <div className="language-tabs">
                   {languages.map(lang => (
@@ -401,7 +689,7 @@ export default function ConfiguratorEditPage() {
 
                 <div className="language-content">
                   <div className="form-group">
-                    <label>İsim ({languages.find(l => l.code === currentLanguage)?.name}) *</label>
+                    <label>{t('admin.configurators.nameLabel')} ({languages.find(l => l.code === currentLanguage)?.name}) *</label>
                     <input
                       type="text"
                       value={formData.name[currentLanguage] || ''}
@@ -419,11 +707,11 @@ export default function ConfiguratorEditPage() {
                       placeholder="Glazen Veranda"
                       required={currentLanguage === 'nl'}
                     />
-                    {currentLanguage === 'nl' && <small>Bu alan zorunludur (default language)</small>}
+                    {currentLanguage === 'nl' && <small>{t('admin.configurators.requiredField')}</small>}
                   </div>
 
                   <div className="form-group">
-                    <label>Açıklama ({languages.find(l => l.code === currentLanguage)?.name})</label>
+                    <label>{t('admin.configurators.descriptionLabel')} ({languages.find(l => l.code === currentLanguage)?.name})</label>
                     <textarea
                       value={formData.description[currentLanguage] || ''}
                       onChange={(e) => setFormData({
@@ -439,14 +727,14 @@ export default function ConfiguratorEditPage() {
 
               <div className="form-actions">
                 <button type="submit" className="admin-btn admin-btn-primary" disabled={saving}>
-                  {saving ? 'Kaydediliyor...' : isEditing ? 'Güncelle' : 'Oluştur'}
+                  {saving ? t('admin.configurators.saving') : isEditing ? t('admin.configurators.update') : t('admin.configurators.create')}
                 </button>
                 <button
                   type="button"
                   className="admin-btn admin-btn-secondary"
                   onClick={() => navigate('/admin/configurators')}
                 >
-                  İptal
+                  {t('common.cancel')}
                 </button>
               </div>
             </form>
@@ -456,19 +744,19 @@ export default function ConfiguratorEditPage() {
           {activeTab === 'steps' && (
             <div className="steps-management">
               <div className="steps-header">
-                <h3>Adımlar ({steps.length})</h3>
+                <h3>{t('admin.configurators.stepsCount', { count: steps.length })}</h3>
                 <button
                   className="admin-btn admin-btn-primary"
                   onClick={() => setIsCreatingStep(true)}
                 >
-                  + Yeni Adım
+                  + {t('admin.configurators.newStep')}
                 </button>
               </div>
 
               {loadingSteps ? (
                 <div style={{ textAlign: 'center', padding: '2rem' }}>
                   <div className="spinner"></div>
-                  <p>Yükleniyor...</p>
+                  <p>{t('common.loading')}</p>
                 </div>
               ) : steps.length === 0 ? (
                 <div className="placeholder-content">
@@ -480,8 +768,8 @@ export default function ConfiguratorEditPage() {
                     <line x1="3" y1="12" x2="3.01" y2="12"></line>
                     <line x1="3" y1="18" x2="3.01" y2="18"></line>
                   </svg>
-                  <h3>Henüz adım yok</h3>
-                  <p>Yeni adım eklemek için butona tıklayın</p>
+                  <h3>{t('admin.configurators.noSteps')}</h3>
+                  <p>{t('admin.configurators.noStepsDesc')}</p>
                 </div>
               ) : (
                 <div className="steps-list">
@@ -500,15 +788,15 @@ export default function ConfiguratorEditPage() {
                                 {step.field_name}
                               </span>
                               {step.is_required && (
-                                <span className="meta-badge required">Zorunlu</span>
+                                <span className="meta-badge required">{t('admin.configurators.required')}</span>
                               )}
                               {step.configurator_options && (
                                 <span className="meta-badge">
-                                  {step.configurator_options.length} seçenek
+                                  {step.configurator_options.length} {t('admin.configurators.optionsCount')}
                                 </span>
                               )}
                               {step.show_condition && (
-                                <span className="meta-badge conditional">⚠ Koşullu</span>
+                                <span className="meta-badge conditional">⚠ {t('admin.configurators.conditional')}</span>
                               )}
                             </div>
                           </div>
@@ -518,7 +806,7 @@ export default function ConfiguratorEditPage() {
                             className="icon-btn"
                             onClick={() => handleMoveStep(step.id, 'up')}
                             disabled={index === 0}
-                            title="Yukarı taşı"
+                            title={t('admin.configurators.moveUp')}
                           >
                             ↑
                           </button>
@@ -526,7 +814,7 @@ export default function ConfiguratorEditPage() {
                             className="icon-btn"
                             onClick={() => handleMoveStep(step.id, 'down')}
                             disabled={index === steps.length - 1}
-                            title="Aşağı taşı"
+                            title={t('admin.configurators.moveDown')}
                           >
                             ↓
                           </button>
@@ -536,14 +824,14 @@ export default function ConfiguratorEditPage() {
                               setEditingStep(step)
                               setIsCreatingStep(true)
                             }}
-                            title="Düzenle"
+                            title={t('common.edit')}
                           >
                             ✏
                           </button>
                           <button
                             className="icon-btn delete"
                             onClick={() => handleDeleteStep(step.id)}
-                            title="Sil"
+                            title={t('common.delete')}
                           >
                             ×
                           </button>
@@ -557,36 +845,36 @@ export default function ConfiguratorEditPage() {
                         <div className="step-card-body">
                           <div className="step-details-grid">
                             <div>
-                              <strong>Başlık (EN):</strong> {step.title.en || '-'}
+                              <strong>{t('admin.configurators.titleEN')}:</strong> {step.title.en || '-'}
                             </div>
                             <div>
-                              <strong>Başlık (TR):</strong> {step.title.tr || '-'}
+                              <strong>{t('admin.configurators.titleTR')}:</strong> {step.title.tr || '-'}
                             </div>
                             {step.subtitle?.nl && (
                               <div>
-                                <strong>Alt Başlık:</strong> {step.subtitle.nl}
+                                <strong>{t('admin.configurators.subtitle')}:</strong> {step.subtitle.nl}
                               </div>
                             )}
                             {step.help_text?.nl && (
                               <div>
-                                <strong>Yardım Metni:</strong> {step.help_text.nl}
+                                <strong>{t('admin.configurators.helpText')}:</strong> {step.help_text.nl}
                               </div>
                             )}
                             {step.show_preview_image && (
                               <div>
-                                <strong>Önizleme Görseli:</strong> Evet ({step.preview_image_base_path || '-'})
+                                <strong>{t('admin.configurators.previewImage')}:</strong> {t('common.yes')} ({step.preview_image_base_path || '-'})
                               </div>
                             )}
                             {step.show_condition && (
                               <div>
-                                <strong>Koşul:</strong> {JSON.stringify(step.show_condition)}
+                                <strong>{t('admin.configurators.condition')}:</strong> {JSON.stringify(step.show_condition)}
                               </div>
                             )}
                           </div>
 
                           <div className="options-management">
                             <div className="options-header">
-                              <strong>Seçenekler ({step.configurator_options?.length || 0})</strong>
+                              <strong>{t('admin.configurators.optionsLabel')} ({step.configurator_options?.length || 0})</strong>
                               <button
                                 className="admin-btn admin-btn-sm admin-btn-primary"
                                 onClick={() => {
@@ -595,7 +883,7 @@ export default function ConfiguratorEditPage() {
                                   setIsCreatingOption(true)
                                 }}
                               >
-                                + Yeni Seçenek
+                                + {t('admin.configurators.newOption')}
                               </button>
                             </div>
 
@@ -624,12 +912,7 @@ export default function ConfiguratorEditPage() {
                                           <div className="option-meta">
                                             <span className="meta-badge-small">#{opt.display_order}</span>
                                             {!opt.is_active && (
-                                              <span className="meta-badge-small inactive">Pasif</span>
-                                            )}
-                                            {opt.price_modifier !== 0 && (
-                                              <span className="meta-badge-small price">
-                                                {opt.price_modifier > 0 ? '+' : ''}{opt.price_modifier}€
-                                              </span>
+                                              <span className="meta-badge-small inactive">{t('admin.configurators.statusInactive')}</span>
                                             )}
                                           </div>
                                         </div>
@@ -642,14 +925,14 @@ export default function ConfiguratorEditPage() {
                                             setEditingOption(opt)
                                             setIsCreatingOption(true)
                                           }}
-                                          title="Düzenle"
+                                          title={t('common.edit')}
                                         >
                                           ✏
                                         </button>
                                         <button
                                           className="icon-btn delete"
                                           onClick={() => handleDeleteOption(opt.id)}
-                                          title="Sil"
+                                          title={t('common.delete')}
                                         >
                                           ×
                                         </button>
@@ -659,7 +942,7 @@ export default function ConfiguratorEditPage() {
                               </div>
                             ) : (
                               <div className="empty-options">
-                                <p>Henüz seçenek yok. Yukarıdaki butona tıklayarak ekleyin.</p>
+                                <p>{t('admin.configurators.noOptions')}</p>
                               </div>
                             )}
                           </div>
@@ -712,8 +995,8 @@ export default function ConfiguratorEditPage() {
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
                 <div>
-                  <strong>Canlı Önizleme</strong>
-                  <p>Bu, konfigüratörünüzün kullanıcılar tarafından nasıl görüneceğinin canlı önizlemesidir. Değişikliklerinizi kaydettiğinizde otomatik olarak güncellenecektir.</p>
+                  <strong>{t('admin.configurators.livePreview')}</strong>
+                  <p>{t('admin.configurators.livePreviewDesc')}</p>
                 </div>
               </div>
               <div className="preview-wrapper">
@@ -721,7 +1004,7 @@ export default function ConfiguratorEditPage() {
                   <DynamicConfigurator configuratorSlug={formData.slug} />
                 ) : (
                   <div className="preview-error">
-                    <p>Önizleme için lütfen önce konfigüratörü kaydedin ve bir slug girin.</p>
+                    <p>{t('admin.configurators.previewError')}</p>
                   </div>
                 )}
               </div>
@@ -1022,11 +1305,6 @@ export default function ConfiguratorEditPage() {
           color: white;
         }
 
-        .meta-badge-small.price {
-          background: #10b981;
-          color: white;
-        }
-
         .option-actions {
           display: flex;
           gap: 0.5rem;
@@ -1300,6 +1578,241 @@ export default function ConfiguratorEditPage() {
         .preview-error p {
           margin: 0;
           font-size: 0.9rem;
+        }
+
+        /* Image Upload Styles */
+        .image-upload-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .image-upload-input {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+        }
+
+        .file-upload-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1.25rem;
+          background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+          color: white;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 0.9rem;
+          transition: all 0.2s ease;
+        }
+
+        .file-upload-btn:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+        }
+
+        .file-upload-btn i {
+          font-size: 1rem;
+        }
+
+        .remove-image-btn {
+          width: 36px;
+          height: 36px;
+          border: 1px solid #ef4444;
+          background: transparent;
+          color: #ef4444;
+          border-radius: 6px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s ease;
+        }
+
+        .remove-image-btn:hover {
+          background: #ef4444;
+          color: white;
+        }
+
+        .image-preview {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          max-width: 250px;
+        }
+
+        .image-preview img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          border: 1px solid var(--border-color);
+        }
+
+        .image-url-text {
+          font-size: 0.75rem;
+          color: var(--muted-text);
+          word-break: break-all;
+          font-family: monospace;
+        }
+
+        /* Icon Selector Styles */
+        .icon-selector {
+          position: relative;
+        }
+
+        .icon-preview-box {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.75rem 1rem;
+          border: 1px solid var(--border-color);
+          border-radius: 6px;
+          background: var(--card-bg);
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .icon-preview-box:hover {
+          border-color: #8b5cf6;
+        }
+
+        .icon-preview-box i:first-child {
+          font-size: 1.25rem;
+          color: #8b5cf6;
+        }
+
+        .icon-preview-box span {
+          flex: 1;
+          font-family: monospace;
+          font-size: 0.875rem;
+          color: var(--body-text);
+        }
+
+        .icon-preview-box i:last-child {
+          font-size: 0.75rem;
+          color: var(--muted-text);
+        }
+
+        .icon-picker-dropdown {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          margin-top: 0.5rem;
+          padding: 1rem;
+          background: var(--card-bg);
+          border: 1px solid var(--border-color);
+          border-radius: 8px;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+          z-index: 100;
+          max-height: 300px;
+          overflow-y: auto;
+        }
+
+        .icon-picker-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+          gap: 0.5rem;
+        }
+
+        .icon-picker-item {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--border-color);
+          border-radius: 6px;
+          background: var(--section-bg);
+          cursor: pointer;
+          transition: all 0.2s ease;
+          font-size: 1.1rem;
+          color: var(--body-text);
+        }
+
+        .icon-picker-item:hover {
+          border-color: #8b5cf6;
+          background: rgba(139, 92, 246, 0.1);
+          color: #8b5cf6;
+        }
+
+        .icon-picker-item.selected {
+          border-color: #8b5cf6;
+          background: #8b5cf6;
+          color: white;
+        }
+
+        /* Icon Mode Toggle */
+        .icon-mode-toggle {
+          display: flex;
+          gap: 0.5rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .mode-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          border: 1px solid var(--border-color);
+          background: var(--section-bg);
+          color: var(--body-text);
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.875rem;
+          transition: all 0.2s ease;
+        }
+
+        .mode-btn:hover {
+          border-color: #8b5cf6;
+          background: rgba(139, 92, 246, 0.1);
+        }
+
+        .mode-btn.active {
+          background: #8b5cf6;
+          color: white;
+          border-color: #8b5cf6;
+        }
+
+        .mode-btn i {
+          font-size: 0.875rem;
+        }
+
+        /* Icon Manual Input */
+        .icon-manual-input {
+          margin-top: 0.5rem;
+        }
+
+        .icon-input-with-preview {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.75rem 1rem;
+          border: 1px solid var(--border-color);
+          border-radius: 6px;
+          background: var(--card-bg);
+        }
+
+        .icon-input-with-preview > i:first-child {
+          font-size: 1.5rem;
+          color: #8b5cf6;
+          width: 32px;
+          text-align: center;
+        }
+
+        .icon-input-with-preview input {
+          flex: 1;
+          border: none;
+          background: transparent;
+          color: var(--body-text);
+          font-size: 0.9rem;
+          font-family: monospace;
+          outline: none;
+        }
+
+        .icon-input-with-preview input::placeholder {
+          color: var(--muted-text);
         }
 
         @media (max-width: 768px) {

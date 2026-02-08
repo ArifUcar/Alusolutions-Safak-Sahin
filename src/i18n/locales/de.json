@@ -1,7 +1,9 @@
 {
   "header": {
+    "home": "Startseite",
+    "products": "Produkte",
     "services": "Unsere Dienstleistungen",
-    "verandas": "Verand as",
+    "verandas": "Verandas",
     "other": "Andere",
     "about": "Über uns",
     "inspiration": "Inspiration",
@@ -22,15 +24,20 @@
     "makeAppointment": "Termin vereinbaren",
     "tagline": "Wir Bringen Das Außenleben Nach Innen",
     "darkMode": "Dunkler Modus",
-    "lightMode": "Heller Modus"
+    "lightMode": "Heller Modus",
+    "cubeVeranda": "Cube Terrassenüberdachung",
+    "lamelVeranda": "Lamellen Terrassenüberdachung",
+    "glazenVeranda": "Glas Terrassenüberdachung",
+    "polycarbonaatVeranda": "Polycarbonat Terrassenüberdachung",
+    "plateReplace": "Plattenwechsel"
   },
   "products": {
-    "polycarbonaat": "Polycarbonat Veranda",
-    "glazen": "Glasveranda",
-    "lamellen": "Lamellen Veranda",
-    "vouwdak": "Faltdach Veranda",
+    "polycarbonaat": "Polycarbonat Terrassenüberdachung",
+    "glazen": "Glas Terrassenüberdachung",
+    "lamellen": "Lamellen Terrassenüberdachung",
+    "vouwdak": "Faltdach Terrassenüberdachung",
     "schuifwand": "Glasschiebewand",
-    "cube": "Cube Veranda",
+    "cube": "Cube Terrassenüberdachung",
     "tuinkamer": "Gartenzimmer",
     "carport": "Carport"
   },
@@ -60,6 +67,14 @@
     "visitShowroom": "Showroom Bezoeken",
     "faq": "Veelgestelde Vragen"
   },
+  "reviews": {
+    "googleReviews": "Google Bewertungen",
+    "title": "Was unsere Kunden sagen",
+    "basedOn": "Basierend auf",
+    "reviews": "Bewertungen",
+    "viewAll": "Alle Bewertungen auf Google ansehen",
+    "writeReview": "Bewertung schreiben"
+  },
   "footer": {
     "tagline": "Wij Brengen Buitenleven Binnen",
     "description": "Specialist in hoogwaardige aluminium veranda's en overkappingen. Al meer dan 15 jaar uw betrouwbare partner voor buitenleven.",
@@ -77,7 +92,10 @@
     "copyright": "Wij brengen buitenleven binnen.",
     "privacyPolicy": "Privacy Policy",
     "termsConditions": "Algemene Voorwaarden",
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "subsidiary": "Ein Teil von"
   },
   "common": {
     "readMore": "Lees meer",
@@ -110,7 +128,7 @@
     },
     "quality": {
       "title": "Kwaliteit en vakmanschap",
-      "description1": "Bij Alusolutions hechten we veel waarde aan kwaliteit en vakmanschap. Onze producten zijn vervaardigd met hoogwaardige materialen en innovatieve technologieën, wat resulteert in duurzame en betrouwbare oplossingen. Onze toegewijde en ervaren teamleden staan altijd klaar om u te adviseren en te begeleiden bij het maken van de beste keuzes voor uw specifieke situatie.",
+      "description1": "Bij VivaVerandas hechten we veel waarde aan kwaliteit en vakmanschap. Onze producten zijn vervaardigd met hoogwaardige materialen en innovatieve technologieën, wat resulteert in duurzame en betrouwbare oplossingen. Onze toegewijde en ervaren teamleden staan altijd klaar om u te adviseren en te begeleiden bij het maken van de beste keuzes voor uw specifieke situatie.",
       "description2": "We streven naar klanttevredenheid en nemen elke uitdaging met enthousiasme aan. Vanaf het eerste contact tot de installatie en nazorg, wij streven ernaar om een uitstekende service te bieden en een langdurige relatie met onze klanten op te bouwen."
     },
     "banner": {
@@ -120,7 +138,7 @@
     "benefits": {
       "custom": {
         "title": "Maatwerk terrasoplossingen",
-        "description": "Bij Alusolutions geloven we in maatwerk. Wij ontwerpen en creëren terrasoplossingen die perfect passen bij uw specifieke wensen, zodat u kunt genieten van een buitenruimte die helemaal van u is."
+        "description": "Bij VivaVerandas geloven we in maatwerk. Wij ontwerpen en creëren terrasoplossingen die perfect passen bij uw specifieke wensen, zodat u kunt genieten van een buitenruimte die helemaal van u is."
       },
       "experience": {
         "title": "Verbeter uw buitenbeleving",
@@ -133,7 +151,7 @@
     },
     "oasis": {
       "title": "Creëer Uw Buitenoase",
-      "description": "Bij Alusolutions streven we ernaar om uw buitenruimte te transformeren in een oase van comfort, stijl en elegantie. Met op maat gemaakte terrasoplossingen en hoogwaardige producten, maken we uw droomproject werkelijkheid. Vraag vandaag nog een offerte aan en ontdek de mogelijkheden voor uw unieke buitenomgeving.",
+      "description": "Bij VivaVerandas streven we ernaar om uw buitenruimte te transformeren in een oase van comfort, stijl en elegantie. Met op maat gemaakte terrasoplossingen en hoogwaardige producten, maken we uw droomproject werkelijkheid. Vraag vandaag nog een offerte aan en ontdek de mogelijkheden voor uw unieke buitenomgeving.",
       "cta": "Gratis Offerte Aanvragen"
     },
     "team": {
@@ -184,10 +202,10 @@
   },
   "home": {
     "hero": {
-      "title": "Polycarbonaat veranda",
-      "description1": "Een polycarbonaat veranda is de ideale keuze voor wie op zoek is naar een duurzame en betaalbare terrasoverkapping. Dankzij de sterke en heldere polycarbonaat dakplaten geniet je van veel lichtinval, zonder in te leveren op bescherming tegen regen en wind.",
-      "description2": "Bij AluSolutions leveren wij jouw polycarbonaat veranda volledig afgestemd op jouw wensen. Binnen 3 weken zorgen onze verandabouwers voor een snelle levering en vakkundige plaatsing.",
-      "cta": "Vraag eenvoudig een offerte aan!"
+      "title": "Veranda",
+      "description1": "Eine Veranda ist die ideale Wahl für alle, die eine langlebige und stilvolle Terrassenüberdachung suchen. Genießen Sie viel Tageslicht und Schutz vor Regen und Wind mit unseren hochwertigen Veranden.",
+      "description2": "Bei VivaVerandas liefern wir Ihre Veranda vollständig nach Ihren Wünschen. Innerhalb von 3 Wochen sorgen unsere Monteure für eine schnelle Lieferung und fachgerechte Installation.",
+      "cta": "Fordern Sie einfach ein Angebot an!"
     },
     "galleryPreview": {
       "image1Alt": "Glazen overkapping",
@@ -196,11 +214,14 @@
       "image4Alt": "Moderne overkapping"
     },
     "products": {
-      "title": "Onze Producten",
-      "subtitle": "Ontdek ons complete assortiment hoogwaardige veranda's en overkappingen",
-      "moreInfo": "Meer info",
+      "title": "Unsere Produkte",
+      "subtitle": "Entdecken Sie unser komplettes Sortiment hochwertiger Veranden",
+      "moreInfo": "Mehr Info",
+      "cube": {
+        "description": "Modernes schlankes Design mit Flachdach für ein luxuriöses Erscheinungsbild"
+      },
       "poly": {
-        "description": "Duurzaam en betaalbaar met uitstekende lichtdoorlatendheid"
+        "description": "Langlebig und erschwinglich mit ausgezeichneter Lichtdurchlässigkeit"
       },
       "glazen": {
         "description": "Maximale transparantie voor een luxe uitstraling"
@@ -219,12 +240,15 @@
       }
     },
     "benefits": {
-      "title": "Ervaar de unieke voordelen van een polycarbonaat veranda",
-      "subtitle": "Betaalbare elegantie met onze polycarbonaat veranda's",
-      "paragraph1": "De investering in een polycarbonaat veranda is afhankelijk van meerdere factoren, zoals de afmetingen van de constructie en de keuze voor aanvullende opties zoals ingebouwde LED-spots, zijwanden of schuifdeuren.",
-      "paragraph2": "Wij begrijpen dat de keuze voor een veranda een belangrijke beslissing is die afgestemd moet zijn op zowel uw budget als uw levensstijl. Daarom bieden we persoonlijk advies en gedetailleerde informatie over de mogelijkheden en kosten.",
-      "ctaButton": "Neem contact op",
-      "imageAlt": "Elegante veranda"
+      "title": "Erleben Sie die einzigartigen Vorteile einer Veranda",
+      "subtitle": "Erschwingliche Eleganz mit unseren Veranden",
+      "description1": "Die Investition in eine Veranda hängt von mehreren Faktoren ab, wie den Abmessungen der Konstruktion und der Wahl zusätzlicher Optionen wie eingebaute LED-Spots, Seitenwände oder Schiebetüren.",
+      "description2": "Wir verstehen, dass die Wahl einer Veranda eine wichtige Entscheidung ist, die sowohl zu Ihrem Budget als auch zu Ihrem Lebensstil passen muss. Deshalb bieten wir persönliche Beratung und detaillierte Informationen über Möglichkeiten und Kosten.",
+      "paragraph1": "Die Investition in eine Veranda hängt von mehreren Faktoren ab, wie den Abmessungen der Konstruktion und der Wahl zusätzlicher Optionen wie eingebaute LED-Spots, Seitenwände oder Schiebetüren.",
+      "paragraph2": "Wir verstehen, dass die Wahl einer Veranda eine wichtige Entscheidung ist, die sowohl zu Ihrem Budget als auch zu Ihrem Lebensstil passen muss. Deshalb bieten wir persönliche Beratung und detaillierte Informationen über Möglichkeiten und Kosten.",
+      "ctaButton": "Kontaktieren Sie uns",
+      "cta": "Kontaktieren Sie uns",
+      "imageAlt": "Elegante Veranda"
     },
     "stats": {
       "experience": "Jaar ervaring",
@@ -257,16 +281,16 @@
       }
     },
     "quality": {
-      "title": "Betaalbare kwaliteit polycarbonaat veranda's",
-      "description": "De kosten van een polycarbonaat veranda hangen af van de grootte en extra's zoals spots, zijwanden of schuifdeuren. Toch is zo'n veranda een voordelige keuze die lang meegaat en er mooi uitziet.",
-      "feature1": "Kosten van materialen: goedkoper dan glas, economisch voordelig",
-      "feature2": "Lagere installatiekosten: eenvoudige installatie verlaagt arbeidskosten",
-      "feature3": "Duurzaamheid en onderhoud: langdurig met minimaal onderhoud",
-      "feature4": "Energie-efficiëntie: isolatie verlaagt energiekosten",
-      "feature5": "Veelzijdigheid: flexibel ontwerp, efficiënte productie"
+      "title": "Erschwingliche Qualität Veranden",
+      "description": "Die Kosten einer Veranda hängen von der Größe und Extras wie Spots, Seitenwänden oder Schiebetüren ab. Unsere Veranden sind eine wirtschaftliche Wahl, die lange hält und schön aussieht.",
+      "feature1": "Hochwertige Materialien: langlebiger Rahmen",
+      "feature2": "Niedrigere Installationskosten: einfache Installation reduziert Arbeitskosten",
+      "feature3": "Haltbarkeit und Wartung: langlebig bei minimalem Wartungsaufwand",
+      "feature4": "Energieeffizienz: Isolierung senkt Energiekosten",
+      "feature5": "Vielseitigkeit: flexibles Design, effiziente Produktion"
     },
     "features": {
-      "title": "Waarom kiezen voor AluSolutions?",
+      "title": "Waarom kiezen voor VivaVerandas?",
       "quality": {
         "title": "Premium Kwaliteit",
         "description": "Alleen de beste materialen voor een langdurig resultaat"
@@ -288,9 +312,18 @@
         "description": "Binnen 3 weken geplaatst"
       },
       "service": {
-        "title": "Persoonlijke Service",
-        "description": "Direct contact met onze specialisten"
+        "title": "Persönlicher Service",
+        "description": "Direkter Kontakt mit unseren Spezialisten"
+      },
+      "openingTypes": {
+        "title": "Glas-Schiebewände",
+        "description": "Wir bieten sowohl Schiebewände als auch Faltwände (mittig öffnend)"
       }
+    },
+    "glassWalls": {
+      "sliding": "Schiebewände",
+      "folding": "Faltwände",
+      "cta": "Mehr Beispiele ansehen"
     },
     "inspiration": {
       "title": "Inspiratie voor jouw veranda",
@@ -322,17 +355,19 @@
       }
     },
     "info": {
+      "title": "Entdecken Sie Unsere Veranden",
+      "subtitle": "Alles, was Sie über unsere hochwertigen Veranden wissen müssen",
       "what": {
-        "title": "Wat is een polycarbonaat veranda?",
-        "description": "Een polycarbonaat veranda van Alusolutions is een duurzame terras- of tuinoverkapping die je woning verlengt met een stijlvolle buitenruimte."
+        "title": "Was ist eine Veranda?",
+        "description": "Eine Veranda von VivaVerandas ist eine langlebige Terrassen- oder Gartenüberdachung, die Ihr Zuhause um einen stilvollen Außenbereich erweitert."
       },
       "benefits": {
-        "title": "Voordelen van polycarbonaat",
-        "description": "Polycarbonaat is een robuust, lichtdoorlatend materiaal dat bescherming biedt tegen UV-stralen en weersinvloeden."
+        "title": "Vorteile einer Veranda",
+        "description": "Unsere Veranden sind robust und wartungsarm, mit ausgezeichnetem Schutz vor Witterungseinflüssen."
       },
       "whyUs": {
-        "title": "Waarom kiezen voor Alusolutions?",
-        "description": "Bij Alusolutions kies je voor kwaliteit en duurzaamheid. Onze veranda's zijn sterk en onderhoudsarm."
+        "title": "Waarom kiezen voor VivaVerandas?",
+        "description": "Bij VivaVerandas kies je voor kwaliteit en duurzaamheid. Onze veranda's zijn sterk en onderhoudsarm."
       },
       "personalize": {
         "title": "Personaliseer je veranda",
@@ -353,7 +388,7 @@
       "anthracite": "Antraciet",
       "white": "Wit",
       "cream": "Crème",
-      "brown": "Bruin"
+      "black": "Schwarz"
     },
     "cta": {
       "title": "Klaar voor jouw droomveranda?",
@@ -405,7 +440,7 @@
     "title": "Datenschutz",
     "section1": {
       "title": "1. Einleitung",
-      "content": "AluSolutions respektiert Ihre Privatsphäre und stellt sicher, dass die persönlichen Informationen, die Sie uns zur Verfügung stellen, vertraulich behandelt werden."
+      "content": "VivaVerandas respektiert Ihre Privatsphäre und stellt sicher, dass die persönlichen Informationen, die Sie uns zur Verfügung stellen, vertraulich behandelt werden."
     },
     "section2": {
       "title": "2. Von uns gesammelte Daten",
@@ -425,18 +460,18 @@
     },
     "section6": {
       "title": "6. Kontakt",
-      "content": "Für Fragen zu unserer Datenschutzpolitik können Sie Kontakt mit uns aufnehmen unter info@alusolutions.nl"
+      "content": "Für Fragen zu unserer Datenschutzpolitik können Sie Kontakt mit uns aufnehmen unter info@vivaverandas.nl"
     }
   },
   "voorwaarden": {
     "title": "Algemene Voorwaarden",
     "section1": {
       "title": "Artikel 1 - Definities",
-      "content": "In deze voorwaarden wordt verstaan onder AluSolutions: de onderneming gevestigd te Reuver, ingeschreven bij de KVK onder nummer 90086449."
+      "content": "In deze voorwaarden wordt verstaan onder VivaVerandas: de onderneming gevestigd te Reuver, ingeschreven bij de KVK onder nummer 90086449."
     },
     "section2": {
       "title": "Artikel 2 - Toepasselijkheid",
-      "content": "Deze voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten van AluSolutions."
+      "content": "Deze voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten van VivaVerandas."
     },
     "section3": {
       "title": "Artikel 3 - Offertes",
@@ -448,12 +483,34 @@
     },
     "section5": {
       "title": "Artikel 5 - Garantie",
-      "content": "AluSolutions biedt 10 jaar garantie op de constructie bij normaal gebruik."
+      "content": "VivaVerandas biedt 10 jaar garantie op de constructie bij normaal gebruik."
     },
     "section6": {
       "title": "Artikel 6 - Betaling",
       "content": "Betaling geschiedt conform de op de factuur vermelde betalingsvoorwaarden."
     }
+  },
+  "cookieBanner": {
+    "title": "Wir schätzen Ihre Privatsphäre",
+    "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, personalisierte Werbung oder Inhalte anzuzeigen und unseren Datenverkehr zu analysieren. Durch Klicken auf \"Alle akzeptieren\" stimmen Sie der Verwendung von Cookies zu.",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "customize": "Anpassen",
+    "savePreferences": "Einstellungen speichern",
+    "learnMore": "Mehr erfahren",
+    "preferencesTitle": "Einwilligungseinstellungen anpassen",
+    "preferencesIntro": "Wir verwenden Cookies, um Ihnen bei der effizienten Navigation zu helfen und bestimmte Funktionen auszuführen. Detaillierte Informationen zu allen Cookies finden Sie unter der entsprechenden Einwilligungskategorie unten.",
+    "necessary": "Notwendig",
+    "necessaryDesc": "Notwendige Cookies sind für die grundlegenden Funktionen der Website unerlässlich und ohne sie funktioniert die Website nicht wie vorgesehen. Diese Cookies speichern keine persönlich identifizierbaren Daten.",
+    "functional": "Funktional",
+    "functionalDesc": "Funktionale Cookies helfen bei der Ausführung bestimmter Funktionen, wie dem Teilen von Website-Inhalten auf Social-Media-Plattformen, dem Sammeln von Feedback und anderen Drittanbieterfunktionen.",
+    "analytical": "Analytisch",
+    "analyticalDesc": "Analytische Cookies werden verwendet, um zu verstehen, wie Besucher mit der Website interagieren. Diese Cookies helfen dabei, Informationen über Besucherstatistiken, Absprungrate, Verkehrsquelle usw. bereitzustellen.",
+    "performance": "Leistung",
+    "performanceDesc": "Leistungs-Cookies werden verwendet, um wichtige Leistungskennzahlen der Website zu verstehen und zu analysieren, was dazu beiträgt, den Besuchern ein besseres Benutzererlebnis zu bieten.",
+    "advertising": "Werbung",
+    "advertisingDesc": "Werbe-Cookies werden verwendet, um Besuchern personalisierte Werbung basierend auf zuvor besuchten Seiten zu liefern und die Wirksamkeit von Werbekampagnen zu analysieren.",
+    "alwaysActive": "Immer aktiv"
   },
   "cookies": {
     "title": "Cookiebeleid",
@@ -474,7 +531,7 @@
     },
     "section4": {
       "title": "Contact",
-      "content": "Vragen over ons cookiebeleid? Neem contact op via info@alusolutions.nl"
+      "content": "Vragen over ons cookiebeleid? Neem contact op via info@vivaverandas.nl"
     }
   },
   "inspiratie": {
@@ -503,7 +560,8 @@
       "elegantSlats": "Elegante Lamellen",
       "compactSolution": "Kompakte Lösung",
       "noImages": "Noch keine Fotos",
-      "noImagesDescription": "Es gibt noch keine Fotos in dieser Kategorie."
+      "noImagesDescription": "Es gibt noch keine Fotos in dieser Kategorie.",
+      "loadMore": "Mehr laden"
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -671,7 +729,7 @@
     "hero": {
       "title": "Contact",
       "subtitle": "Wij staan voor u klaar",
-      "imageAlt": "Contact AluSolutions"
+      "imageAlt": "Contact VivaVerandas"
     },
     "form": {
       "title": "Contact formulier",
@@ -702,8 +760,8 @@
       "successMessage": "Bedankt voor uw bericht! Wij nemen zo snel mogelijk contact met u op."
     },
     "info": {
-      "title": "Wil je contact opnemen met AluSolutions?",
-      "paragraph1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij AluSolutions horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
+      "title": "Wil je contact opnemen met VivaVerandas?",
+      "paragraph1": "Heb je vragen over onze producten, of heb je hulp nodig bij het plaatsen van een bestelling? Misschien wil je gewoon je gedachten delen? Bij VivaVerandas horen we graag van je! Ons toegewijde team staat klaar om snel en efficiënt te reageren op al je vragen.",
       "paragraph2": "Voor directe hulp adviseren we je om contact met ons op te nemen via WhatsApp. Daarnaast zijn we ook bereikbaar via e-mail of ons contactformulier.",
       "phone": "Telefoon",
       "email": "Email",
@@ -723,7 +781,7 @@
     },
     "map": {
       "title": "Bezoek onze showroom",
-      "mapTitle": "AluSolutions Locatie"
+      "mapTitle": "VivaVerandas Locatie"
     },
     "reviews": {
       "title": "Wat onze klanten zeggen",
@@ -773,7 +831,31 @@
     }
   },
   "offerte": {
-    "required": "Verplicht",
+    "pageTitle": "Angebot anfordern",
+    "pageDescription": "Fordern Sie einfach und schnell ein unverbindliches Angebot für Ihre Traumveranda an",
+    "title": "Angebot anfordern",
+    "subtitle": "Konfigurieren Sie Ihre Traumveranda und erhalten Sie innerhalb von 24 Stunden ein unverbindliches Angebot",
+    "chooseProduct": "Wählen Sie Ihr Produkt",
+    "chooseProductSubtitle": "Wählen Sie das Produkt, für das Sie ein Angebot wünschen",
+    "startConfigurator": "Konfigurator starten",
+    "noConfigurators": "Derzeit sind keine Konfiguratoren verfügbar",
+    "benefit1": {
+      "title": "Unverbindlich",
+      "description": "Erhalten Sie ein Angebot ohne jegliche Verpflichtung"
+    },
+    "benefit2": {
+      "title": "Schnelle Antwort",
+      "description": "Antwort von unseren Spezialisten innerhalb von 24 Stunden"
+    },
+    "benefit3": {
+      "title": "Bester Preis",
+      "description": "Günstige Preise für Qualitätsprodukte"
+    },
+    "alternativeTitle": "Lieber persönliche Beratung?",
+    "alternativeDescription": "Vereinbaren Sie einen Termin für ein unverbindliches Beratungsgespräch oder rufen Sie uns direkt an",
+    "makeAppointment": "Termin vereinbaren",
+    "callUs": "Rufen Sie uns an",
+    "required": "Pflichtfeld",
     "optional": "Optioneel",
     "nextButton": "Volgende",
     "backButton": "Terug",
@@ -888,10 +970,20 @@
     "openingHours": "Wir sind geöffnet: Mo-Do 09:00-17:00, Sa 10:00-15:00",
     "selectDateFirst": "Bitte wählen Sie zuerst ein Datum",
     "closedSunday": "Wir sind sonntags geschlossen",
+    "closedDay": "Wir sind am {{day}} geschlossen",
     "slotBooked": "Dieser Zeitslot ist bereits gebucht",
     "slotPast": "Dieser Zeitslot ist bereits vorbei",
     "available": "Verfügbar",
     "booked": "Gebucht",
+    "durationInfo": "Dieser Termin dauert {{duration}} Stunde(n)",
+    "notEnoughTime": "Nicht genügend verfügbare Zeit",
+    "badge": "Kostenlose Beratung",
+    "imageTitle": "Ihre Traumveranda",
+    "imageSubtitle": "Wir helfen Ihnen gerne bei der Verwirklichung Ihres idealen Außenbereichs",
+    "feature1": "Persönliche Beratung",
+    "feature2": "Unverbindliches Angebot",
+    "feature3": "Fachgerechte Montage",
+    "contactInfo": "Kontaktdaten",
     "step1": {
       "title": "Terminart",
       "subtitle": "Welche Art von Termin möchten Sie vereinbaren?"
@@ -917,6 +1009,7 @@
       "adviceDesc": "Telefon- oder Videoberatung"
     },
     "form": {
+      "dateTime": "Datum & Uhrzeit",
       "date": "Datum",
       "time": "Uhrzeit",
       "name": "Name",
@@ -960,8 +1053,8 @@
       },
       "info": {
         "title": "Was ist eine Polycarbonat-Veranda?",
-        "description1": "Eine Polycarbonat-Veranda von AluSolutions ist eine langlebige Terrassen- oder Gartenüberdachung, die Ihr Zuhause um einen stilvollen Außenbereich erweitert.",
-        "description2": "Bei AluSolutions liefern wir Ihre Polycarbonat-Veranda vollständig nach Ihren Wünschen. Innerhalb von 3 Wochen sorgen unsere Veranda-Bauer für eine schnelle Lieferung und fachgerechte Montage.",
+        "description1": "Eine Polycarbonat-Veranda von VivaVerandas ist eine langlebige Terrassen- oder Gartenüberdachung, die Ihr Zuhause um einen stilvollen Außenbereich erweitert.",
+        "description2": "Bei VivaVerandas liefern wir Ihre Polycarbonat-Veranda vollständig nach Ihren Wünschen. Innerhalb von 3 Wochen sorgen unsere Veranda-Bauer für eine schnelle Lieferung und fachgerechte Montage.",
         "benefitsTitle": "Vorteile",
         "imageAlt": "Polycarbonat-Veranda Beispiel"
       },
@@ -1011,7 +1104,7 @@
       "info": {
         "title": "Was ist eine Glas-Veranda?",
         "description1": "Eine Glas-Veranda bietet maximalen Lichteinfall und eine ungehinderte Aussicht auf Ihren Garten. Gehärtetes Glas ist sicher, robust und leicht zu reinigen.",
-        "description2": "Bei AluSolutions verwenden wir ausschließlich hochwertiges gehärtetes Glas, das alle Sicherheitsstandards erfüllt.",
+        "description2": "Bei VivaVerandas verwenden wir ausschließlich hochwertiges gehärtetes Glas, das alle Sicherheitsstandards erfüllt.",
         "benefitsTitle": "Vorteile",
         "imageAlt": "Glas-Veranda"
       },
@@ -1392,8 +1485,8 @@
       "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden."
     },
     "info": {
-      "title": "Möchten Sie Kontakt mit AluSolutions aufnehmen?",
-      "intro1": "Haben Sie Fragen zu unseren Produkten oder benötigen Sie Hilfe bei der Bestellung? Vielleicht möchten Sie einfach Ihre Gedanken teilen? Bei AluSolutions freuen wir uns von Ihnen zu hören! Unser engagiertes Team steht bereit, um schnell und effizient auf all Ihre Fragen zu reagieren.",
+      "title": "Möchten Sie Kontakt mit VivaVerandas aufnehmen?",
+      "intro1": "Haben Sie Fragen zu unseren Produkten oder benötigen Sie Hilfe bei der Bestellung? Vielleicht möchten Sie einfach Ihre Gedanken teilen? Bei VivaVerandas freuen wir uns von Ihnen zu hören! Unser engagiertes Team steht bereit, um schnell und effizient auf all Ihre Fragen zu reagieren.",
       "intro2": "Für sofortige Hilfe empfehlen wir Ihnen, uns über WhatsApp zu kontaktieren. Wir sind auch per E-Mail oder über unser Kontaktformular erreichbar.",
       "phone": "Telefon",
       "email": "E-Mail",
@@ -1484,6 +1577,242 @@
       "loadError": "Fehler beim Laden des Artikels",
       "saveError": "Fehler beim Speichern",
       "slugExists": "Dieser Slug existiert bereits"
+    }
+  },
+  "productPages": {
+    "common": {
+      "specifications": "Spezifikationen",
+      "projectGallery": "Projektgalerie",
+      "benefits": "Vorteile",
+      "material": "Material",
+      "maxWidth": "Maximale Breite",
+      "guarantee": "Garantie",
+      "yearsGuarantee": "Jahre Garantie",
+      "requestQuote": "Termin vereinbaren",
+      "callUs": "Rufen Sie uns direkt an",
+      "interestedIn": "Interesse an einer",
+      "requestQuoteSubtitle": "Fordern Sie ein unverbindliches Angebot an oder vereinbaren Sie einen Termin für eine persönliche Beratung"
+    },
+    "cube": {
+      "title": "Cube Veranda",
+      "subtitle": "Modernes Design für einen zeitlosen Außenbereich",
+      "heroAlt": "Cube Veranda",
+      "mainTitle": "Die Cube Veranda: Elegant & Modern",
+      "description1": "Die Cube Veranda ist die perfekte Kombination aus zeitgenössischem Design und ultimativem Outdoor-Komfort. Mit ihren charakteristischen klaren Linien und dem Flachdach passt diese Überdachung perfekt zur modernen Architektur. Dank der hochwertigen Aluminiumkonstruktion sind Sie auf eine langlebige und wartungsarme Lösung garantiert, die viele Jahre hält.",
+      "description2": "Bei VivaVerandas entwerfen und installieren wir Ihre Cube Veranda vollständig nach Maß. Ob Sie sich für ein minimalistisches Design oder einen voll ausgestatteten Außenbereich mit LED-Beleuchtung, Glasschiebewänden und Sonnenschutz entscheiden: Wir liefern eine Lösung, die sowohl praktisch als auch elegant ist. Innerhalb weniger Wochen genießen Sie Ihren neuen luxuriösen Außenbereich, inklusive professioneller Montage und Fertigstellung.",
+      "benefitsTitle": "Erleben Sie die einzigartigen Vorteile einer Cube Veranda",
+      "benefit1": "Elegantes, modernes Design mit Flachdach für zeitlose Ausstrahlung",
+      "benefit2": "Hochwertiger Aluminiumrahmen, beständig gegen alle Wetterbedingungen",
+      "benefit3": "100% maßgefertigt, perfekt zu Ihrem Haus passend",
+      "benefit4": "Integrierte LED-Beleuchtung für stimmungsvolle Abende",
+      "benefit5": "Kombinierbar mit Glasschiebewänden für einen Wintergarten",
+      "benefit6": "Wartungsarm und korrosionsbeständig",
+      "benefit7": "10 Jahre Werksgarantie auf die Konstruktion",
+      "whatIsTitle": "Was ist eine Cube Veranda?",
+      "whatIsText": "Eine Cube Veranda von VivaVerandas ist eine moderne Aluminiumüberdachung mit einem eleganten, minimalistischen Design. Das Flachdach und die geraden Linien schaffen ein zeitgenössisches Erscheinungsbild, das nahtlos an moderne Häuser anschließt. Die langlebige Konstruktion bietet Schutz vor Sonne und Regen, während Sie Ihren Außenbereich optimal genießen.",
+      "whyChooseTitle": "Warum eine Cube Veranda wählen?",
+      "whyChooseText": "Die Cube Veranda ist ideal für alle, die einen eleganten, modernen Look lieben. Die robuste Aluminiumkonstruktion ist wartungsarm und hält viele Jahre. Mit den vielen Erweiterungsmöglichkeiten wie LED-Beleuchtung, Sonnenschutz und Glaswänden schaffen Sie Ihren idealen Außenbereich.",
+      "customizeTitle": "Personalisieren Sie Ihre Cube Veranda",
+      "customizeText": "Vervollständigen Sie Ihre Cube Veranda mit verschiedenen Optionen wie integrierten LED-Spots, elektrischen Screens, Glasschiebewänden oder Seitenwänden für zusätzlichen Schutz. Wählen Sie aus verschiedenen RAL-Farben, um die Überdachung perfekt an Ihr Haus anzupassen.",
+      "installationTitle": "Installation und Montage",
+      "installationText": "Unsere erfahrenen Fachleute sorgen für eine schnelle und professionelle Montage Ihrer Cube Veranda. Ob Sie sich für eine freistehende Aufstellung oder einen Anbau an Ihr Haus entscheiden, wir bieten flexible Platzierungsoptionen, die zu Ihrer Situation passen.",
+      "specMaterial": "Hochwertiges Aluminium, pulverbeschichtet in jeder RAL-Farbe",
+      "specRoof": "Dachbedeckung",
+      "specRoofValue": "Isolierte Dachplatten oder Glasdach",
+      "specWidthValue": "Bis zu 7 Meter ohne Zwischenpfosten",
+      "specDepth": "Maximale Tiefe",
+      "specDepthValue": "Bis zu 5 Meter Tiefe",
+      "specLighting": "Beleuchtung",
+      "specLightingValue": "Optionale eingebaute LED-Spots",
+      "specGuaranteeValue": "10 Jahre auf Konstruktion",
+      "experienceYears": "15+ Jahre Erfahrung",
+      "colorOptions": "Jede RAL-Farbe verfügbar",
+      "serviceText": "Zuverlässiger Service und Handwerkskunst"
+    },
+    "lamel": {
+      "title": "Lamellen Veranda",
+      "subtitle": "Luxus, Komfort und vollständige Kontrolle über Ihren Außenbereich",
+      "heroAlt": "Lamellen Veranda",
+      "mainTitle": "Die Lamellen Veranda: Ultimativer Komfort & Flexibilität",
+      "description1": "Eine Lamellen Veranda ist die perfekte Kombination aus Luxus, Komfort und Kontrolle über Ihren Außenbereich. Dank der elektrisch verstellbaren Lamellen bestimmen Sie selbst die ideale Menge an Sonnenlicht, Belüftung und Schatten, perfekt abgestimmt auf jede Jahreszeit. Diese moderne Aluminium-Lamellenüberdachung bietet Schutz vor Sonne, Regen und Wind, sodass Sie das ganze Jahr über Ihre Terrasse genießen können.",
+      "description2": "Bei VivaVerandas entwerfen und installieren wir Ihre Lamellen Veranda vollständig nach Maß. Ob Sie sich für eine freistehende Lamellenüberdachung im Garten oder einen Anbau an Ihr Haus mit integriertem Sonnenschutz entscheiden: Wir liefern eine Lösung, die sowohl praktisch als auch elegant ist. Innerhalb weniger Wochen genießen Sie eine langlebige Aluminiumüberdachung mit Lamellendach, inklusive professioneller Montage und Fertigstellung.",
+      "benefitsTitle": "Erleben Sie die einzigartigen Vorteile einer Lamellen Veranda",
+      "benefit1": "Verstellbare Lamellen (0° - 135°) für perfekte Kontrolle über Licht und Schatten",
+      "benefit2": "100% wasserdicht bei geschlossenen Lamellen - genießen Sie auch bei Regen draußen",
+      "benefit3": "Elektrische Bedienung mit Fernbedienung oder Smartphone-App",
+      "benefit4": "Automatischer Regensensor für sorgloses Outdoor-Vergnügen",
+      "benefit5": "Integrierte Wasserableitung durch die Pfosten",
+      "benefit6": "Stimmungsvolle LED-Beleuchtung zwischen den Lamellen möglich",
+      "benefit7": "Kombinierbar mit Screens, Glasschiebewänden und Seitenwänden",
+      "whatIsTitle": "Was ist eine Lamellen Veranda?",
+      "whatIsText": "Eine Lamellen Veranda von VivaVerandas bietet die perfekte Kombination aus Stil, Komfort und Funktionalität für Ihren Außenbereich. Dank der verstellbaren Lamellen können Sie einfach die Menge an Sonnenlicht und Belüftung regulieren, sodass Sie immer eine angenehme Außenumgebung haben. Unsere hochwertigen Aluminiumkonstruktionen sind wetterbeständig und langlebig, ideal für jedes Klima.",
+      "whyChooseTitle": "Warum eine Lamellen Veranda wählen?",
+      "whyChooseText": "Lamellenüberdachungen bieten einzigartige Flexibilität, da Sie die Lamellen in die gewünschte Position neigen können. Genießen Sie optimalen Schatten, maximales Licht oder vollständigen Schutz vor Regen. Die Aluminiumlamellen sind wartungsarm und beständig gegen verschiedene Wetterbedingungen, sodass Sie jahrelang sorglos genießen können.",
+      "customizeTitle": "Personalisieren Sie Ihre Lamellen Veranda",
+      "customizeText": "Vervollständigen Sie Ihre Lamellen Veranda mit verschiedenen Optionen wie integrierter LED-Beleuchtung, Glasschiebewänden oder Seitenwänden für zusätzlichen Schutz. Sie können aus verschiedenen Farben und Abmessungen wählen, um die Überdachung perfekt an Ihr Haus anzupassen.",
+      "installationTitle": "Installation und Montage",
+      "installationText": "Unsere erfahrenen Fachleute sorgen für eine schnelle und professionelle Montage Ihrer Lamellen Veranda. Ob Sie sich für eine freistehende Aufstellung oder einen Anbau an Ihr Haus entscheiden, wir bieten flexible und effiziente Platzierungsoptionen, die zu Ihrer Situation passen.",
+      "affordableTitle": "Erschwinglicher Luxus",
+      "affordableText": "Der Preis einer Lamellen Veranda hängt von den Abmessungen und gewählten Erweiterungen ab, wie LED-Beleuchtung, Seitenwände oder Schiebepaneele. Dennoch bleibt dieser Überdachungstyp eine kluge und stilvolle Wahl. Fordern Sie ein unverbindliches Angebot an, um zu erfahren, was es für Sie kostet.",
+      "specMaterial": "Aluminiumlamellen und -rahmen, pulverbeschichtet in jeder RAL-Farbe",
+      "specLamelSize": "Lamellenabmessungen",
+      "specLamelSizeValue": "200mm breit, neigbar von 0° bis 135°",
+      "specWidthValue": "Bis zu 6 Meter pro Sektion",
+      "specControl": "Steuerung",
+      "specControlValue": "Elektrisch mit Fernbedienung oder App (Somfy)",
+      "specSensors": "Sensoren",
+      "specSensorsValue": "Optionaler Wind- und Regensensor",
+      "specGuaranteeValue": "5 Jahre auf Motor, 10 Jahre auf Konstruktion",
+      "experienceYears": "15+ Jahre Erfahrung",
+      "colorOptions": "RAL 7024 und mehr",
+      "roofType": "Verstellbare Lamellen",
+      "serviceText": "Zuverlässiger Service und Handwerkskunst"
+    },
+    "glazen": {
+      "title": "Glasveranda",
+      "subtitle": "Maximales natürliches Licht, maximales Outdoor-Gefühl",
+      "heroAlt": "Glasveranda",
+      "mainTitle": "Die Glasveranda: Licht, Luxus & Raum",
+      "description1": "Eine Glasveranda ist der perfekte Weg, um Ihren Außenbereich in eine helle, luxuriöse Lebensumgebung zu verwandeln. Das hochwertige Verbund-Sicherheitsglas sorgt für ein elegantes Erscheinungsbild und verleiht Ihrem Garten oder Ihrer Terrasse ein großzügiges Raumgefühl. Dank des transparenten Daches genießen Sie maximales Tageslicht und bleiben dabei vor Regen und Wind geschützt.",
+      "description2": "Bei VivaVerandas entwerfen wir Ihre Glasveranda vollständig nach Maß. Das Glasdach kann mit sonnenschützendem oder selbstreinigendem Glas ausgestattet werden, sodass Sie auch an warmen Tagen bequem draußen bleiben können. Die robuste Aluminium-Tragkonstruktion ist langlebig, wartungsarm und in jeder RAL-Farbe erhältlich. So schaffen Sie einen Außenbereich, der perfekt zu Ihrem Haus passt.",
+      "benefitsTitle": "Erleben Sie die Vorteile einer Glasveranda",
+      "benefit1": "Maximales natürliches Tageslicht durch das transparente Glasdach",
+      "benefit2": "Gehärtetes VSG-Sicherheitsglas für optimale Sicherheit",
+      "benefit3": "Sonnenschutzglas hält den Raum an warmen Tagen kühl",
+      "benefit4": "Selbstreinigende Glasbeschichtung für minimalen Wartungsaufwand",
+      "benefit5": "Luxuriöses, zeitloses Erscheinungsbild, das den Wert Ihres Hauses steigert",
+      "benefit6": "Langlebige Aluminium-Tragkonstruktion, korrosionsbeständig",
+      "benefit7": "Kombinierbar mit Sonnenschutz, Screens und Glasschiebewänden",
+      "whatIsTitle": "Was ist eine Glasveranda?",
+      "whatIsText": "Eine Glasveranda von VivaVerandas ist eine Aluminiumüberdachung mit transparentem Glasdach. Durch die Verwendung von hochwertigem Sicherheitsglas genießen Sie maximales Tageslicht, während Sie vor Regen und Wind geschützt sind. Die Glasveranda ist die ideale Wahl für alle, die einen hellen, offenen Außenbereich lieben.",
+      "whyChooseTitle": "Warum eine Glasveranda wählen?",
+      "whyChooseText": "Eine Glasveranda bietet das Beste aus beiden Welten: den Schutz einer Überdachung und das Gefühl, draußen zu sein. Das transparente Dach schafft eine helle Atmosphäre und lässt Ihren Außenbereich optisch größer wirken. Die robuste Aluminiumkonstruktion hält viele Jahre mit minimalem Wartungsaufwand.",
+      "customizeTitle": "Personalisieren Sie Ihre Glasveranda",
+      "customizeText": "Vervollständigen Sie Ihre Glasveranda mit verschiedenen Optionen wie Sonnenschutz, integrierter LED-Beleuchtung, Glasschiebewänden oder elektrischen Screens. Wählen Sie zwischen klarem, sonnenschützendem oder selbstreinigendem Glas und wählen Sie die perfekte RAL-Farbe für Ihren Aluminiumrahmen.",
+      "installationTitle": "Fachkundige Installation",
+      "installationText": "Unsere erfahrenen Monteure installieren Ihre Glasveranda schnell und professionell. Ob als Anbau an Ihr Haus oder als freistehende Konstruktion im Garten, wir sorgen für eine perfekte Ausführung und wasserdichte Verbindung.",
+      "specFrame": "Rahmen",
+      "specFrameValue": "Aluminium, pulverbeschichtet in jeder RAL-Farbe",
+      "specGlassType": "Glastyp",
+      "specGlassTypeValue": "VSG Verbund-Sicherheitsglas 8.8mm",
+      "specOptions": "Glasoptionen",
+      "specOptionsValue": "Sonnenschutz, selbstreinigend oder klares Glas",
+      "specWidthValue": "Bis zu 6 Meter ohne Zwischenpfosten",
+      "specDrainage": "Wasserableitung",
+      "specDrainageValue": "Integriertes Entwässerungssystem in Rinnen",
+      "specGuaranteeValue": "10 Jahre auf Konstruktion, 5 Jahre auf Glas",
+      "experienceYears": "15+ Jahre Erfahrung",
+      "colorOptions": "4+ RAL-Farben",
+      "guaranteeYears": "7 Jahre Garantie",
+      "serviceText": "Zuverlässiger Service und Handwerkskunst"
+    },
+    "polycarbonaat": {
+      "title": "Polycarbonat Veranda",
+      "subtitle": "Erschwingliche Qualität für jedes Budget",
+      "heroAlt": "Polycarbonat Veranda",
+      "mainTitle": "Die Polycarbonat Veranda: Klug & Erschwinglich",
+      "description1": "Eine Polycarbonat Veranda ist die ideale Wahl für alle, die eine hochwertige Überdachung mit ausgezeichnetem Preis-Leistungs-Verhältnis suchen. Die Mehrkammer-Polycarbonat-Dachplatten sind lichtdurchlässig, isolierend und praktisch unzerbrechlich. Sie genießen Schutz vor Sonne und Regen, ohne auf Tageslicht verzichten zu müssen.",
+      "description2": "Bei VivaVerandas liefern wir Polycarbonat-Veranden vollständig nach Maß. Die hochwertige Aluminiumkonstruktion ist langlebig und wartungsarm, während die Polycarbonatplatten für ausgezeichnete Wärmedämmung und reduzierte Regengeräusche sorgen. Erhältlich in verschiedenen Farben, von klar bis opal, bronze oder grau. So finden Sie immer die perfekte Optik für Ihr Haus.",
+      "benefitsTitle": "Entdecken Sie die Vorteile von Polycarbonat",
+      "benefit1": "Ausgezeichnetes Preis-Leistungs-Verhältnis - luxuriöse Optik, wettbewerbsfähiger Preis",
+      "benefit2": "Lichtdurchlässiges Material für eine angenehme Atmosphäre",
+      "benefit3": "Überlegene Wärmedämmung dank Mehrkammerstruktur",
+      "benefit4": "Praktisch unzerbrechlich - 250x stärker als Glas",
+      "benefit5": "UV-beständig mit 10 Jahren Werksgarantie",
+      "benefit6": "Reduzierte Regengeräusche für extra Komfort",
+      "benefit7": "Leichtgewichtige Konstruktion, geeignet für verschiedene Situationen",
+      "whatIsTitle": "Was ist eine Polycarbonat Veranda?",
+      "whatIsText": "Eine Polycarbonat Veranda ist eine Aluminiumüberdachung mit Dachplatten aus Mehrkammer-Polycarbonat. Dieses Kunststoffmaterial ist leichter als Glas, aber um ein Vielfaches stärker und bietet ausgezeichnete Isolierung. Es ist die perfekte Wahl für alle, die Komfort und Qualität suchen, ohne das Budget zu überschreiten.",
+      "whyChooseTitle": "Warum Polycarbonat wählen?",
+      "whyChooseText": "Polycarbonat ist eine kluge Wahl für alle, die das Beste zum besten Preis wollen. Die Platten sind UV-beständig, schlagfest und bieten gute Wärmedämmung. Außerdem reduziert Polycarbonat Regengeräusche erheblich, sodass Sie auch bei einem Schauer entspannt draußen sitzen können.",
+      "customizeTitle": "Maßanfertigung für Ihre Situation",
+      "customizeText": "Jede Polycarbonat Veranda wird maßgefertigt für Ihre spezifische Situation. Wählen Sie die gewünschten Abmessungen, Plattenfarbe (klar, opal, bronze oder grau) und RAL-Farbe für den Aluminiumrahmen. Optional können Sie die Veranda mit Seitenwänden, Screens oder LED-Beleuchtung erweitern.",
+      "installationTitle": "Schnelle und fachkundige Montage",
+      "installationText": "Unsere professionellen Monteure installieren Ihre Polycarbonat Veranda effizient und sorgfältig. Das leichte Material macht die Installation schneller als bei anderen Dachtypen, was zu niedrigeren Montagekosten und weniger Störungen führt.",
+      "affordableTitle": "Erschwingliche Qualität",
+      "affordableText": "Eine Polycarbonat Veranda ist die erschwinglichste Option, ohne Kompromisse bei der Qualität einzugehen. Die Kombination aus langlebigem Aluminium und hochwertigen Polycarbonatplatten sorgt für eine Überdachung, die Sie jahrelang genießen werden.",
+      "specFrame": "Rahmen",
+      "specFrameValue": "Aluminium, pulverbeschichtet in jeder RAL-Farbe",
+      "specPanels": "Dachplatten",
+      "specPanelsValue": "16mm Mehrkammer-Polycarbonat",
+      "specColors": "Plattenfarben",
+      "specColorsValue": "Klar, opal, bronze oder grau",
+      "specWidthValue": "Bis zu 8 Meter ohne Zwischenpfosten",
+      "specInsulation": "Dämmwert",
+      "specInsulationValue": "U-Wert: 2.3 W/m²K",
+      "specGuaranteeValue": "10 Jahre auf Konstruktion und Platten",
+      "experienceYears": "15+ Jahre Erfahrung",
+      "colorOptions": "4 Plattenfarben",
+      "serviceText": "Zuverlässiger Service und Handwerkskunst"
+    }
+  },
+  "plateReplace": {
+    "pageTitle": "Polycarbonat Plattenwechsel",
+    "metaDescription": "Fordern Sie ein Angebot für den Polycarbonat-Plattenwechsel an. Kostenlose Vermessung im Umkreis von 70 km um Reuver.",
+    "title": "Angebotsanfrage Plattenwechsel",
+    "subtitle": "Mehrwandige Polycarbonat-Platten in verschiedenen Farben.",
+    "form": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "address": "Adresse",
+      "addressPlaceholder": "Adresse + Hausnummer",
+      "postcode": "Postleitzahl",
+      "city": "Stadt",
+      "phone": "Telefonnummer",
+      "email": "E-Mail",
+      "plateCount": "Anzahl Platten",
+      "depth": "Tiefe",
+      "roofType": "Dachtyp",
+      "roofTypeSelect": "Auswählen...",
+      "plateType": "Gewünschter Plattentyp",
+      "photo": "Foto der aktuellen Situation hinzufügen",
+      "noFile": "Keine Datei ausgewählt",
+      "message": "Nachricht",
+      "submit": "Angebot anfordern",
+      "submitting": "Wird gesendet...",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "roofTypes": {
+      "veranda": "Veranda",
+      "carport": "Carport",
+      "tuinoverkapping": "Gartenüberdachung",
+      "serre": "Wintergarten",
+      "maatwerk": "Maßanfertigung"
+    },
+    "plateTypes": {
+      "helder": "Klar",
+      "opaal": "Opal",
+      "brons": "Bronze",
+      "grijs": "Grau"
+    },
+    "steps": {
+      "step1": "Schritt 1",
+      "step1Desc": "Kostenlose Vermessung im Umkreis von 70 km um Reuver",
+      "step2": "Schritt 2",
+      "step2Desc": "Wir überprüfen Ihre aktuelle Konstruktion",
+      "step3": "Schritt 3",
+      "step3Desc": "Sie wählen aus verschiedenen Arten von Polycarbonat-Platten",
+      "step4": "Schritt 4",
+      "step4Desc": "Wir sorgen für fachgerechte Montage innerhalb von 3 Wochen"
+    },
+    "info": {
+      "whyTitle": "Warum Sie Polycarbonat-Platten rechtzeitig ersetzen sollten",
+      "whyText1": "Polycarbonat-Dachplatten halten jahrelang, können aber mit der Zeit verfärben, kleine Risse zeigen oder sogar undicht werden. Dies beeinträchtigt nicht nur das Aussehen, sondern auch die Qualität Ihrer Veranda oder Ihres Carports. Indem Sie Ihre Polycarbonat-Dachplatten rechtzeitig ersetzen, verhindern Sie Schäden und genießen ein schlankes, klares und lichtdurchlässiges Dach, das wie neu aussieht.",
+      "whyText2": "Bei VivaVerandas bieten wir schnellen und professionellen Ersatz, in der Regel innerhalb von 3 Wochen, einschließlich kostenloser Vermessung im Umkreis von 70 km um Reuver. Wir verwenden nur hochwertiges klares oder opales Polycarbonat und montieren alles mit Präzision und Handwerkskunst. So sind Sie sicher, ein dauerhaftes Ergebnis zu erhalten, an dem Sie jahrelang Freude haben werden.",
+      "forTitle": "Polycarbonat-Plattenwechsel für jede Überdachung",
+      "forText": "Wir ersetzen Dachplatten bei:",
+      "forList1": "Aluminium-Veranden",
+      "forList2": "Carports",
+      "forList3": "Gartenüberdachungen",
+      "forList4": "Wintergärten und Maßanfertigungen",
+      "forText2": "Es spielt keine Rolle, welche Marke Ihre aktuelle Überdachung hat: Wir können fast jedes System mit neuen Polycarbonat-Platten ausstatten.",
+      "areaTitle": "Servicegebiet",
+      "areaText": "Wir sind in Limburg, Noord-Brabant und Teilen von Gelderland aktiv. In Ihrer Nähe? Dann kommen wir zur kostenlosen Vermessung und Sie erhalten schnell ein unverbindliches Angebot."
+    },
+    "success": {
+      "title": "Vielen Dank für Ihre Anfrage!",
+      "text1": "Wir haben Ihre Angebotsanfrage für den Polycarbonat-Plattenwechsel erhalten.",
+      "text2": "Wir werden Sie innerhalb von 24 Stunden kontaktieren."
     }
   }
 }

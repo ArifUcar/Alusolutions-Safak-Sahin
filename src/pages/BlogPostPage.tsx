@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { supabase } from '../lib/supabase'
@@ -72,6 +73,13 @@ export default function BlogPostPage() {
       .replace(/\n/g, '<br/>')
   }
 
+  const getExcerpt = (content: string, maxLength: number = 160): string => {
+    // Strip HTML tags
+    const text = content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim()
+    if (text.length <= maxLength) return text
+    return text.substring(0, maxLength).trim() + '...'
+  }
+
   if (loading) {
     return (
       <div className="blog-post-page">
@@ -114,8 +122,68 @@ export default function BlogPostPage() {
     )
   }
 
+  const title = getLocalizedText(post.title)
+  const description = post.excerpt
+    ? getLocalizedText(post.excerpt as MultiLanguageText)
+    : getExcerpt(getLocalizedText(post.content))
+  const image = post.featured_image || 'https://vivaverandas.nl/glasLux-home.webp'
+  const url = `https://vivaverandas.nl/blog/${slug}`
+  const publishedDate = post.published_at || post.created_at
+
   return (
     <div className="blog-post-page">
+      <Helmet>
+        <title>{title} | VivaVerandas Blog</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={url} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:site_name" content="VivaVerandas" />
+        <meta property="article:published_time" content={publishedDate} />
+        {post.author && <meta property="article:author" content={post.author} />}
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": title,
+            "description": description,
+            "image": image,
+            "url": url,
+            "datePublished": publishedDate,
+            "dateModified": post.updated_at || publishedDate,
+            "author": {
+              "@type": "Person",
+              "name": post.author || "VivaVerandas"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "VivaVerandas",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://vivaverandas.nl/logo.svg"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": url
+            }
+          })}
+        </script>
+      </Helmet>
+
       <Header />
 
       <section className="blog-post-hero">

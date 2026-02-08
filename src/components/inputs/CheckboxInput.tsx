@@ -33,11 +33,6 @@ export default function CheckboxInput({ options, value = [], onChange, error, ge
               {option.description && getLocalizedText(option.description) && (
                 <small className="checkbox-description">{getLocalizedText(option.description)}</small>
               )}
-              {option.price_modifier !== 0 && (
-                <span className="option-price-inline">
-                  ({option.price_modifier > 0 ? '+' : ''}{option.price_modifier}€)
-                </span>
-              )}
             </span>
           </label>
         ))}

@@ -1,5 +1,7 @@
 {
   "header": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
     "services": "Hizmetlerimiz",
     "verandas": "Veranda'lar",
     "other": "Diğer",
@@ -22,15 +24,20 @@
     "makeAppointment": "Randevu Al",
     "tagline": "Dış Yaşamı İçeri Taşıyoruz",
     "darkMode": "Karanlık mod",
-    "lightMode": "Aydınlık mod"
+    "lightMode": "Aydınlık mod",
+    "cubeVeranda": "Küp Teras Örtüsü",
+    "lamelVeranda": "Lamel Teras Örtüsü",
+    "glazenVeranda": "Cam Teras Örtüsü",
+    "polycarbonaatVeranda": "Polikarbonat Teras Örtüsü",
+    "plateReplace": "Plaka Değişimi"
   },
   "products": {
-    "polycarbonaat": "Polikarbonat Veranda",
-    "glazen": "Cam Veranda",
-    "lamellen": "Lamel Veranda",
-    "vouwdak": "Katlanır Çatı Veranda",
+    "polycarbonaat": "Polikarbonat Teras Örtüsü",
+    "glazen": "Cam Teras Örtüsü",
+    "lamellen": "Lamel Teras Örtüsü",
+    "vouwdak": "Katlanır Çatı Teras Örtüsü",
     "schuifwand": "Cam Sürgülü Duvar",
-    "cube": "Küp Veranda",
+    "cube": "Küp Teras Örtüsü",
     "tuinkamer": "Kış Bahçesi",
     "carport": "Otopark Sundurması"
   },
@@ -60,6 +67,14 @@
     "visitShowroom": "Showroom Ziyareti",
     "faq": "Sıkça Sorulan Sorular"
   },
+  "reviews": {
+    "googleReviews": "Google Yorumları",
+    "title": "Müşterilerimiz ne diyor",
+    "basedOn": "Toplam",
+    "reviews": "değerlendirmeye göre",
+    "viewAll": "Google'daki tüm yorumları görüntüle",
+    "writeReview": "Yorum yaz"
+  },
   "footer": {
     "tagline": "Dış Yaşamı İçeri Taşıyoruz",
     "description": "Yüksek kaliteli alüminyum veranda ve üstü kapalı alanlar konusunda uzmanız. 15 yılı aşkın süredir güvenilir ortağınız.",
@@ -77,7 +92,9 @@
     "copyright": "Dış yaşamı içeri taşıyoruz.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsConditions": "Genel Şartlar",
-    "cookies": "Çerezler"
+    "cookies": "Çerezler",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar"
   },
   "common": {
     "readMore": "Devamını oku",
@@ -95,7 +112,52 @@
     "close": "Kapat",
     "next": "İleri",
     "previous": "Geri",
-    "back": "Geri Dön"
+    "back": "Geri Dön",
+    "yes": "Evet",
+    "no": "Hayır"
+  },
+  "configuratorForm": {
+    "imagePreview": "Görsel önizlemesi",
+    "stepOf": "Adım {{current}} / {{total}}",
+    "gatewayTitle": "Daha fazla özelleştirmek ister misiniz?",
+    "gatewaySubtitle": "İsterseniz ek özelleştirme seçeneklerini görebilirsiniz.",
+    "gatewayYes": "Evet",
+    "gatewayYesDesc": "Daha fazla seçenek görmek istiyorum",
+    "gatewayNo": "Hayır",
+    "gatewayNoDesc": "Devam etmek istiyorum",
+    "contactTitle": "Bilgileriniz",
+    "contactSubtitle": "Teklifinizi almak için iletişim bilgilerinizi doldurun",
+    "name": "Ad Soyad",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "address": "Adres",
+    "city": "Şehir",
+    "notes": "Notlar",
+    "notesPlaceholder": "Ek notlar veya sorular...",
+    "appointmentTitle": "Randevu almak ister misiniz?",
+    "appointmentSubtitle": "Ücretsiz danışmanlık görüşmesi için hemen randevu planlayın",
+    "appointmentYes": "Evet, randevu planla",
+    "appointmentNo": "Hayır, sadece teklif",
+    "appointmentType": "Randevu türü",
+    "date": "Tarih",
+    "selectDate": "Tarih seçin",
+    "time": "Saat",
+    "previous": "Geri",
+    "next": "İleri",
+    "submitting": "Gönderiliyor...",
+    "requestQuote": "Teklif İste",
+    "required": "Bu alan zorunludur",
+    "minValue": "Minimum değer {{value}}",
+    "maxValue": "Maksimum değer {{value}}",
+    "invalidInput": "Geçersiz giriş",
+    "fillRequired": "Lütfen tüm zorunlu alanları doldurun",
+    "fillAppointment": "Lütfen randevu bilgilerini doldurun",
+    "successMessage": "Talebiniz başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.",
+    "errorMessage": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "notFound": "Konfigüratör bulunamadı",
+    "loadError": "Konfigüratör yüklenirken hata oluştu",
+    "selectOption": "Bir seçenek seçin",
+    "dimensionHint": "{{min}} ile {{max}} {{unit}} arası değer"
   },
   "about": {
     "hero": {
@@ -110,7 +172,7 @@
     },
     "quality": {
       "title": "Kalite ve ustalık",
-      "description1": "Alusolutions'ta kalite ve ustalığa büyük önem veriyoruz. Ürünlerimiz yüksek kaliteli malzemeler ve yenilikçi teknolojilerle üretilir, bu da dayanıklı ve güvenilir çözümlerle sonuçlanır.",
+      "description1": "VivaVerandas'ta kalite ve ustalığa büyük önem veriyoruz. Ürünlerimiz yüksek kaliteli malzemeler ve yenilikçi teknolojilerle üretilir, bu da dayanıklı ve güvenilir çözümlerle sonuçlanır.",
       "description2": "Müşteri memnuniyetini hedefliyoruz ve her meydan okumayı coşkuyla karşılıyoruz. İlk temasdan kurulum ve sonrası bakıma kadar mükemmel hizmet sunmaya ve müşterilerimizle uzun süreli ilişkiler kurmaya çalışıyoruz."
     },
     "banner": {
@@ -120,7 +182,7 @@
     "benefits": {
       "custom": {
         "title": "Özel teras çözümleri",
-        "description": "Alusolutions'ta özel çözümlere inanıyoruz. Özel isteklerinize tam olarak uyan teras çözümleri tasarlıyor ve yaratıyoruz."
+        "description": "VivaVerandas'ta özel çözümlere inanıyoruz. Özel isteklerinize tam olarak uyan teras çözümleri tasarlıyor ve yaratıyoruz."
       },
       "experience": {
         "title": "Dış mekan deneyiminizi geliştirin",
@@ -133,7 +195,7 @@
     },
     "oasis": {
       "title": "Dış Mekan Vahanızı Yaratın",
-      "description": "Alusolutions'ta dış mekanınızı konfor, stil ve zarafet vahası haline getirmeyi amaçlıyoruz. Özel teras çözümleri ve yüksek kaliteli ürünlerle hayalinizdeki projeyi gerçekleştiriyoruz.",
+      "description": "VivaVerandas'ta dış mekanınızı konfor, stil ve zarafet vahası haline getirmeyi amaçlıyoruz. Özel teras çözümleri ve yüksek kaliteli ürünlerle hayalinizdeki projeyi gerçekleştiriyoruz.",
       "cta": "Ücretsiz Teklif İste"
     },
     "team": {
@@ -184,9 +246,9 @@
   },
   "home": {
     "hero": {
-      "title": "Polikarbonat veranda",
-      "description1": "Polikarbonat veranda, dayanıklı ve uygun fiyatlı bir teras örtüsü arayan herkes için ideal seçimdir. Güçlü ve şeffaf polikarbonat çatı panelleri sayesinde yağmur ve rüzgara karşı korumadan ödün vermeden bol ışık alırsınız.",
-      "description2": "AluSolutions'ta polikarbonat verandanızı tamamen isteklerinize göre sunuyoruz. 3 hafta içinde veranda ustalarımız hızlı teslimat ve profesyonel kurulum sağlar.",
+      "title": "Veranda",
+      "description1": "Veranda, dayanıklı ve şık bir teras örtüsü arayan herkes için ideal seçimdir. Yüksek kaliteli veranda'larımız ile yağmur ve rüzgara karşı korumadan ödün vermeden bol ışık alırsınız.",
+      "description2": "VivaVerandas'ta verandanızı tamamen isteklerinize göre sunuyoruz. 3 hafta içinde veranda ustalarımız hızlı teslimat ve profesyonel kurulum sağlar.",
       "cta": "Hemen teklif isteyin!"
     },
     "galleryPreview": {
@@ -199,6 +261,9 @@
       "title": "Ürünlerimiz",
       "subtitle": "Yüksek kaliteli veranda ve üst örtülerimizin tam serisini keşfedin",
       "moreInfo": "Daha fazla bilgi",
+      "cube": {
+        "description": "Lüks görünüm için düz çatılı modern şık tasarım"
+      },
       "poly": {
         "description": "Mükemmel ışık geçirgenliği ile dayanıklı ve uygun fiyatlı"
       },
@@ -219,11 +284,14 @@
       }
     },
     "benefits": {
-      "title": "Polikarbonat verandanın benzersiz avantajlarını deneyimleyin",
-      "subtitle": "Polikarbonat veranda'larımızla uygun fiyatlı zarafet",
-      "paragraph1": "Polikarbonat veranda yatırımı, yapının boyutları ve gömülü LED spotlar, yan duvarlar veya sürgülü kapılar gibi ek seçenekler gibi birçok faktöre bağlıdır.",
+      "title": "Verandanın benzersiz avantajlarını deneyimleyin",
+      "subtitle": "Veranda'larımızla uygun fiyatlı zarafet",
+      "description1": "Veranda yatırımı, yapının boyutları ve gömülü LED spotlar, yan duvarlar veya sürgülü kapılar gibi ek seçenekler gibi birçok faktöre bağlıdır.",
+      "description2": "Veranda seçiminin hem bütçenize hem de yaşam tarzınıza uygun olması gereken önemli bir karar olduğunu anlıyoruz. Bu nedenle kişisel danışmanlık ve olasılıklar ve maliyetler hakkında ayrıntılı bilgi sunuyoruz.",
+      "paragraph1": "Veranda yatırımı, yapının boyutları ve gömülü LED spotlar, yan duvarlar veya sürgülü kapılar gibi ek seçenekler gibi birçok faktöre bağlıdır.",
       "paragraph2": "Veranda seçiminin hem bütçenize hem de yaşam tarzınıza uygun olması gereken önemli bir karar olduğunu anlıyoruz. Bu nedenle kişisel danışmanlık ve olasılıklar ve maliyetler hakkında ayrıntılı bilgi sunuyoruz.",
       "ctaButton": "İletişime geç",
+      "cta": "İletişime geç",
       "imageAlt": "Zarif veranda"
     },
     "stats": {
@@ -257,16 +325,16 @@
       }
     },
     "quality": {
-      "title": "Uygun fiyatlı kaliteli polikarbonat veranda'lar",
-      "description": "Polikarbonat verandanın maliyeti boyut ve spotlar, yan duvarlar veya sürgülü kapılar gibi ekstralar gibi faktörlere bağlıdır. Yine de böyle bir veranda uzun süre dayanıklı ve güzel görünen uygun bir seçimdir.",
-      "feature1": "Malzeme maliyetleri: camdan daha ucuz, ekonomik olarak avantajlı",
+      "title": "Uygun fiyatlı kaliteli veranda'lar",
+      "description": "Verandanın maliyeti boyut ve spotlar, yan duvarlar veya sürgülü kapılar gibi ekstralar gibi faktörlere bağlıdır. Veranda'larımız uzun süre dayanıklı ve güzel görünen uygun bir seçimdir.",
+      "feature1": "Yüksek kaliteli malzemeler: dayanıklı çerçeve",
       "feature2": "Daha düşük kurulum maliyetleri: kolay kurulum işçilik maliyetlerini düşürür",
       "feature3": "Dayanıklılık ve bakım: minimum bakımla uzun ömürlü",
       "feature4": "Enerji verimliliği: yalıtım enerji maliyetlerini azaltır",
       "feature5": "Çok yönlülük: esnek tasarım, verimli üretim"
     },
     "features": {
-      "title": "Neden AluSolutions'ı seçmelisiniz?",
+      "title": "Neden VivaVerandas'ı seçmelisiniz?",
       "quality": {
         "title": "Premium Kalite",
         "description": "Uzun ömürlü sonuç için sadece en iyi malzemeler"
@@ -290,7 +358,16 @@
       "service": {
         "title": "Kişisel Hizmet",
         "description": "Uzmanlarımızla doğrudan iletişim"
+      },
+      "openingTypes": {
+        "title": "Cam Sürgülü Duvarlar",
+        "description": "Hem sürgülü cam duvarlar hem de katlanır cam duvarlar (ortadan açılan) yapıyoruz"
       }
+    },
+    "glassWalls": {
+      "sliding": "Sürgülü Duvarlar",
+      "folding": "Katlanır Duvarlar",
+      "cta": "Daha fazla örnek gör"
     },
     "inspiration": {
       "title": "Verandanız için ilham",
@@ -322,17 +399,19 @@
       }
     },
     "info": {
+      "title": "Verandalarımızı Keşfedin",
+      "subtitle": "Birinci sınıf verandalarımız hakkında bilmeniz gereken her şey",
       "what": {
-        "title": "Polikarbonat veranda nedir?",
-        "description": "Alusolutions'tan bir polikarbonat veranda, evinizi şık bir dış alanla genişleten dayanıklı bir teras veya bahçe örtüsüdür."
+        "title": "Veranda nedir?",
+        "description": "VivaVerandas'tan bir veranda, evinizi şık bir dış alanla genişleten dayanıklı bir teras veya bahçe örtüsüdür."
       },
       "benefits": {
-        "title": "Polikarbonat avantajları",
-        "description": "Polikarbonat, UV ışınlarına ve hava koşullarına karşı koruma sağlayan sağlam, ışık geçiren bir malzemedir."
+        "title": "Veranda avantajları",
+        "description": "Veranda'larımız sağlam ve bakım gerektirmez, hava koşullarına karşı mükemmel koruma sağlar."
       },
       "whyUs": {
-        "title": "Neden Alusolutions'ı seçmelisiniz?",
-        "description": "Alusolutions'ta kalite ve dayanıklılığı seçersiniz. Veranda'larımız güçlü ve bakım gerektirmez."
+        "title": "Neden VivaVerandas'ı seçmelisiniz?",
+        "description": "VivaVerandas'ta kalite ve dayanıklılığı seçersiniz. Veranda'larımız güçlü ve bakım gerektirmez."
       },
       "personalize": {
         "title": "Verandanızı kişiselleştirin",
@@ -353,7 +432,7 @@
       "anthracite": "Antrasit",
       "white": "Beyaz",
       "cream": "Krem",
-      "brown": "Kahverengi"
+      "black": "Siyah"
     },
     "cta": {
       "title": "Hayalinizdeki veranda için hazır mısınız?",
@@ -405,7 +484,7 @@
     "title": "Gizlilik Politikası",
     "section1": {
       "title": "1. Giriş",
-      "content": "AluSolutions gizliliğinize saygı duyar ve bize sağladığınız kişisel bilgilerin gizli tutulmasını sağlar."
+      "content": "VivaVerandas gizliliğinize saygı duyar ve bize sağladığınız kişisel bilgilerin gizli tutulmasını sağlar."
     },
     "section2": {
       "title": "2. Topladığımız veriler",
@@ -425,18 +504,18 @@
     },
     "section6": {
       "title": "6. İletişim",
-      "content": "Gizlilik politikamızla ilgili sorularınız için info@alusolutions.nl adresinden iletişime geçebilirsiniz"
+      "content": "Gizlilik politikamızla ilgili sorularınız için info@vivaverandas.nl adresinden iletişime geçebilirsiniz"
     }
   },
   "voorwaarden": {
     "title": "Genel Şartlar",
     "section1": {
       "title": "Madde 1 - Tanımlar",
-      "content": "Bu şartlarda AluSolutions: Reuver'de yerleşik, KVK 90086449 numarasıyla kayıtlı şirket anlamına gelir."
+      "content": "Bu şartlarda VivaVerandas: Reuver'de yerleşik, KVK 90086449 numarasıyla kayıtlı şirket anlamına gelir."
     },
     "section2": {
       "title": "Madde 2 - Uygulanabilirlik",
-      "content": "Bu şartlar AluSolutions'ın tüm teklifleri ve sözleşmeleri için geçerlidir."
+      "content": "Bu şartlar VivaVerandas'ın tüm teklifleri ve sözleşmeleri için geçerlidir."
     },
     "section3": {
       "title": "Madde 3 - Teklifler",
@@ -448,12 +527,34 @@
     },
     "section5": {
       "title": "Madde 5 - Garanti",
-      "content": "AluSolutions normal kullanımda yapı için 10 yıl garanti sunar."
+      "content": "VivaVerandas normal kullanımda yapı için 10 yıl garanti sunar."
     },
     "section6": {
       "title": "Madde 6 - Ödeme",
       "content": "Ödeme faturada belirtilen ödeme koşullarına göre yapılır."
     }
+  },
+  "cookieBanner": {
+    "title": "Gizliliğinize değer veriyoruz",
+    "description": "Tarama deneyiminizi geliştirmek, kişiselleştirilmiş reklamlar veya içerik görüntülemek ve trafiğimizi analiz etmek için çerezler kullanıyoruz. \"Tümünü Kabul Et\" seçeneğine tıklayarak çerez kullanımımızı kabul etmiş olursunuz.",
+    "acceptAll": "Tümünü Kabul Et",
+    "rejectAll": "Tümünü Reddet",
+    "customize": "Özelleştir",
+    "savePreferences": "Tercihleri Kaydet",
+    "learnMore": "Daha fazla bilgi",
+    "preferencesTitle": "Onay tercihlerini özelleştir",
+    "preferencesIntro": "Verimli bir şekilde gezinmenize yardımcı olmak ve belirli işlevleri gerçekleştirmek için çerezler kullanıyoruz. Tüm çerezler hakkında ayrıntılı bilgiyi aşağıdaki ilgili onay kategorisinde bulabilirsiniz.",
+    "necessary": "Gerekli",
+    "necessaryDesc": "Gerekli çerezler web sitesinin temel işlevleri için çok önemlidir ve bunlar olmadan web sitesi amaçlandığı gibi çalışmaz. Bu çerezler kişisel olarak tanımlanabilir verileri saklamaz.",
+    "functional": "İşlevsel",
+    "functionalDesc": "İşlevsel çerezler, web sitesi içeriğini sosyal medya platformlarında paylaşma, geri bildirim toplama ve diğer üçüncü taraf özellikleri gibi belirli işlevlerin gerçekleştirilmesine yardımcı olur.",
+    "analytical": "Analitik",
+    "analyticalDesc": "Analitik çerezler, ziyaretçilerin web sitesiyle nasıl etkileşimde bulunduğunu anlamak için kullanılır. Bu çerezler, ziyaretçi istatistikleri, hemen çıkma oranı, trafik kaynağı vb. hakkında bilgi sağlamaya yardımcı olur.",
+    "performance": "Performans",
+    "performanceDesc": "Performans çerezleri, web sitesinin temel performans göstergelerini anlamak ve analiz etmek için kullanılır ve ziyaretçilere daha iyi bir kullanıcı deneyimi sunulmasına yardımcı olur.",
+    "advertising": "Reklam",
+    "advertisingDesc": "Reklam çerezleri, daha önce ziyaret edilen sayfalara göre ziyaretçilere kişiselleştirilmiş reklamlar sunmak ve reklam kampanyalarının etkinliğini analiz etmek için kullanılır.",
+    "alwaysActive": "Her zaman aktif"
   },
   "cookies": {
     "title": "Çerez Politikası",
@@ -474,7 +575,7 @@
     },
     "section4": {
       "title": "İletişim",
-      "content": "Çerez politikamızla ilgili sorular? info@alusolutions.nl adresinden iletişime geçin"
+      "content": "Çerez politikamızla ilgili sorular? info@vivaverandas.nl adresinden iletişime geçin"
     }
   },
   "inspiratie": {
@@ -503,7 +604,8 @@
       "elegantSlats": "Zarif Lamellar",
       "compactSolution": "Kompakt Çözüm",
       "noImages": "Henüz fotoğraf yok",
-      "noImagesDescription": "Bu kategoride henüz fotoğraf bulunmuyor."
+      "noImagesDescription": "Bu kategoride henüz fotoğraf bulunmuyor.",
+      "loadMore": "Daha fazla yükle"
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -671,7 +773,7 @@
     "hero": {
       "title": "İletişim",
       "subtitle": "Sizin için buradayız",
-      "imageAlt": "İletişim AluSolutions"
+      "imageAlt": "İletişim VivaVerandas"
     },
     "form": {
       "title": "İletişim formu",
@@ -702,8 +804,8 @@
       "successMessage": "Mesajınız için teşekkürler! En kısa sürede sizinle iletişime geçeceğiz."
     },
     "info": {
-      "title": "AluSolutions ile iletişime geçmek ister misiniz?",
-      "paragraph1": "Ürünlerimiz hakkında sorularınız mı var veya sipariş vermede yardıma mı ihtiyacınız var? Belki sadece düşüncelerinizi paylaşmak istiyorsunuz? AluSolutions'ta sizden haber almayı çok isteriz!",
+      "title": "VivaVerandas ile iletişime geçmek ister misiniz?",
+      "paragraph1": "Ürünlerimiz hakkında sorularınız mı var veya sipariş vermede yardıma mı ihtiyacınız var? Belki sadece düşüncelerinizi paylaşmak istiyorsunuz? VivaVerandas'ta sizden haber almayı çok isteriz!",
       "paragraph2": "Doğrudan yardım için WhatsApp üzerinden bizimle iletişime geçmenizi öneririz. Ayrıca e-posta veya iletişim formumuz aracılığıyla da ulaşabilirsiniz.",
       "phone": "Telefon",
       "email": "E-posta",
@@ -723,7 +825,7 @@
     },
     "map": {
       "title": "Showroom'umuzu ziyaret edin",
-      "mapTitle": "AluSolutions Konumu"
+      "mapTitle": "VivaVerandas Konumu"
     },
     "reviews": {
       "title": "Müşterilerimiz ne diyor",
@@ -773,6 +875,30 @@
     }
   },
   "offerte": {
+    "pageTitle": "Teklif İste",
+    "pageDescription": "Hayalinizdeki veranda için kolayca ve hızlı bir şekilde ücretsiz teklif alın",
+    "title": "Teklif İste",
+    "subtitle": "Hayalinizdeki verandayı yapılandırın ve 24 saat içinde ücretsiz teklif alın",
+    "chooseProduct": "Ürününüzü seçin",
+    "chooseProductSubtitle": "Teklif almak istediğiniz ürünü seçin",
+    "startConfigurator": "Yapılandırıcıyı başlat",
+    "noConfigurators": "Şu anda mevcut yapılandırıcı yok",
+    "benefit1": {
+      "title": "Bağlayıcı değil",
+      "description": "Herhangi bir yükümlülük olmadan teklif alın"
+    },
+    "benefit2": {
+      "title": "Hızlı yanıt",
+      "description": "Uzmanlarımızdan 24 saat içinde yanıt"
+    },
+    "benefit3": {
+      "title": "En iyi fiyat",
+      "description": "Kaliteli ürünler için rekabetçi fiyatlar"
+    },
+    "alternativeTitle": "Kişisel danışmanlık mı tercih edersiniz?",
+    "alternativeDescription": "Ücretsiz danışma için randevu alın veya bizi doğrudan arayın",
+    "makeAppointment": "Randevu al",
+    "callUs": "Bizi arayın",
     "required": "Zorunlu",
     "optional": "İsteğe bağlı",
     "nextButton": "İleri",
@@ -888,10 +1014,20 @@
     "openingHours": "Açılış saatleri: Pzt-Per 09:00-17:00, Cmt 10:00-15:00",
     "selectDateFirst": "Lütfen önce bir tarih seçin",
     "closedSunday": "Pazar günleri kapalıyız",
+    "closedDay": "{{day}} günü kapalıyız",
     "slotBooked": "Bu saat dolu",
     "slotPast": "Bu saat geçmiş",
     "available": "Müsait",
     "booked": "Dolu",
+    "durationInfo": "Bu randevu {{duration}} saat sürer",
+    "notEnoughTime": "Yeterli müsait zaman yok",
+    "badge": "Ücretsiz Danışmanlık",
+    "imageTitle": "Hayalinizdeki Veranda",
+    "imageSubtitle": "İdeal dış mekanınızı gerçekleştirmenizde size yardımcı olmaktan mutluluk duyarız",
+    "feature1": "Kişisel danışmanlık",
+    "feature2": "Ücretsiz teklif",
+    "feature3": "Uzman montaj",
+    "contactInfo": "İletişim Bilgileri",
     "step1": {
       "title": "Randevu Tipi",
       "subtitle": "Ne tür bir randevu almak istiyorsunuz?"
@@ -917,6 +1053,7 @@
       "adviceDesc": "Telefon veya video danışması"
     },
     "form": {
+      "dateTime": "Tarih & Saat",
       "date": "Tarih",
       "time": "Saat",
       "name": "Ad",
@@ -961,7 +1098,7 @@
       "info": {
         "title": "Polikarbonat Veranda Nedir?",
         "description1": "Polikarbonat veranda, dayanıklı ve uygun fiyatlı bir teras örtüsü arayan herkes için ideal seçimdir. Güçlü ve şeffaf polikarbonat çatı panelleri sayesinde yağmur ve rüzgara karşı korumadan ödün vermeden bol ışık alırsınız.",
-        "description2": "AluSolutions'ta polikarbonat verandanızı tamamen isteklerinize göre sunuyoruz. 3 hafta içinde veranda ustalarımız hızlı teslimat ve profesyonel kurulum sağlar.",
+        "description2": "VivaVerandas'ta polikarbonat verandanızı tamamen isteklerinize göre sunuyoruz. 3 hafta içinde veranda ustalarımız hızlı teslimat ve profesyonel kurulum sağlar.",
         "benefitsTitle": "Avantajlar",
         "imageAlt": "Polikarbonat Veranda örneği"
       },
@@ -1011,7 +1148,7 @@
       "info": {
         "title": "Camlı Veranda Nedir?",
         "description1": "Camlı veranda maksimum ışık girişi ve bahçenize engelsiz manzara sunar. Temperli cam güvenli, güçlü ve temizlemesi kolaydır.",
-        "description2": "AluSolutions'ta yalnızca tüm güvenlik standartlarını karşılayan yüksek kaliteli temperli cam kullanıyoruz.",
+        "description2": "VivaVerandas'ta yalnızca tüm güvenlik standartlarını karşılayan yüksek kaliteli temperli cam kullanıyoruz.",
         "benefitsTitle": "Avantajlar",
         "imageAlt": "Camlı Veranda"
       },
@@ -1342,6 +1479,264 @@
     }
   },
   "admin": {
+    "sidebar": {
+      "title": "Yönetim Paneli",
+      "dashboard": "Kontrol Paneli",
+      "gallery": "Galeri",
+      "appointments": "Randevular",
+      "appointmentSettings": "Randevu Ayarları",
+      "offertes": "Teklifler",
+      "configurators": "Konfigüratörler",
+      "configuratorSubmissions": "Konfigüratör Talepleri",
+      "messages": "Mesajlar",
+      "blog": "Blog",
+      "logout": "Çıkış Yap"
+    },
+    "dashboard": {
+      "title": "Kontrol Paneli",
+      "welcome": "Hoş Geldiniz",
+      "loading": "Yükleniyor...",
+      "statistics": "İstatistikler",
+      "recentAppointments": "Son Randevular",
+      "recentMessages": "Son Mesajlar",
+      "totalAppointments": "Toplam Randevu",
+      "pendingAppointments": "Bekleyen Randevu",
+      "totalMessages": "Toplam Mesaj",
+      "unreadMessages": "Okunmamış Mesaj",
+      "totalOffertes": "Toplam Teklif",
+      "totalPages": "Toplam Sayfa",
+      "galleryImages": "Galeri Görselleri",
+      "products": "Ürünler",
+      "appointments": "Randevular",
+      "quickAccess": "Hızlı Erişim",
+      "addPage": "Sayfa Ekle",
+      "uploadImage": "Görsel Yükle",
+      "addProduct": "Ürün Ekle",
+      "viewAppointments": "Randevuları Gör",
+      "viewMessages": "Mesajları Gör",
+      "viewOffertes": "Teklifleri Gör",
+      "manageBlog": "Blog Yönetimi",
+      "viewAll": "Tümünü Gör",
+      "noRecentAppointments": "Henüz randevu yok",
+      "noRecentMessages": "Henüz mesaj yok"
+    },
+    "appointments": {
+      "title": "Randevu Yönetimi",
+      "filterAll": "Tümü",
+      "filterPending": "Bekleyen",
+      "filterConfirmed": "Onaylandı",
+      "filterCompleted": "Tamamlandı",
+      "filterCancelled": "İptal Edildi",
+      "noAppointments": "Randevu bulunamadı",
+      "noAppointmentsDesc": "Henüz randevu kaydı bulunmuyor.",
+      "loading": "Yükleniyor...",
+      "all": "Tümü",
+      "pending": "Bekleyen",
+      "confirmed": "Onaylı",
+      "statusPending": "Bekliyor",
+      "statusConfirmed": "Onaylandı",
+      "statusCompleted": "Tamamlandı",
+      "statusCancelled": "İptal",
+      "statusConfirmedLocked": "Onaylandı (Kilitli)",
+      "status": {
+        "pending": "Beklemede",
+        "confirmed": "Onaylandı",
+        "completed": "Tamamlandı",
+        "cancelled": "İptal"
+      },
+      "confirm": "Onayla",
+      "confirmAndLock": "Onayla ve Kilitle",
+      "complete": "Tamamla",
+      "cancel": "İptal Et",
+      "delete": "Sil",
+      "deleteConfirm": "Bu randevuyu silmek istediğinizden emin misiniz?",
+      "deleteError": "Silme işlemi başarısız!",
+      "statusUpdateError": "Durum güncellenirken hata oluştu!",
+      "duration": "Süre",
+      "minutes": "dk",
+      "hour": "saat",
+      "hours": "saat",
+      "serviceShowroom": "Showroom Ziyareti",
+      "serviceHomeVisit": "Ev Ziyareti",
+      "serviceConsultation": "Danışmanlık"
+    },
+    "appointmentSettings": {
+      "title": "Randevu Ayarları",
+      "addNew": "Yeni Ekle",
+      "serviceType": "Hizmet Türü",
+      "duration": "Süre",
+      "name": "İsim",
+      "description": "Açıklama",
+      "active": "Aktif",
+      "order": "Sıra",
+      "save": "Kaydet",
+      "cancel": "İptal",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "deleteConfirm": "Bu ayarı silmek istediğinizden emin misiniz?",
+      "minutes": "dakika",
+      "hour": "saat",
+      "hours": "saat"
+    },
+    "offertes": {
+      "title": "Teklif Talepleri",
+      "filterAll": "Tümü",
+      "filterNew": "Yeni",
+      "filterInProgress": "İşlemde",
+      "filterCompleted": "Tamamlandı",
+      "noOffertes": "Teklif bulunamadı",
+      "noOffertesDesc": "Henüz teklif talebi yok.",
+      "loading": "Yükleniyor...",
+      "all": "Tümü",
+      "total": "Toplam",
+      "statusNew": "Yeni",
+      "statusViewed": "Görüntülendi",
+      "statusQuoted": "Teklif Gönderildi",
+      "statusAccepted": "Kabul Edildi",
+      "statusRejected": "Reddedildi",
+      "status": {
+        "new": "Yeni",
+        "inProgress": "İşlemde",
+        "completed": "Tamamlandı"
+      },
+      "details": "Detaylar",
+      "delete": "Sil",
+      "deleteConfirm": "Bu teklifi silmek istediğinizden emin misiniz?",
+      "coverType": "Örtü Tipi",
+      "gutterType": "Oluk Tipi",
+      "color": "Renk",
+      "material": "Malzeme",
+      "dimensions": "Boyutlar",
+      "lighting": "Aydınlatma",
+      "installation": "Montaj",
+      "extraOptions": "Ekstra Seçenekler",
+      "rightSide": "Sağ Taraf",
+      "rightWedge": "Sağ Kama",
+      "leftSide": "Sol Taraf",
+      "leftWedge": "Sol Kama",
+      "front": "Ön Taraf",
+      "back": "Arka Taraf",
+      "remarks": "Açıklama",
+      "showDetails": "Tüm Detayları Göster",
+      "hideDetails": "Detayları Gizle"
+    },
+    "configuratorSubmissions": {
+      "title": "Konfigüratör Talepleri",
+      "total": "Toplam",
+      "all": "Tümü",
+      "allConfigurators": "Tüm Konfigüratörler",
+      "filterStatus": "Durum",
+      "filterConfigurator": "Konfigüratör",
+      "noSubmissions": "Henüz talep yok",
+      "noSubmissionsDesc": "Müşteriler konfigüratörü tamamladığında burada görünecek.",
+      "deleteConfirm": "Bu talebi silmek istediğinizden emin misiniz?",
+      "statusNew": "Yeni",
+      "statusViewed": "Görüldü",
+      "statusQuoted": "Teklif Verildi",
+      "statusAccepted": "Kabul Edildi",
+      "statusRejected": "Reddedildi",
+      "appointmentRequested": "Randevu Talebi",
+      "serviceType": "Hizmet Türü",
+      "date": "Tarih",
+      "time": "Saat",
+      "showDetails": "Detayları Göster",
+      "hideDetails": "Detayları Gizle",
+      "configurationDetails": "Konfigürasyon Detayları",
+      "notes": "Notlar"
+    },
+    "configurators": {
+      "title": "Konfigüratör Yönetimi",
+      "addNew": "Yeni Ekle",
+      "noConfigurators": "Henüz konfigüratör yok",
+      "noConfiguratorsDesc": "Yeni konfigüratör oluşturmak için butona tıklayın",
+      "loading": "Yükleniyor...",
+      "name": "İsim",
+      "slug": "Slug",
+      "steps": "Adımlar",
+      "active": "Aktif",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "deleteConfirm": "Bu konfigüratörü silmek istediğinizden emin misiniz?",
+      "deleteConfirmFull": "Bu konfigüratörü silmek istediğinizden emin misiniz? Tüm adımlar ve seçenekler de silinecektir.",
+      "deleteError": "Silme hatası!",
+      "duplicateError": "Kopyalama hatası!",
+      "copy": "Kopya",
+      "category": "Kategori",
+      "status": "Durum",
+      "all": "Tümü",
+      "statusActive": "Aktif",
+      "statusInactive": "Pasif",
+      "newConfigurator": "Yeni Konfigüratör",
+      "editConfigurator": "Konfigüratör Düzenle",
+      "hide": "Gizle",
+      "publish": "Yayınla",
+      "duplicate": "Kopyala",
+      "loadError": "Konfigüratör yüklenemedi!",
+      "saved": "Kaydedildi!",
+      "slugExists": "Bu slug zaten kullanılıyor!",
+      "saveError": "Kaydetme hatası!",
+      "saving": "Kaydediliyor...",
+      "saveFirst": "Önce kaydedin",
+      "tabGeneral": "Genel",
+      "tabSteps": "Adımlar",
+      "tabPreview": "Önizleme",
+      "generalInfo": "Temel Bilgiler",
+      "slugLabel": "Slug (URL)",
+      "slugHelp": "URL-dostu benzersiz tanımlayıcı",
+      "categoryLabel": "Kategori",
+      "categoryOther": "Diğer",
+      "displayOrder": "Sıra",
+      "displayOrderHelp": "Liste gösteriminde sıralama için",
+      "activePublished": "Aktif (Yayında)",
+      "activeHelp": "Bu seçeneği işaretlerseniz konfigüratör web sitesinde görünür olur",
+      "multiLanguageInfo": "Çoklu Dil Bilgileri",
+      "nameLabel": "İsim",
+      "descriptionLabel": "Açıklama",
+      "requiredField": "Bu alan zorunludur (varsayılan dil)",
+      "update": "Güncelle",
+      "create": "Oluştur",
+      "stepsCount": "Adımlar ({{count}})",
+      "newStep": "Yeni Adım",
+      "noSteps": "Henüz adım yok",
+      "noStepsDesc": "Yeni adım eklemek için butona tıklayın",
+      "required": "Zorunlu",
+      "optionsCount": "seçenek",
+      "conditional": "Koşullu",
+      "moveUp": "Yukarı taşı",
+      "moveDown": "Aşağı taşı",
+      "deleteStepConfirm": "Bu adımı silmek istediğinizden emin misiniz? Tüm seçenekler de silinecektir.",
+      "moveStepError": "Adım sırası değiştirilemedi!",
+      "deleteOptionConfirm": "Bu seçeneği silmek istediğinizden emin misiniz?",
+      "titleEN": "Başlık (EN)",
+      "titleTR": "Başlık (TR)",
+      "subtitle": "Alt Başlık",
+      "helpText": "Yardım Metni",
+      "previewImage": "Önizleme Görseli",
+      "condition": "Koşul",
+      "optionsLabel": "Seçenekler",
+      "newOption": "Yeni Seçenek",
+      "noOptions": "Henüz seçenek yok. Yukarıdaki butona tıklayarak ekleyin.",
+      "livePreview": "Canlı Önizleme",
+      "livePreviewDesc": "Bu, konfigüratörünüzün kullanıcılar tarafından nasıl görüneceğinin canlı önizlemesidir. Değişikliklerinizi kaydettiğinizde otomatik olarak güncellenecektir.",
+      "previewError": "Önizleme için lütfen önce konfigüratörü kaydedin ve bir slug girin."
+    },
+    "gallery": {
+      "title": "Galeri Yönetimi",
+      "upload": "Yükle",
+      "uploadButton": "+ Görsel Yükle",
+      "delete": "Sil",
+      "deleteConfirm": "Bu görseli silmek istediğinizden emin misiniz?",
+      "deleteError": "Silme hatası!",
+      "uploadError": "Yükleme hatası!",
+      "noImages": "Henüz görsel yok",
+      "noImagesDesc": "Görsel yüklemek için yukarıdaki butona tıklayın",
+      "loading": "Yükleniyor...",
+      "uploading": "Yükleniyor...",
+      "all": "Tümü",
+      "other": "Diğer",
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
     "contacts": {
       "title": "Mesajlar",
       "filterAll": "Tümünü Göster",
@@ -1360,42 +1755,42 @@
       "deleteConfirm": "Bu mesajı silmek istediğinizden emin misiniz?"
     },
     "blog": {
-      "title": "Blog Yonetimi",
-      "filterAll": "Tumunu Goster",
-      "filterPublished": "Yayinlanmis",
+      "title": "Blog Yönetimi",
+      "filterAll": "Tümünü Göster",
+      "filterPublished": "Yayınlanmış",
       "filterDraft": "Taslak",
-      "newPost": "Yeni yazi",
-      "noPosts": "Henuz blog yazisi yok",
-      "createFirst": "Ilk yazinizi olusturun",
-      "tableTitle": "Baslik",
+      "newPost": "Yeni Yazı",
+      "noPosts": "Henüz blog yazısı yok",
+      "createFirst": "İlk yazınızı oluşturun",
+      "tableTitle": "Başlık",
       "tableCategory": "Kategori",
       "tableStatus": "Durum",
       "tableDate": "Tarih",
-      "tableActions": "Islemler",
-      "published": "Yayinlandi",
+      "tableActions": "İşlemler",
+      "published": "Yayınlandı",
       "draft": "Taslak",
-      "publish": "Yayinla",
+      "publish": "Yayınla",
       "unpublish": "Gizle",
-      "editPost": "Yaziyi duzenle",
-      "createPost": "Yazi olustur",
+      "editPost": "Yazıyı düzenle",
+      "createPost": "Yazı oluştur",
       "slug": "Slug (URL)",
-      "slugHelp": "URL-dostu tanimlayici",
+      "slugHelp": "URL-dostu tanımlayıcı",
       "category": "Kategori",
       "author": "Yazar",
-      "featuredImage": "One cikan gorsel",
-      "publishPost": "Yaziyi yayinla",
-      "multiLanguage": "Cok dilli icerik",
-      "postTitle": "Baslik",
-      "titlePlaceholder": "Yazi basligi",
-      "excerpt": "Ozet",
-      "excerptPlaceholder": "Yazinin kisa ozeti",
-      "excerptHelp": "Blog genel bakis sayfasinda gosterilir",
-      "content": "Icerik",
-      "contentPlaceholder": "Yazinizi buraya yazin...",
-      "contentHelp": "Yeni paragraflar icin bos satirlar kullanin",
-      "deleteConfirm": "Bu yaziyi silmek istediginizden emin misiniz?",
-      "loadError": "Yazi yuklenirken hata olustu",
-      "saveError": "Kaydetme hatasi",
+      "featuredImage": "Öne çıkan görsel",
+      "publishPost": "Yazıyı yayınla",
+      "multiLanguage": "Çok dilli içerik",
+      "postTitle": "Başlık",
+      "titlePlaceholder": "Yazı başlığı",
+      "excerpt": "Özet",
+      "excerptPlaceholder": "Yazının kısa özeti",
+      "excerptHelp": "Blog genel bakış sayfasında gösterilir",
+      "content": "İçerik",
+      "contentPlaceholder": "Yazınızı buraya yazın...",
+      "contentHelp": "Yeni paragraflar için boş satırlar kullanın",
+      "deleteConfirm": "Bu yazıyı silmek istediğinizden emin misiniz?",
+      "loadError": "Yazı yüklenirken hata oluştu",
+      "saveError": "Kaydetme hatası",
       "slugExists": "Bu slug zaten mevcut"
     }
   },
@@ -1431,8 +1826,8 @@
       "successMessage": "Mesajınız için teşekkürler! En kısa sürede sizinle iletişime geçeceğiz."
     },
     "info": {
-      "title": "AluSolutions ile iletişime geçmek ister misiniz?",
-      "intro1": "Ürünlerimiz hakkında sorularınız mı var veya sipariş vermekte yardıma mı ihtiyacınız var? Belki sadece düşüncelerinizi paylaşmak istiyorsunuz? AluSolutions'da sizden haber almayı çok isteriz! Deneyimli ekibimiz tüm sorularınıza hızlı ve etkili şekilde yanıt vermeye hazır.",
+      "title": "VivaVerandas ile iletişime geçmek ister misiniz?",
+      "intro1": "Ürünlerimiz hakkında sorularınız mı var veya sipariş vermekte yardıma mı ihtiyacınız var? Belki sadece düşüncelerinizi paylaşmak istiyorsunuz? VivaVerandas'da sizden haber almayı çok isteriz! Deneyimli ekibimiz tüm sorularınıza hızlı ve etkili şekilde yanıt vermeye hazır.",
       "intro2": "Anında yardım için WhatsApp üzerinden bizimle iletişime geçmenizi öneririz. Ayrıca e-posta veya iletişim formumuz üzerinden de bize ulaşabilirsiniz.",
       "phone": "Telefon",
       "email": "E-posta",
@@ -1482,6 +1877,242 @@
       "subtitle": "Kisisel tavsiye icin bizimle iletisime gecin",
       "quoteButton": "Teklif isteyin",
       "contactButton": "Iletisime gecin"
+    }
+  },
+  "productPages": {
+    "common": {
+      "specifications": "Özellikler",
+      "projectGallery": "Proje Galerisi",
+      "benefits": "Avantajlar",
+      "material": "Malzeme",
+      "maxWidth": "Maksimum genişlik",
+      "guarantee": "Garanti",
+      "yearsGuarantee": "yıl garanti",
+      "requestQuote": "Randevu al",
+      "callUs": "Bizi hemen arayın",
+      "interestedIn": "İlgilendiğiniz ürün:",
+      "requestQuoteSubtitle": "Ücretsiz teklif isteyin veya kişisel danışmanlık için randevu alın"
+    },
+    "cube": {
+      "title": "Cube Veranda",
+      "subtitle": "Zamansız dış mekan için modern tasarım",
+      "heroAlt": "Cube Veranda",
+      "mainTitle": "Cube Veranda: Şık & Modern Tasarım",
+      "description1": "Cube Veranda, çağdaş tasarım ve üstün dış mekan konforunun mükemmel birleşimidir. Karakteristik temiz hatları ve düz çatısı ile bu sundurma, modern mimariye mükemmel uyum sağlar. Yüksek kaliteli alüminyum yapı sayesinde yıllarca dayanacak dayanıklı ve bakımsız bir çözüme sahip olursunuz.",
+      "description2": "VivaVerandas olarak Cube Verandanızı tamamen size özel tasarlıyor ve kuruyoruz. İster minimalist bir tasarım ister LED aydınlatma, cam sürgülü duvarlar ve güneşlik ile tam donanımlı bir dış mekan tercih edin: hem pratik hem de şık bir çözüm sunuyoruz. Birkaç hafta içinde profesyonel montaj ve son rötuşlar dahil yeni lüks dış mekanınızın keyfini çıkarın.",
+      "benefitsTitle": "Cube Veranda'nın Eşsiz Avantajlarını Keşfedin",
+      "benefit1": "Zamansız görünüm için düz çatılı şık, modern tasarım",
+      "benefit2": "Her hava koşuluna dayanıklı yüksek kaliteli alüminyum çerçeve",
+      "benefit3": "Evinize mükemmel uyum sağlayan %100 özel yapım",
+      "benefit4": "Keyifli akşamlar için entegre LED aydınlatma",
+      "benefit5": "Kış bahçesi için cam sürgülü duvarlarla birleştirilebilir",
+      "benefit6": "Bakım gerektirmez ve korozyona dayanıklı",
+      "benefit7": "Yapı üzerinde 10 yıl fabrika garantisi",
+      "whatIsTitle": "Cube Veranda Nedir?",
+      "whatIsText": "VivaVerandas Cube Veranda, şık, minimalist tasarıma sahip modern bir alüminyum sundurmasıdır. Düz çatı ve düz hatlar, modern evlere kusursuz uyum sağlayan çağdaş bir görünüm oluşturur. Dayanıklı yapı, dış mekanınızın keyfini çıkarırken güneş ve yağmurdan koruma sağlar.",
+      "whyChooseTitle": "Neden Cube Veranda Tercih Etmelisiniz?",
+      "whyChooseText": "Cube Veranda, şık, modern görünümü sevenler için idealdir. Sağlam alüminyum yapı bakım gerektirmez ve yıllarca dayanır. LED aydınlatma, güneşlik ve cam duvarlar gibi birçok genişletme seçeneği ile ideal dış mekanınızı oluşturursunuz.",
+      "customizeTitle": "Cube Verandanızı Kişiselleştirin",
+      "customizeText": "Cube Verandanızı entegre LED spotlar, elektrikli storlar, cam sürgülü duvarlar veya ekstra koruma için yan paneller gibi çeşitli seçeneklerle tamamlayın. Sundurmanızı evinize mükemmel uydurmak için farklı RAL renklerinden seçim yapın.",
+      "installationTitle": "Kurulum ve Montaj",
+      "installationText": "Deneyimli ustalarımız Cube Verandanızın hızlı ve profesyonel montajını sağlar. İster bağımsız bir kurulum ister evinize ek olsun, durumunuza uygun esnek yerleştirme seçenekleri sunuyoruz.",
+      "specMaterial": "Yüksek kaliteli alüminyum, her RAL renginde toz boya kaplama",
+      "specRoof": "Çatı kaplaması",
+      "specRoofValue": "İzoleli çatı panelleri veya cam çatı",
+      "specWidthValue": "Ara direk olmadan 7 metreye kadar",
+      "specDepth": "Maksimum derinlik",
+      "specDepthValue": "5 metre derinliğe kadar",
+      "specLighting": "Aydınlatma",
+      "specLightingValue": "Opsiyonel gömme LED spotlar",
+      "specGuaranteeValue": "Yapı üzerinde 10 yıl",
+      "experienceYears": "15+ yıl deneyim",
+      "colorOptions": "Tüm RAL renkleri mevcut",
+      "serviceText": "Güvenilir servis ve işçilik"
+    },
+    "lamel": {
+      "title": "Lamel Veranda",
+      "subtitle": "Dış mekanınız üzerinde lüks, konfor ve tam kontrol",
+      "heroAlt": "Lamel Veranda",
+      "mainTitle": "Lamel Veranda: Üstün Konfor & Esneklik",
+      "description1": "Lamel veranda, dış mekanınız üzerinde lüks, konfor ve kontrolün mükemmel birleşimidir. Elektrikle ayarlanabilen lameller sayesinde her mevsime mükemmel uyum sağlayan ideal güneş ışığı, havalandırma ve gölge miktarını siz belirlersiniz. Bu modern alüminyum lamel sundurma güneş, yağmur ve rüzgardan koruma sağlar, böylece yıl boyunca terasınızın keyfini çıkarabilirsiniz.",
+      "description2": "VivaVerandas olarak lamel verandanızı tamamen size özel tasarlıyor ve kuruyoruz. İster bahçede bağımsız bir lamel sundurma ister entegre güneşlik ile evinize ek olsun: hem pratik hem de şık bir çözüm sunuyoruz. Birkaç hafta içinde profesyonel montaj ve son rötuşlar dahil dayanıklı lamel çatılı alüminyum sundurmanızın keyfini çıkarın.",
+      "benefitsTitle": "Lamel Veranda'nın Eşsiz Avantajlarını Keşfedin",
+      "benefit1": "Işık ve gölge üzerinde mükemmel kontrol için ayarlanabilir lameller (0° - 135°)",
+      "benefit2": "Lameller kapalıyken %100 su geçirmez - yağmurda bile dışarıda keyif yapın",
+      "benefit3": "Uzaktan kumanda veya akıllı telefon uygulaması ile elektrikli kontrol",
+      "benefit4": "Endişesiz dış mekan keyfi için otomatik yağmur sensörü",
+      "benefit5": "Direkler üzerinden entegre su tahliyesi",
+      "benefit6": "Lameller arasında atmosferik LED aydınlatma mümkün",
+      "benefit7": "Storlar, cam sürgülü duvarlar ve yan panellerle birleştirilebilir",
+      "whatIsTitle": "Lamel Veranda Nedir?",
+      "whatIsText": "VivaVerandas lamel veranda, dış mekanınız için stil, konfor ve işlevselliğin mükemmel birleşimini sunar. Ayarlanabilir lameller sayesinde güneş ışığı ve havalandırma miktarını kolayca düzenleyebilir, her zaman hoş bir dış ortama sahip olursunuz. Yüksek kaliteli alüminyum yapılarımız hava koşullarına dayanıklı ve uzun ömürlüdür, her iklim için idealdir.",
+      "whyChooseTitle": "Neden Lamel Veranda Tercih Etmelisiniz?",
+      "whyChooseText": "Lamel sundurmalar, lamelleri istediğiniz konuma eğebilmeniz sayesinde eşsiz bir esneklik sunar. Optimum gölge, maksimum ışık veya yağmurdan tam koruma keyfi çıkarın. Alüminyum lameller bakım gerektirmez ve çeşitli hava koşullarına dayanıklıdır, yıllarca endişesiz keyif çıkarmanızı sağlar.",
+      "customizeTitle": "Lamel Verandanızı Kişiselleştirin",
+      "customizeText": "Lamel verandanızı entegre LED aydınlatma, cam sürgülü duvarlar veya ekstra koruma için yan paneller gibi çeşitli seçeneklerle tamamlayın. Sundurmanızı evinize mükemmel uydurmak için farklı renkler ve boyutlardan seçim yapabilirsiniz.",
+      "installationTitle": "Kurulum ve Montaj",
+      "installationText": "Deneyimli ustalarımız lamel verandanızın hızlı ve profesyonel montajını sağlar. İster bağımsız bir kurulum ister evinize ek olsun, durumunuza uygun esnek ve verimli yerleştirme seçenekleri sunuyoruz.",
+      "affordableTitle": "Uygun Fiyatlı Lüks",
+      "affordableText": "Lamel verandanın fiyatı boyutlara ve LED aydınlatma, yan duvarlar veya sürgülü paneller gibi seçilen eklentilere bağlıdır. Yine de bu sundurma tipi akıllı ve şık bir tercih olmaya devam ediyor. Sizin için maliyetini öğrenmek üzere ücretsiz teklif isteyin.",
+      "specMaterial": "Alüminyum lameller ve çerçeve, her RAL renginde toz boya kaplama",
+      "specLamelSize": "Lamel boyutları",
+      "specLamelSizeValue": "200mm genişlik, 0° ile 135° arasında eğilebilir",
+      "specWidthValue": "Bölüm başına 6 metreye kadar",
+      "specControl": "Kontrol",
+      "specControlValue": "Uzaktan kumanda veya uygulama ile elektrikli (Somfy)",
+      "specSensors": "Sensörler",
+      "specSensorsValue": "Opsiyonel rüzgar ve yağmur sensörü",
+      "specGuaranteeValue": "Motor üzerinde 5 yıl, yapı üzerinde 10 yıl",
+      "experienceYears": "15+ yıl deneyim",
+      "colorOptions": "RAL 7024 ve daha fazlası",
+      "roofType": "Ayarlanabilir lameller",
+      "serviceText": "Güvenilir servis ve işçilik"
+    },
+    "glazen": {
+      "title": "Cam Veranda",
+      "subtitle": "Maksimum doğal ışık, maksimum açık hava hissi",
+      "heroAlt": "Cam Veranda",
+      "mainTitle": "Cam Veranda: Işık, Lüks & Ferahlık",
+      "description1": "Cam veranda, dış mekanınızı aydınlık, lüks bir yaşam alanına dönüştürmenin mükemmel yoludur. Yüksek kaliteli lamine güvenlik camı şık bir görünüm sağlar ve bahçenize veya terasınıza ferah bir his verir. Şeffaf çatı sayesinde yağmur ve rüzgardan korunurken maksimum gün ışığının keyfini çıkarırsınız.",
+      "description2": "VivaVerandas olarak cam verandanızı tamamen size özel tasarlıyoruz. Cam çatı, sıcak günlerde bile konforlu kalmanız için güneş koruyucu veya kendi kendini temizleyen cam ile donatılabilir. Sağlam alüminyum taşıyıcı yapı dayanıklı, bakım gerektirmez ve her RAL renginde mevcuttur. Böylece evinize mükemmel uyum sağlayan bir dış mekan yaratırsınız.",
+      "benefitsTitle": "Cam Veranda'nın Avantajlarını Keşfedin",
+      "benefit1": "Şeffaf cam çatı sayesinde maksimum doğal gün ışığı",
+      "benefit2": "Optimum güvenlik için temperli VSG güvenlik camı",
+      "benefit3": "Güneş koruyucu cam sıcak günlerde mekanı serin tutar",
+      "benefit4": "Minimum bakım için kendi kendini temizleyen cam kaplama",
+      "benefit5": "Evinizin değerini artıran lüks, zamansız görünüm",
+      "benefit6": "Korozyona dayanıklı, dayanıklı alüminyum taşıyıcı yapı",
+      "benefit7": "Güneşlik, storlar ve cam sürgülü duvarlarla birleştirilebilir",
+      "whatIsTitle": "Cam Veranda Nedir?",
+      "whatIsText": "VivaVerandas cam veranda, şeffaf cam çatılı bir alüminyum sundurmadır. Yüksek kaliteli güvenlik camı kullanımı sayesinde yağmur ve rüzgardan korunurken maksimum gün ışığının keyfini çıkarırsınız. Cam veranda, aydınlık, açık bir dış mekan sevenler için ideal seçimdir.",
+      "whyChooseTitle": "Neden Cam Veranda Tercih Etmelisiniz?",
+      "whyChooseText": "Cam veranda iki dünyanın en iyisini sunar: bir sundurmanın koruması ve açık havada olma hissi. Şeffaf çatı aydınlık bir atmosfer yaratır ve dış mekanınızı görsel olarak daha geniş gösterir. Sağlam alüminyum yapı minimum bakımla yıllarca dayanır.",
+      "customizeTitle": "Cam Verandanızı Kişiselleştirin",
+      "customizeText": "Cam verandanızı güneşlik, entegre LED aydınlatma, cam sürgülü duvarlar veya elektrikli storlar gibi çeşitli seçeneklerle tamamlayın. Şeffaf, güneş koruyucu veya kendi kendini temizleyen cam arasından seçim yapın ve alüminyum çerçeveniz için mükemmel RAL rengini belirleyin.",
+      "installationTitle": "Uzman Kurulum",
+      "installationText": "Deneyimli montajcılarımız cam verandanızı hızlı ve profesyonel şekilde kurar. İster evinize ek ister bahçede bağımsız bir yapı olsun, mükemmel bir işçilik ve su geçirmez bağlantı sağlıyoruz.",
+      "specFrame": "Çerçeve",
+      "specFrameValue": "Alüminyum, her RAL renginde toz boya kaplama",
+      "specGlassType": "Cam tipi",
+      "specGlassTypeValue": "VSG lamine güvenlik camı 8.8mm",
+      "specOptions": "Cam seçenekleri",
+      "specOptionsValue": "Güneş koruyucu, kendi kendini temizleyen veya şeffaf cam",
+      "specWidthValue": "Ara direk olmadan 6 metreye kadar",
+      "specDrainage": "Su tahliyesi",
+      "specDrainageValue": "Oluklarda entegre drenaj sistemi",
+      "specGuaranteeValue": "Yapı üzerinde 10 yıl, cam üzerinde 5 yıl",
+      "experienceYears": "15+ yıl deneyim",
+      "colorOptions": "4+ RAL rengi",
+      "guaranteeYears": "7 yıl garanti",
+      "serviceText": "Güvenilir servis ve işçilik"
+    },
+    "polycarbonaat": {
+      "title": "Polikarbonat Veranda",
+      "subtitle": "Her bütçe için uygun fiyatlı kalite",
+      "heroAlt": "Polikarbonat Veranda",
+      "mainTitle": "Polikarbonat Veranda: Akıllı & Uygun Fiyatlı",
+      "description1": "Polikarbonat veranda, mükemmel fiyat-performans oranına sahip kaliteli bir sundurma arayanlar için ideal seçimdir. Çok hücreli polikarbonat çatı panelleri ışık geçirgen, yalıtımlı ve neredeyse kırılmazdır. Gün ışığından ödün vermeden güneş ve yağmurdan korunmanın keyfini çıkarırsınız.",
+      "description2": "VivaVerandas olarak polikarbonat verandaları tamamen size özel üretiyoruz. Yüksek kaliteli alüminyum yapı dayanıklı ve bakım gerektirmez, polikarbonat paneller ise mükemmel ısı yalıtımı ve azaltılmış yağmur sesi sağlar. Şeffaftan opala, bronz veya griye kadar çeşitli renklerde mevcuttur. Böylece eviniz için her zaman mükemmel görünümü bulursunuz.",
+      "benefitsTitle": "Polikarbonat'ın Avantajlarını Keşfedin",
+      "benefit1": "Mükemmel fiyat-kalite oranı - lüks görünüm, uygun fiyat",
+      "benefit2": "Hoş bir atmosfer için ışık geçirgen malzeme",
+      "benefit3": "Çok hücreli yapı sayesinde üstün ısı yalıtımı",
+      "benefit4": "Neredeyse kırılmaz - camdan 250 kat daha güçlü",
+      "benefit5": "10 yıl fabrika garantili UV dayanıklı",
+      "benefit6": "Ekstra konfor için azaltılmış yağmur sesi",
+      "benefit7": "Çeşitli durumlar için uygun hafif yapı",
+      "whatIsTitle": "Polikarbonat Veranda Nedir?",
+      "whatIsText": "Polikarbonat veranda, çok hücreli polikarbonat çatı panellerine sahip bir alüminyum sundurmadır. Bu plastik malzeme camdan daha hafif ancak çok daha güçlüdür ve mükemmel yalıtım sağlar. Bütçeyi aşmadan konfor ve kalite arayanlar için mükemmel seçimdir.",
+      "whyChooseTitle": "Neden Polikarbonat Tercih Etmelisiniz?",
+      "whyChooseText": "Polikarbonat, en iyi fiyata en iyisini isteyenler için akıllı bir seçimdir. Paneller UV dayanıklı, darbelere dayanıklı ve iyi ısı yalıtımı sağlar. Ayrıca polikarbonat yağmur sesini önemli ölçüde azaltır, böylece yağmurda bile rahatça dışarıda oturabilirsiniz.",
+      "customizeTitle": "Durumunuza Özel Üretim",
+      "customizeText": "Her polikarbonat veranda sizin özel durumunuza göre üretilir. İstediğiniz boyutları, panel rengini (şeffaf, opal, bronz veya gri) ve alüminyum çerçeve için RAL rengini seçin. Opsiyonel olarak verandayı yan paneller, storlar veya LED aydınlatma ile genişletebilirsiniz.",
+      "installationTitle": "Hızlı ve Uzman Montaj",
+      "installationText": "Profesyonel montajcılarımız polikarbonat verandanızı verimli ve özenli bir şekilde kurar. Hafif malzeme, diğer çatı tiplerinden daha hızlı kurulum sağlar, bu da daha düşük montaj maliyetleri ve daha az rahatsızlık anlamına gelir.",
+      "affordableTitle": "Uygun Fiyatlı Kalite",
+      "affordableText": "Polikarbonat veranda, kaliteden ödün vermeden en uygun fiyatlı seçenektir. Dayanıklı alüminyum ve yüksek kaliteli polikarbonat panellerin kombinasyonu, yıllarca keyif alacağınız bir sundurma sağlar.",
+      "specFrame": "Çerçeve",
+      "specFrameValue": "Alüminyum, her RAL renginde toz boya kaplama",
+      "specPanels": "Çatı panelleri",
+      "specPanelsValue": "16mm çok hücreli polikarbonat",
+      "specColors": "Panel renkleri",
+      "specColorsValue": "Şeffaf, opal, bronz veya gri",
+      "specWidthValue": "Ara direk olmadan 8 metreye kadar",
+      "specInsulation": "Yalıtım değeri",
+      "specInsulationValue": "U-değeri: 2.3 W/m²K",
+      "specGuaranteeValue": "Yapı ve paneller üzerinde 10 yıl",
+      "experienceYears": "15+ yıl deneyim",
+      "colorOptions": "4 panel rengi",
+      "serviceText": "Güvenilir servis ve işçilik"
+    }
+  },
+  "plateReplace": {
+    "pageTitle": "Polikarbonat Plaka Değişimi",
+    "metaDescription": "Polikarbonat plaka değişimi için teklif isteyin. Reuver'den 70 km içinde ücretsiz ölçüm.",
+    "title": "Plaka Değişimi Teklif Talebi",
+    "subtitle": "Çeşitli renklerde çok duvarlı polikarbonat plakalar.",
+    "form": {
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "address": "Adres",
+      "addressPlaceholder": "Adres + Ev Numarası",
+      "postcode": "Posta Kodu",
+      "city": "Şehir",
+      "phone": "Telefon Numarası",
+      "email": "E-posta",
+      "plateCount": "Plaka Sayısı",
+      "depth": "Derinlik",
+      "roofType": "Çatı Tipi",
+      "roofTypeSelect": "Seçiniz...",
+      "plateType": "İstenen Plaka Tipi",
+      "photo": "Mevcut durumun fotoğrafını ekleyin",
+      "noFile": "Dosya seçilmedi",
+      "message": "Mesaj",
+      "submit": "Teklif İste",
+      "submitting": "Gönderiliyor...",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "roofTypes": {
+      "veranda": "Veranda",
+      "carport": "Carport",
+      "tuinoverkapping": "Bahçe Örtüsü",
+      "serre": "Sera",
+      "maatwerk": "Özel Yapı"
+    },
+    "plateTypes": {
+      "helder": "Şeffaf",
+      "opaal": "Opal",
+      "brons": "Bronz",
+      "grijs": "Gri"
+    },
+    "steps": {
+      "step1": "Adım 1",
+      "step1Desc": "Reuver'den 70 km içinde ücretsiz ölçüm",
+      "step2": "Adım 2",
+      "step2Desc": "Mevcut yapınızı kontrol ediyoruz",
+      "step3": "Adım 3",
+      "step3Desc": "Farklı polikarbonat plaka türlerinden seçim yapıyorsunuz",
+      "step4": "Adım 4",
+      "step4Desc": "3 hafta içinde profesyonel montaj sağlıyoruz"
+    },
+    "info": {
+      "whyTitle": "Polikarbonat plakaları neden zamanında değiştirmelisiniz",
+      "whyText1": "Polikarbonat çatı plakaları yıllarca dayanır, ancak zamanla renk değiştirebilir, küçük çatlaklar gösterebilir veya sızmaya başlayabilir. Bu sadece görünümü değil, verandanızın veya carportunuzun kalitesini de etkiler. Polikarbonat çatı plakalarınızı zamanında değiştirerek hasarı önler ve yeni gibi görünen şık, berrak ve ışık geçiren bir çatının keyfini çıkarırsınız.",
+      "whyText2": "VivaVerandas'ta, Reuver'den 70 km içinde ücretsiz ölçüm dahil, genellikle 3 hafta içinde hızlı ve profesyonel değişim sağlıyoruz. Sadece yüksek kaliteli şeffaf veya opal polikarbonat kullanıyor ve her şeyi hassasiyet ve ustalıkla monte ediyoruz. Bu şekilde yıllarca keyif alacağınız dayanıklı bir sonuç elde edersiniz.",
+      "forTitle": "Her örtü için polikarbonat plaka değişimi",
+      "forText": "Şunlarda çatı plakalarını değiştiriyoruz:",
+      "forList1": "Alüminyum verandalar",
+      "forList2": "Carportlar",
+      "forList3": "Bahçe örtüleri",
+      "forList4": "Seralar ve özel yapılar",
+      "forText2": "Mevcut örtünüzün markası önemli değil: neredeyse her sisteme yeni polikarbonat plakalar takabiliriz.",
+      "areaTitle": "Hizmet Alanı",
+      "areaText": "Limburg, Noord-Brabant ve Gelderland'ın bazı bölgelerinde aktifiz. Bölgenizde miyiz? O zaman ücretsiz ölçüm için gelir ve hızlıca bağlayıcı olmayan bir teklif alırsınız."
+    },
+    "success": {
+      "title": "Talebiniz için teşekkürler!",
+      "text1": "Polikarbonat plaka değişimi teklif talebinizi aldık.",
+      "text2": "24 saat içinde sizinle iletişime geçeceğiz."
     }
   }
 }

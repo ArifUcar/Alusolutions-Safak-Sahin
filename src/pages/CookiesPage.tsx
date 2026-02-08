@@ -20,7 +20,7 @@ export default function CookiesPage() {
           <p>U kunt cookies blokkeren of verwijderen via uw browserinstellingen.</p>
 
           <h2>Contact</h2>
-          <p>Vragen over ons cookiebeleid? Neem contact op via info@alusolutions.nl</p>
+          <p>Vragen over ons cookiebeleid? Neem contact op via info@vivaverandas.nl</p>
         </div>
       </section>
       <Footer />

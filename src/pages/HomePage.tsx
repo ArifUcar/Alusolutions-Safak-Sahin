@@ -1,12 +1,21 @@
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import GoogleReviews from '../components/GoogleReviews'
 import '../styles/HomePage.css'
 
 export default function HomePage() {
   const { t } = useTranslation()
   return (
     <div className="home-page">
+      <Helmet>
+        <title>VivaVerandas | Aluminium Veranda's & Overkappingen in Reuver, Limburg</title>
+        <meta name="description" content={t('home.hero.description1')} />
+        <link rel="canonical" href="https://vivaverandas.nl/" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}
@@ -33,6 +42,7 @@ export default function HomePage() {
             <img src="/Veranda-antraciet.webp" alt="Aluminium veranda" />
             <img src="/Tuinkamer-met-glazenschuifwanden-r96cf3vfsj301y31nv8v88rmlr026cvk5ly402n4i0.webp" alt="Tuinkamer met veranda" />
             <img src="/Overkapping-Helder-poly.webp" alt="Moderne overkapping" />
+            <img src="/cube-veranda.webp" alt="Cube veranda" />
           </div>
         </div>
       </section>
@@ -44,54 +54,34 @@ export default function HomePage() {
           <p className="section-subtitle">{t('home.products.subtitle')}</p>
 
           <div className="products-grid">
-            <div className="product-card">
+            <Link to="/producten/polycarbonaat-veranda" className="product-card">
               <img src="/antra-veranda-PC5-1.webp" alt="Polycarbonaat Veranda" />
               <div className="product-content">
-                <h3>{t('products.polycarbonaat')}</h3>
+                <h3>{t('header.polycarbonaatVeranda')}</h3>
                 <p>{t('home.products.poly.description')}</p>
-                <a href="#" className="btn btn-primary">{t('home.products.moreInfo')}</a>
               </div>
-            </div>
-            <div className="product-card">
+            </Link>
+            <Link to="/producten/glazen-veranda" className="product-card">
               <img src="/Glazendak-cremewit-1.webp" alt="Glazen Veranda" />
               <div className="product-content">
-                <h3>{t('products.glazen')}</h3>
+                <h3>{t('header.glazenVeranda')}</h3>
                 <p>{t('home.products.glazen.description')}</p>
-                <a href="#" className="btn btn-primary">{t('home.products.moreInfo')}</a>
               </div>
-            </div>
-            <div className="product-card">
-              <img src="/lamellen-overkapping.webp" alt="Lamellen Veranda" />
+            </Link>
+            <Link to="/producten/lamel-veranda" className="product-card">
+              <img src="/lamellen-overkapping.webp" alt="Lamel Veranda" />
               <div className="product-content">
-                <h3>{t('products.lamellen')}</h3>
+                <h3>{t('header.lamelVeranda')}</h3>
                 <p>{t('home.products.lamellen.description')}</p>
-                <a href="#" className="btn btn-primary">{t('home.products.moreInfo')}</a>
               </div>
-            </div>
-            <div className="product-card">
-              <img src="/Vouwdak-halfopen.webp" alt="Vouwdak Veranda" />
+            </Link>
+            <Link to="/producten/cube-veranda" className="product-card">
+              <img src="/cube-veranda.webp" alt="Cube Veranda" />
               <div className="product-content">
-                <h3>{t('products.vouwdak')}</h3>
-                <p>{t('home.products.vouwdak.description')}</p>
-                <a href="#" className="btn btn-primary">{t('home.products.moreInfo')}</a>
+                <h3>{t('header.cubeVeranda')}</h3>
+                <p>{t('home.products.cube.description')}</p>
               </div>
-            </div>
-            <div className="product-card">
-              <img src="/glazen-schuifwand-5-rails.webp" alt="Glazen Schuifwand" />
-              <div className="product-content">
-                <h3>{t('products.schuifwand')}</h3>
-                <p>{t('home.products.schuifwand.description')}</p>
-                <a href="#" className="btn btn-primary">{t('home.products.moreInfo')}</a>
-              </div>
-            </div>
-            <div className="product-card">
-              <img src="/Tuinkamer-Antraciet.webp" alt="Tuinkamer" />
-              <div className="product-content">
-                <h3>{t('products.tuinkamer')}</h3>
-                <p>{t('home.products.tuinkamer.description')}</p>
-                <a href="#" className="btn btn-primary">{t('home.products.moreInfo')}</a>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -109,7 +99,10 @@ export default function HomePage() {
               <h3>{t('home.benefits.subtitle')}</h3>
               <p>{t('home.benefits.description1')}</p>
               <p>{t('home.benefits.description2')}</p>
-              <a href="#contact" className="btn btn-primary">{t('home.benefits.cta')}</a>
+              <a href="tel:+31773902201" className="btn btn-primary">
+                <i className="pi pi-phone" style={{ marginRight: '8px' }}></i>
+                {t('home.benefits.cta')} - +31 77 390 2201
+              </a>
             </div>
           </div>
         </div>
@@ -148,25 +141,49 @@ export default function HomePage() {
           <div className="process-grid">
             <div className="process-item">
               <div className="process-number">1</div>
-              <img src="/Grondstof-Polycarbonaat.webp" alt="Offerte aanvragen" />
+              <div className="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
               <h3>{t('home.process.step1.title')}</h3>
               <p>{t('home.process.step1.description')}</p>
             </div>
             <div className="process-item">
               <div className="process-number">2</div>
-              <img src="/alusolutions-ons-project-1.webp" alt="Persoonlijk advies" />
+              <div className="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
               <h3>{t('home.process.step2.title')}</h3>
               <p>{t('home.process.step2.description')}</p>
             </div>
             <div className="process-item">
               <div className="process-number">3</div>
-              <img src="/Overkapping-met-spie.webp" alt="Productie" />
+              <div className="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
               <h3>{t('home.process.step3.title')}</h3>
               <p>{t('home.process.step3.description')}</p>
             </div>
             <div className="process-item">
               <div className="process-number">4</div>
-              <img src="/Antraciet-veranda-met-sutter.webp" alt="Installatie" />
+              <div className="process-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
               <h3>{t('home.process.step4.title')}</h3>
               <p>{t('home.process.step4.description')}</p>
             </div>
@@ -235,41 +252,65 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Glazen Schuifwanden Section */}
+      <section className="glass-walls-section">
+        <div className="container">
+          <div className="glass-walls-wrapper">
+            <div className="glass-walls-image">
+              <img src="/glazen-schuifwand-5-rails.webp" alt="Glazen Schuifwanden" />
+            </div>
+            <div className="glass-walls-content">
+              <h2>{t('home.features.openingTypes.title')}</h2>
+              <p>{t('home.features.openingTypes.description')}</p>
+              <div className="glass-walls-features">
+                <div className="glass-wall-type">
+                  <i className="pi pi-arrows-h"></i>
+                  <span>{t('home.glassWalls.sliding')}</span>
+                </div>
+                <div className="glass-wall-type">
+                  <i className="pi pi-arrows-alt"></i>
+                  <span>{t('home.glassWalls.folding')}</span>
+                </div>
+              </div>
+              <Link to="/inspiratie" className="btn btn-primary">{t('home.glassWalls.cta')}</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Inspiration Gallery */}
       <section className="inspiration" id="inspiratie">
         <div className="container">
           <h2>{t('home.inspiration.title')}</h2>
-          <div className="inspiration-grid">
-            <div className="inspiration-item large">
-              <img src="/sunlight-illuminating-cozy-patio-with-dining-table-hanging-plants-copy-space-2048x1366.jpg.webp" alt="Luxe veranda inspiratie" />
-              <div className="inspiration-overlay">
-                <span>{t('home.inspiration.luxury')}</span>
+          <div className="inspiration-products-grid">
+            <Link to="/producten/polycarbonaat-veranda" className="inspiration-product-item">
+              <img src="/polikarbonat/polikarbonat-veranda.png" alt={t('header.polycarbonaatVeranda')} />
+              <div className="inspiration-product-overlay">
+                <h3>{t('header.polycarbonaatVeranda')}</h3>
+                <span className="view-more">{t('common.readMore')} →</span>
               </div>
-            </div>
-            <div className="inspiration-item">
-              <img src="/Veranda-cremewit.webp" alt="Moderne stijl" />
-              <div className="inspiration-overlay">
-                <span>{t('home.inspiration.modern')}</span>
+            </Link>
+            <Link to="/producten/lamel-veranda" className="inspiration-product-item">
+              <img src="/lamellen-overkapping.webp" alt={t('header.lamelVeranda')} />
+              <div className="inspiration-product-overlay">
+                <h3>{t('header.lamelVeranda')}</h3>
+                <span className="view-more">{t('common.readMore')} →</span>
               </div>
-            </div>
-            <div className="inspiration-item">
-              <img src="/tuinkamer-antraciet-met-glazenwand-vast.webp" alt="Klassieke stijl" />
-              <div className="inspiration-overlay">
-                <span>{t('home.inspiration.classic')}</span>
+            </Link>
+            <Link to="/producten/cube-veranda" className="inspiration-product-item">
+              <img src="/cube-vernda.png" alt={t('header.cubeVeranda')} />
+              <div className="inspiration-product-overlay">
+                <h3>{t('header.cubeVeranda')}</h3>
+                <span className="view-more">{t('common.readMore')} →</span>
               </div>
-            </div>
-            <div className="inspiration-item">
-              <img src="/Glazenwand-1.webp" alt="Met glazen wanden" />
-              <div className="inspiration-overlay">
-                <span>{t('home.inspiration.glassWalls')}</span>
+            </Link>
+            <Link to="/producten/glazen-veranda" className="inspiration-product-item">
+              <img src="/Glazendak-cremewit-1.webp" alt={t('header.glazenVeranda')} />
+              <div className="inspiration-product-overlay">
+                <h3>{t('header.glazenVeranda')}</h3>
+                <span className="view-more">{t('common.readMore')} →</span>
               </div>
-            </div>
-            <div className="inspiration-item">
-              <img src="/tuinkamer-bij-zwembad.webp" alt="Tuinkamer" />
-              <div className="inspiration-overlay">
-                <span>{t('home.inspiration.gardenRoom')}</span>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -291,57 +332,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="testimonials">
-        <div className="container">
-          <h2>{t('home.testimonials.title')}</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-item">
-              <div className="testimonial-image">
-                <img src="/Grondstof-Polycarbonaat.webp" alt="Jan de Vries" />
-              </div>
-              <div className="testimonial-content">
-                <p>"{t('home.testimonials.review1.text')}"</p>
-                <div className="testimonial-author">
-                  <strong>{t('home.testimonials.review1.name')}</strong>
-                  <span>{t('home.testimonials.review1.location')}</span>
-                </div>
-                <div className="testimonial-stars">★★★★★</div>
-              </div>
-            </div>
-            <div className="testimonial-item">
-              <div className="testimonial-image">
-                <img src="/Polycarbonaat-kleuren.webp" alt="Maria Jansen" />
-              </div>
-              <div className="testimonial-content">
-                <p>"{t('home.testimonials.review2.text')}"</p>
-                <div className="testimonial-author">
-                  <strong>{t('home.testimonials.review2.name')}</strong>
-                  <span>{t('home.testimonials.review2.location')}</span>
-                </div>
-                <div className="testimonial-stars">★★★★★</div>
-              </div>
-            </div>
-            <div className="testimonial-item">
-              <div className="testimonial-image">
-                <img src="/LAmellen-veranda-afstandbediening.webp" alt="Peter Bakker" />
-              </div>
-              <div className="testimonial-content">
-                <p>"{t('home.testimonials.review3.text')}"</p>
-                <div className="testimonial-author">
-                  <strong>{t('home.testimonials.review3.name')}</strong>
-                  <span>{t('home.testimonials.review3.location')}</span>
-                </div>
-                <div className="testimonial-stars">★★★★★</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Google Reviews */}
+      <GoogleReviews />
 
       {/* What is a Polycarbonate Veranda */}
       <section className="info-section" id="over-ons">
         <div className="container">
+          <div className="info-header" style={{ textAlign: 'center', width: '100%' }}>
+            <h2>{t('home.info.title')}</h2>
+            <p className="section-subtitle">{t('home.info.subtitle')}</p>
+          </div>
           <div className="info-grid">
             <div className="info-item">
               <img src="/antra-veranda-PC5-1.webp" alt="Wat is veranda" />
@@ -396,8 +396,8 @@ export default function HomePage() {
               <span>{t('home.colors.cream')}</span>
             </div>
             <div className="color-item">
-              <div className="color-swatch" style={{ backgroundColor: '#8B4513' }}></div>
-              <span>{t('home.colors.brown')}</span>
+              <div className="color-swatch" style={{ backgroundColor: '#000000' }}></div>
+              <span>{t('home.colors.black')}</span>
             </div>
           </div>
         </div>
@@ -475,14 +475,14 @@ export default function HomePage() {
                   <span className="contact-icon">📞</span>
                   <div>
                     <strong>{t('home.contact.phone')}</strong>
-                    <p>+31 85 060 5036</p>
+                    <p>+31 77 390 2201</p>
                   </div>
                 </div>
                 <div className="contact-item">
                   <span className="contact-icon">✉️</span>
                   <div>
                     <strong>{t('home.contact.email')}</strong>
-                    <p>Info@alusolutions.nl</p>
+                    <p>Info@vivaverandas.nl</p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -497,14 +497,14 @@ export default function HomePage() {
             </div>
             <div className="contact-map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5!2d6.0789!3d51.2876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74b8a5c8b1a1f%3A0x1234567890abcdef!2sMariastraat%2022%2C%205953%20NL%20Reuver%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500!2d6.082766!3d51.280102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74f53a508958d%3A0x618238c611b6b837!2sAluSolutions%20%7C%20Veranda's%20%26%20Overkappingen!5e0!3m2!1snl!2snl"
                 width="100%"
                 height="400"
                 style={{ border: 0, borderRadius: '10px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="AluSolutions Locatie"
+                title="VivaVerandas Locatie"
               ></iframe>
             </div>
           </div>

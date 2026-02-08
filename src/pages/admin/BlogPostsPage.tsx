@@ -151,7 +151,7 @@ export default function BlogPostsPage() {
                     </span>
                   </td>
                   <td>
-                    {new Date(post.created_at).toLocaleDateString('nl-NL')}
+                    {new Date(post.created_at).toLocaleDateString(i18n.language === 'tr' ? 'tr-TR' : 'nl-NL')}
                   </td>
                   <td>
                     <div style={{ display: 'flex', gap: '8px' }}>

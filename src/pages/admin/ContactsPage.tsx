@@ -4,7 +4,7 @@ import { supabase } from '../../lib/supabase'
 import type { Contact } from '../../lib/supabase'
 
 export default function ContactsPage() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [contacts, setContacts] = useState<Contact[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedContact, setSelectedContact] = useState<Contact | null>(null)
@@ -129,7 +129,7 @@ export default function ContactsPage() {
                       </div>
                     </td>
                     <td>{contact.subject}</td>
-                    <td>{new Date(contact.created_at).toLocaleDateString('tr-TR')}</td>
+                    <td>{new Date(contact.created_at).toLocaleDateString(i18n.language === 'tr' ? 'tr-TR' : 'nl-NL')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -160,7 +160,7 @@ export default function ContactsPage() {
                 </div>
               )}
               <div style={{ marginBottom: '15px' }}>
-                <strong>{t('admin.contacts.detailDate')}</strong> {new Date(selectedContact.created_at).toLocaleString('tr-TR')}
+                <strong>{t('admin.contacts.detailDate')}</strong> {new Date(selectedContact.created_at).toLocaleString(i18n.language === 'tr' ? 'tr-TR' : 'nl-NL')}
               </div>
 
               <hr style={{ margin: '20px 0', border: 'none', borderTop: '1px solid #e0e0e0' }} />
@@ -168,6 +168,27 @@ export default function ContactsPage() {
               <div style={{ whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
                 {selectedContact.message}
               </div>
+
+              {selectedContact.image_url && (
+                <div style={{ marginTop: '20px' }}>
+                  <strong>{t('admin.contacts.detailPhoto', 'Foto:')}</strong>
+                  <div style={{ marginTop: '10px' }}>
+                    <a href={selectedContact.image_url} target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={selectedContact.image_url}
+                        alt="Bijlage"
+                        style={{
+                          maxWidth: '100%',
+                          maxHeight: '300px',
+                          borderRadius: '8px',
+                          border: '1px solid #e0e0e0',
+                          cursor: 'pointer'
+                        }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              )}
 
               <div style={{ marginTop: '20px', display: 'flex', gap: '10px' }}>
                 <a

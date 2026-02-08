@@ -21,17 +21,14 @@ export default function OptionFormModal({ stepId, option, onClose, onSave }: Opt
     description: option?.description || { nl: '', en: '', tr: '', de: '', fr: '', it: '' },
     image_url: option?.image_url || '',
     display_order: option?.display_order || 1,
-    is_active: option?.is_active ?? true,
-    price_modifier: option?.price_modifier || 0
+    is_active: option?.is_active ?? true
   })
 
   const languages: { code: keyof MultiLanguageText; name: string }[] = [
     { code: 'nl', name: 'NL' },
     { code: 'en', name: 'EN' },
     { code: 'tr', name: 'TR' },
-    { code: 'de', name: 'DE' },
-    { code: 'fr', name: 'FR' },
-    { code: 'it', name: 'IT' }
+    { code: 'de', name: 'DE' }
   ]
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -95,8 +92,7 @@ export default function OptionFormModal({ stepId, option, onClose, onSave }: Opt
         description: formData.description,
         image_url: formData.image_url || null,
         display_order: formData.display_order,
-        is_active: formData.is_active,
-        price_modifier: formData.price_modifier
+        is_active: formData.is_active
       }
 
       if (isEditing) {
@@ -166,16 +162,6 @@ export default function OptionFormModal({ stepId, option, onClose, onSave }: Opt
                 />
               </div>
 
-              <div className="form-group" style={{ flex: '0 0 150px' }}>
-                <label>Fiyat (+/-)</label>
-                <input
-                  type="number"
-                  value={formData.price_modifier}
-                  onChange={(e) => setFormData({ ...formData, price_modifier: parseFloat(e.target.value) || 0 })}
-                  step="0.01"
-                  placeholder="0.00"
-                />
-              </div>
             </div>
 
             <div className="form-row">

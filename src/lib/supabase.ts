@@ -73,13 +73,30 @@ export interface BlockedSlot {
   created_at: string
 }
 
+/**
+ * Appointment settings - configurable durations per service type
+ */
+export interface AppointmentSettings {
+  id: string
+  service_type: string
+  duration_slots: number // How many 30-min slots this appointment blocks (e.g., 2 = 1 hour)
+  name: MultiLanguageText
+  description?: MultiLanguageText
+  is_active: boolean
+  display_order: number
+  created_at: string
+  updated_at: string
+}
+
 export interface Contact {
   id: string
   name: string
   email: string
   phone?: string
+  city?: string
   subject: string
   message: string
+  image_url?: string
   is_read: boolean
   created_at: string
 }
@@ -158,6 +175,11 @@ export type StepInputType =
   | 'number'
   | 'select'
   | 'textarea'
+  | 'dimensions'
+  | 'dimension'
+  | 'dimension-width'
+  | 'dimension-length'
+  | 'dimension-height'
 
 /**
  * Main configurator definition
@@ -169,6 +191,7 @@ export interface Configurator {
   description?: MultiLanguageText
   category?: string
   image_url?: string
+  icon?: string  // PrimeNG icon class (e.g., 'pi pi-home')
   is_active: boolean
   display_order: number
   created_at: string
@@ -189,6 +212,7 @@ export interface ConfiguratorStep {
   is_required: boolean
   min_value?: number
   max_value?: number
+  step_value?: number  // Increment step for number/dimension inputs (e.g., 10 for cm)
   validation_regex?: string
   help_text?: MultiLanguageText
   show_condition?: StepCondition | StepCondition[]
@@ -263,4 +287,27 @@ export interface BlogPost {
   view_count: number
   created_at: string
   updated_at: string
+}
+
+/**
+ * Plaat wisselen (plate replacement) request
+ */
+export interface PlaatWisselenRequest {
+  id: string
+  first_name: string
+  last_name: string
+  address: string
+  postcode: string
+  city: string
+  phone: string
+  email: string
+  plate_count: number
+  depth: string
+  roof_type: string
+  plate_type: string
+  message?: string
+  image_url?: string
+  status: 'pending' | 'contacted' | 'quoted' | 'completed' | 'cancelled'
+  created_at: string
+  updated_at?: string
 }

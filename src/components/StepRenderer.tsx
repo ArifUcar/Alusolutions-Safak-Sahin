@@ -6,6 +6,8 @@ import TextInput from './inputs/TextInput'
 import NumberInput from './inputs/NumberInput'
 import SelectInput from './inputs/SelectInput'
 import TextareaInput from './inputs/TextareaInput'
+import DimensionInput from './inputs/DimensionInput'
+import DimensionsInput from './inputs/DimensionsInput'
 
 interface StepRendererProps {
   step: ConfiguratorStep
@@ -76,6 +78,41 @@ export default function StepRenderer({ step, value, onChange, error, currentLang
           min={step.min_value}
           max={step.max_value}
           placeholder={getLocalizedText(step.help_text)}
+        />
+      )
+
+    case 'dimensions':
+      return (
+        <DimensionsInput
+          options={options}
+          value={value || {}}
+          onChange={onChange}
+          error={error}
+          min={step.min_value || 100}
+          max={step.max_value || 1200}
+          step={step.step_value || 10}
+          getLocalizedText={getLocalizedText}
+        />
+      )
+
+    case 'dimension':
+    case 'dimension-width':
+    case 'dimension-length':
+    case 'dimension-height':
+      return (
+        <DimensionInput
+          value={value || step.min_value || 100}
+          onChange={onChange}
+          error={error}
+          min={step.min_value || 100}
+          max={step.max_value || 1000}
+          step={step.step_value || 10}
+          unit="cm"
+          icon={
+            step.input_type === 'dimension-width' ? 'width' :
+            step.input_type === 'dimension-length' ? 'length' :
+            step.input_type === 'dimension-height' ? 'height' : 'width'
+          }
         />
       )
 

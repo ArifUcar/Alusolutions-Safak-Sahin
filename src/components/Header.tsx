@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next'
 import { Menubar } from 'primereact/menubar'
 import { Button } from 'primereact/button'
 import { Menu } from 'primereact/menu'
-import { Sidebar } from 'primereact/sidebar'
-import type { MenuItem } from 'primereact/menuitem'
+import type { MenuItem, MenuItemCommandEvent } from 'primereact/menuitem'
 import { useTheme } from '../context/ThemeContext'
 import { supabase } from '../lib/supabase'
+import { LogoIcon } from './Logo'
 import 'primereact/resources/themes/lara-light-blue/theme.css'
 import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
@@ -17,6 +17,7 @@ interface Configurator {
   id: string
   slug: string
   name: Record<string, string>
+  icon: string | null
   is_active: boolean
 }
 
@@ -33,7 +34,7 @@ export default function Header() {
     const loadConfigurators = async () => {
       const { data } = await supabase
         .from('configurators')
-        .select('id, slug, name, is_active')
+        .select('id, slug, name, icon, is_active')
         .eq('is_active', true)
         .order('display_order', { ascending: true })
 
@@ -58,81 +59,42 @@ export default function Header() {
       command: () => changeLanguage('en')
     },
     {
-      label: '🇹🇷 Türkçe',
-      command: () => changeLanguage('tr')
-    },
-    {
       label: '🇩🇪 Deutsch',
       command: () => changeLanguage('de')
     }
   ]
 
-  // Build configurator menu items dynamically
+// Build configurator menu items dynamically
   const configuratorItems: MenuItem[] = configurators.map(config => ({
     label: config.name[i18n.language] || config.name['nl'] || config.slug,
-    icon: 'pi pi-cog',
+    icon: config.icon || 'pi pi-cog',
     command: () => navigate(`/offerte/${config.slug}`)
   }))
 
   const menuItems: MenuItem[] = [
     {
-      label: t('header.services'),
+      label: t('header.products'),
       icon: 'pi pi-th-large',
       items: [
         {
-          label: t('header.verandas'),
-          icon: 'pi pi-home',
-          items: [
-            {
-              label: t('products.polycarbonaat'),
-              icon: 'pi pi-box',
-              command: () => navigate('/producten/polycarbonaat')
-            },
-            {
-              label: t('products.glazen'),
-              icon: 'pi pi-sparkles',
-              command: () => navigate('/producten/glazen')
-            },
-            {
-              label: t('products.lamellen'),
-              icon: 'pi pi-bars',
-              command: () => navigate('/producten/lamellen')
-            },
-            {
-              label: t('products.vouwdak'),
-              icon: 'pi pi-chevron-up',
-              command: () => navigate('/producten/vouwdak')
-            }
-          ]
+          label: t('header.polycarbonaatVeranda'),
+          icon: 'pi pi-sun',
+          command: () => navigate('/producten/polycarbonaat-veranda')
         },
         {
-          separator: true
+          label: t('header.glazenVeranda'),
+          icon: 'pi pi-window-maximize',
+          command: () => navigate('/producten/glazen-veranda')
         },
         {
-          label: t('header.other'),
-          icon: 'pi pi-palette',
-          items: [
-            {
-              label: t('products.schuifwand'),
-              icon: 'pi pi-arrows-h',
-              command: () => navigate('/producten/schuifwand')
-            },
-            {
-              label: t('products.cube'),
-              icon: 'pi pi-stop',
-              command: () => navigate('/producten/cube')
-            },
-            {
-              label: t('products.tuinkamer'),
-              icon: 'pi pi-building',
-              command: () => navigate('/producten/tuinkamer')
-            },
-            {
-              label: t('products.carport'),
-              icon: 'pi pi-car',
-              command: () => navigate('/producten/carport')
-            }
-          ]
+          label: t('header.lamelVeranda'),
+          icon: 'pi pi-bars',
+          command: () => navigate('/producten/lamel-veranda')
+        },
+        {
+          label: t('header.cubeVeranda'),
+          icon: 'pi pi-box',
+          command: () => navigate('/producten/cube-veranda')
         }
       ]
     },
@@ -151,16 +113,6 @@ export default function Header() {
           command: () => navigate('/inspiratie')
         },
         {
-          label: t('header.beforeAfter'),
-          icon: 'pi pi-replay',
-          command: () => navigate('/inspiratie')
-        },
-        {
-          label: t('header.styles'),
-          icon: 'pi pi-palette',
-          command: () => navigate('/inspiratie')
-        },
-        {
           label: t('header.blogsTips'),
           icon: 'pi pi-book',
           command: () => navigate('/blog')
@@ -171,18 +123,23 @@ export default function Header() {
       label: t('header.requestQuote'),
       icon: 'pi pi-file-edit',
       items: [
-        // Dynamic configurators
+        {
+          label: t('offerte.chooseProduct'),
+          icon: 'pi pi-list',
+          command: () => navigate('/offerte')
+        },
+        { separator: true },
         ...configuratorItems,
         ...(configuratorItems.length > 0 ? [{ separator: true }] : []),
         {
-          label: t('header.freeMeasurement'),
+          label: t('header.makeAppointment'),
           icon: 'pi pi-calendar',
           command: () => navigate('/afspraak')
         },
         {
           label: t('header.callDirect'),
           icon: 'pi pi-phone',
-          command: () => window.location.href = 'tel:+31850605036'
+          command: () => window.location.href = 'tel:+31773902201'
         }
       ]
     },
@@ -206,14 +163,26 @@ export default function Header() {
           command: () => navigate('/faq')
         }
       ]
+    },
+    {
+      label: t('header.plateReplace'),
+      icon: 'pi pi-sync',
+      command: () => navigate('/offerte-polycarbonaat-platen-wisselen')
     }
   ]
 
   const start = (
     <Link to="/" className="logo-link">
       <div className="logo">
-        <h1>ALU<span>SOLUTIONS</span></h1>
-        <p className="tagline">{t('header.tagline')}</p>
+        <div className="logo-icon">
+          <LogoIcon />
+        </div>
+        <div className="logo-text">
+          <h1>
+            <span className="logo-viva">Viva</span>
+            <span className="logo-verandas">Verandas</span>
+          </h1>
+        </div>
       </div>
     </Link>
   )
@@ -245,6 +214,12 @@ export default function Header() {
       />
 
       <Button
+        icon={theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}
+        className="p-button-text p-button-rounded mobile-theme-toggle"
+        onClick={toggleTheme}
+      />
+
+      <Button
         icon="pi pi-bars"
         className="p-button-text p-button-rounded mobile-menu-toggle"
         onClick={() => setMobileMenuOpen(true)}
@@ -258,51 +233,138 @@ export default function Header() {
         <Menubar model={menuItems} start={start} end={end} className="custom-menubar" />
       </header>
 
-      {/* Mobile Sidebar */}
-      <Sidebar
-        visible={mobileMenuOpen}
-        onHide={() => setMobileMenuOpen(false)}
-        position="left"
-        className="mobile-sidebar"
-      >
-        <div className="mobile-logo">
-          <h2>ALU<span>SOLUTIONS</span></h2>
-          <p>{t('header.tagline')}</p>
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div className="mobile-menu-overlay" onClick={() => setMobileMenuOpen(false)}>
+          <div className="mobile-menu-panel" onClick={(e) => e.stopPropagation()}>
+            {/* Header with close button */}
+            <div className="mobile-menu-header">
+              <div className="mobile-menu-logo">
+                <div className="mobile-logo-icon">
+                  <LogoIcon />
+                </div>
+                <div className="mobile-logo-text">
+                  <h2>
+                    <span className="logo-viva">Viva</span>
+                    <span className="logo-verandas">Verandas</span>
+                  </h2>
+                </div>
+              </div>
+              <button className="mobile-menu-close" onClick={() => setMobileMenuOpen(false)}>
+                <i className="pi pi-times"></i>
+              </button>
+            </div>
+
+            {/* Navigation Links */}
+            <nav className="mobile-menu-nav">
+              {menuItems.map((item, index) => (
+                <div key={index} className="mobile-nav-item">
+                  {item.items ? (
+                    <>
+                      <div className="mobile-nav-group-title">
+                        <i className={item.icon}></i>
+                        <span>{item.label}</span>
+                      </div>
+                      <div className="mobile-nav-subitems">
+                        {item.items.map((subItem: MenuItem, subIndex: number) => (
+                          subItem.separator ? (
+                            <div key={subIndex} className="mobile-nav-separator"></div>
+                          ) : subItem.items ? (
+                            <div key={subIndex} className="mobile-nav-subgroup">
+                              <div className="mobile-nav-subgroup-title">{subItem.label}</div>
+                              {subItem.items.map((subSubItem: MenuItem, subSubIndex: number) => (
+                                <button
+                                  key={subSubIndex}
+                                  className="mobile-nav-link mobile-nav-link-nested"
+                                  onClick={() => {
+                                    if (subSubItem.command) subSubItem.command({} as MenuItemCommandEvent)
+                                    setMobileMenuOpen(false)
+                                  }}
+                                >
+                                  <i className={subSubItem.icon}></i>
+                                  <span>{subSubItem.label}</span>
+                                </button>
+                              ))}
+                            </div>
+                          ) : (
+                            <button
+                              key={subIndex}
+                              className="mobile-nav-link"
+                              onClick={() => {
+                                if (subItem.command) subItem.command({} as MenuItemCommandEvent)
+                                setMobileMenuOpen(false)
+                              }}
+                            >
+                              <i className={subItem.icon}></i>
+                              <span>{subItem.label}</span>
+                            </button>
+                          )
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <button
+                      className="mobile-nav-link mobile-nav-link-main"
+                      onClick={() => {
+                        if (item.command) item.command({} as MenuItemCommandEvent)
+                        setMobileMenuOpen(false)
+                      }}
+                    >
+                      <i className={item.icon}></i>
+                      <span>{item.label}</span>
+                    </button>
+                  )}
+                </div>
+              ))}
+            </nav>
+
+            {/* CTA Button */}
+            <div className="mobile-menu-cta">
+              <button
+                className="mobile-cta-button"
+                onClick={() => {
+                  navigate('/afspraak')
+                  setMobileMenuOpen(false)
+                }}
+              >
+                <i className="pi pi-calendar-plus"></i>
+                <span>{t('header.makeAppointment')}</span>
+              </button>
+            </div>
+
+            {/* Footer Actions */}
+            <div className="mobile-menu-footer">
+              <div className="mobile-lang-selector">
+                <button
+                  className={`mobile-lang-btn ${i18n.language === 'nl' ? 'active' : ''}`}
+                  onClick={() => changeLanguage('nl')}
+                >
+                  NL
+                </button>
+                <button
+                  className={`mobile-lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+                  onClick={() => changeLanguage('en')}
+                >
+                  EN
+                </button>
+                <button
+                  className={`mobile-lang-btn ${i18n.language === 'de' ? 'active' : ''}`}
+                  onClick={() => changeLanguage('de')}
+                >
+                  DE
+                </button>
+              </div>
+              <button
+                className="mobile-footer-btn"
+                onClick={toggleTheme}
+              >
+                <i className={theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}></i>
+                <span>{theme === 'light' ? t('header.darkMode') : t('header.lightMode')}</span>
+              </button>
+            </div>
+          </div>
         </div>
-
-        <Menu
-          model={[
-            ...menuItems,
-            { separator: true },
-            {
-              label: t('header.makeAppointment'),
-              icon: 'pi pi-calendar-plus',
-              command: () => {
-                navigate('/afspraak')
-                setMobileMenuOpen(false)
-              },
-              className: 'mobile-cta-item'
-            }
-          ]}
-          className="mobile-menu"
-        />
-
-        <div className="mobile-actions">
-          <Button
-            label={i18n.language.toUpperCase()}
-            icon="pi pi-globe"
-            className="p-button-outlined w-full mb-2"
-            onClick={(e) => langMenuRef.current?.toggle(e)}
-          />
-
-          <Button
-            label={theme === 'light' ? t('header.darkMode') : t('header.lightMode')}
-            icon={theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}
-            className="p-button-outlined w-full"
-            onClick={toggleTheme}
-          />
-        </div>
-      </Sidebar>
+      )}
     </>
   )
 }

@@ -321,6 +321,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--body-text);
+  text-align: left;
 }
 
 .blog-post-body p {
@@ -364,6 +365,323 @@
   margin: 2rem 0;
   font-style: italic;
   color: var(--muted-text);
+}
+
+/* Additional HTML content styles - Link styles moved to Quill section */
+
+.blog-post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.blog-post-body th,
+.blog-post-body td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.blog-post-body th {
+  background: var(--section-bg);
+  font-weight: 600;
+}
+
+.blog-post-body pre,
+.blog-post-body code {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+}
+
+.blog-post-body pre {
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.blog-post-body pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.blog-post-body hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+.blog-post-body figure {
+  margin: 2rem 0;
+}
+
+.blog-post-body figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin-top: 0.5rem;
+}
+
+.blog-post-body video,
+.blog-post-body iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* Image gallery support */
+.blog-post-body .image-gallery,
+.blog-post-body .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.blog-post-body .image-gallery img,
+.blog-post-body .gallery img {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Quill Editor Output Styles */
+.blog-post-body strong,
+.blog-post-body b {
+  font-weight: 700;
+}
+
+.blog-post-body em,
+.blog-post-body i {
+  font-style: italic;
+}
+
+.blog-post-body u {
+  text-decoration: underline;
+}
+
+.blog-post-body s,
+.blog-post-body strike {
+  text-decoration: line-through;
+}
+
+.blog-post-body sub {
+  vertical-align: sub;
+  font-size: 0.8em;
+}
+
+.blog-post-body sup {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+/* Quill Text Alignment - Override to left align */
+.blog-post-body .ql-align-center,
+.blog-post-body [style*="text-align: center"] {
+  text-align: left !important;
+}
+
+.blog-post-body .ql-align-right,
+.blog-post-body [style*="text-align: right"] {
+  text-align: left !important;
+}
+
+.blog-post-body .ql-align-justify,
+.blog-post-body [style*="text-align: justify"] {
+  text-align: left !important;
+}
+
+/* Quill Indentation */
+.blog-post-body .ql-indent-1 {
+  padding-left: 3em;
+}
+
+.blog-post-body .ql-indent-2 {
+  padding-left: 6em;
+}
+
+.blog-post-body .ql-indent-3 {
+  padding-left: 9em;
+}
+
+.blog-post-body .ql-indent-4 {
+  padding-left: 12em;
+}
+
+/* Quill Font Sizes */
+.blog-post-body .ql-size-small {
+  font-size: 0.75em;
+}
+
+.blog-post-body .ql-size-large {
+  font-size: 1.5em;
+}
+
+.blog-post-body .ql-size-huge {
+  font-size: 2.5em;
+}
+
+/* Quill Headers from editor */
+.blog-post-body h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-text);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.blog-post-body h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--heading-text);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-post-body h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading-text);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-body h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--heading-text);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Quill Video Embeds */
+.blog-post-body .ql-video {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* Quill Code Blocks */
+.blog-post-body .ql-code-block-container {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  font-family: 'Consolas', 'Monaco', monospace;
+  line-height: 1.5;
+}
+
+.blog-post-body .ql-code-block {
+  color: #d4d4d4;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0.25rem 0;
+  white-space: pre;
+}
+
+/* Dark mode adjustments for code blocks */
+[data-theme="dark"] .blog-post-body .ql-code-block-container,
+[data-theme="dark"] .blog-post-body .ql-code-block {
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Image styling improvements */
+.blog-post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-body img[style*="float: left"] {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post-body img[style*="float: right"] {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Center aligned images */
+.blog-post-body p:has(img) {
+  
+}
+
+.blog-post-body p img {
+  display: inline-block;
+}
+
+/* Link hover effect */
+.blog-post-body a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.blog-post-body a:hover {
+  border-bottom-color: var(--primary-color);
+}
+
+/* Editor wrapper styles for admin page */
+.blog-editor-wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Textarea styles for HTML content editor */
+.blog-editor-wrapper textarea,
+.blog-content-textarea {
+  width: 100%;
+  min-height: 400px;
+  padding: 1rem;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  resize: vertical;
+  background: white;
+  color: var(--body-text);
+}
+
+.blog-editor-wrapper textarea:focus,
+.blog-content-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Clean paragraph spacing */
+.blog-post-body p:empty {
+  display: none;
+}
+
+.blog-post-body p + p {
+  margin-top: 0;
+}
+
+/* First paragraph special styling */
+.blog-post-body > p:first-child {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--body-text);
 }
 
 .blog-post-back {
@@ -412,4 +730,78 @@
   .blog-post-body {
     font-size: 1rem;
   }
+
+  .blog-post-body > p:first-child {
+    font-size: 1.05rem;
+  }
+
+  .blog-post-body h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-post-body h2 {
+    font-size: 1.4rem;
+  }
+
+  .blog-post-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .blog-post-body h4 {
+    font-size: 1.1rem;
+  }
+
+  .blog-post-body .ql-indent-1 {
+    padding-left: 1.5em;
+  }
+
+  .blog-post-body .ql-indent-2 {
+    padding-left: 3em;
+  }
+
+  .blog-post-body img {
+    margin: 1rem 0;
+  }
+
+  .blog-post-body img[style*="float: left"],
+  .blog-post-body img[style*="float: right"] {
+    float: none !important;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .blog-post-body .image-gallery,
+  .blog-post-body .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-post-article {
+    padding: 0 1rem;
+  }
+}
+
+/* Dark mode adjustments for blog post */
+[data-theme="dark"] .blog-post-body img {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .blog-post-body blockquote {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+[data-theme="dark"] .blog-post-body pre,
+[data-theme="dark"] .blog-post-body code {
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .blog-post-body th {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .blog-post-body th,
+[data-theme="dark"] .blog-post-body td {
+  border-color: rgba(255, 255, 255, 0.1);
 }

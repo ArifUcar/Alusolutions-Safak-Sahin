@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { supabase } from '../../lib/supabase'
 import type { Configurator } from '../../lib/supabase'
 
 export default function ConfiguratorsPage() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const [configurators, setConfigurators] = useState<Configurator[]>([])
   const [loading, setLoading] = useState(true)
@@ -59,7 +61,7 @@ export default function ConfiguratorsPage() {
   }
 
   const handleDelete = async (id: string) => {
-    if (!confirm('Bu konfigüratörü silmek istediğinizden emin misiniz? Tüm adımlar ve seçenekler de silinecektir.')) return
+    if (!confirm(t('admin.configurators.deleteConfirmFull'))) return
 
     try {
       const { error } = await supabase
@@ -71,34 +73,100 @@ export default function ConfiguratorsPage() {
       loadConfigurators()
     } catch (error) {
       console.error('Error deleting:', error)
-      alert('Silme hatası!')
+      alert(t('admin.configurators.deleteError'))
     }
   }
 
   const handleDuplicate = async (configurator: Configurator) => {
     try {
+      // 1. Create the new configurator
       const newConfigData = {
-        ...configurator,
-        id: undefined,
-        slug: `${configurator.slug}-kopya`,
+        slug: `${configurator.slug}-copy-${Date.now()}`,
         name: {
           ...configurator.name,
-          nl: `${configurator.name.nl} (Kopya)`
+          nl: `${configurator.name.nl} (${t('admin.configurators.copy')})`
         },
+        description: configurator.description,
+        category: configurator.category,
+        image_url: configurator.image_url,
+        icon: configurator.icon,
         is_active: false,
-        created_at: undefined,
-        updated_at: undefined
+        display_order: configurator.display_order
       }
 
-      const { error } = await supabase
+      const { data: newConfigurator, error: configError } = await supabase
         .from('configurators')
         .insert(newConfigData)
+        .select()
+        .single()
 
-      if (error) throw error
+      if (configError) throw configError
+
+      // 2. Get all steps with their options from the original configurator
+      const { data: originalSteps, error: stepsError } = await supabase
+        .from('configurator_steps')
+        .select('*, configurator_options(*)')
+        .eq('configurator_id', configurator.id)
+        .order('step_order', { ascending: true })
+
+      if (stepsError) throw stepsError
+
+      // 3. Copy each step and its options
+      if (originalSteps && originalSteps.length > 0) {
+        for (const step of originalSteps) {
+          // Create new step
+          const newStepData = {
+            configurator_id: newConfigurator.id,
+            step_order: step.step_order,
+            title: step.title,
+            subtitle: step.subtitle,
+            input_type: step.input_type,
+            field_name: step.field_name,
+            is_required: step.is_required,
+            min_value: step.min_value,
+            max_value: step.max_value,
+            step_value: step.step_value,
+            validation_regex: step.validation_regex,
+            help_text: step.help_text,
+            show_condition: step.show_condition,
+            show_preview_image: step.show_preview_image,
+            preview_image_base_path: step.preview_image_base_path
+          }
+
+          const { data: newStep, error: newStepError } = await supabase
+            .from('configurator_steps')
+            .insert(newStepData)
+            .select()
+            .single()
+
+          if (newStepError) throw newStepError
+
+          // Copy options for this step
+          if (step.configurator_options && step.configurator_options.length > 0) {
+            const newOptions = step.configurator_options.map((option: any) => ({
+              step_id: newStep.id,
+              option_value: option.option_value,
+              label: option.label,
+              description: option.description,
+              image_url: option.image_url,
+              display_order: option.display_order,
+              is_active: option.is_active,
+              price_modifier: option.price_modifier
+            }))
+
+            const { error: optionsError } = await supabase
+              .from('configurator_options')
+              .insert(newOptions)
+
+            if (optionsError) throw optionsError
+          }
+        }
+      }
+
       loadConfigurators()
     } catch (error) {
       console.error('Error duplicating:', error)
-      alert('Kopyalama hatası!')
+      alert(t('admin.configurators.duplicateError'))
     }
   }
 
@@ -107,37 +175,37 @@ export default function ConfiguratorsPage() {
   return (
     <div className="admin-page">
       <div className="admin-page-header">
-        <h1>Konfigüratör Yönetimi</h1>
+        <h1>{t('admin.configurators.title')}</h1>
         <button
           className="admin-btn admin-btn-primary"
           onClick={() => navigate('/admin/configurators/new')}
         >
-          + Yeni Konfigüratör
+          + {t('admin.configurators.newConfigurator')}
         </button>
       </div>
 
       <div style={{ marginBottom: '25px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
         <div style={{ display: 'flex', gap: '10px' }}>
-          <span style={{ alignSelf: 'center', fontWeight: '600', color: 'var(--body-text)' }}>Kategori:</span>
+          <span style={{ alignSelf: 'center', fontWeight: '600', color: 'var(--body-text)' }}>{t('admin.configurators.category')}:</span>
           {categories.map(cat => (
             <button
               key={cat}
               className={`admin-btn ${filterCategory === cat ? 'admin-btn-primary' : 'admin-btn-secondary'}`}
               onClick={() => setFilterCategory(cat)}
             >
-              {cat === 'all' ? 'Tümü' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+              {cat === 'all' ? t('admin.configurators.all') : cat.charAt(0).toUpperCase() + cat.slice(1)}
             </button>
           ))}
         </div>
         <div style={{ display: 'flex', gap: '10px' }}>
-          <span style={{ alignSelf: 'center', fontWeight: '600', color: 'var(--body-text)' }}>Durum:</span>
+          <span style={{ alignSelf: 'center', fontWeight: '600', color: 'var(--body-text)' }}>{t('admin.configurators.status')}:</span>
           {['all', 'active', 'inactive'].map(status => (
             <button
               key={status}
               className={`admin-btn ${filterStatus === status ? 'admin-btn-primary' : 'admin-btn-secondary'}`}
               onClick={() => setFilterStatus(status)}
             >
-              {status === 'all' ? 'Tümü' : status === 'active' ? 'Aktif' : 'Pasif'}
+              {status === 'all' ? t('admin.configurators.all') : status === 'active' ? t('admin.configurators.statusActive') : t('admin.configurators.statusInactive')}
             </button>
           ))}
         </div>
@@ -146,7 +214,7 @@ export default function ConfiguratorsPage() {
       {loading ? (
         <div className="loading-screen">
           <div className="spinner"></div>
-          <p>Yükleniyor...</p>
+          <p>{t('common.loading')}</p>
         </div>
       ) : configurators.length === 0 ? (
         <div className="empty-state">
@@ -154,8 +222,8 @@ export default function ConfiguratorsPage() {
             <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
             <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <h3>Henüz konfigüratör yok</h3>
-          <p>Yeni konfigüratör oluşturmak için butona tıklayın</p>
+          <h3>{t('admin.configurators.noConfigurators')}</h3>
+          <p>{t('admin.configurators.noConfiguratorsDesc')}</p>
         </div>
       ) : (
         <div className="configurators-grid">
@@ -186,7 +254,7 @@ export default function ConfiguratorsPage() {
                 </div>
                 <div className="configurator-status">
                   <span className={`status-badge ${config.is_active ? 'confirmed' : 'pending'}`}>
-                    {config.is_active ? 'Aktif' : 'Pasif'}
+                    {config.is_active ? t('admin.configurators.statusActive') : t('admin.configurators.statusInactive')}
                   </span>
                 </div>
               </div>
@@ -201,7 +269,7 @@ export default function ConfiguratorsPage() {
                     <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                     <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                   </svg>
-                  Düzenle
+                  {t('common.edit')}
                 </button>
 
                 <button
@@ -220,7 +288,7 @@ export default function ConfiguratorsPage() {
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
-                      Gizle
+                      {t('admin.configurators.hide')}
                     </>
                   ) : (
                     <>
@@ -228,7 +296,7 @@ export default function ConfiguratorsPage() {
                         <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
                         <line x1="1" y1="1" x2="23" y2="23"></line>
                       </svg>
-                      Yayınla
+                      {t('admin.configurators.publish')}
                     </>
                   )}
                 </button>
@@ -242,7 +310,7 @@ export default function ConfiguratorsPage() {
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                   </svg>
-                  Kopyala
+                  {t('admin.configurators.duplicate')}
                 </button>
 
                 <button
@@ -254,7 +322,7 @@ export default function ConfiguratorsPage() {
                     <polyline points="3 6 5 6 21 6"></polyline>
                     <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                   </svg>
-                  Sil
+                  {t('common.delete')}
                 </button>
               </div>
             </div>

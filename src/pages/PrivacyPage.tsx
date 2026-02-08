@@ -10,7 +10,7 @@ export default function PrivacyPage() {
       <section className="legal-content">
         <div className="container">
           <h2>1. Inleiding</h2>
-          <p>AluSolutions respecteert uw privacy en zorgt ervoor dat de persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld.</p>
+          <p>VivaVerandas respecteert uw privacy en zorgt ervoor dat de persoonlijke informatie die u ons verschaft vertrouwelijk wordt behandeld.</p>
 
           <h2>2. Gegevens die wij verzamelen</h2>
           <p>Wij verzamelen gegevens die u zelf aan ons verstrekt, zoals naam, adres, e-mailadres en telefoonnummer wanneer u contact met ons opneemt of een offerte aanvraagt.</p>
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           <p>U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op.</p>
 
           <h2>6. Contact</h2>
-          <p>Voor vragen over ons privacybeleid kunt u contact opnemen via info@alusolutions.nl</p>
+          <p>Voor vragen over ons privacybeleid kunt u contact opnemen via info@vivaverandas.nl</p>
         </div>
       </section>
       <Footer />

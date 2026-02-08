@@ -23,6 +23,7 @@ export default function StepFormModal({ configuratorId, step, onClose, onSave }:
     is_required: step?.is_required ?? true,
     min_value: step?.min_value || undefined,
     max_value: step?.max_value || undefined,
+    step_value: step?.step_value || undefined,
     validation_regex: step?.validation_regex || '',
     help_text: step?.help_text || { nl: '', en: '', tr: '', de: '', fr: '', it: '' },
     show_preview_image: step?.show_preview_image || false,
@@ -33,9 +34,7 @@ export default function StepFormModal({ configuratorId, step, onClose, onSave }:
     { code: 'nl', name: 'NL' },
     { code: 'en', name: 'EN' },
     { code: 'tr', name: 'TR' },
-    { code: 'de', name: 'DE' },
-    { code: 'fr', name: 'FR' },
-    { code: 'it', name: 'IT' }
+    { code: 'de', name: 'DE' }
   ]
 
   const inputTypes: { value: StepInputType; label: string }[] = [
@@ -45,7 +44,12 @@ export default function StepFormModal({ configuratorId, step, onClose, onSave }:
     { value: 'text', label: 'Metin' },
     { value: 'number', label: 'Sayı' },
     { value: 'select', label: 'Dropdown' },
-    { value: 'textarea', label: 'Uzun Metin' }
+    { value: 'textarea', label: 'Uzun Metin' },
+    { value: 'dimensions', label: '📐 Ölçüler (Çoklu - Seçeneklerden)' },
+    { value: 'dimension', label: '📏 Ölçü (Tekli)' },
+    { value: 'dimension-width', label: '↔️ Genişlik (Tekli)' },
+    { value: 'dimension-length', label: '↕️ Uzunluk (Tekli)' },
+    { value: 'dimension-height', label: '⬆️ Yükseklik (Tekli)' }
   ]
 
   // Auto-generate field_name from NL title
@@ -74,6 +78,7 @@ export default function StepFormModal({ configuratorId, step, onClose, onSave }:
         is_required: formData.is_required,
         min_value: formData.min_value || null,
         max_value: formData.max_value || null,
+        step_value: formData.step_value || null,
         validation_regex: formData.validation_regex || null,
         help_text: formData.help_text,
         show_condition: null, // Will be added later
@@ -236,33 +241,60 @@ export default function StepFormModal({ configuratorId, step, onClose, onSave }:
             </div>
           </div>
 
-          {/* Validation (for text/number inputs) */}
-          {(formData.input_type === 'text' || formData.input_type === 'number') && (
+          {/* Validation (for text/number/dimension inputs) */}
+          {(formData.input_type === 'text' || formData.input_type === 'number' || formData.input_type.startsWith('dimension')) && (
             <div className="form-section">
               <h3>Validasyon</h3>
 
-              {formData.input_type === 'number' && (
-                <div className="form-row">
-                  <div className="form-group">
-                    <label>Minimum Değer</label>
-                    <input
-                      type="number"
-                      value={formData.min_value || ''}
-                      onChange={(e) => setFormData({ ...formData, min_value: e.target.value ? parseFloat(e.target.value) : undefined })}
-                      placeholder="0"
-                    />
+              {(formData.input_type === 'number' || formData.input_type.startsWith('dimension')) && (
+                <>
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label>Minimum Değer {formData.input_type.startsWith('dimension') ? '(cm)' : ''}</label>
+                      <input
+                        type="number"
+                        value={formData.min_value || ''}
+                        onChange={(e) => setFormData({ ...formData, min_value: e.target.value ? parseFloat(e.target.value) : undefined })}
+                        placeholder={formData.input_type.startsWith('dimension') ? '100' : '0'}
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <label>Maximum Değer {formData.input_type.startsWith('dimension') ? '(cm)' : ''}</label>
+                      <input
+                        type="number"
+                        value={formData.max_value || ''}
+                        onChange={(e) => setFormData({ ...formData, max_value: e.target.value ? parseFloat(e.target.value) : undefined })}
+                        placeholder={formData.input_type.startsWith('dimension') ? '1200' : '100'}
+                      />
+                    </div>
+
+                    {formData.input_type.startsWith('dimension') && (
+                      <div className="form-group">
+                        <label>Artış Adımı (cm)</label>
+                        <input
+                          type="number"
+                          value={formData.step_value || ''}
+                          onChange={(e) => setFormData({ ...formData, step_value: e.target.value ? parseFloat(e.target.value) : undefined })}
+                          placeholder="10"
+                        />
+                        <small>Slider'ın her adımda artış miktarı</small>
+                      </div>
+                    )}
                   </div>
 
-                  <div className="form-group">
-                    <label>Maximum Değer</label>
-                    <input
-                      type="number"
-                      value={formData.max_value || ''}
-                      onChange={(e) => setFormData({ ...formData, max_value: e.target.value ? parseFloat(e.target.value) : undefined })}
-                      placeholder="100"
-                    />
-                  </div>
-                </div>
+                  {formData.input_type === 'dimensions' && (
+                    <div style={{ padding: '0.75rem', background: 'rgba(34, 197, 94, 0.1)', borderRadius: '6px', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--body-text)', border: '1px solid rgba(34, 197, 94, 0.3)' }}>
+                      <strong>📐 Çoklu Ölçü:</strong> Bu tip, eklediğiniz her seçenek için ayrı bir ölçü girişi oluşturur. Örneğin: "diepte" ve "breedte" seçenekleri eklerseniz, müşteri her biri için ayrı slider ile değer girebilir.
+                    </div>
+                  )}
+
+                  {formData.input_type.startsWith('dimension') && formData.input_type !== 'dimensions' && (
+                    <div style={{ padding: '0.75rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '6px', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--body-text)' }}>
+                      <strong>💡 İpucu:</strong> Tekli ölçü girişi slider ve +/- düğmeleri ile gelişmiş bir arayüz sunar. Minimum/maksimum değerleri ve artış adımını ayarlayın.
+                    </div>
+                  )}
+                </>
               )}
 
               {formData.input_type === 'text' && (

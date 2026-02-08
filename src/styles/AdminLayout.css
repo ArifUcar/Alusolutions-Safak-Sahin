@@ -46,30 +46,49 @@
 }
 
 .sidebar-header {
-  padding: 25px 20px;
+  padding: 20px 15px;
   border-bottom: 1px solid var(--admin-border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
+}
+
+.sidebar-header-info {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .sidebar-header h2 {
-  font-size: 1.3rem;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
   color: var(--admin-sidebar-text) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sidebar-header .user-email {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--admin-sidebar-text-muted) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 /* Theme Toggle Button in Admin */
 .theme-toggle-admin {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
   background: var(--admin-sidebar-hover);
   border: 1px solid var(--admin-border);
   color: var(--admin-sidebar-text);
@@ -82,13 +101,53 @@
 }
 
 .theme-toggle-admin svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .theme-toggle-admin:hover {
   background: var(--admin-sidebar-active);
   border-color: var(--admin-sidebar-active);
+  color: #ffffff;
+}
+
+/* Header Actions Container */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Admin Language Switcher */
+.lang-switcher-admin {
+  display: flex;
+  background: var(--admin-sidebar-hover);
+  border-radius: 8px;
+  padding: 3px;
+  border: 1px solid var(--admin-border);
+  width: 100%;
+}
+
+.lang-switcher-admin .lang-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: var(--admin-sidebar-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.lang-switcher-admin .lang-btn:hover {
+  color: var(--admin-sidebar-text);
+}
+
+.lang-switcher-admin .lang-btn.active {
+  background: var(--admin-sidebar-active);
   color: #ffffff;
 }
 
@@ -379,6 +438,112 @@
 .admin-form textarea {
   min-height: 120px;
   resize: vertical;
+}
+
+/* HTML Editor Textarea */
+.html-editor-textarea,
+textarea.html-editor-textarea,
+.admin-form textarea.html-editor-textarea {
+  width: 100% !important;
+  min-height: 500px !important;
+  padding: 1rem !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  border: 2px solid #374151 !important;
+  border-radius: 8px !important;
+  background-color: #1a1a2e !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #22c55e !important;
+  resize: vertical !important;
+  cursor: text !important;
+  pointer-events: auto !important;
+  -webkit-user-select: text !important;
+  user-select: text !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+.html-editor-textarea:focus,
+textarea.html-editor-textarea:focus,
+.admin-form textarea.html-editor-textarea:focus {
+  outline: none !important;
+  border-color: #22c55e !important;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2) !important;
+}
+
+.html-editor-textarea::placeholder,
+textarea.html-editor-textarea::placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Blog Editor Wrapper - PrimeReact Editor */
+.blog-editor-wrapper {
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-editor-wrapper .p-editor-container {
+  border: none !important;
+}
+
+.blog-editor-wrapper .p-editor-toolbar {
+  background: var(--admin-card-bg) !important;
+  border-bottom: 1px solid var(--admin-border) !important;
+  padding: 0.75rem !important;
+}
+
+.blog-editor-wrapper .p-editor-content {
+  background: var(--admin-card-bg) !important;
+  border: none !important;
+}
+
+.blog-editor-wrapper .p-editor-content .ql-editor {
+  min-height: 400px !important;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--admin-text) !important;
+}
+
+.blog-editor-wrapper .p-editor-content .ql-editor.ql-blank::before {
+  color: var(--admin-text-muted) !important;
+  font-style: normal;
+}
+
+.blog-editor-wrapper .ql-toolbar .ql-stroke {
+  stroke: var(--admin-text) !important;
+}
+
+.blog-editor-wrapper .ql-toolbar .ql-fill {
+  fill: var(--admin-text) !important;
+}
+
+.blog-editor-wrapper .ql-toolbar .ql-picker {
+  color: var(--admin-text) !important;
+}
+
+.blog-editor-wrapper .ql-toolbar .ql-picker-options {
+  background: var(--admin-card-bg) !important;
+  border-color: var(--admin-border) !important;
+}
+
+.blog-editor-wrapper .ql-toolbar button:hover,
+.blog-editor-wrapper .ql-toolbar button.ql-active {
+  color: #22c55e !important;
+}
+
+.blog-editor-wrapper .ql-toolbar button:hover .ql-stroke,
+.blog-editor-wrapper .ql-toolbar button.ql-active .ql-stroke {
+  stroke: #22c55e !important;
+}
+
+.blog-editor-wrapper .ql-toolbar button:hover .ql-fill,
+.blog-editor-wrapper .ql-toolbar button.ql-active .ql-fill {
+  fill: #22c55e !important;
 }
 
 .admin-form .form-actions {
@@ -706,24 +871,39 @@
   }
 
   .sidebar-header {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 10px 8px;
+    gap: 8px;
   }
 
-  .sidebar-header h2,
-  .sidebar-header .user-email,
-  .sidebar-nav a span,
-  .logout-btn span {
+  .sidebar-header-top {
+    justify-content: center;
+  }
+
+  .sidebar-header-info {
     display: none;
   }
 
-  .theme-toggle-admin {
+  .lang-switcher-admin {
     width: 100%;
+  }
+
+  .lang-switcher-admin .lang-btn {
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
+
+  .theme-toggle-admin {
+    width: 36px;
+    height: 36px;
   }
 
   .sidebar-nav a {
     justify-content: center;
     padding: 15px;
+  }
+
+  .sidebar-nav a svg {
+    margin: 0;
   }
 
   .admin-main {

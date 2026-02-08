@@ -34,11 +34,6 @@ export default function RadioImageInput({ options, value, onChange, error, getLo
                 {option.description && getLocalizedText(option.description) && (
                   <span className="option-description">{getLocalizedText(option.description)}</span>
                 )}
-                {option.price_modifier !== 0 && (
-                  <span className="option-price">
-                    {option.price_modifier > 0 ? '+' : ''}{option.price_modifier}€
-                  </span>
-                )}
               </div>
               {isSelected && (
                 <div className="option-checkmark">✓</div>

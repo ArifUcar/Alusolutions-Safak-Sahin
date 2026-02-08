@@ -26,11 +26,6 @@ export default function RadioInput({ options, value, onChange, error, getLocaliz
               {option.description && getLocalizedText(option.description) && (
                 <small className="radio-description">{getLocalizedText(option.description)}</small>
               )}
-              {option.price_modifier !== 0 && (
-                <span className="option-price-inline">
-                  ({option.price_modifier > 0 ? '+' : ''}{option.price_modifier}€)
-                </span>
-              )}
             </span>
           </label>
         ))}

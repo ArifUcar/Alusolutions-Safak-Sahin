@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/ProductPage.css'
@@ -6,6 +7,15 @@ import '../styles/ProductPage.css'
 export default function ShowroomPage() {
   return (
     <div className="product-page">
+      <Helmet>
+        <title>Showroom Bezoeken | VivaVerandas Reuver</title>
+        <meta name="description" content="Bezoek onze showroom in Reuver en bekijk onze veranda's en overkappingen in het echt. Persoonlijk advies van onze experts." />
+        <link rel="canonical" href="https://vivaverandas.nl/showroom" />
+        <meta property="og:title" content="Showroom Bezoeken | VivaVerandas" />
+        <meta property="og:description" content="Bezoek onze showroom in Reuver en bekijk onze veranda's en overkappingen in het echt." />
+        <meta property="og:url" content="https://vivaverandas.nl/showroom" />
+      </Helmet>
+
       <Header />
       <section className="product-hero">
         <div className="product-hero-bg">
@@ -36,12 +46,13 @@ export default function ShowroomPage() {
             </div>
             <div className="product-image">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5!2d6.0789!3d51.2876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74b8a5c8b1a1f%3A0x1234567890abcdef!2sMariastraat%2022%2C%205953%20NL%20Reuver%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500!2d6.082766!3d51.280102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74f53a508958d%3A0x618238c611b6b837!2sAluSolutions%20%7C%20Veranda's%20%26%20Overkappingen!5e0!3m2!1snl!2snl!4v1703000000000"
                 width="100%"
                 height="400"
                 style={{ border: 0, borderRadius: '10px' }}
                 allowFullScreen
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="Showroom Locatie"
               ></iframe>
             </div>
@@ -55,7 +66,7 @@ export default function ShowroomPage() {
           <p>Plan uw bezoek aan onze showroom</p>
           <div className="cta-buttons">
             <Link to="/afspraak" className="btn btn-primary btn-large">Afspraak maken</Link>
-            <a href="tel:+31850605036" className="btn btn-secondary btn-large">Bel ons</a>
+            <a href="tel:+31773902201" className="btn btn-secondary btn-large">Bel ons</a>
           </div>
         </div>
       </section>

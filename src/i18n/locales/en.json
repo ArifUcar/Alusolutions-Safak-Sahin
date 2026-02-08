@@ -1,5 +1,7 @@
 {
   "header": {
+    "home": "Home",
+    "products": "Products",
     "services": "Our Services",
     "verandas": "Verandas",
     "other": "Other",
@@ -22,15 +24,20 @@
     "makeAppointment": "Make Appointment",
     "tagline": "We Bring Outdoor Living Inside",
     "darkMode": "Dark mode",
-    "lightMode": "Light mode"
+    "lightMode": "Light mode",
+    "cubeVeranda": "Cube Patio Cover",
+    "lamelVeranda": "Louvered Patio Cover",
+    "glazenVeranda": "Glass Patio Cover",
+    "polycarbonaatVeranda": "Polycarbonate Patio Cover",
+    "plateReplace": "Plate Replacement"
   },
   "products": {
-    "polycarbonaat": "Polycarbonate Veranda",
-    "glazen": "Glass Veranda",
-    "lamellen": "Louvered Veranda",
-    "vouwdak": "Folding Roof Veranda",
+    "polycarbonaat": "Polycarbonate Patio Cover",
+    "glazen": "Glass Patio Cover",
+    "lamellen": "Louvered Patio Cover",
+    "vouwdak": "Folding Roof Patio Cover",
     "schuifwand": "Glass Sliding Wall",
-    "cube": "Cube Veranda",
+    "cube": "Cube Patio Cover",
     "tuinkamer": "Garden Room",
     "carport": "Carport"
   },
@@ -60,6 +67,14 @@
     "visitShowroom": "Visit Showroom",
     "faq": "Frequently Asked Questions"
   },
+  "reviews": {
+    "googleReviews": "Google Reviews",
+    "title": "What our customers say",
+    "basedOn": "Based on",
+    "reviews": "reviews",
+    "viewAll": "View all reviews on Google",
+    "writeReview": "Write a review"
+  },
   "footer": {
     "tagline": "We Bring Outdoor Living Inside",
     "description": "Specialist in high-quality aluminum verandas and patio covers. Your reliable partner for outdoor living for more than 15 years.",
@@ -77,7 +92,10 @@
     "copyright": "We bring outdoor living inside.",
     "privacyPolicy": "Privacy Policy",
     "termsConditions": "Terms & Conditions",
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "subsidiary": "A part of"
   },
   "common": {
     "readMore": "Read more",
@@ -110,7 +128,7 @@
     },
     "quality": {
       "title": "Quality and craftsmanship",
-      "description1": "At Alusolutions, we attach great value to quality and craftsmanship. Our products are manufactured with high-quality materials and innovative technologies, resulting in durable and reliable solutions. Our dedicated and experienced team members are always ready to advise and guide you in making the best choices for your specific situation.",
+      "description1": "At VivaVerandas, we attach great value to quality and craftsmanship. Our products are manufactured with high-quality materials and innovative technologies, resulting in durable and reliable solutions. Our dedicated and experienced team members are always ready to advise and guide you in making the best choices for your specific situation.",
       "description2": "We strive for customer satisfaction and take on every challenge with enthusiasm. From the first contact to installation and aftercare, we strive to provide excellent service and build a long-term relationship with our customers."
     },
     "banner": {
@@ -120,7 +138,7 @@
     "benefits": {
       "custom": {
         "title": "Custom patio solutions",
-        "description": "At Alusolutions we believe in customization. We design and create patio solutions that perfectly match your specific wishes, so you can enjoy an outdoor space that is completely yours."
+        "description": "At VivaVerandas we believe in customization. We design and create patio solutions that perfectly match your specific wishes, so you can enjoy an outdoor space that is completely yours."
       },
       "experience": {
         "title": "Improve your outdoor experience",
@@ -133,7 +151,7 @@
     },
     "oasis": {
       "title": "Create Your Outdoor Oasis",
-      "description": "At Alusolutions we strive to transform your outdoor space into an oasis of comfort, style and elegance. With custom patio solutions and high-quality products, we make your dream project a reality. Request a quote today and discover the possibilities for your unique outdoor environment.",
+      "description": "At VivaVerandas we strive to transform your outdoor space into an oasis of comfort, style and elegance. With custom patio solutions and high-quality products, we make your dream project a reality. Request a quote today and discover the possibilities for your unique outdoor environment.",
       "cta": "Request Free Quote"
     },
     "team": {
@@ -184,9 +202,9 @@
   },
   "home": {
     "hero": {
-      "title": "Polycarbonate veranda",
-      "description1": "A polycarbonate veranda is the ideal choice for those looking for a durable and affordable patio cover. Thanks to the strong and clear polycarbonate roof panels, you enjoy plenty of light, without sacrificing protection from rain and wind.",
-      "description2": "At AluSolutions, we deliver your polycarbonate veranda completely tailored to your needs. Within 3 weeks, our veranda builders ensure fast delivery and professional installation.",
+      "title": "Veranda",
+      "description1": "A veranda is the ideal choice for those looking for a durable and stylish patio cover. Enjoy plenty of natural light and protection from rain and wind with our high-quality verandas.",
+      "description2": "At VivaVerandas, we deliver your veranda completely tailored to your needs. Within 3 weeks, our veranda builders ensure fast delivery and professional installation.",
       "cta": "Simply request a quote!"
     },
     "galleryPreview": {
@@ -199,6 +217,9 @@
       "title": "Our Products",
       "subtitle": "Discover our complete range of high-quality verandas and patio covers",
       "moreInfo": "More info",
+      "cube": {
+        "description": "Modern sleek design with flat roof for a luxurious appearance"
+      },
       "poly": {
         "description": "Durable and affordable with excellent light transmission"
       },
@@ -219,11 +240,14 @@
       }
     },
     "benefits": {
-      "title": "Experience the unique benefits of a polycarbonate veranda",
-      "subtitle": "Affordable elegance with our polycarbonate verandas",
-      "paragraph1": "The investment in a polycarbonate veranda depends on several factors, such as the dimensions of the construction and the choice of additional options such as built-in LED spots, side walls or sliding doors.",
+      "title": "Experience the unique benefits of a veranda",
+      "subtitle": "Affordable elegance with our verandas",
+      "description1": "The investment in a veranda depends on several factors, such as the dimensions of the construction and the choice of additional options such as built-in LED spots, side walls or sliding doors.",
+      "description2": "We understand that choosing a veranda is an important decision that must be tailored to both your budget and your lifestyle. That's why we offer personal advice and detailed information about the possibilities and costs.",
+      "paragraph1": "The investment in a veranda depends on several factors, such as the dimensions of the construction and the choice of additional options such as built-in LED spots, side walls or sliding doors.",
       "paragraph2": "We understand that choosing a veranda is an important decision that must be tailored to both your budget and your lifestyle. That's why we offer personal advice and detailed information about the possibilities and costs.",
       "ctaButton": "Contact us",
+      "cta": "Contact us",
       "imageAlt": "Elegant veranda"
     },
     "stats": {
@@ -257,16 +281,16 @@
       }
     },
     "quality": {
-      "title": "Affordable quality polycarbonate verandas",
-      "description": "The cost of a polycarbonate veranda depends on the size and extras such as spotlights, side walls or sliding doors. Yet such a veranda is an economical choice that lasts a long time and looks beautiful.",
-      "feature1": "Material costs: cheaper than glass, economically advantageous",
+      "title": "Affordable quality verandas",
+      "description": "The cost of a veranda depends on the size and extras such as spotlights, side walls or sliding doors. Our verandas are an economical choice that lasts a long time and looks beautiful.",
+      "feature1": "High-quality materials: durable frame",
       "feature2": "Lower installation costs: simple installation reduces labor costs",
       "feature3": "Durability and maintenance: long-lasting with minimal maintenance",
       "feature4": "Energy efficiency: insulation reduces energy costs",
       "feature5": "Versatility: flexible design, efficient production"
     },
     "features": {
-      "title": "Why choose AluSolutions?",
+      "title": "Why choose VivaVerandas?",
       "quality": {
         "title": "Premium Quality",
         "description": "Only the best materials for a long-lasting result"
@@ -290,7 +314,16 @@
       "service": {
         "title": "Personal Service",
         "description": "Direct contact with our specialists"
+      },
+      "openingTypes": {
+        "title": "Glass Sliding Walls",
+        "description": "We offer both sliding glass walls and folding glass walls (center-opening)"
       }
+    },
+    "glassWalls": {
+      "sliding": "Sliding Walls",
+      "folding": "Folding Walls",
+      "cta": "View more examples"
     },
     "inspiration": {
       "title": "Inspiration for your veranda",
@@ -322,17 +355,19 @@
       }
     },
     "info": {
+      "title": "Discover Our Verandas",
+      "subtitle": "Everything you need to know about our premium verandas",
       "what": {
-        "title": "What is a polycarbonate veranda?",
-        "description": "A polycarbonate veranda from Alusolutions is a durable patio or garden cover that extends your home with a stylish outdoor space."
+        "title": "What is a veranda?",
+        "description": "A veranda from VivaVerandas is a durable patio or garden cover that extends your home with a stylish outdoor space."
       },
       "benefits": {
-        "title": "Benefits of polycarbonate",
-        "description": "Polycarbonate is a robust, light-permeable material that provides protection against UV rays and weather influences."
+        "title": "Benefits of a veranda",
+        "description": "Our verandas are robust and low-maintenance, with excellent protection against weather influences."
       },
       "whyUs": {
-        "title": "Why choose Alusolutions?",
-        "description": "At Alusolutions you choose quality and durability. Our verandas are strong and low-maintenance."
+        "title": "Why choose VivaVerandas?",
+        "description": "At VivaVerandas you choose quality and durability. Our verandas are strong and low-maintenance."
       },
       "personalize": {
         "title": "Personalize your veranda",
@@ -353,7 +388,7 @@
       "anthracite": "Anthracite",
       "white": "White",
       "cream": "Cream",
-      "brown": "Brown"
+      "black": "Black"
     },
     "cta": {
       "title": "Ready for your dream veranda?",
@@ -363,7 +398,7 @@
     },
     "faq": {
       "title": "Frequently asked questions",
-      "subtitle": "Discover our easy step-by-step guide for your polycarbonate veranda.",
+      "subtitle": "Discover our easy step-by-step guide for your veranda.",
       "cta": "Request Non-Binding Quote",
       "q1": {
         "question": "Is a permit required to install a patio cover?",
@@ -405,7 +440,7 @@
     "title": "Privacy Policy",
     "section1": {
       "title": "1. Introduction",
-      "content": "AluSolutions respects your privacy and ensures that the personal information you provide to us is treated confidentially."
+      "content": "VivaVerandas respects your privacy and ensures that the personal information you provide to us is treated confidentially."
     },
     "section2": {
       "title": "2. Data we collect",
@@ -425,18 +460,18 @@
     },
     "section6": {
       "title": "6. Contact",
-      "content": "For questions about our privacy policy, you can contact us via info@alusolutions.nl"
+      "content": "For questions about our privacy policy, you can contact us via info@vivaverandas.nl"
     }
   },
   "voorwaarden": {
     "title": "Terms & Conditions",
     "section1": {
       "title": "Article 1 - Definitions",
-      "content": "In these terms AluSolutions means: the company located in Reuver, registered with the Chamber of Commerce under number 90086449."
+      "content": "In these terms VivaVerandas means: the company located in Reuver, registered with the Chamber of Commerce under number 90086449."
     },
     "section2": {
       "title": "Article 2 - Applicability",
-      "content": "These conditions apply to all offers and agreements of AluSolutions."
+      "content": "These conditions apply to all offers and agreements of VivaVerandas."
     },
     "section3": {
       "title": "Article 3 - Quotes",
@@ -448,12 +483,34 @@
     },
     "section5": {
       "title": "Article 5 - Warranty",
-      "content": "AluSolutions offers 10 years warranty on the construction under normal use."
+      "content": "VivaVerandas offers 10 years warranty on the construction under normal use."
     },
     "section6": {
       "title": "Article 6 - Payment",
       "content": "Payment is made in accordance with the payment terms stated on the invoice."
     }
+  },
+  "cookieBanner": {
+    "title": "We value your privacy",
+    "description": "We use cookies to improve your browsing experience, display personalized advertisements or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "customize": "Customize",
+    "savePreferences": "Save Preferences",
+    "learnMore": "Learn more",
+    "preferencesTitle": "Customize consent preferences",
+    "preferencesIntro": "We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under the relevant consent category below.",
+    "necessary": "Necessary",
+    "necessaryDesc": "Necessary cookies are crucial for the basic functions of the website and without them, the website will not function as intended. These cookies do not store any personally identifiable data.",
+    "functional": "Functional",
+    "functionalDesc": "Functional cookies help perform certain functionalities, such as sharing website content on social media platforms, collecting feedback, and other third-party features.",
+    "analytical": "Analytical",
+    "analyticalDesc": "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information about visitor statistics, bounce rate, traffic source, etc.",
+    "performance": "Performance",
+    "performanceDesc": "Performance cookies are used to understand and analyze key performance indices of the website, helping to deliver a better user experience for visitors.",
+    "advertising": "Advertising",
+    "advertisingDesc": "Advertising cookies are used to deliver personalized advertisements to visitors based on previously visited pages and to analyze the effectiveness of advertising campaigns.",
+    "alwaysActive": "Always active"
   },
   "cookies": {
     "title": "Cookie Policy",
@@ -474,7 +531,7 @@
     },
     "section4": {
       "title": "Contact",
-      "content": "Questions about our cookie policy? Contact us via info@alusolutions.nl"
+      "content": "Questions about our cookie policy? Contact us via info@vivaverandas.nl"
     }
   },
   "inspiratie": {
@@ -503,7 +560,8 @@
       "elegantSlats": "Elegant Louvers",
       "compactSolution": "Compact Solution",
       "noImages": "No photos yet",
-      "noImagesDescription": "There are no photos in this category yet."
+      "noImagesDescription": "There are no photos in this category yet.",
+      "loadMore": "Load more"
     },
     "cities": {
       "amsterdam": "Amsterdam",
@@ -671,7 +729,7 @@
     "hero": {
       "title": "Contact",
       "subtitle": "We are here for you",
-      "imageAlt": "Contact AluSolutions"
+      "imageAlt": "Contact VivaVerandas"
     },
     "form": {
       "title": "Contact form",
@@ -702,8 +760,8 @@
       "successMessage": "Thank you for your message! We will contact you as soon as possible."
     },
     "info": {
-      "title": "Do you want to contact AluSolutions?",
-      "paragraph1": "Do you have questions about our products, or do you need help placing an order? Maybe you just want to share your thoughts? At AluSolutions we would love to hear from you! Our dedicated team is ready to respond quickly and efficiently to all your questions.",
+      "title": "Do you want to contact VivaVerandas?",
+      "paragraph1": "Do you have questions about our products, or do you need help placing an order? Maybe you just want to share your thoughts? At VivaVerandas we would love to hear from you! Our dedicated team is ready to respond quickly and efficiently to all your questions.",
       "paragraph2": "For immediate help, we recommend you contact us via WhatsApp. In addition, we can also be reached via email or our contact form.",
       "phone": "Phone",
       "email": "Email",
@@ -723,7 +781,7 @@
     },
     "map": {
       "title": "Visit our showroom",
-      "mapTitle": "AluSolutions Location"
+      "mapTitle": "VivaVerandas Location"
     },
     "reviews": {
       "title": "What our customers say",
@@ -773,6 +831,30 @@
     }
   },
   "offerte": {
+    "pageTitle": "Request Quote",
+    "pageDescription": "Easily and quickly request a free quote for your dream veranda",
+    "title": "Request Quote",
+    "subtitle": "Configure your dream veranda and receive a free quote within 24 hours",
+    "chooseProduct": "Choose your product",
+    "chooseProductSubtitle": "Select the product you want a quote for",
+    "startConfigurator": "Start configurator",
+    "noConfigurators": "No configurators available at the moment",
+    "benefit1": {
+      "title": "No obligation",
+      "description": "Receive a quote without any obligation"
+    },
+    "benefit2": {
+      "title": "Quick response",
+      "description": "Response from our specialists within 24 hours"
+    },
+    "benefit3": {
+      "title": "Best price",
+      "description": "Competitive prices for quality products"
+    },
+    "alternativeTitle": "Prefer personal advice?",
+    "alternativeDescription": "Make an appointment for a free consultation or call us directly",
+    "makeAppointment": "Make appointment",
+    "callUs": "Call us",
     "required": "Required",
     "optional": "Optional",
     "nextButton": "Next",
@@ -888,10 +970,20 @@
     "openingHours": "We are open: Mon-Thu 09:00-17:00, Sat 10:00-15:00",
     "selectDateFirst": "Please select a date first",
     "closedSunday": "We are closed on Sundays",
+    "closedDay": "We are closed on {{day}}",
     "slotBooked": "This time slot is already booked",
     "slotPast": "This time slot has passed",
     "available": "Available",
     "booked": "Booked",
+    "durationInfo": "This appointment takes {{duration}} hour(s)",
+    "notEnoughTime": "Not enough available time",
+    "badge": "Free Consultation",
+    "imageTitle": "Your Dream Veranda",
+    "imageSubtitle": "We are happy to help you realize your ideal outdoor space",
+    "feature1": "Personal advice",
+    "feature2": "No-obligation quote",
+    "feature3": "Expert installation",
+    "contactInfo": "Contact Details",
     "step1": {
       "title": "Appointment Type",
       "subtitle": "What type of appointment would you like to make?"
@@ -917,6 +1009,7 @@
       "adviceDesc": "Phone or video consultation"
     },
     "form": {
+      "dateTime": "Date & Time",
       "date": "Date",
       "time": "Time",
       "name": "Name",
@@ -961,7 +1054,7 @@
       "info": {
         "title": "What is a Polycarbonate Veranda?",
         "description1": "A polycarbonate veranda is the ideal choice for anyone looking for a durable and affordable patio cover. Thanks to the strong and clear polycarbonate roof panels, you enjoy plenty of light without compromising on protection from rain and wind.",
-        "description2": "At AluSolutions, we deliver your polycarbonate veranda completely customized to your needs. Within 3 weeks, our veranda experts ensure fast delivery and professional installation.",
+        "description2": "At VivaVerandas, we deliver your polycarbonate veranda completely customized to your needs. Within 3 weeks, our veranda experts ensure fast delivery and professional installation.",
         "benefitsTitle": "Benefits",
         "imageAlt": "Polycarbonate Veranda example"
       },
@@ -1011,7 +1104,7 @@
       "info": {
         "title": "What is a Glass Veranda?",
         "description1": "A glass veranda offers maximum light entry and an unobstructed view of your garden. Tempered glass is safe, strong and easy to clean.",
-        "description2": "At AluSolutions, we only use high-quality tempered glass that meets all safety standards.",
+        "description2": "At VivaVerandas, we only use high-quality tempered glass that meets all safety standards.",
         "benefitsTitle": "Benefits",
         "imageAlt": "Glass Veranda"
       },
@@ -1392,8 +1485,8 @@
       "successMessage": "Thank you for your message! We will contact you as soon as possible."
     },
     "info": {
-      "title": "Want to get in touch with AluSolutions?",
-      "intro1": "Do you have questions about our products, or do you need help placing an order? Maybe you just want to share your thoughts? At AluSolutions, we'd love to hear from you! Our dedicated team is ready to respond quickly and efficiently to all your questions.",
+      "title": "Want to get in touch with VivaVerandas?",
+      "intro1": "Do you have questions about our products, or do you need help placing an order? Maybe you just want to share your thoughts? At VivaVerandas, we'd love to hear from you! Our dedicated team is ready to respond quickly and efficiently to all your questions.",
       "intro2": "For immediate help, we recommend contacting us via WhatsApp. We are also available via email or our contact form.",
       "phone": "Phone",
       "email": "Email",
@@ -1484,6 +1577,242 @@
       "loadError": "Error loading article",
       "saveError": "Error saving",
       "slugExists": "This slug already exists"
+    }
+  },
+  "productPages": {
+    "common": {
+      "specifications": "Specifications",
+      "projectGallery": "Project Gallery",
+      "benefits": "Benefits",
+      "material": "Material",
+      "maxWidth": "Maximum width",
+      "guarantee": "Guarantee",
+      "yearsGuarantee": "years guarantee",
+      "requestQuote": "Make appointment",
+      "callUs": "Call us directly",
+      "interestedIn": "Interested in a",
+      "requestQuoteSubtitle": "Request a free quote or make an appointment for personal advice"
+    },
+    "cube": {
+      "title": "Cube Veranda",
+      "subtitle": "Modern design for a timeless outdoor space",
+      "heroAlt": "Cube Veranda",
+      "mainTitle": "The Cube Veranda: Sleek & Modern Design",
+      "description1": "The Cube Veranda is the perfect combination of contemporary design and ultimate outdoor comfort. With its characteristic clean lines and flat roof, this canopy fits perfectly with modern architecture. Thanks to the high-quality aluminum construction, you are assured of a durable and low-maintenance solution that will last for years.",
+      "description2": "At VivaVerandas, we design and install your Cube Veranda completely custom-made. Whether you choose a minimalist design or a fully equipped outdoor space with LED lighting, glass sliding walls and sun shading: we deliver a solution that is both practical and elegant. Within a few weeks, you will enjoy your new luxury outdoor space, including professional installation and finishing.",
+      "benefitsTitle": "Experience the unique benefits of a Cube Veranda",
+      "benefit1": "Sleek, modern design with flat roof for a timeless appearance",
+      "benefit2": "High-quality aluminum frame, resistant to all weather conditions",
+      "benefit3": "100% custom made, perfectly matching your home",
+      "benefit4": "Integrated LED lighting for atmospheric evenings",
+      "benefit5": "Combinable with glass sliding walls for a garden room",
+      "benefit6": "Low maintenance and corrosion resistant",
+      "benefit7": "10 year factory guarantee on construction",
+      "whatIsTitle": "What is a Cube Veranda?",
+      "whatIsText": "A Cube Veranda from VivaVerandas is a modern aluminum canopy with a sleek, minimalist design. The flat roof and straight lines create a contemporary appearance that seamlessly connects to modern homes. The durable construction offers protection from sun and rain while you optimally enjoy your outdoor space.",
+      "whyChooseTitle": "Why choose a Cube Veranda?",
+      "whyChooseText": "The Cube Veranda is ideal for those who love a sleek, modern look. The robust aluminum construction is low maintenance and lasts for years. With the many expansion options such as LED lighting, sun shading and glass walls, you create your ideal outdoor space.",
+      "customizeTitle": "Customize your Cube Veranda",
+      "customizeText": "Complete your Cube Veranda with various options such as integrated LED spots, electric screens, glass sliding walls or side panels for extra shelter. Choose from different RAL colors to perfectly match the canopy to your home.",
+      "installationTitle": "Installation and placement",
+      "installationText": "Our experienced craftsmen ensure a quick and professional installation of your Cube Veranda. Whether you choose a freestanding setup or an extension to your home, we offer flexible placement options that suit your situation.",
+      "specMaterial": "High-quality aluminum, powder coated in any RAL color",
+      "specRoof": "Roof covering",
+      "specRoofValue": "Insulated roof panels or glass roof",
+      "specWidthValue": "Up to 7 meters without intermediate posts",
+      "specDepth": "Maximum depth",
+      "specDepthValue": "Up to 5 meters depth",
+      "specLighting": "Lighting",
+      "specLightingValue": "Optional built-in LED spots",
+      "specGuaranteeValue": "10 years on construction",
+      "experienceYears": "15+ years experience",
+      "colorOptions": "Any RAL color available",
+      "serviceText": "Reliable service and craftsmanship"
+    },
+    "lamel": {
+      "title": "Louvered Veranda",
+      "subtitle": "Luxury, comfort and complete control over your outdoor space",
+      "heroAlt": "Louvered Veranda",
+      "mainTitle": "The Louvered Veranda: Ultimate Comfort & Flexibility",
+      "description1": "A louvered veranda is the perfect combination of luxury, comfort and control over your outdoor space. Thanks to the electrically adjustable louvers, you determine the ideal amount of sunlight, ventilation and shade, perfectly tuned to every season. This modern aluminum louvered canopy offers protection from sun, rain and wind, so you can enjoy your terrace all year round.",
+      "description2": "At VivaVerandas, we design and install your louvered veranda completely custom-made. Whether you choose a freestanding louvered canopy in the garden or an extension to your home with integrated sun shading: we deliver a solution that is both practical and elegant. Within a few weeks, you will enjoy a durable aluminum canopy with louver roof, including professional installation and finishing.",
+      "benefitsTitle": "Experience the unique benefits of a louvered veranda",
+      "benefit1": "Adjustable louvers (0° - 135°) for perfect control over light and shade",
+      "benefit2": "100% watertight when louvers are closed - enjoy outdoors even in the rain",
+      "benefit3": "Electric operation with remote control or smartphone app",
+      "benefit4": "Automatic rain sensor for worry-free outdoor enjoyment",
+      "benefit5": "Integrated water drainage through the posts",
+      "benefit6": "Atmospheric LED lighting between the louvers possible",
+      "benefit7": "Combinable with screens, glass sliding walls and side panels",
+      "whatIsTitle": "What is a louvered veranda?",
+      "whatIsText": "A louvered veranda from VivaVerandas offers the perfect combination of style, comfort and functionality for your outdoor space. Thanks to the adjustable louvers, you can easily regulate the amount of sunlight and ventilation, ensuring you always have a pleasant outdoor environment. Our high-quality aluminum constructions are weather-resistant and durable, ideal for any climate.",
+      "whyChooseTitle": "Why choose a louvered veranda?",
+      "whyChooseText": "Louvered canopies offer unique flexibility because you can tilt the louvers to the desired position. Enjoy optimal shade, maximum light or complete shelter from rain. The aluminum louvers are low maintenance and resistant to various weather conditions, allowing you to enjoy carefree for years.",
+      "customizeTitle": "Customize your louvered veranda",
+      "customizeText": "Complete your louvered veranda with various options such as integrated LED lighting, glass sliding walls or side panels for extra shelter. You can choose from different colors and dimensions to perfectly match the canopy to your home.",
+      "installationTitle": "Installation and placement",
+      "installationText": "Our experienced craftsmen ensure a quick and professional installation of your louvered veranda. Whether you choose a freestanding setup or an extension to your home, we offer flexible and efficient placement options that suit your situation.",
+      "affordableTitle": "Affordable luxury",
+      "affordableText": "The price of a louvered veranda depends on the dimensions and chosen extensions, such as LED lighting, side panels or sliding panels. Yet this type of canopy remains a smart and stylish choice. Request a free quote to discover what it costs for you.",
+      "specMaterial": "Aluminum louvers and frame, powder coated in any RAL color",
+      "specLamelSize": "Louver dimensions",
+      "specLamelSizeValue": "200mm wide, tiltable from 0° to 135°",
+      "specWidthValue": "Up to 6 meters per section",
+      "specControl": "Control",
+      "specControlValue": "Electric with remote control or app (Somfy)",
+      "specSensors": "Sensors",
+      "specSensorsValue": "Optional wind and rain sensor",
+      "specGuaranteeValue": "5 years on motor, 10 years on construction",
+      "experienceYears": "15+ years experience",
+      "colorOptions": "RAL 7024 and more",
+      "roofType": "Adjustable louvers",
+      "serviceText": "Reliable service and craftsmanship"
+    },
+    "glazen": {
+      "title": "Glass Veranda",
+      "subtitle": "Maximum natural light, maximum outdoor feeling",
+      "heroAlt": "Glass Veranda",
+      "mainTitle": "The Glass Veranda: Light, Luxury & Space",
+      "description1": "A glass veranda is the perfect way to transform your outdoor space into a bright, luxurious living environment. The high-quality laminated safety glass provides an elegant appearance and gives your garden or terrace a spacious feeling. Thanks to the transparent roof, you enjoy maximum daylight while remaining protected from rain and wind.",
+      "description2": "At VivaVerandas, we design your glass veranda completely custom-made. The glass roof can be fitted with sun-resistant or self-cleaning glass, so you can comfortably stay outside even on warm days. The robust aluminum support structure is durable, low-maintenance and available in any RAL color. This way you create an outdoor space that perfectly matches your home.",
+      "benefitsTitle": "Experience the benefits of a glass veranda",
+      "benefit1": "Maximum natural daylight through the transparent glass roof",
+      "benefit2": "Tempered VSG safety glass for optimal safety",
+      "benefit3": "Sun-resistant glass keeps the space cool on warm days",
+      "benefit4": "Self-cleaning glass coating for minimal maintenance",
+      "benefit5": "Luxurious, timeless appearance that increases your home's value",
+      "benefit6": "Durable aluminum support structure, corrosion resistant",
+      "benefit7": "Combinable with sun shading, screens and glass sliding walls",
+      "whatIsTitle": "What is a glass veranda?",
+      "whatIsText": "A glass veranda from VivaVerandas is an aluminum canopy with a transparent glass roof. By using high-quality safety glass, you enjoy maximum daylight while being protected from rain and wind. The glass veranda is the ideal choice for those who love a bright, open outdoor space.",
+      "whyChooseTitle": "Why choose a glass veranda?",
+      "whyChooseText": "A glass veranda offers the best of both worlds: the shelter of a canopy and the feeling of being outside. The transparent roof creates a bright atmosphere and makes your outdoor space visually larger. The robust aluminum construction lasts for years with minimal maintenance.",
+      "customizeTitle": "Customize your glass veranda",
+      "customizeText": "Complete your glass veranda with various options such as sun shading, integrated LED lighting, glass sliding walls or electric screens. Choose from clear, sun-resistant or self-cleaning glass and select the perfect RAL color for your aluminum frame.",
+      "installationTitle": "Expert installation",
+      "installationText": "Our experienced installers place your glass veranda quickly and professionally. Whether it's an extension to your home or a freestanding construction in the garden, we ensure a perfect finish and watertight connection.",
+      "specFrame": "Frame",
+      "specFrameValue": "Aluminum, powder coated in any RAL color",
+      "specGlassType": "Glass type",
+      "specGlassTypeValue": "VSG laminated safety glass 8.8mm",
+      "specOptions": "Glass options",
+      "specOptionsValue": "Sun-resistant, self-cleaning or clear glass",
+      "specWidthValue": "Up to 6 meters without intermediate posts",
+      "specDrainage": "Water drainage",
+      "specDrainageValue": "Integrated drainage system in gutters",
+      "specGuaranteeValue": "10 years on construction, 5 years on glass",
+      "experienceYears": "15+ years experience",
+      "colorOptions": "4+ RAL colors",
+      "guaranteeYears": "7 year guarantee",
+      "serviceText": "Reliable service and craftsmanship"
+    },
+    "polycarbonaat": {
+      "title": "Polycarbonate Veranda",
+      "subtitle": "Affordable quality for every budget",
+      "heroAlt": "Polycarbonate Veranda",
+      "mainTitle": "The Polycarbonate Veranda: Smart & Affordable",
+      "description1": "A polycarbonate veranda is the ideal choice for those looking for a quality canopy with excellent value for money. The multi-chamber polycarbonate roof panels are translucent, insulating and virtually unbreakable. You enjoy protection from sun and rain without sacrificing daylight.",
+      "description2": "At VivaVerandas, we deliver polycarbonate verandas completely custom-made. The high-quality aluminum construction is durable and low-maintenance, while the polycarbonate panels provide excellent thermal insulation and reduced rain noise. Available in various colors, from clear to opal, bronze or grey. This way you always find the perfect look for your home.",
+      "benefitsTitle": "Discover the benefits of polycarbonate",
+      "benefit1": "Excellent value for money - luxury appearance, competitive price",
+      "benefit2": "Translucent material for a pleasant atmosphere",
+      "benefit3": "Superior thermal insulation thanks to multi-chamber structure",
+      "benefit4": "Virtually unbreakable - 250x stronger than glass",
+      "benefit5": "UV resistant with 10 year factory guarantee",
+      "benefit6": "Reduced rain noise for extra comfort",
+      "benefit7": "Lightweight construction, suitable for various situations",
+      "whatIsTitle": "What is a polycarbonate veranda?",
+      "whatIsText": "A polycarbonate veranda is an aluminum canopy with multi-chamber polycarbonate roof panels. This plastic material is lighter than glass, but many times stronger and offers excellent insulation. It is the perfect choice for those seeking comfort and quality without exceeding their budget.",
+      "whyChooseTitle": "Why choose polycarbonate?",
+      "whyChooseText": "Polycarbonate is a smart choice for those who want the best for the best price. The panels are UV resistant, impact resistant and offer good thermal insulation. Moreover, polycarbonate significantly reduces rain noise, allowing you to sit outside peacefully even during a shower.",
+      "customizeTitle": "Custom made for your situation",
+      "customizeText": "Every polycarbonate veranda is custom made for your specific situation. Choose the desired dimensions, panel color (clear, opal, bronze or grey) and RAL color for the aluminum frame. Optionally you can extend the veranda with side panels, screens or LED lighting.",
+      "installationTitle": "Quick and expert installation",
+      "installationText": "Our professional installers place your polycarbonate veranda efficiently and carefully. The lightweight material makes installation faster than other roof types, resulting in lower installation costs and less disruption.",
+      "affordableTitle": "Affordable quality",
+      "affordableText": "A polycarbonate veranda is the most affordable option without compromising on quality. The combination of durable aluminum and high-quality polycarbonate panels ensures a canopy you will enjoy for years.",
+      "specFrame": "Frame",
+      "specFrameValue": "Aluminum, powder coated in any RAL color",
+      "specPanels": "Roof panels",
+      "specPanelsValue": "16mm multi-chamber polycarbonate",
+      "specColors": "Panel colors",
+      "specColorsValue": "Clear, opal, bronze or grey",
+      "specWidthValue": "Up to 8 meters without intermediate posts",
+      "specInsulation": "Insulation value",
+      "specInsulationValue": "U-value: 2.3 W/m²K",
+      "specGuaranteeValue": "10 years on construction and panels",
+      "experienceYears": "15+ years experience",
+      "colorOptions": "4 panel colors",
+      "serviceText": "Reliable service and craftsmanship"
+    }
+  },
+  "plateReplace": {
+    "pageTitle": "Polycarbonate Plate Replacement",
+    "metaDescription": "Request a quote for polycarbonate plate replacement. Free measurement within 70 km of Reuver.",
+    "title": "Plate Replacement Quote Request",
+    "subtitle": "Multi-wall polycarbonate plates in various colors.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "address": "Address",
+      "addressPlaceholder": "Address + House Number",
+      "postcode": "Postal Code",
+      "city": "City",
+      "phone": "Phone Number",
+      "email": "Email",
+      "plateCount": "Number of Plates",
+      "depth": "Depth",
+      "roofType": "Roof Type",
+      "roofTypeSelect": "Select...",
+      "plateType": "Desired Plate Type",
+      "photo": "Add photo of current situation",
+      "noFile": "No file selected",
+      "message": "Message",
+      "submit": "Request Quote",
+      "submitting": "Submitting...",
+      "error": "An error occurred. Please try again."
+    },
+    "roofTypes": {
+      "veranda": "Veranda",
+      "carport": "Carport",
+      "tuinoverkapping": "Garden Cover",
+      "serre": "Conservatory",
+      "maatwerk": "Custom Construction"
+    },
+    "plateTypes": {
+      "helder": "Clear",
+      "opaal": "Opal",
+      "brons": "Bronze",
+      "grijs": "Grey"
+    },
+    "steps": {
+      "step1": "Step 1",
+      "step1Desc": "Free measurement within 70 km of Reuver",
+      "step2": "Step 2",
+      "step2Desc": "We check your current construction",
+      "step3": "Step 3",
+      "step3Desc": "You choose from different types of polycarbonate plates",
+      "step4": "Step 4",
+      "step4Desc": "We ensure professional installation within 3 weeks"
+    },
+    "info": {
+      "whyTitle": "Why you should replace polycarbonate plates on time",
+      "whyText1": "Polycarbonate roof plates last for years, but over time they can discolor, show small cracks or even start leaking. This affects not only the appearance, but also the quality of your veranda or carport. By replacing your polycarbonate roof plates on time, you prevent damage and enjoy a sleek, clear and light-transmitting roof that looks like new.",
+      "whyText2": "At VivaVerandas we provide fast and professional replacement, usually within 3 weeks, including free measurement within 70 km of Reuver. We use only high-quality clear or opal polycarbonate and install everything with precision and craftsmanship. This way you are assured of a durable result that you will enjoy for years to come.",
+      "forTitle": "Polycarbonate plate replacement for every cover",
+      "forText": "We replace roof plates on:",
+      "forList1": "Aluminum verandas",
+      "forList2": "Carports",
+      "forList3": "Garden covers",
+      "forList4": "Conservatories and custom constructions",
+      "forText2": "It doesn't matter what brand your current cover is: we can provide almost any system with new polycarbonate plates.",
+      "areaTitle": "Service Area",
+      "areaText": "We are active in Limburg, Noord-Brabant and parts of Gelderland. In your area? Then we will come for free measurement and you will receive a non-binding quote quickly."
+    },
+    "success": {
+      "title": "Thank you for your request!",
+      "text1": "We have received your quote request for polycarbonate plate replacement.",
+      "text2": "We will contact you within 24 hours."
     }
   }
 }

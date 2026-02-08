@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet-async'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { supabase } from '../lib/supabase'
@@ -40,7 +41,7 @@ export default function BlogPage() {
     return text[lang] || text.nl || ''
   }
 
-  const categories = ['all', ...new Set(posts.map(p => p.category).filter(Boolean))]
+  const categories = ['all', ...new Set(posts.map(p => p.category).filter((c): c is string => Boolean(c)))]
 
   const filteredPosts = selectedCategory === 'all'
     ? posts
@@ -48,6 +49,17 @@ export default function BlogPage() {
 
   return (
     <div className="blog-page">
+      <Helmet>
+        <title>{t('blog.hero.title')} | VivaVerandas</title>
+        <meta name="description" content={t('blog.hero.subtitle')} />
+        <link rel="canonical" href="https://vivaverandas.nl/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${t('blog.hero.title')} | VivaVerandas`} />
+        <meta property="og:description" content={t('blog.hero.subtitle')} />
+        <meta property="og:url" content="https://vivaverandas.nl/blog" />
+        <meta property="og:image" content="https://vivaverandas.nl/glasLux-home.webp" />
+      </Helmet>
+
       <Header />
 
       <section className="blog-hero">

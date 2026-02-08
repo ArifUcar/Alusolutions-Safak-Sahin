@@ -524,3 +524,345 @@
     padding: 15px;
   }
 }
+
+/* ===== Offerte List Page Styles ===== */
+.offerte-list-page .offerte-hero {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offerte-list-page .offerte-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.offerte-list-page .offerte-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offerte-list-page .offerte-hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.85), rgba(52, 152, 219, 0.75));
+}
+
+.offerte-list-page .offerte-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.offerte-list-page .offerte-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.offerte-list-page .offerte-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Configurators Section */
+.offerte-configurators {
+  padding: 80px 0;
+  background: var(--light-bg);
+}
+
+.offerte-configurators .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offerte-configurators h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.offerte-configurators .section-subtitle {
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.loading-spinner i {
+  font-size: 3rem;
+  color: var(--accent-color);
+}
+
+.no-configurators {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-color);
+}
+
+.configurators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.configurator-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.configurator-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.configurator-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.configurator-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.configurator-card:hover .configurator-image img {
+  transform: scale(1.05);
+}
+
+.configurator-content {
+  padding: 25px;
+}
+
+.configurator-content h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.configurator-content p {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.configurator-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.configurator-cta i {
+  transition: transform 0.3s ease;
+}
+
+.configurator-card:hover .configurator-cta i {
+  transform: translateX(5px);
+}
+
+/* Benefits Section */
+.offerte-benefits {
+  padding: 60px 0;
+  background: var(--white);
+}
+
+.offerte-benefits .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offerte-benefits .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.benefit-item {
+  text-align: center;
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--accent-color), #16a34a);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.benefit-icon i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.benefit-item h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Alternative CTA Section */
+.offerte-alternative {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.offerte-alternative .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.alternative-content {
+  text-align: center;
+  color: white;
+}
+
+.alternative-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.alternative-content p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-bottom: 30px;
+}
+
+.alternative-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.alternative-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.alternative-buttons .btn-primary {
+  background: var(--accent-color);
+  color: white;
+}
+
+.alternative-buttons .btn-primary:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.alternative-buttons .btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.alternative-buttons .btn-secondary:hover {
+  background: white;
+  color: var(--primary-color);
+}
+
+/* Responsive for Offerte List Page */
+@media (max-width: 992px) {
+  .offerte-benefits .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offerte-list-page .offerte-hero {
+    height: 280px;
+  }
+
+  .offerte-list-page .offerte-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .offerte-list-page .offerte-hero-content p {
+    font-size: 1rem;
+  }
+
+  .offerte-configurators {
+    padding: 50px 0;
+  }
+
+  .offerte-configurators h2 {
+    font-size: 1.6rem;
+  }
+
+  .configurators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offerte-alternative {
+    padding: 50px 0;
+  }
+
+  .alternative-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .alternative-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .alternative-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
